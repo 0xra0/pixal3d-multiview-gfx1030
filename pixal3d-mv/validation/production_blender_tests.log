@@ -1,0 +1,132 @@
+socket(): Operation not permitted
+socket(): Operation not permitted
+test_complete_bake_export_and_lod_bundle (__main__.ProductionTests.test_complete_bake_export_and_lod_bundle) ... /workspace/scratch/ce3dabdc12f0/project/pixal3d-mv/tests/blender_assets.py:33: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material.use_nodes = True
+Info: Saved as "source.blend"
+ASSET stage 1/7 component-aware surface cleanup
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ASSET components 1 protected 0
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 1
+ASSET stage 3/7 shared Smart UV atlas
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 12, 'merged_boundaries': 7, 'unfold_charts': 5}
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 1
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 18, 'merged_boundaries': 9, 'unfold_charts': 9}
+ASSET bake groups {'groups': 1, 'physical_components': 1}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+INFO Draco is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_meshopt_bridge.so
+15:57:01 | INFO: Starting glTF 2.0 export
+15:57:01 | INFO: Extracting primitive: Collision
+15:57:01 | INFO: Primitives created: 1
+15:57:01 | INFO: Finished glTF 2.0 export in 0.003194093704223633 s
+
+15:57:01 | INFO: Starting glTF 2.0 export
+15:57:01 | INFO: Extracting primitive: Sphere.003
+15:57:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:57:01 | INFO: Primitives created: 1
+15:57:01 | INFO: Finished glTF 2.0 export in 0.02633810043334961 s
+
+
+FBX export starting... '/tmp/tmpz0chz5_e/asset.building_oxsrslq6/meshes/test_asset_LOD0.fbx'
+export finished in 0.0078 sec.
+Info: File exported successfully
+15:57:01 | INFO: Starting glTF 2.0 export
+15:57:01 | INFO: Extracting primitive: Sphere.004
+15:57:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:57:01 | INFO: Primitives created: 1
+15:57:01 | INFO: Finished glTF 2.0 export in 0.009818315505981445 s
+
+
+FBX export starting... '/tmp/tmpz0chz5_e/asset.building_oxsrslq6/meshes/test_asset_LOD1.fbx'
+export finished in 0.0057 sec.
+Info: File exported successfully
+ASSET stage 7/7 visual and import quality gates
+Info: Saved as "test_asset.blend"
+ASSET OK /tmp/tmpz0chz5_e/asset/asset_report.json
+ok
+test_component_protection_and_masked_cleanup (__main__.ProductionTests.test_component_protection_and_masked_cleanup) ... PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ok
+test_failed_build_keeps_previous_output (__main__.ProductionTests.test_failed_build_keeps_previous_output) ... Info: Saved as "source.blend"
+ASSET stage 1/7 component-aware surface cleanup
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ASSET components 1 protected 0
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET FAILED report /tmp/tmpa4kwgcvx/existing.building_r5c35q_3/asset_report.json
+ok
+test_named_source_and_visible_mesh_selection (__main__.ProductionTests.test_named_source_and_visible_mesh_selection) ... ok
+test_normalization_and_convex_collision (__main__.ProductionTests.test_normalization_and_convex_collision) ... ok
+test_region_mask_changes_only_selected_surface (__main__.ProductionTests.test_region_mask_changes_only_selected_surface) ... Info: Saved as "mixed.blend"
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ok
+test_uv_atlas_preserves_component_identity (__main__.ProductionTests.test_uv_atlas_preserves_component_identity) ... PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 10, 'merged_boundaries': 0, 'unfold_charts': 10}
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.465s
+
+OK
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+Writing to /tmp/tmpz0chz5_e/asset.building_oxsrslq6/meshes/test_asset_LOD0.obj
+OBJ export of 'test_asset_LOD0.obj' took 0.30 ms
+Writing to /tmp/tmpz0chz5_e/asset.building_oxsrslq6/meshes/test_asset_LOD1.obj
+OBJ export of 'test_asset_LOD1.obj' took 0.33 ms
+
+Blender quit

@@ -1,0 +1,33 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ruff_cache/
+.benchmarks/
+.remember/
+.claude/
+
+# Temporary run artifacts & process trackers
+*.pid
+*.exit
+loopcut-local/tmp/
+*autosave.blend
+*.blend1
+*.blend2
+
+# Large intermediate binary dumps (>50MB) - baked arrays & uncompressed raw sculpts
+# High-resolution benchmark meshes are published as GitHub Release assets
+sculpt/top.glb
+sculpt/top_uv.glb
+sculpt/top_v2.glb
+*.npy
+*.npz
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.bak-*

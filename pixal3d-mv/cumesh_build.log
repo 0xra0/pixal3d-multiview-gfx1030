@@ -1,0 +1,816 @@
+/mnt/sata/CuMesh/src/hash/api.h -> /mnt/sata/CuMesh/src/hash/api.h [skipped, no changes]
+/mnt/sata/CuMesh/src/hash/hash.cuh -> /mnt/sata/CuMesh/src/hash/hash.cuh [skipped, no changes]
+/mnt/sata/CuMesh/src/hash/hash.cu -> /mnt/sata/CuMesh/src/hash/hash.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/utils.h -> /mnt/sata/CuMesh/src/utils_hip.h [skipped, already hipified]
+/mnt/sata/CuMesh/src/cumesh.h -> /mnt/sata/CuMesh/src/cumesh_hip.h [skipped, already hipified]
+/mnt/sata/CuMesh/src/dtypes.cuh -> /mnt/sata/CuMesh/src/dtypes_hip.cuh [skipped, already hipified]
+/mnt/sata/CuMesh/src/shared.h -> /mnt/sata/CuMesh/src/shared_hip.h [skipped, already hipified]
+/mnt/sata/CuMesh/src/atlas.cu -> /mnt/sata/CuMesh/src/atlas.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/clean_up.cu -> /mnt/sata/CuMesh/src/clean_up.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/cumesh.cu -> /mnt/sata/CuMesh/src/cumesh.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/connectivity.cu -> /mnt/sata/CuMesh/src/connectivity.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/geometry.cu -> /mnt/sata/CuMesh/src/geometry.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/io.cu -> /mnt/sata/CuMesh/src/io.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/simplify.cu -> /mnt/sata/CuMesh/src/simplify.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/shared.cu -> /mnt/sata/CuMesh/src/shared.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/remesh/api.h -> /mnt/sata/CuMesh/src/remesh/api.h [skipped, no changes]
+/mnt/sata/CuMesh/src/remesh/simple_dual_contour.cu -> /mnt/sata/CuMesh/src/remesh/simple_dual_contour.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/remesh/svox2vert.cu -> /mnt/sata/CuMesh/src/remesh/svox2vert.hip [skipped, already hipified]
+/mnt/sata/CuMesh/src/ext.cpp -> /mnt/sata/CuMesh/src/ext_hip.cpp [skipped, already hipified]
+[92mSuccessfully preprocessed all matching files.[0m
+Total number of unsupported CUDA function calls: 0
+
+
+Total number of replaced kernel launches: 102
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/common.h -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/common_hip.h [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/triangle.cuh -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/triangle_hip.cuh [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/bounding_box.cuh -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/bounding_box_hip.cuh [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/gpu_memory.h -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/gpu_memory_hip.h [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/bvh.cuh -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/bvh_hip.cuh [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/pcg32.h -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/pcg32_hip.h [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/src/bvh.cu -> /mnt/sata/CuMesh/third_party/cubvh/src/bvh.hip [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/api_gpu.h -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/api_gpu_hip.h [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill.cuh -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc.cuh -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc_hip.cuh [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/hashtable.cuh -> /mnt/sata/CuMesh/third_party/cubvh/include/gpu/hashtable_hip.cuh [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.cu -> /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip [skipped, already hipified]
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/fill_holes.h -> /mnt/sata/CuMesh/third_party/cubvh/include/cpu/fill_holes.h [skipped, no changes]
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/merge_vertices.h -> /mnt/sata/CuMesh/third_party/cubvh/include/cpu/merge_vertices.h [skipped, no changes]
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/hashtable.h -> /mnt/sata/CuMesh/third_party/cubvh/include/cpu/hashtable.h [skipped, no changes]
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/spmc.h -> /mnt/sata/CuMesh/third_party/cubvh/include/cpu/spmc.h [skipped, no changes]
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h -> /mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h [skipped, no changes]
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h -> /mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h [skipped, no changes]
+/mnt/sata/CuMesh/third_party/cubvh/src/bindings.cpp -> /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp [skipped, already hipified]
+[92mSuccessfully preprocessed all matching files.[0m
+Total number of unsupported CUDA function calls: 0
+
+
+Total number of replaced kernel launches: 14
+/mnt/sata/CuMesh/third_party/xatlas/xatlas_mod.cpp -> /mnt/sata/CuMesh/third_party/xatlas/xatlas_mod.cpp [skipped, no changes]
+/mnt/sata/CuMesh/third_party/xatlas/binding.cpp -> /mnt/sata/CuMesh/third_party/xatlas/binding.cpp [skipped, no changes]
+[92mSuccessfully preprocessed all matching files.[0m
+/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+Total number of unsupported CUDA function calls: 0
+
+
+Total number of replaced kernel launches: 0
+running build_ext
+building 'cumesh._C' extension
+[1/12] clang++ -MMD -MF /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/ext_hip.o.d -fno-strict-overflow -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/ext_hip.cpp -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/ext_hip.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -O3 -std=c++20 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C
+[2/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/cumesh.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/cumesh.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/cumesh.hip:2:
+In file included from /mnt/sata/CuMesh/src/cumesh_hip.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+1 warning generated when compiling for gfx1030.
+[3/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/hash/hash.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/hash/hash.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/hash/hash.hip:2:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+1 warning generated when compiling for gfx1030.
+[4/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/io.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/io.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/io.hip:2:
+In file included from /mnt/sata/CuMesh/src/cumesh_hip.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+1 warning generated when compiling for gfx1030.
+[5/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/geometry.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/geometry.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/geometry.hip:3:
+In file included from /mnt/sata/CuMesh/src/cumesh_hip.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+In file included from /mnt/sata/CuMesh/src/geometry.hip:5:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+2 warnings generated when compiling for gfx1030.
+In file included from /mnt/sata/CuMesh/src/geometry.hip:5:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+1 warning generated when compiling for host.
+[6/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/remesh/simple_dual_contour.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/remesh/simple_dual_contour.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/remesh/simple_dual_contour.hip:2:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+1 warning generated when compiling for gfx1030.
+[7/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/connectivity.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/connectivity.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/connectivity.hip:3:
+In file included from /mnt/sata/CuMesh/src/cumesh_hip.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+In file included from /mnt/sata/CuMesh/src/connectivity.hip:4:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+2 warnings generated when compiling for gfx1030.
+In file included from /mnt/sata/CuMesh/src/connectivity.hip:4:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+1 warning generated when compiling for host.
+[8/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/clean_up.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/clean_up.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/clean_up.hip:3:
+In file included from /mnt/sata/CuMesh/src/cumesh_hip.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+In file included from /mnt/sata/CuMesh/src/clean_up.hip:5:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+2 warnings generated when compiling for gfx1030.
+In file included from /mnt/sata/CuMesh/src/clean_up.hip:5:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+1 warning generated when compiling for host.
+[9/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/atlas.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/atlas.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/atlas.hip:3:
+In file included from /mnt/sata/CuMesh/src/cumesh_hip.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+In file included from /mnt/sata/CuMesh/src/atlas.hip:5:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+2 warnings generated when compiling for gfx1030.
+In file included from /mnt/sata/CuMesh/src/atlas.hip:5:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+1 warning generated when compiling for host.
+[10/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/shared.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/shared.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/shared.hip:3:
+In file included from /mnt/sata/CuMesh/src/shared_hip.h:6:
+In file included from /opt/rocm/include/hipcub/hipcub.hpp:31:
+In file included from /opt/rocm/include/hipcub/config.hpp:78:
+In file included from /opt/rocm/include/rocprim/device/config_types.hpp:33:
+In file included from /opt/rocm/include/rocprim/device/../detail/various.hpp:26:
+In file included from /opt/rocm/include/rocprim/device/../detail/../type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/device/../detail/../type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/device/../detail/../functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/device/../config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:44:2: note: expanded from here
+   44 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+In file included from /mnt/sata/CuMesh/src/shared.hip:3:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+2 warnings generated when compiling for gfx1030.
+In file included from /mnt/sata/CuMesh/src/shared.hip:3:
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+  277 |     T h_ptr[size];
+      |             ^~~~
+/mnt/sata/CuMesh/src/shared_hip.h:277:13: note: function parameter 'size' with unknown value cannot be used in a constant expression
+/mnt/sata/CuMesh/src/shared_hip.h:276:31: note: declared here
+  276 | void print_val(T* ptr, size_t size) {
+      |                               ^
+1 warning generated when compiling for host.
+[11/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/remesh/svox2vert.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/remesh/svox2vert.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/remesh/svox2vert.hip:2:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+/mnt/sata/CuMesh/src/remesh/svox2vert.hip:179:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  179 |     hipcub::DeviceScan::ExclusiveSum(nullptr, temp_storage_bytes, num_vertices, M + 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/src/remesh/svox2vert.hip:182:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  182 |     hipcub::DeviceScan::ExclusiveSum(d_temp_storage, temp_storage_bytes, num_vertices, M + 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated when compiling for gfx1030.
+/mnt/sata/CuMesh/src/remesh/svox2vert.hip:179:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  179 |     hipcub::DeviceScan::ExclusiveSum(nullptr, temp_storage_bytes, num_vertices, M + 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/src/remesh/svox2vert.hip:182:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  182 |     hipcub::DeviceScan::ExclusiveSum(d_temp_storage, temp_storage_bytes, num_vertices, M + 1);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated when compiling for host.
+[12/12] /opt/rocm/bin/hipcc  -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/src/simplify.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/simplify.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/src/simplify.hip:3:
+In file included from /mnt/sata/CuMesh/src/cumesh_hip.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/extension.h:6:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/all.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include/torch/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/autograd.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/variable.h:7:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/cpp_hook.h:3:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/autograd/function_hook.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Tensor.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/TensorBody.h:17:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/Scalar.h:10:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:142:2: note: expanded from here
+  142 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+1 warning generated when compiling for gfx1030.
+clang++ -fno-strict-overflow -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -pthread -B /mnt/ssd/conda-envs/ComfyUI/compiler_compat -shared -Wl,-rpath,/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath-link,/mnt/ssd/conda-envs/ComfyUI/lib -L/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath,/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath-link,/mnt/ssd/conda-envs/ComfyUI/lib -L/mnt/ssd/conda-envs/ComfyUI/lib -fuse-ld=mold /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/atlas.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/clean_up.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/connectivity.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/cumesh.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/ext_hip.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/geometry.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/hash/hash.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/io.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/remesh/simple_dual_contour.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/remesh/svox2vert.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/shared.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/src/simplify.o -L/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/torch/lib -L/opt/rocm/lib -L/opt/rocm/hip/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lamdhip64 -lc10_hip -ltorch_hip -o build/lib.linux-x86_64-cpython-312/cumesh/_C.cpython-312-x86_64-linux-gnu.so
+building 'cumesh._cubvh' extension
+[1/3] /opt/rocm/bin/hipcc  -I/mnt/sata/CuMesh/third_party/cubvh/include -I/usr/include/eigen3 -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/third_party/cubvh/src/bvh.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/cubvh/src/bvh.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -U__HIP_NO_HALF_OPERATORS__ -U__HIP_NO_HALF_CONVERSIONS__ -U__HIP_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cubvh -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bvh.hip:4:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/gpu/common_hip.h:15:
+In file included from /usr/include/eigen3/Eigen/Dense:1:
+In file included from /usr/include/eigen3/Eigen/Core:98:
+In file included from /usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/memory:80:
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:93:2: warning: delete called on 'cubvh::TriangleBvh' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+   93 |         delete __ptr;
+      |         ^
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:399:4: note: in instantiation of member function 'std::default_delete<cubvh::TriangleBvh>::operator()' requested here
+  399 |           get_deleter()(std::move(__ptr));
+      |           ^
+/mnt/sata/CuMesh/third_party/cubvh/src/bvh.hip:614:12: note: in instantiation of member function 'std::unique_ptr<cubvh::TriangleBvh>::~unique_ptr' requested here
+  614 |     return std::unique_ptr<TriangleBvh>(new TriangleBvh4());
+      |            ^
+1 warning generated when compiling for gfx1030.
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bvh.hip:4:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/gpu/common_hip.h:15:
+In file included from /usr/include/eigen3/Eigen/Dense:1:
+In file included from /usr/include/eigen3/Eigen/Core:98:
+In file included from /usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/memory:80:
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:93:2: warning: delete called on 'cubvh::TriangleBvh' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+   93 |         delete __ptr;
+      |         ^
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:399:4: note: in instantiation of member function 'std::default_delete<cubvh::TriangleBvh>::operator()' requested here
+  399 |           get_deleter()(std::move(__ptr));
+      |           ^
+/mnt/sata/CuMesh/third_party/cubvh/src/bvh.hip:614:12: note: in instantiation of member function 'std::unique_ptr<cubvh::TriangleBvh>::~unique_ptr' requested here
+  614 |     return std::unique_ptr<TriangleBvh>(new TriangleBvh4());
+      |            ^
+1 warning generated when compiling for host.
+[2/3] clang++ -MMD -MF /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/cubvh/src/bindings_hip.o.d -fno-strict-overflow -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -I/mnt/sata/CuMesh/third_party/cubvh/include -I/usr/include/eigen3 -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/cubvh/src/bindings_hip.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -O3 -std=c++20 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cubvh
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp:9:
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:196:26: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'ssize_t' (aka 'long') [-Wsign-compare]
+  196 |     for (size_t i = 0; i < faces.shape(0); ++i) {
+      |                        ~ ^ ~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:191:26: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'ssize_t' (aka 'long') [-Wsign-compare]
+  191 |     for (size_t i = 0; i < vertices.shape(0); ++i) {
+      |                        ~ ^ ~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:230:21: note: in instantiation of function template specialization 'cubvh::_mesh_from_numpy_typed<float>' requested here
+  230 |         auto mesh = _mesh_from_numpy_typed<float>(v, f);
+      |                     ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:196:26: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'ssize_t' (aka 'long') [-Wsign-compare]
+  196 |     for (size_t i = 0; i < faces.shape(0); ++i) {
+      |                        ~ ^ ~~~~~~~~~~~~~~
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp:9:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:11:
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:423:14: warning: unused variable 'a' [-Wunused-variable]
+  423 |                                 Vec3T<T> a = m.vertices[f[0]];
+      |                                          ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:246:3: note: in instantiation of member function 'cubvh::cpu::qd::DecimatorT<float>::buildVertexQuadrics' requested here
+  246 |                 buildVertexQuadrics();
+      |                 ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:232:13: note: in instantiation of member function 'cubvh::cpu::qd::DecimatorT<float>::decimate' requested here
+  232 |         dec.decimate(target_vertices);
+      |             ^
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp:9:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:11:
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:424:14: warning: unused variable 'b' [-Wunused-variable]
+  424 |                                 Vec3T<T> b = m.vertices[f[1]];
+      |                                          ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:425:14: warning: unused variable 'c' [-Wunused-variable]
+  425 |                                 Vec3T<T> c = m.vertices[f[2]];
+      |                                          ^
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp:9:
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:191:26: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'ssize_t' (aka 'long') [-Wsign-compare]
+  191 |     for (size_t i = 0; i < vertices.shape(0); ++i) {
+      |                        ~ ^ ~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:238:21: note: in instantiation of function template specialization 'cubvh::_mesh_from_numpy_typed<double>' requested here
+  238 |         auto mesh = _mesh_from_numpy_typed<double>(v, f);
+      |                     ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:196:26: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'ssize_t' (aka 'long') [-Wsign-compare]
+  196 |     for (size_t i = 0; i < faces.shape(0); ++i) {
+      |                        ~ ^ ~~~~~~~~~~~~~~
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp:9:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:11:
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:423:14: warning: unused variable 'a' [-Wunused-variable]
+  423 |                                 Vec3T<T> a = m.vertices[f[0]];
+      |                                          ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:246:3: note: in instantiation of member function 'cubvh::cpu::qd::DecimatorT<double>::buildVertexQuadrics' requested here
+  246 |                 buildVertexQuadrics();
+      |                 ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:240:13: note: in instantiation of member function 'cubvh::cpu::qd::DecimatorT<double>::decimate' requested here
+  240 |         dec.decimate(target_vertices);
+      |             ^
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/bindings_hip.cpp:9:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/cpu/api_cpu.h:11:
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:424:14: warning: unused variable 'b' [-Wunused-variable]
+  424 |                                 Vec3T<T> b = m.vertices[f[1]];
+      |                                          ^
+/mnt/sata/CuMesh/third_party/cubvh/include/cpu/decimation.h:425:14: warning: unused variable 'c' [-Wunused-variable]
+  425 |                                 Vec3T<T> c = m.vertices[f[2]];
+      |                                          ^
+11 warnings generated.
+[3/3] /opt/rocm/bin/hipcc  -I/mnt/sata/CuMesh/third_party/cubvh/include -I/usr/include/eigen3 -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/cubvh/src/api_gpu.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -DCUDA_HAS_FP16=1 -D__HIP_NO_HALF_OPERATORS__=1 -D__HIP_NO_HALF_CONVERSIONS__=1 -DHIP_ENABLE_WARP_SYNC_BUILTINS=1 -O3 -std=c++20 -I/mnt/ssd/conda-envs/ComfyUI/include --offload-arch=native -U__HIP_NO_HALF_OPERATORS__ -U__HIP_NO_HALF_CONVERSIONS__ -U__HIP_NO_HALF2_OPERATORS__ -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_cubvh -fno-gpu-rdc
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:2:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/gpu/api_gpu_hip.h:5:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/hip/HIPContext.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/Context.h:5:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/CPUGeneratorImpl.h:4:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/ATen/core/Generator.h:19:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/GeneratorImpl.h:9:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/TensorImpl.h:12:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/core/ScalarType.h:14:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/c10/util/complex.h:8:
+In file included from /mnt/ssd/conda-envs/ComfyUI/include/torch/headeronly/util/complex.h:9:
+In file included from /opt/rocm/include/thrust/complex.h:35:
+In file included from /opt/rocm/include/thrust/detail/type_traits.h:38:
+In file included from /opt/rocm/include/rocprim/type_traits.hpp:24:
+In file included from /opt/rocm/include/rocprim/type_traits_functions.hpp:25:
+/opt/rocm/include/rocprim/functional.hpp:37:1: warning: GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs temporarily disabled, due to performance issues with printf. [-W#pragma-messages]
+   37 | ROCPRIM_PRAGMA_MESSAGE("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs "
+      | ^
+/opt/rocm/include/rocprim/config.hpp:331:39: note: expanded from macro 'ROCPRIM_PRAGMA_MESSAGE'
+  331 |     #define ROCPRIM_PRAGMA_MESSAGE(x) _Pragma(ROCPRIM_STRINGIZE(message(x)))
+      |                                       ^
+<scratch space>:88:2: note: expanded from here
+   88 |  message("GPU printf warnings for invalid rocPRIM warp operations on Navi GPUs " "temporarily disabled, due to performance issues with printf.")
+      |  ^
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:5:
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:175:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  175 |     hipMalloc(&d_grid,    bytesGrid);  
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:176:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  176 |     hipMalloc(&d_labels,  bytesLabel);  
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:177:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  177 |     hipMalloc(&d_changed, sizeof(int));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:179:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  179 |     hipMemcpy(d_grid, grid, bytesGrid, hipMemcpyHostToDevice);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:185:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  185 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:191:13: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  191 |             hipFree(d_grid);
+      |             ^~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:192:13: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  192 |             hipFree(d_labels);
+      |             ^~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:193:13: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  193 |             hipFree(d_changed);
+      |             ^~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:209:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  209 |         hipMemset(d_changed, 0, sizeof(int));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:225:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  225 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:234:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  234 |         hipMemcpy(&h_changed, d_changed, sizeof(int), hipMemcpyDeviceToHost);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:263:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  263 |         hipDeviceSynchronize();  
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:267:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  267 |     hipMemcpy(mask, d_labels, bytesLabel, hipMemcpyDeviceToHost);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:270:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  270 |     hipFree(d_grid);  
+      |     ^~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:271:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  271 |     hipFree(d_labels);  
+      |     ^~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:272:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  272 |     hipFree(d_changed);  
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:6:
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc_hip.cuh:807:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  807 |         hipMemcpyAsync(&uniqueCount, thrust::raw_pointer_cast(mapSortedToUnique.data()) + (M - 1),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  808 |                         sizeof(int), hipMemcpyDeviceToHost, stream);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc_hip.cuh:809:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  809 |         hipStreamSynchronize(stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc_hip.cuh:867:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  867 |     hipStreamSynchronize(stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:141:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  141 |     hipMemcpyAsync(verts.data_ptr<float>(),
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  142 |                     thrust::raw_pointer_cast(verts_vec.data()),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  143 |                     M * 3 * sizeof(float),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~
+  144 |                     hipMemcpyDeviceToDevice, stream);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:146:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  146 |     hipMemcpyAsync(tris.data_ptr<int>(),
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  147 |                     thrust::raw_pointer_cast(tris_vec.data()),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  148 |                     T * 3 * sizeof(int),
+      |                     ~~~~~~~~~~~~~~~~~~~~
+  149 |                     hipMemcpyDeviceToDevice, stream);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:152:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  152 |     hipStreamSynchronize(stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:2:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/gpu/api_gpu_hip.h:4:
+In file included from /usr/include/eigen3/Eigen/Dense:1:
+In file included from /usr/include/eigen3/Eigen/Core:98:
+In file included from /usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/memory:80:
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:93:2: warning: delete called on 'cubvh::TriangleBvh' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+   93 |         delete __ptr;
+      |         ^
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:399:4: note: in instantiation of member function 'std::default_delete<cubvh::TriangleBvh>::operator()' requested here
+  399 |           get_deleter()(std::move(__ptr));
+      |           ^
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:34:28: note: in instantiation of member function 'std::unique_ptr<cubvh::TriangleBvh>::~unique_ptr' requested here
+   34 |             triangle_bvh = TriangleBvh::make();
+      |                            ^
+24 warnings generated when compiling for gfx1030.
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:5:
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:175:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  175 |     hipMalloc(&d_grid,    bytesGrid);  
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:176:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  176 |     hipMalloc(&d_labels,  bytesLabel);  
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:177:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  177 |     hipMalloc(&d_changed, sizeof(int));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:179:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  179 |     hipMemcpy(d_grid, grid, bytesGrid, hipMemcpyHostToDevice);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:185:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  185 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:191:13: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  191 |             hipFree(d_grid);
+      |             ^~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:192:13: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  192 |             hipFree(d_labels);
+      |             ^~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:193:13: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  193 |             hipFree(d_changed);
+      |             ^~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:209:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  209 |         hipMemset(d_changed, 0, sizeof(int));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:225:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  225 |         hipDeviceSynchronize();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:234:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  234 |         hipMemcpy(&h_changed, d_changed, sizeof(int), hipMemcpyDeviceToHost);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:263:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  263 |         hipDeviceSynchronize();  
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:267:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  267 |     hipMemcpy(mask, d_labels, bytesLabel, hipMemcpyDeviceToHost);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:270:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  270 |     hipFree(d_grid);  
+      |     ^~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:271:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  271 |     hipFree(d_labels);  
+      |     ^~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/floodfill_hip.cuh:272:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  272 |     hipFree(d_changed);  
+      |     ^~~~~~~~~~~~~~~~~~
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:6:
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc_hip.cuh:807:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  807 |         hipMemcpyAsync(&uniqueCount, thrust::raw_pointer_cast(mapSortedToUnique.data()) + (M - 1),
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  808 |                         sizeof(int), hipMemcpyDeviceToHost, stream);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc_hip.cuh:809:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  809 |         hipStreamSynchronize(stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/include/gpu/spcumc_hip.cuh:867:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  867 |     hipStreamSynchronize(stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:141:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  141 |     hipMemcpyAsync(verts.data_ptr<float>(),
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  142 |                     thrust::raw_pointer_cast(verts_vec.data()),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  143 |                     M * 3 * sizeof(float),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~
+  144 |                     hipMemcpyDeviceToDevice, stream);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:146:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  146 |     hipMemcpyAsync(tris.data_ptr<int>(),
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  147 |                     thrust::raw_pointer_cast(tris_vec.data()),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  148 |                     T * 3 * sizeof(int),
+      |                     ~~~~~~~~~~~~~~~~~~~~
+  149 |                     hipMemcpyDeviceToDevice, stream);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:152:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  152 |     hipStreamSynchronize(stream);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:2:
+In file included from /mnt/sata/CuMesh/third_party/cubvh/include/gpu/api_gpu_hip.h:4:
+In file included from /usr/include/eigen3/Eigen/Dense:1:
+In file included from /usr/include/eigen3/Eigen/Core:98:
+In file included from /usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/memory:80:
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:93:2: warning: delete called on 'cubvh::TriangleBvh' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+   93 |         delete __ptr;
+      |         ^
+/usr/lib64/gcc/x86_64-pc-linux-gnu/15.2/../../../../include/c++/15.2/bits/unique_ptr.h:399:4: note: in instantiation of member function 'std::default_delete<cubvh::TriangleBvh>::operator()' requested here
+  399 |           get_deleter()(std::move(__ptr));
+      |           ^
+/mnt/sata/CuMesh/third_party/cubvh/src/api_gpu.hip:34:28: note: in instantiation of member function 'std::unique_ptr<cubvh::TriangleBvh>::~unique_ptr' requested here
+   34 |             triangle_bvh = TriangleBvh::make();
+      |                            ^
+23 warnings generated when compiling for host.
+clang++ -fno-strict-overflow -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -pthread -B /mnt/ssd/conda-envs/ComfyUI/compiler_compat -shared -Wl,-rpath,/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath-link,/mnt/ssd/conda-envs/ComfyUI/lib -L/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath,/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath-link,/mnt/ssd/conda-envs/ComfyUI/lib -L/mnt/ssd/conda-envs/ComfyUI/lib -fuse-ld=mold /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/cubvh/src/api_gpu.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/cubvh/src/bindings_hip.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/cubvh/src/bvh.o -L/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/torch/lib -L/opt/rocm/lib -L/opt/rocm/hip/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lamdhip64 -lc10_hip -ltorch_hip -o build/lib.linux-x86_64-cpython-312/cumesh/_cubvh.cpython-312-x86_64-linux-gnu.so
+building 'cumesh._xatlas' extension
+[1/2] clang++ -MMD -MF /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/xatlas/xatlas_mod.o.d -fno-strict-overflow -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/third_party/xatlas/xatlas_mod.cpp -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/xatlas/xatlas_mod.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -O3 -std=c++20 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_xatlas
+[2/2] clang++ -MMD -MF /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/xatlas/binding.o.d -fno-strict-overflow -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -I/mnt/ssd/conda-envs/ComfyUI/include/torch/csrc/api/include -I/mnt/ssd/conda-envs/ComfyUI/include/THH -I/opt/rocm/include -I/mnt/ssd/conda-envs/ComfyUI/include/python3.12 -c -c /mnt/sata/CuMesh/third_party/xatlas/binding.cpp -o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/xatlas/binding.o -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -D__HIP_PLATFORM_AMD__=1 -DUSE_ROCM=1 -DHIPBLAS_V2 -fPIC -O3 -std=c++20 -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_xatlas
+clang++ -fno-strict-overflow -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -fPIC -O2 -isystem /mnt/ssd/conda-envs/ComfyUI/include -pthread -B /mnt/ssd/conda-envs/ComfyUI/compiler_compat -shared -Wl,-rpath,/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath-link,/mnt/ssd/conda-envs/ComfyUI/lib -L/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath,/mnt/ssd/conda-envs/ComfyUI/lib -Wl,-rpath-link,/mnt/ssd/conda-envs/ComfyUI/lib -L/mnt/ssd/conda-envs/ComfyUI/lib -fuse-ld=mold /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/xatlas/binding.o /mnt/sata/CuMesh/build/temp.linux-x86_64-cpython-312/third_party/xatlas/xatlas_mod.o -L/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/torch/lib -L/opt/rocm/lib -L/opt/rocm/hip/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lamdhip64 -lc10_hip -ltorch_hip -o build/lib.linux-x86_64-cpython-312/cumesh/_xatlas.cpython-312-x86_64-linux-gnu.so

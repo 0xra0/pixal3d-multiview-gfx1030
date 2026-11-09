@@ -1,0 +1,39 @@
+socket(): Operation not permitted
+socket(): Operation not permitted
+PREP import /workspace/scratch/ce3dabdc12f0/upload/medallion.blend
+PREP input {"vertices": 166451, "faces": 331729, "triangles": 331729, "boundary_edges": 27, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 1898, "uv_layer": null, "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.0, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 3563
+PREP degenerates
+PREP overconnected edges 27
+PREP hole boundaries 33
+PREP decimate 329854 -> 40000
+PREP boundary weld 3
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 1
+PREP Smart UV
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP UV isolate foldovers 4622
+/workspace/scratch/ce3dabdc12f0/project/pixal3d-mv/prep_mesh.py:599: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+PREP validate {"vertices": 19813, "faces": 39494, "triangles": 39494, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "GameUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.15940757839883407, "uv_overlap_check": "complete", "uv_overlap_pairs": 0, "uv_overlap_samples": [], "uv_overlap_faces": []}
+INFO Draco is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_meshopt_bridge.so
+14:09:26 | INFO: Starting glTF 2.0 export
+14:09:26 | INFO: Extracting primitive: geometry_0.001
+14:09:26 | INFO: Primitives created: 1
+14:09:26 | INFO: Finished glTF 2.0 export in 0.11424779891967773 s
+
+
+FBX export starting... '/workspace/scratch/ce3dabdc12f0/validation/medallion_closed.fbx'
+export finished in 0.0883 sec.
+Info: Saved as "medallion_closed.blend"
+PREP WARNING Neutral material: bake/apply textures before shipping.
+PREP OK triangles 331729 -> 39494; boundary edges 0; UV GameUV; report /workspace/scratch/ce3dabdc12f0/validation/medallion_closed.report.json
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit

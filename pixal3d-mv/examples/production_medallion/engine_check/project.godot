@@ -1,0 +1,4 @@
+[application]
+config/name="Pixal3D asset import check"
+[rendering]
+renderer/rendering_method="gl_compatibility"

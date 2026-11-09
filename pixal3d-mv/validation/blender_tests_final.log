@@ -1,0 +1,200 @@
+socket(): Operation not permitted
+socket(): Operation not permitted
+test_bowtie_vertex_splits_into_two_closed_shells (__main__.MeshTests.test_bowtie_vertex_splits_into_two_closed_shells) ... PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ok
+test_custom_normals_clear_without_splitting_geometry (__main__.MeshTests.test_custom_normals_clear_without_splitting_geometry) ... ok
+test_image_texture_survives_smart_uv_transfer (__main__.MeshTests.test_image_texture_survives_smart_uv_transfer) ... /workspace/scratch/ce3dabdc12f0/project/pixal3d-mv/tests/blender_integration.py:159: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+Info: Saved as "input.blend"
+PREP import /tmp/tmps4za9tw4/input.blend
+PREP input {"vertices": 8, "faces": 6, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "SourceUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.375, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP Smart UV
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake normal
+Info: Baking map saved to internal image, save it externally or pack it
+PREP validate {"vertices": 8, "faces": 12, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "GameUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.5475260381499598, "uv_overlap_check": "complete", "uv_overlap_pairs": 0, "uv_overlap_samples": [], "uv_overlap_faces": []}
+INFO Draco is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_meshopt_bridge.so
+14:09:54 | INFO: Starting glTF 2.0 export
+14:09:54 | INFO: Extracting primitive: Cube.001
+14:09:54 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:09:54 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:09:54 | INFO: Primitives created: 1
+14:09:54 | INFO: Finished glTF 2.0 export in 0.0166776180267334 s
+ok
+test_isolated_surface_is_not_capped_onto_itself (__main__.MeshTests.test_isolated_surface_is_not_capped_onto_itself) ... 
+PREP OK triangles 12 -> 12; boundary edges 0; UV GameUV; report /tmp/tmps4za9tw4/checker.report.json
+PREP boundary weld 3
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 1
+ok
+test_keep_without_uv_rejects_instead_of_silently_unwrapping (__main__.MeshTests.test_keep_without_uv_rejects_instead_of_silently_unwrapping) ... Info: Saved as "input.blend"
+PREP import /tmp/tmpjen1qpwb/input.blend
+PREP input {"vertices": 8, "faces": 6, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": null, "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.0, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ok
+test_opt_in_voxel_remesh_and_smoothing (__main__.MeshTests.test_opt_in_voxel_remesh_and_smoothing) ... Info: Saved as "input.blend"
+PREP import /tmp/tmpbjod_j70/input.blend
+PREP input {"vertices": 8, "faces": 6, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "SourceUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.375, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP Smart UV
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP validate {"vertices": 1352, "faces": 2700, "triangles": 2700, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "GameUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.6509949556290162, "uv_overlap_check": "complete", "uv_overlap_pairs": 0, "uv_overlap_samples": [], "uv_overlap_faces": []}
+14:09:54 | INFO: Starting glTF 2.0 export
+14:09:54 | INFO: Extracting primitive: Cube.001
+14:09:54 | INFO: Primitives created: 1
+14:09:54 | INFO: Finished glTF 2.0 export in 0.00912618637084961 s
+ok
+test_pbr_transfer_bakes_color_onto_smart_uv (__main__.MeshTests.test_pbr_transfer_bakes_color_onto_smart_uv) ... /workspace/scratch/ce3dabdc12f0/project/pixal3d-mv/tests/blender_integration.py:83: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+
+PREP WARNING Neutral material: bake/apply textures before shipping.
+PREP WARNING Smoothing/remeshing changes shape; inspect thin parts and silhouette.
+PREP OK triangles 12 -> 2700; boundary edges 0; UV GameUV; report /tmp/tmpbjod_j70/voxel.report.json
+Info: Saved as "input.blend"
+PREP import /tmp/tmp21ybdpk6/input.blend
+PREP input {"vertices": 8, "faces": 6, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "SourceUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.375, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP Smart UV
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+PREP bake normal
+Info: Baking map saved to internal image, save it externally or pack it
+PREP validate {"vertices": 8, "faces": 12, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "GameUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.5475260381499598, "uv_overlap_check": "complete", "uv_overlap_pairs": 0, "uv_overlap_samples": [], "uv_overlap_faces": []}
+14:09:54 | INFO: Starting glTF 2.0 export
+14:09:54 | INFO: Extracting primitive: Cube.001
+14:09:54 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:09:54 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:09:54 | INFO: Primitives created: 1
+14:09:54 | INFO: Finished glTF 2.0 export in 0.010412216186523438 s
+ok
+test_repair_fills_closed_boundary_removes_loose_and_keeps_small_parts (__main__.MeshTests.test_repair_fills_closed_boundary_removes_loose_and_keeps_small_parts) ... 
+PREP OK triangles 12 -> 12; boundary edges 0; UV GameUV; report /tmp/tmp21ybdpk6/baked.report.json
+PREP boundary weld 5
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 1
+ok
+test_smart_uv_exports_without_topology_tearing (__main__.MeshTests.test_smart_uv_exports_without_topology_tearing) ... Info: Saved as "input.blend"
+PREP import /tmp/tmpk2jpk3we/input.blend
+PREP input {"vertices": 8, "faces": 6, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "SourceUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.375, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP Smart UV
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP validate {"vertices": 8, "faces": 12, "triangles": 12, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "GameUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.6511330919628083, "uv_overlap_check": "complete", "uv_overlap_pairs": 0, "uv_overlap_samples": [], "uv_overlap_faces": []}
+14:09:54 | INFO: Starting glTF 2.0 export
+14:09:54 | INFO: Extracting primitive: Cube.001
+14:09:54 | INFO: Primitives created: 1
+14:09:54 | INFO: Finished glTF 2.0 export in 0.0035507678985595703 s
+ok
+test_strict_rejects_open_surface_and_does_not_export (__main__.MeshTests.test_strict_rejects_open_surface_and_does_not_export) ... 
+Info: File exported successfully
+
+FBX export starting... '/tmp/tmpk2jpk3we/out.fbx'
+export finished in 0.0042 sec.
+Info: Saved as "out.blend"
+PREP WARNING Neutral material: bake/apply textures before shipping.
+PREP OK triangles 12 -> 12; boundary edges 0; UV GameUV; report /tmp/tmpk2jpk3we/out.report.json
+Info: Saved as "input.blend"
+PREP import /tmp/tmpyiqb8mml/input.blend
+PREP input {"vertices": 4, "faces": 1, "triangles": 2, "boundary_edges": 4, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "SourceUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 1.0, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 4
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 1
+PREP boundary weld 4
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 1
+PREP Smart UV
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP validate {"vertices": 4, "faces": 2, "triangles": 2, "boundary_edges": 4, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "GameUV", "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.992202514170253, "uv_overlap_check": "complete", "uv_overlap_pairs": 0, "uv_overlap_samples": [], "uv_overlap_faces": []}
+ok
+test_uv_fallback_separates_overlapping_triangles (__main__.MeshTests.test_uv_fallback_separates_overlapping_triangles) ... PREP UV isolate foldovers 12
+ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.457s
+
+OK
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+Writing to /tmp/tmpk2jpk3we/out.obj
+OBJ export of 'out.obj' took 0.16 ms
+
+Blender quit

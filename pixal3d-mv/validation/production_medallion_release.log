@@ -1,0 +1,91 @@
+  ASSET stage 1/7 component-aware surface cleanup
+  ASSET components 421 protected 418
+  ASSET stage 2/7 low mesh and high-resolution source
+  ASSET reduce LOD 0 component 0 / 421
+  ASSET reduce LOD 0 component 50 / 421
+  ASSET reduce LOD 0 component 100 / 421
+  ASSET reduce LOD 0 component 150 / 421
+  ASSET reduce LOD 0 component 200 / 421
+  ASSET reduce LOD 0 component 250 / 421
+  ASSET reduce LOD 0 component 300 / 421
+  ASSET reduce LOD 0 component 350 / 421
+  ASSET reduce LOD 0 component 400 / 421
+  ASSET stage 3/7 shared Smart UV atlas
+  ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 12587, 'merged_boundaries': 3150, 'unfold_charts': 9437}
+  ASSET UV pack candidate CONVEX timeout 20
+  ASSET stage 5/7 LOD geometry
+  ASSET reduce LOD 1 component 0 / 421
+  ASSET reduce LOD 1 component 50 / 421
+  ASSET reduce LOD 1 component 100 / 421
+  ASSET reduce LOD 1 component 150 / 421
+  ASSET reduce LOD 1 component 200 / 421
+  ASSET reduce LOD 1 component 250 / 421
+  ASSET reduce LOD 1 component 300 / 421
+  ASSET reduce LOD 1 component 350 / 421
+  ASSET reduce LOD 1 component 400 / 421
+  ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 8725, 'merged_boundaries': 1757, 'unfold_charts': 6968}
+  ASSET UV pack candidate CONVEX timeout 20
+  ASSET reduce LOD 2 component 0 / 421
+  ASSET reduce LOD 2 component 50 / 421
+  ASSET reduce LOD 2 component 100 / 421
+  ASSET reduce LOD 2 component 150 / 421
+  ASSET reduce LOD 2 component 200 / 421
+  ASSET reduce LOD 2 component 250 / 421
+  ASSET reduce LOD 2 component 300 / 421
+  ASSET reduce LOD 2 component 350 / 421
+  ASSET reduce LOD 2 component 400 / 421
+  ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 5177, 'merged_boundaries': 1079, 'unfold_charts': 4098}
+  ASSET UV pack candidate CONVEX timeout 20
+  ASSET reduce LOD 3 component 0 / 421
+  ASSET reduce LOD 3 component 50 / 421
+  ASSET reduce LOD 3 component 100 / 421
+  ASSET reduce LOD 3 component 150 / 421
+  ASSET reduce LOD 3 component 200 / 421
+  ASSET reduce LOD 3 component 250 / 421
+  ASSET reduce LOD 3 component 300 / 421
+  ASSET reduce LOD 3 component 350 / 421
+  ASSET reduce LOD 3 component 400 / 421
+  ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 3480, 'merged_boundaries': 559, 'unfold_charts': 2921}
+  ASSET UV pack candidate CONVEX timeout 20
+  ASSET bake groups {'groups': 23, 'physical_components': 421, 'max_components_per_group': 32}
+  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+  ASSET full PBR bake LOD 0 resolution 1024
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET bake emission
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 1 resolution 512
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET bake emission
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 2 resolution 256
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET bake emission
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 3 resolution 256
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET bake emission
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET stage 4/7 asset and runtime budgets
+  ASSET stage 6/7 collision and engine exports
+  ASSET stage 7/7 visual and import quality gates
+  ASSET OK /workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/asset_report.json
+  production asset -> /workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion
+  report -> /workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/asset_report.json
+  review -> /workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/review.html
+  engine check: passed

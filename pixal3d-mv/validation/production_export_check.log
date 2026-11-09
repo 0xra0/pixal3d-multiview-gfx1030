@@ -1,0 +1,45 @@
+socket(): Operation not permitted
+socket(): Operation not permitted
+00:00.556  blend            | Read blend: "/workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/medallion.blend"
+INFO Draco is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_meshopt_bridge.so
+15:57:00 | INFO: Starting glTF 2.0 export
+15:57:00 | INFO: Extracting primitive: geometry_0.1264
+15:57:00 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:57:00 | INFO: Primitives created: 1
+15:57:00 | INFO: Finished glTF 2.0 export in 0.4680600166320801 s
+
+
+FBX export starting... '/workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/meshes/medallion_LOD0.fbx'
+export finished in 0.1436 sec.
+15:57:00 | INFO: Starting glTF 2.0 export
+15:57:00 | INFO: Extracting primitive: geometry_0.2105
+15:57:00 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:57:00 | INFO: Primitives created: 1
+15:57:00 | INFO: Finished glTF 2.0 export in 0.12062692642211914 s
+
+
+FBX export starting... '/workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/meshes/medallion_LOD1.fbx'
+export finished in 0.0900 sec.
+15:57:01 | INFO: Starting glTF 2.0 export
+15:57:01 | INFO: Extracting primitive: geometry_0.2946
+15:57:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:57:01 | INFO: Primitives created: 1
+15:57:01 | INFO: Finished glTF 2.0 export in 0.049130916595458984 s
+
+
+FBX export starting... '/workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/meshes/medallion_LOD2.fbx'
+export finished in 0.0489 sec.
+15:57:01 | INFO: Starting glTF 2.0 export
+15:57:01 | INFO: Extracting primitive: geometry_0.3787
+15:57:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:57:01 | INFO: Primitives created: 1
+15:57:01 | INFO: Finished glTF 2.0 export in 0.041406869888305664 s
+
+
+FBX export starting... '/workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/meshes/medallion_LOD3.fbx'
+export finished in 0.0275 sec.
+FINAL EXPORT CHECK PASSED
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit

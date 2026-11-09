@@ -1,0 +1,12 @@
+{
+  "status": "exported",
+  "validation_passed": true,
+  "options": {
+    "unwrap": "smart"
+  },
+  "outputs": [
+    "meshes/medallion_LOD2.glb"
+  ],
+  "portable_root": "..",
+  "production_manifest": "../asset_report.json"
+}

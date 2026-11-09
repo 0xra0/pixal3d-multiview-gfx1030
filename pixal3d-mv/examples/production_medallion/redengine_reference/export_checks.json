@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "triangles": 39985,
+  "chunks": [
+    {
+      "name": "submesh_00_LOD_1",
+      "vertices": 36617,
+      "triangles": 20000,
+      "target_material_slot": 0
+    },
+    {
+      "name": "submesh_01_LOD_1",
+      "vertices": 32782,
+      "triangles": 19985,
+      "target_material_slot": 0
+    }
+  ],
+  "native_import": "not_run"
+}

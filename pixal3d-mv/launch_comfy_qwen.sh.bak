@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Your normal ComfyUI launch plus --cache-none, which is what stops Qwen filling RAM and
+# hanging at "Requested to load QwenImage21" (see README.md). All flags live in
+# /mnt/ssd/ComfyUI/launch_best_cpu_vae.sh - keep them there, this stays one line.
+# COMFY_PORT is shared with pa.py's URL, so export it once to move the port.
+exec /mnt/ssd/ComfyUI/launch_best_cpu_vae.sh --cache-none --disable-smart-memory "$@"

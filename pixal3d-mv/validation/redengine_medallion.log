@@ -1,0 +1,19 @@
+socket(): Operation not permitted
+socket(): Operation not permitted
+00:00.431  blend            | Read blend: "/workspace/scratch/ce3dabdc12f0/validation/production/final_comfy/output/GameAssets/medallion/medallion.blend"
+INFO Draco is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_meshopt_bridge.so
+16:35:33 | INFO: Starting glTF 2.0 export
+16:35:33 | INFO: Extracting primitive: submesh_00_LOD_1
+16:35:33 | INFO: Primitives created: 1
+16:35:33 | INFO: Extracting primitive: submesh_01_LOD_1
+16:35:33 | INFO: Primitives created: 1
+16:35:33 | INFO: Finished glTF 2.0 export in 0.07912135124206543 s
+
+
+FBX export starting... '/workspace/scratch/ce3dabdc12f0/validation/redengine_medallion_witcher3.fbx'
+export finished in 0.1712 sec.
+REDENGINE MEDALLION CHECK PASSED {"status": "passed", "triangles": 39985, "chunks": [{"name": "submesh_00_LOD_1", "vertices": 36617, "triangles": 20000, "target_material_slot": 0}, {"name": "submesh_01_LOD_1", "vertices": 32782, "triangles": 19985, "target_material_slot": 0}], "native_import": "not_run"}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+
+Blender quit

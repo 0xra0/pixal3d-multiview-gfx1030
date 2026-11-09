@@ -1,0 +1,4 @@
+  mesh: /workspace/scratch/ce3dabdc12f0/upload/medallion.blend
+  PREP WARNING Open/non-manifold topology remains; inspect it or try opt-in voxel remeshing.
+  PREP WARNING Neutral material: bake/apply textures before shipping.
+  PREP OK triangles 331729 -> 39493; boundary edges 33; UV GameUV; report /workspace/scratch/ce3dabdc12f0/validation/comfy/output/3D/medallion_lp.report.json

@@ -1,0 +1,332 @@
+socket(): Operation not permitted
+socket(): Operation not permitted
+test_complete_bake_export_and_lod_bundle (__main__.ProductionTests.test_complete_bake_export_and_lod_bundle) ... /workspace/scratch/ce3dabdc12f0/project/pixal3d-mv/tests/blender_assets.py:34: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material.use_nodes = True
+Info: Saved as "source.blend"
+ASSET stage 1/7 component-aware surface cleanup
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ASSET components 1 protected 0
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 1
+ASSET stage 3/7 shared Smart UV atlas
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 12, 'merged_boundaries': 7, 'unfold_charts': 5}
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 1
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 18, 'merged_boundaries': 9, 'unfold_charts': 9}
+ASSET bake groups {'groups': 1, 'physical_components': 1}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+INFO Draco is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /workspace/scratch/ce3dabdc12f0/blender-runtime/lib/libbf_intern_meshopt_bridge.so
+16:31:34 | INFO: Starting glTF 2.0 export
+16:31:34 | INFO: Extracting primitive: Collision
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Finished glTF 2.0 export in 0.002621889114379883 s
+
+16:31:34 | INFO: Starting glTF 2.0 export
+16:31:34 | INFO: Extracting primitive: Sphere.003
+16:31:34 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Finished glTF 2.0 export in 0.015091419219970703 s
+
+
+FBX export starting... '/tmp/tmpaw7sgkt0/asset.building_mmzezqwy/meshes/test_asset_LOD0.fbx'
+export finished in 0.0053 sec.
+Info: File exported successfully
+16:31:34 | INFO: Starting glTF 2.0 export
+16:31:34 | INFO: Extracting primitive: Sphere.004
+16:31:34 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Finished glTF 2.0 export in 0.009566783905029297 s
+
+
+FBX export starting... '/tmp/tmpaw7sgkt0/asset.building_mmzezqwy/meshes/test_asset_LOD1.fbx'
+export finished in 0.0065 sec.
+Info: File exported successfully
+ASSET stage 7/7 visual and import quality gates
+Info: Saved as "test_asset.blend"
+ASSET OK /tmp/tmpaw7sgkt0/asset/asset_report.json
+ok
+test_component_protection_and_masked_cleanup (__main__.ProductionTests.test_component_protection_and_masked_cleanup) ... PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ok
+test_cyberpunk_chunks_preserve_attributes_and_reserved_names (__main__.ProductionTests.test_cyberpunk_chunks_preserve_attributes_and_reserved_names) ... 16:31:34 | INFO: Starting glTF 2.0 export
+16:31:34 | INFO: Extracting primitive: submesh_00_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_01_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_02_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_03_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_04_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_05_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_06_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_07_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_08_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_09_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_10_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Extracting primitive: submesh_11_LOD_1
+16:31:34 | INFO: Primitives created: 1
+16:31:34 | INFO: Finished glTF 2.0 export in 0.015385866165161133 s
+ok
+test_failed_build_keeps_previous_output (__main__.ProductionTests.test_failed_build_keeps_previous_output) ... 
+Info: Saved as "source.blend"
+ASSET stage 1/7 component-aware surface cleanup
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ASSET components 1 protected 0
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET FAILED report /tmp/tmpeskf3c6z/existing.building_8s8krxt8/asset_report.json
+ok
+test_named_source_and_visible_mesh_selection (__main__.ProductionTests.test_named_source_and_visible_mesh_selection) ... ok
+test_normalization_and_convex_collision (__main__.ProductionTests.test_normalization_and_convex_collision) ... ok
+test_redengine_full_builds_are_manual_handoffs (__main__.ProductionTests.test_redengine_full_builds_are_manual_handoffs) ... Info: Saved as "mixed.blend"
+Info: Saved as "source.blend"
+ASSET stage 1/7 component-aware surface cleanup
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ASSET components 1 protected 0
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 1
+ASSET stage 3/7 shared Smart UV atlas
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 7, 'merged_boundaries': 4, 'unfold_charts': 3}
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 1
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 12, 'merged_boundaries': 3, 'unfold_charts': 9}
+ASSET bake groups {'groups': 1, 'physical_components': 1}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+16:31:35 | INFO: Starting glTF 2.0 export
+16:31:35 | INFO: Extracting primitive: Collision
+16:31:35 | INFO: Primitives created: 1
+16:31:35 | INFO: Finished glTF 2.0 export in 0.0027658939361572266 s
+
+16:31:35 | INFO: Starting glTF 2.0 export
+16:31:35 | INFO: Extracting primitive: Sphere.003
+16:31:35 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:31:35 | INFO: Primitives created: 1
+16:31:35 | INFO: Finished glTF 2.0 export in 0.017198562622070312 s
+
+16:31:35 | INFO: Starting glTF 2.0 export
+16:31:35 | INFO: Extracting primitive: Sphere.004
+16:31:35 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:31:35 | INFO: Primitives created: 1
+16:31:35 | INFO: Finished glTF 2.0 export in 0.011614561080932617 s
+
+16:31:35 | INFO: Starting glTF 2.0 export
+16:31:35 | INFO: Extracting primitive: submesh_00_LOD_1
+16:31:35 | INFO: Primitives created: 1
+16:31:35 | INFO: Finished glTF 2.0 export in 0.003535032272338867 s
+
+16:31:35 | INFO: Starting glTF 2.0 export
+16:31:35 | INFO: Extracting primitive: submesh_00_LOD_1
+16:31:35 | INFO: Primitives created: 1
+16:31:35 | INFO: Finished glTF 2.0 export in 0.0026607513427734375 s
+
+
+FBX export starting... '/tmp/tmp0rpb_uc2/cyberpunk.building_s3dku2ys/redengine/red_test_collision_reference.fbx'
+export finished in 0.0060 sec.
+ASSET stage 7/7 visual and import quality gates
+ASSET OK /tmp/tmp0rpb_uc2/cyberpunk/asset_report.json
+ASSET stage 1/7 component-aware surface cleanup
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ASSET components 1 protected 0
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 1
+ASSET stage 3/7 shared Smart UV atlas
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 7, 'merged_boundaries': 4, 'unfold_charts': 3}
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 1
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 12, 'merged_boundaries': 3, 'unfold_charts': 9}
+ASSET bake groups {'groups': 1, 'physical_components': 1}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+16:31:36 | INFO: Starting glTF 2.0 export
+16:31:36 | INFO: Extracting primitive: Collision
+16:31:36 | INFO: Primitives created: 1
+16:31:36 | INFO: Finished glTF 2.0 export in 0.003720998764038086 s
+
+16:31:36 | INFO: Starting glTF 2.0 export
+16:31:36 | INFO: Extracting primitive: Sphere.003
+16:31:36 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:31:36 | INFO: Primitives created: 1
+16:31:36 | INFO: Finished glTF 2.0 export in 0.0163576602935791 s
+
+
+FBX export starting... '/tmp/tmp0rpb_uc2/witcher3.building_t2wmq1pg/meshes/red_test_LOD0.fbx'
+export finished in 0.0047 sec.
+16:31:36 | INFO: Starting glTF 2.0 export
+16:31:36 | INFO: Extracting primitive: Sphere.004
+16:31:36 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:31:36 | INFO: Primitives created: 1
+16:31:36 | INFO: Finished glTF 2.0 export in 0.009229421615600586 s
+
+
+FBX export starting... '/tmp/tmp0rpb_uc2/witcher3.building_t2wmq1pg/meshes/red_test_LOD1.fbx'
+export finished in 0.0045 sec.
+
+FBX export starting... '/tmp/tmp0rpb_uc2/witcher3.building_t2wmq1pg/redengine/red_test_collision_reference.fbx'
+export finished in 0.0020 sec.
+ASSET stage 7/7 visual and import quality gates
+ASSET OK /tmp/tmp0rpb_uc2/witcher3/asset_report.json
+ok
+test_region_mask_changes_only_selected_surface (__main__.ProductionTests.test_region_mask_changes_only_selected_surface) ... PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+ok
+test_uv_atlas_preserves_component_identity (__main__.ProductionTests.test_uv_atlas_preserves_component_identity) ... PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 10, 'merged_boundaries': 0, 'unfold_charts': 10}
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.744s
+
+OK
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:35:05)
+Writing to /tmp/tmpaw7sgkt0/asset.building_mmzezqwy/meshes/test_asset_LOD0.obj
+OBJ export of 'test_asset_LOD0.obj' took 0.37 ms
+Writing to /tmp/tmpaw7sgkt0/asset.building_mmzezqwy/meshes/test_asset_LOD1.obj
+OBJ export of 'test_asset_LOD1.obj' took 0.27 ms
+
+Blender quit

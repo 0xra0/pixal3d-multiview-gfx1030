@@ -1,0 +1,37 @@
+test_asset_runner_requires_fresh_success (test_assets.AssetTests.test_asset_runner_requires_fresh_success) ... ok
+test_component_budget_is_bounded_and_preserves_small_parts (test_assets.AssetTests.test_component_budget_is_bounded_and_preserves_small_parts) ... ok
+test_editor_failure_rejects_stale_success (test_assets.AssetTests.test_editor_failure_rejects_stale_success) ... ok
+test_missing_editor_is_not_a_pass (test_assets.AssetTests.test_missing_editor_is_not_a_pass) ... ok
+test_negative_flag_serialization_and_fresh_failed_status (test_assets.AssetTests.test_negative_flag_serialization_and_fresh_failed_status) ... ok
+test_portable_provenance_keeps_uvs_after_moving_bundle (test_assets.AssetTests.test_portable_provenance_keeps_uvs_after_moving_bundle) ... ok
+test_preset_and_explicit_overrides (test_assets.AssetTests.test_preset_and_explicit_overrides) ... ok
+test_process_timeout_and_log (test_assets.AssetTests.test_process_timeout_and_log) ... ok
+test_production_cli_preserves_flags (test_assets.AssetTests.test_production_cli_preserves_flags) ... ok
+test_red_depot_paths_and_native_check_boundary (test_assets.AssetTests.test_red_depot_paths_and_native_check_boundary) ... ok
+test_red_presets_keep_other_engines_and_source_pivot (test_assets.AssetTests.test_red_presets_keep_other_engines_and_source_pivot) ... ok
+test_region_validation (test_assets.AssetTests.test_region_validation) ... ok
+test_rejects_invalid_production_options (test_assets.AssetTests.test_rejects_invalid_production_options) ... ok
+test_invalid_options_fail_before_blender (test_pipeline.PipelineTests.test_invalid_options_fail_before_blender) ... ok
+test_legacy_triangle_count_and_flag_precedence (test_pipeline.PipelineTests.test_legacy_triangle_count_and_flag_precedence) ... ok
+test_mesh_processes_the_actual_generation (test_pipeline.PipelineTests.test_mesh_processes_the_actual_generation) ... ok
+test_success_text_without_report_is_rejected (test_pipeline.PipelineTests.test_success_text_without_report_is_rejected) ... ok
+test_texture_prepares_external_mesh_and_keeps_smart_uv (test_pipeline.PipelineTests.test_texture_prepares_external_mesh_and_keeps_smart_uv) ... ok
+test_zero_faces_is_explicitly_forwarded (test_pipeline.PipelineTests.test_zero_faces_is_explicitly_forwarded) ... ok
+test_budget_is_explicit (test_uv_quality.UVTests.test_budget_is_explicit) ... ok
+test_contained_triangle (test_uv_quality.UVTests.test_contained_triangle) ... ok
+test_identical_islands_overlap (test_uv_quality.UVTests.test_identical_islands_overlap) ... ok
+test_shared_edge_is_not_overlap (test_uv_quality.UVTests.test_shared_edge_is_not_overlap) ... ok
+test_small_translated_uv_triangle_is_not_collapsed (test_uv_quality.UVTests.test_small_translated_uv_triangle_is_not_collapsed) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.351s
+
+OK
+  mesh: /tmp/tmpm1i0wst1/meshes/prop_LOD0.glb
+  seed 850806532
+  seed 123
+  mesh: source.glb
+  mesh: /prepared/prop_lp.glb
+  seed 1521698416
+  mesh: source.blend
+  PREP OK done

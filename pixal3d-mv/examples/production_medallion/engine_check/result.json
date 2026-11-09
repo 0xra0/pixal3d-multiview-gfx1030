@@ -1,0 +1,30 @@
+{
+  "collision_hulls": 16,
+  "engine": "godot",
+  "errors": [],
+  "lods": [
+    {
+      "lod": 0.0,
+      "triangles": 39985,
+      "vertices": 69333
+    },
+    {
+      "lod": 1.0,
+      "triangles": 19699,
+      "vertices": 36948
+    },
+    {
+      "lod": 2.0,
+      "triangles": 9457,
+      "vertices": 19047
+    },
+    {
+      "lod": 3.0,
+      "triangles": 5060,
+      "vertices": 11414
+    }
+  ],
+  "scene": "engine_check/asset.tscn",
+  "status": "passed",
+  "version": "4.7.2-stable (official)"
+}
