@@ -1,0 +1,27 @@
+    1.2 +   1.2  
+    1.7 +   0.5  ModuleNotFoundError: No module named 'cattrs'
+    1.8 +   0.0  PREP import /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_00002_.glb
+    2.9 +   1.2  ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+    2.9 +   0.0  PREP input {"vertices": 140749, "faces": 282111, "triangles": 282111, "boundary_edges": 273, "overco
+    3.3 +   0.4  PREP repair
+    3.5 +   0.1  PREP boundary weld 363
+    4.3 +   0.9  PREP degenerates
+    4.6 +   0.2  PREP overconnected edges 0
+   17.8 +  13.2  PREP hole boundaries 87
+   17.8 +   0.0  PREP boundary weld 0
+   23.3 +   5.4  PREP degenerates
+   23.7 +   0.5  PREP overconnected edges 0
+   42.4 +  18.6  PREP hole boundaries 0
+  103.4 +  61.0  PREP QuadriFlow 1562124 -> 25000 + multires 3
+  113.0 +   9.6  PREP Smart UV
+  128.5 +  15.5  PREP UV project
+  131.9 +   3.4  PREP UV merged small islands 4016
+  132.0 +   0.1  PREP UV scale
+  148.2 +  16.2  PREP UV pack
+  168.1 +  20.0  PREP UV packed
+  213.8 +  45.7  PREP UV re-unwrap foldovers 5006
+  267.6 +  53.8  PREP UV isolate foldovers 1429
+  269.9 +   2.3  PREP validate {"vertices": 44618, "faces": 44652, "triangles": 89304, "boundary_edges": 0, "overconn
+  269.9 +   0.0  PREP WARNING Neutral material: bake/apply textures before shipping.
+  269.9 +   0.0  PREP WARNING Smoothing/remeshing changes shape; inspect thin parts and silhouette.
+end 270.6284399032593 PREP OK triangles 282111 -> 89304; boundary edges 0; UV GameUV; report /mnt/ssd/work/overnight/sculpt/s1.report.json

@@ -1,0 +1,93 @@
+    1.2 +   1.2  
+    1.7 +   0.5  ModuleNotFoundError: No module named 'cattrs'
+    1.8 +   0.0  ASSET stage 1/7 component-aware surface cleanup
+    3.3 +   1.5  ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync
+    3.5 +   0.2  PREP boundary weld 3022
+    4.6 +   1.1  PREP degenerates
+    5.2 +   0.6  PREP overconnected edges 39
+   14.4 +   9.1  PREP hole boundaries 35
+   14.4 +   0.0  ASSET components 199 protected 196
+   14.4 +   0.1  ASSET stage 2/7 low mesh and high-resolution source
+   16.9 +   2.5  ASSET reduce LOD 0 component 0 / 199
+   17.0 +   0.1  ASSET reduce LOD 0 component 50 / 199
+   17.0 +   0.0  ASSET reduce LOD 0 component 100 / 199
+   17.0 +   0.0  ASSET reduce LOD 0 component 150 / 199
+   17.3 +   0.3  ASSET stage 3/7 shared Smart UV atlas
+   23.1 +   5.8  PREP xatlas 19912 triangles
+   26.4 +   3.3  PREP xatlas pass 0 charts 3074 utilization 0.7756 folded 124
+   26.4 +   0.0  ASSET stage 5/7 LOD geometry
+   26.7 +   0.2  ASSET reduce LOD 1 component 0 / 199
+   27.0 +   0.3  ASSET reduce LOD 1 component 50 / 199
+   27.4 +   0.4  ASSET reduce LOD 1 component 100 / 199
+   27.8 +   0.4  ASSET reduce LOD 1 component 150 / 199
+   29.4 +   1.6  PREP xatlas 9744 triangles
+   31.2 +   1.8  PREP xatlas pass 0 charts 2089 utilization 0.7708 folded 26
+   31.4 +   0.2  ASSET reduce LOD 2 component 0 / 199
+   31.7 +   0.3  ASSET reduce LOD 2 component 50 / 199
+   32.2 +   0.4  ASSET reduce LOD 2 component 100 / 199
+   33.1 +   0.9  ASSET reduce LOD 2 component 150 / 199
+   33.9 +   0.8  PREP xatlas 4696 triangles
+   35.0 +   1.2  PREP xatlas pass 0 charts 1432 utilization 0.7956 folded 36
+   35.3 +   0.2  ASSET reduce LOD 3 component 0 / 199
+   35.6 +   0.3  ASSET reduce LOD 3 component 50 / 199
+   36.0 +   0.4  ASSET reduce LOD 3 component 100 / 199
+   36.5 +   0.5  ASSET reduce LOD 3 component 150 / 199
+   36.6 +   0.1  ASSET WARNING medallion_necklace_LOD3_part0190 preserved because reduction would erase it
+   37.2 +   0.6  ASSET WARNING medallion_necklace_LOD3_part0195 preserved because reduction would erase it
+   37.7 +   0.5  PREP xatlas 2772 triangles
+   42.1 +   4.4  PREP xatlas pass 0 charts 1199 utilization 0.8286 folded 3
+   42.1 +   0.0  ASSET bake groups {'groups': 34, 'physical_components': 199, 'max_components_per_group': 3
+   42.1 +   0.0  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+   42.4 +   0.4  ASSET full PBR bake LOD 0 resolution 2048
+   42.6 +   0.1  ASSET bake basecolor
+   94.4 +  51.9  ASSET bake device HIP
+   94.5 +   0.1  ASSET bake roughness
+   94.5 +   0.0  ASSET constant roughness 0.5
+   94.6 +   0.1  ASSET bake metallic
+   94.6 +   0.0  ASSET constant metallic 0.0
+   94.7 +   0.1  ASSET bake alpha
+   94.7 +   0.0  ASSET constant alpha 1.0
+   94.8 +   0.1  ASSET bake emission
+   94.9 +   0.1  ASSET constant emission 0.0
+  152.0 +  57.1  ASSET bake AO
+  206.7 +  54.7  ASSET bake high-to-low normal LOD 0
+  207.1 +   0.3  ASSET full PBR bake LOD 1 resolution 1024
+  225.6 +  18.5  ASSET bake basecolor
+  225.6 +   0.0  ASSET bake roughness
+  225.6 +   0.0  ASSET constant roughness 0.5
+  225.6 +   0.0  ASSET bake metallic
+  225.6 +   0.0  ASSET constant metallic 0.0
+  225.6 +   0.0  ASSET bake alpha
+  225.6 +   0.0  ASSET constant alpha 1.0
+  225.6 +   0.0  ASSET bake emission
+  225.6 +   0.0  ASSET constant emission 0.0
+  247.2 +  21.6  ASSET bake AO
+  266.1 +  19.0  ASSET bake high-to-low normal LOD 0
+  266.5 +   0.4  ASSET full PBR bake LOD 2 resolution 512
+  278.1 +  11.6  ASSET bake basecolor
+  278.1 +   0.0  ASSET bake roughness
+  278.1 +   0.0  ASSET constant roughness 0.5
+  278.1 +   0.0  ASSET bake metallic
+  278.1 +   0.0  ASSET constant metallic 0.0
+  278.1 +   0.0  ASSET bake alpha
+  278.1 +   0.0  ASSET constant alpha 1.0
+  278.1 +   0.0  ASSET bake emission
+  278.1 +   0.0  ASSET constant emission 0.0
+  292.1 +  14.0  ASSET bake AO
+  303.2 +  11.1  ASSET bake high-to-low normal LOD 0
+  303.6 +   0.4  ASSET full PBR bake LOD 3 resolution 256
+  313.5 +   9.9  ASSET bake basecolor
+  313.5 +   0.0  ASSET bake roughness
+  313.5 +   0.0  ASSET constant roughness 0.5
+  313.5 +   0.0  ASSET bake metallic
+  313.5 +   0.0  ASSET constant metallic 0.0
+  313.5 +   0.0  ASSET bake alpha
+  313.5 +   0.0  ASSET constant alpha 1.0
+  313.5 +   0.0  ASSET bake emission
+  313.5 +   0.0  ASSET constant emission 0.0
+  325.6 +  12.1  ASSET bake AO
+  334.7 +   9.2  ASSET bake high-to-low normal LOD 0
+  335.3 +   0.6  ASSET stage 4/7 asset and runtime budgets
+  340.1 +   4.8  ASSET stage 6/7 collision and engine exports
+  354.8 +  14.7  ASSET stage 7/7 visual and import quality gates
+end 355.1220977306366 ASSET NEEDS REVIEW /mnt/ssd/work/overnight/n7/asset_report.json

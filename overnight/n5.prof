@@ -1,0 +1,74 @@
+    1.8 +   1.8  
+    3.4 +   1.6  ASSET stage 1/7 component-aware surface cleanup
+    3.6 +   0.2  PREP boundary weld 3022
+    4.7 +   1.1  PREP degenerates
+    5.3 +   0.6  PREP overconnected edges 39
+   14.9 +   9.6  PREP hole boundaries 35
+   14.9 +   0.0  ASSET components 199 protected 196
+   15.0 +   0.1  ASSET stage 2/7 low mesh and high-resolution source
+   17.6 +   2.6  ASSET reduce LOD 0 component 0 / 199
+   17.7 +   0.1  ASSET reduce LOD 0 component 50 / 199
+   17.7 +   0.0  ASSET reduce LOD 0 component 100 / 199
+   17.7 +   0.0  ASSET reduce LOD 0 component 150 / 199
+   18.0 +   0.3  ASSET stage 3/7 shared Smart UV atlas
+   23.8 +   5.8  PREP xatlas 19912 triangles
+   27.2 +   3.3  PREP xatlas pass 0 charts 3074 utilization 0.7756 folded 124
+   27.2 +   0.0  ASSET stage 5/7 LOD geometry
+   27.4 +   0.2  ASSET reduce LOD 1 component 0 / 199
+   27.7 +   0.3  ASSET reduce LOD 1 component 50 / 199
+   28.1 +   0.4  ASSET reduce LOD 1 component 100 / 199
+   28.5 +   0.4  ASSET reduce LOD 1 component 150 / 199
+   30.2 +   1.6  PREP xatlas 9744 triangles
+   32.0 +   1.8  PREP xatlas pass 0 charts 2089 utilization 0.7708 folded 26
+   32.2 +   0.2  ASSET reduce LOD 2 component 0 / 199
+   32.5 +   0.3  ASSET reduce LOD 2 component 50 / 199
+   33.0 +   0.4  ASSET reduce LOD 2 component 100 / 199
+   33.9 +   0.9  ASSET reduce LOD 2 component 150 / 199
+   34.7 +   0.8  PREP xatlas 4696 triangles
+   35.9 +   1.2  PREP xatlas pass 0 charts 1432 utilization 0.7956 folded 36
+   36.1 +   0.2  ASSET reduce LOD 3 component 0 / 199
+   36.4 +   0.3  ASSET reduce LOD 3 component 50 / 199
+   36.8 +   0.4  ASSET reduce LOD 3 component 100 / 199
+   37.3 +   0.5  ASSET reduce LOD 3 component 150 / 199
+   37.4 +   0.1  ASSET WARNING medallion_necklace_LOD3_part0190 preserved because reduction would erase it
+   38.1 +   0.7  ASSET WARNING medallion_necklace_LOD3_part0195 preserved because reduction would erase it
+   38.6 +   0.5  PREP xatlas 2772 triangles
+   43.3 +   4.7  PREP xatlas pass 0 charts 1199 utilization 0.8286 folded 3
+   43.3 +   0.0  ASSET bake groups {'groups': 34, 'physical_components': 199, 'max_components_per_group': 3
+   43.3 +   0.0  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+   43.6 +   0.3  ASSET full PBR bake LOD 0 resolution 2048
+   94.1 +  50.5  ASSET bake basecolor
+  143.4 +  49.3  ASSET bake roughness
+  192.5 +  49.1  ASSET bake metallic
+  242.4 +  49.8  ASSET bake alpha
+  291.6 +  49.2  ASSET bake emission
+  350.8 +  59.3  ASSET bake AO
+  405.4 +  54.6  ASSET bake high-to-low normal LOD 0
+  405.8 +   0.4  ASSET full PBR bake LOD 1 resolution 1024
+  421.7 +  16.0  ASSET bake basecolor
+  436.2 +  14.5  ASSET bake roughness
+  450.9 +  14.7  ASSET bake metallic
+  466.1 +  15.1  ASSET bake alpha
+  480.7 +  14.7  ASSET bake emission
+  498.6 +  17.8  ASSET bake AO
+  515.2 +  16.6  ASSET bake high-to-low normal LOD 0
+  515.5 +   0.4  ASSET full PBR bake LOD 2 resolution 512
+  523.9 +   8.4  ASSET bake basecolor
+  531.1 +   7.2  ASSET bake roughness
+  538.2 +   7.1  ASSET bake metallic
+  545.8 +   7.6  ASSET bake alpha
+  553.1 +   7.2  ASSET bake emission
+  561.6 +   8.5  ASSET bake AO
+  569.7 +   8.1  ASSET bake high-to-low normal LOD 0
+  570.0 +   0.3  ASSET full PBR bake LOD 3 resolution 256
+  576.8 +   6.8  ASSET bake basecolor
+  582.4 +   5.6  ASSET bake roughness
+  588.0 +   5.6  ASSET bake metallic
+  594.0 +   6.0  ASSET bake alpha
+  599.7 +   5.7  ASSET bake emission
+  606.3 +   6.6  ASSET bake AO
+  612.4 +   6.1  ASSET bake high-to-low normal LOD 0
+  613.3 +   0.9  ASSET stage 4/7 asset and runtime budgets
+  618.3 +   5.0  ASSET stage 6/7 collision and engine exports
+  633.3 +  14.9  ASSET stage 7/7 visual and import quality gates
+end 633.5881307125092 ASSET NEEDS REVIEW /mnt/ssd/work/overnight/n5/asset_report.json
