@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "engine": "witcher3",
+  "requested_game_version": "5.01",
+  "version_compatibility": "unverified",
+  "native_import_status": "not_run",
+  "asset_type": "static_prop",
+  "native_template_depot_path": null,
+  "native_resources_generated": false,
+  "lod_policy": "Separate native mesh targets with independent textures; no automatic native LOD assembly",
+  "normal_policy": "GLB preview uses OpenGL. OpenGL and DirectX source maps supplied; match the native shader template.",
+  "material_policy": "Source PBR maps require native shader assignment; ORM is a preview, not a REDengine convention",
+  "collision_policy": "Reference hulls only; assign/cook native physics in the game tools",
+  "reference": "https://cdprojektred.atlassian.net/wiki/spaces/W3REDkit/pages/6326771",
+  "lods": [
+    {
+      "source_lod": 0,
+      "role": "primary",
+      "textures": {
+        "normal_lod0": "textures/lod0/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod0/normal_dx_lod0.png",
+        "basecolor": "textures/lod0/basecolor.png",
+        "roughness": "textures/lod0/roughness.png",
+        "metallic": "textures/lod0/metallic.png",
+        "ao": "textures/lod0/ao.png",
+        "emission": "textures/lod0/emission.png",
+        "orm": "textures/lod0/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "mesh": "meshes/medallion_pendant_v3_LOD0.fbx"
+    },
+    {
+      "source_lod": 1,
+      "role": "alternative mesh target",
+      "textures": {
+        "normal_lod0": "textures/lod1/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod1/normal_dx_lod0.png",
+        "basecolor": "textures/lod1/basecolor.png",
+        "roughness": "textures/lod1/roughness.png",
+        "metallic": "textures/lod1/metallic.png",
+        "ao": "textures/lod1/ao.png",
+        "emission": "textures/lod1/emission.png",
+        "orm": "textures/lod1/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "mesh": "meshes/medallion_pendant_v3_LOD1.fbx"
+    },
+    {
+      "source_lod": 2,
+      "role": "alternative mesh target",
+      "textures": {
+        "normal_lod0": "textures/lod2/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod2/normal_dx_lod0.png",
+        "basecolor": "textures/lod2/basecolor.png",
+        "roughness": "textures/lod2/roughness.png",
+        "metallic": "textures/lod2/metallic.png",
+        "ao": "textures/lod2/ao.png",
+        "emission": "textures/lod2/emission.png",
+        "orm": "textures/lod2/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "mesh": "meshes/medallion_pendant_v3_LOD2.fbx"
+    },
+    {
+      "source_lod": 3,
+      "role": "alternative mesh target",
+      "textures": {
+        "normal_lod0": "textures/lod3/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod3/normal_dx_lod0.png",
+        "basecolor": "textures/lod3/basecolor.png",
+        "roughness": "textures/lod3/roughness.png",
+        "metallic": "textures/lod3/metallic.png",
+        "ao": "textures/lod3/ao.png",
+        "emission": "textures/lod3/emission.png",
+        "orm": "textures/lod3/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "mesh": "meshes/medallion_pendant_v3_LOD3.fbx"
+    }
+  ],
+  "collision_reference": "redengine/medallion_pendant_v3_collision_reference.fbx"
+}

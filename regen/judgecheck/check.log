@@ -1,0 +1,6 @@
+repeat-1 fail 4.0
+repeat-2 fail 3.0
+repeat-3 fail 3.0
+self-match (expect pass) None None
+back ref = front render (expect fail on back) fail 4.0
+pendant vs cuirass refs (expect fail ~0) fail 0.0

@@ -1,0 +1,128 @@
+  NAF check: strict real NAF
+  VIEW WARNING: left/right silhouettes are not mirror images (IoU 0.68): inconsistent proportions or a rotated view
+  reconstruction 1/4
+  seed 1221721691
+  unloaded models before mesh
+  memory before mesh: RAM 15.8 GiB available, VRAM 15.2 GiB free
+  running 5s  running 10s  running 15s  running 20s  running 26s  running 31s  running 36s  running 41s  running 46s  running 51s  running 56s  running 61s  running 66s  running 72s  running 78s  running 83s  running 88s  running 93s  running 98s  running 103s  running 108s  running 114s  running 119s  running 124s  running 129s  running 134s  running 139s  running 144s  running 149s  running 154s  running 160s  running 165s  running 170s  running 175s  running 180s  running 185s  running 190s  running 195s  running 200s  running 206s  running 212s  running 217s  running 222s  running 228s  running 233s  running 238s  running 243s  running 248s  running 254s  running 259s  running 264s  running 269s  running 274s  running 279s  running 284s  running 289s  running 296s  running 301s  running 311s  running 317s  running 322s  running 327s  running 332s  running 337s  running 342s  running 347s  running 353s  running 358s  running 363s  running 368s  running 373s  running 378s  running 384s  running 389s  running 394s  running 399s  running 404s  running 410s  running 415s  running 420s  running 428s  running 433s  running 438s  running 450s  running 457s  running 463s  running 468s  running 473s  running 484s  running 489s  running 494s  running 499s  running 504s  running 510s  running 515s  running 520s  running 525s  running 530s  running 536s  running 541s  running 546s  running 551s  running 556s  running 561s  running 566s  running 571s  running 577s  running 582s  running 587s  running 592s  running 597s  running 602s  running 608s  running 616s  running 621s  running 627s  running 632s  running 637s  running 642s  running 647s  running 652s  running 658s  running 663s  running 668s  running 673s  running 678s  running 685s  running 692s  running 697s  running 702s  running 709s  running 715s  running 720s  running 726s  running 731s  running 736s  running 744s  running 751s  running 756s  running 761s  running 766s  running 771s  running 776s  running 781s  running 786s  running 791s  running 797s  running 802s  running 807s  running 812s  running 817s  running 822s  running 827s  running 832s  running 837s  running 842s  running 848s  running 853s  running 858s  running 863s  running 868s  running 873s  running 878s  running 883s  running 888s  running 893s  running 898s  running 903s  running 908s  running 913s  running 918s  running 923s  running 928s  running 933s  running 938s  running 943s  running 948s  running 953s  running 958s  running 963s  running 968s  running 973s  running 978s  running 983s  running 989s  running 994s  running 999s  running 1004s  running 1009s  running 1014s  running 1019s  running 1024s  running 1029s  running 1034s  running 1039s  running 1044s  running 1049s  running 1054s  running 1059s  running 1064s  running 1070s  running 1075s  running 1080s  running 1085s  running 1090s  running 1095s  running 1100s  running 1105s  running 1110s  running 1115s  running 1120s  running 1125s  running 1130s  running 1135s  running 1140s  running 1145s  running 1150s  running 1155s  running 1160s  running 1165s  running 1170s  running 1175s  running 1180s  running 1185s  running 1190s  running 1195s  running 1200s  running 1205s  running 1210s  running 1216s  running 1221s  running 1226s  running 1231s  running 1236s  running 1242s  running 1247s  running 1252s  running 1258s  success in 1263s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00005_.glb
+  mesh QA: score 1.185, IoU front 0.96 left 0.69 back 0.96 right 0.79
+  MESH WARNING: left: mesh silhouette matches the reference poorly (IoU 0.69, 10% of the reference missing)
+  mesh judge (agy): FAIL 3/10  sheet /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00005_.judge.png
+    - front: top and bottom skulls are melted and featureless blobs
+    - front: central hexagram and inner ring are distorted and blobby
+    - front: bail loop at the top is deformed and partially fused
+    - back: skull-shaped relief added to top and bottom where reference is smooth
+    - back: central emblem is heavily smeared and warped into irregular melted ridges instead of a clean engraved hexagram
+    - left: bail loop and relief profile are lumpy and poorly defined
+    - right: bail loop and relief profile are lumpy and poorly defined
+  reconstruction 2/4
+  seed 115553722
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 90s  running 95s  running 100s  running 105s  running 110s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 201s  running 206s  running 211s  running 216s  running 221s  running 226s  running 231s  running 236s  running 241s  running 246s  running 251s  running 256s  running 261s  running 266s  running 271s  running 276s  running 282s  running 287s  running 292s  running 297s  running 302s  running 307s  running 312s  running 317s  running 322s  running 327s  running 332s  running 337s  running 342s  running 347s  running 352s  running 357s  running 362s  running 367s  running 372s  running 377s  running 382s  running 387s  running 392s  running 398s  running 403s  running 408s  running 413s  running 418s  running 423s  running 428s  running 433s  running 438s  running 443s  running 448s  running 453s  running 458s  running 463s  running 468s  running 473s  running 478s  running 483s  running 488s  running 493s  running 498s  running 503s  running 508s  running 513s  running 518s  running 523s  running 528s  running 533s  running 538s  running 543s  running 548s  running 553s  running 558s  running 563s  running 568s  running 573s  running 579s  running 584s  running 589s  running 594s  running 599s  running 604s  running 609s  running 614s  running 619s  running 624s  running 629s  running 634s  running 639s  running 644s  running 649s  running 654s  running 659s  running 664s  running 669s  running 674s  running 679s  running 684s  running 689s  running 694s  running 699s  running 704s  running 709s  running 714s  running 719s  running 724s  running 729s  running 734s  running 740s  running 745s  running 750s  running 755s  running 760s  running 765s  running 770s  running 775s  running 780s  running 785s  running 790s  running 795s  running 800s  running 805s  running 810s  running 815s  running 820s  running 825s  running 830s  running 835s  running 840s  running 845s  running 850s  running 855s  running 860s  running 865s  running 870s  running 875s  running 880s  running 886s  running 891s  running 896s  running 901s  running 906s  running 911s  running 916s  running 921s  running 926s  running 931s  running 936s  running 941s  running 946s  running 951s  running 956s  running 961s  running 966s  running 971s  running 976s  running 981s  running 986s  running 991s  running 996s  running 1001s  running 1006s  running 1011s  running 1016s  running 1021s  running 1026s  running 1031s  running 1036s  running 1041s  running 1046s  running 1051s  running 1056s  running 1061s  running 1066s  running 1071s  running 1076s  running 1082s  running 1087s  running 1092s  running 1097s  running 1102s  running 1107s  running 1112s  running 1117s  running 1122s  running 1127s  running 1132s  running 1137s  running 1142s  running 1147s  running 1152s  running 1159s  running 1164s  running 1169s  success in 1175s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00006_.glb
+  mesh QA: score 1.225, IoU front 0.97 left 0.72 back 0.96 right 0.81
+  MESH WARNING: left: mesh silhouette matches the reference poorly (IoU 0.72, 10% of the reference missing)
+  mesh judge (agy): FAIL 2/10  sheet /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00006_.judge.png
+    - front: bail loop is fused and closed
+    - front: hexagram, runes, and skulls are melted and blobby
+    - back: phantom skulls and distorted 3D relief present where reference is flat
+    - back: hexagram is warped and heavily embossed instead of flat
+  reconstruction 3/4
+  seed 1112725602
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 90s  running 95s  running 100s  running 105s  running 110s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 202s  running 207s  running 212s  running 217s  running 222s  running 227s  running 232s  running 237s  running 242s  running 247s  running 252s  running 257s  running 262s  running 267s  running 272s  running 277s  running 282s  running 287s  running 292s  running 297s  running 302s  running 307s  running 313s  running 318s  running 323s  running 328s  running 333s  running 338s  running 343s  running 348s  running 353s  running 358s  running 363s  running 368s  running 373s  running 378s  running 384s  running 389s  running 394s  running 399s  running 404s  running 409s  running 414s  running 419s  running 424s  running 429s  running 434s  running 439s  running 444s  running 449s  running 455s  running 460s  running 465s  running 470s  running 475s  running 480s  running 485s  running 490s  running 495s  running 500s  running 505s  running 510s  running 515s  running 520s  running 525s  running 530s  running 535s  running 540s  running 545s  running 550s  running 555s  running 560s  running 566s  running 571s  running 576s  running 581s  running 586s  running 591s  running 596s  running 601s  running 606s  running 611s  running 616s  running 621s  running 626s  running 631s  running 636s  running 641s  running 646s  running 651s  running 656s  running 661s  running 666s  running 671s  running 676s  running 681s  running 686s  running 691s  running 696s  running 701s  running 706s  running 712s  running 717s  running 722s  running 727s  running 732s  running 737s  running 742s  running 747s  running 752s  running 757s  running 763s  running 768s  running 773s  running 778s  running 783s  running 788s  running 793s  running 798s  running 803s  running 808s  running 813s  running 818s  running 824s  running 829s  running 834s  running 839s  running 844s  running 849s  running 854s  running 859s  running 864s  running 869s  running 874s  running 879s  running 884s  running 889s  running 894s  running 899s  running 904s  running 909s  running 914s  running 919s  running 924s  running 930s  running 935s  running 940s  running 945s  running 950s  running 955s  running 960s  running 965s  running 970s  running 975s  running 980s  running 985s  running 990s  running 995s  running 1000s  running 1005s  running 1010s  running 1015s  running 1020s  running 1025s  running 1030s  running 1035s  running 1040s  running 1045s  running 1050s  running 1055s  running 1060s  running 1065s  running 1070s  running 1076s  running 1081s  running 1086s  running 1091s  running 1096s  running 1101s  running 1106s  running 1111s  running 1116s  running 1121s  running 1126s  running 1131s  running 1136s  running 1142s  running 1147s  running 1153s  running 1158s  success in 1163s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00007_.glb
+  mesh QA: score 1.136, IoU front 0.96 left 0.67 back 0.96 right 0.78
+  MESH WARNING: left: mesh silhouette matches the reference poorly (IoU 0.67, 15% of the reference missing)
+  mesh judge (agy): FAIL 3/10  sheet /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00007_.judge.png
+    - front: center hexagram and runes are melted, distorted, and blobby instead of crisp geometric shapes
+    - front: top and bottom skulls are melted into indistinct lumps
+    - front: bail attachment ring is fused solid to the body
+    - back: center has deformed sunken gouges and melted relief instead of a flat surface with a clean hexagram
+  reconstruction 4/4
+  seed 1603042074
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 90s  running 96s  running 101s  running 106s  running 111s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 182s  running 187s  running 192s  running 197s  running 202s  running 207s  running 212s  running 217s  running 222s  running 227s  running 232s  running 237s  running 242s  running 247s  running 252s  running 258s  running 263s  running 268s  running 273s  running 278s  running 283s  running 288s  running 293s  running 298s  running 303s  running 308s  running 313s  running 318s  running 323s  running 328s  running 334s  running 339s  running 344s  running 349s  running 354s  running 359s  running 364s  running 369s  running 374s  running 379s  running 384s  running 389s  running 394s  running 399s  running 404s  running 409s  running 414s  running 419s  running 424s  running 429s  running 434s  running 439s  running 444s  running 449s  running 454s  running 459s  running 464s  running 469s  running 474s  running 479s  running 484s  running 489s  running 494s  running 499s  running 505s  running 510s  running 515s  running 520s  running 525s  running 530s  running 535s  running 540s  running 545s  running 550s  running 555s  running 560s  running 565s  running 570s  running 575s  running 580s  running 585s  running 590s  running 595s  running 600s  running 605s  running 610s  running 615s  running 620s  running 625s  running 630s  running 635s  running 640s  running 645s  running 650s  running 655s  running 660s  running 665s  running 671s  running 676s  running 681s  running 686s  running 691s  running 696s  running 701s  running 706s  running 711s  running 716s  running 721s  running 726s  running 731s  running 736s  running 741s  running 746s  running 751s  running 756s  running 761s  running 767s  running 772s  running 777s  running 782s  running 787s  running 792s  running 797s  running 802s  running 807s  running 812s  running 817s  running 822s  running 827s  running 832s  running 837s  running 842s  running 847s  running 852s  running 857s  running 862s  running 867s  running 872s  running 877s  running 882s  running 887s  running 892s  running 897s  running 902s  running 907s  running 912s  running 917s  running 922s  running 928s  running 933s  running 938s  running 944s  running 949s  running 954s  running 959s  running 964s  running 969s  running 974s  running 979s  running 984s  running 989s  running 994s  running 999s  running 1004s  running 1009s  running 1014s  running 1019s  running 1024s  running 1029s  running 1034s  running 1039s  running 1044s  running 1049s  running 1054s  running 1059s  running 1064s  running 1069s  running 1074s  running 1080s  running 1085s  running 1090s  running 1095s  running 1100s  running 1105s  running 1110s  running 1115s  running 1120s  running 1125s  running 1130s  running 1135s  running 1140s  running 1145s  running 1150s  running 1155s  running 1160s  running 1165s  running 1170s  running 1175s  running 1180s  running 1185s  running 1190s  running 1195s  running 1200s  running 1205s  running 1210s  running 1215s  running 1220s  running 1225s  running 1230s  running 1235s  running 1240s  running 1245s  running 1250s  running 1255s  running 1260s  running 1265s  running 1275s  running 1280s  running 1285s  running 1290s  success in 1295s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00008_.glb
+  mesh QA: score 1.159, IoU front 0.96 left 0.69 back 0.95 right 0.78
+  MESH WARNING: left: mesh silhouette matches the reference poorly (IoU 0.69, 15% of the reference missing)
+  mesh judge (agy): FAIL 3/10  sheet /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00008_.judge.png
+    - front: central hexagram star is heavily distorted, asymmetrical, and melted
+    - front: top and bottom skull reliefs are blobby and melted
+    - back: central circular hexagram emblem is completely missing
+  keeping seed 1221721691 (judge 3/10, score 1.185) of 4 reconstructions
+  MESH WARNING: no reconstruction passed the agy judge; keeping the best-rated one
+  ASSET stage 1/7 component-aware surface cleanup
+  ASSET components 54 protected 52
+  ASSET stage 2/7 low mesh and high-resolution source
+  ASSET reduce LOD 0 component 0 / 54
+  ASSET reduce LOD 0 component 50 / 54
+  ASSET stage 3/7 shared Smart UV atlas
+  ASSET stage 5/7 LOD geometry
+  ASSET reduce LOD 1 component 0 / 54
+  ASSET reduce LOD 1 component 50 / 54
+  ASSET reduce LOD 2 component 0 / 54
+  ASSET reduce LOD 2 component 50 / 54
+  ASSET reduce LOD 3 component 0 / 54
+  ASSET reduce LOD 3 component 50 / 54
+  ASSET bake groups {'groups': 6, 'physical_components': 54, 'max_components_per_group': 32}
+  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+  ASSET full PBR bake LOD 0 resolution 2048
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 1 resolution 1024
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 2 resolution 512
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 3 resolution 256
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET stage 4/7 asset and runtime budgets
+  ASSET stage 6/7 collision and engine exports
+  ASSET stage 7/7 visual and import quality gates
+  ASSET NEEDS REVIEW /mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3/asset_report.json
+  NOT production-ready - review these before shipping:
+   - subpixel_islands : Some UV islands occupy under one texel; inspect checker previews and mip behavior.
+   - texture_budget : Estimated uncompressed runtime texture memory exceeds the preset budget.
+   - redengine_native_import : REDengine handoff needs native material, LOD and collision setup, cooking and in-game validation; see redengine/IMPORT.md.
+   - redengine_template : Choose a compatible native .mesh/.w2mesh template or REDkit resource before integration.
+  production asset -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3
+  report -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3/asset_report.json
+  review -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3/review.html
+  engine check: not_run

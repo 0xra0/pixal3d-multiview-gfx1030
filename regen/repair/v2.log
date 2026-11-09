@@ -1,0 +1,357 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+22:29:38 | INFO: Data are loaded, start creating Blender stuff
+22:29:38 | INFO: Blender create Mesh node geometry_0
+22:29:38 | INFO: glTF import finished in 0.22s
+LOOPCUT welded to 143933 vertices
+ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so
+ERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so
+22:30:02 | INFO: Starting glTF 2.0 export
+22:30:02 | INFO: Extracting primitive: geometry_0
+22:30:02 | INFO: Primitives created: 1
+22:30:02 | INFO: Finished glTF 2.0 export in 0.6118800640106201 s
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+warning: registered duplicate command "extension", this will be inaccessible
+warning: registered duplicate command "asset_listing", this will be inaccessible
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+
+LOOPCUT smooth front=False r=0.03 s=1.0 x8: verts touched/stroke up to 5449, 23.0 s -> v2_smooth.glb
+Warning: addon-module bl_pkg found module but without '__addon_enabled__' field, possible name collision from file: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py'
+module changed on disk: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py' reloading...
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync', bl_idname 'extensions.repo_sync' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync_all', bl_idname 'extensions.repo_sync_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_refresh_all', bl_idname 'extensions.repo_refresh_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_enable_from_drop', bl_idname 'extensions.repo_enable_from_drop' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock', bl_idname 'extensions.repo_unlock' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_files', bl_idname 'extensions.package_install_files' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install', bl_idname 'extensions.package_install' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall', bl_idname 'extensions.package_uninstall' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_system', bl_idname 'extensions.package_uninstall_system' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_disable', bl_idname 'extensions.package_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_enable', bl_idname 'extensions.package_theme_enable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_disable', bl_idname 'extensions.package_theme_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_upgrade_all', bl_idname 'extensions.package_upgrade_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_marked', bl_idname 'extensions.package_install_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_marked', bl_idname 'extensions.package_uninstall_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear_errors', bl_idname 'extensions.status_clear_errors' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear', bl_idname 'extensions.status_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_set', bl_idname 'extensions.package_show_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_clear', bl_idname 'extensions.package_show_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set', bl_idname 'extensions.package_mark_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear', bl_idname 'extensions.package_mark_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set_all', bl_idname 'extensions.package_mark_set_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear_all', bl_idname 'extensions.package_mark_clear_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_settings', bl_idname 'extensions.package_show_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_obsolete_marked', bl_idname 'extensions.package_obsolete_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_lock_all', bl_idname 'extensions.repo_lock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock_all', bl_idname 'extensions.repo_unlock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_tags_set', bl_idname 'extensions.userpref_tags_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_for_update', bl_idname 'extensions.userpref_show_for_update' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_online', bl_idname 'extensions.userpref_show_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online', bl_idname 'extensions.userpref_allow_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online_popup', bl_idname 'extensions.userpref_allow_online_popup' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_addons_tags', bl_idname 'USERPREF_PT_addons_tags' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_addons_settings', bl_idname 'USERPREF_MT_addons_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_extensions_filter', bl_idname 'USERPREF_PT_extensions_filter' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_settings', bl_idname 'USERPREF_MT_extensions_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_item', bl_idname 'USERPREF_MT_extensions_item' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_active_repo_extra', bl_idname 'USERPREF_MT_extensions_active_repo_extra' has been registered before, unregistering previous
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+22:30:02 | INFO: Data are loaded, start creating Blender stuff
+22:30:02 | INFO: Blender create Mesh node geometry_0
+22:30:03 | INFO: glTF import finished in 0.20s
+LOOPCUT welded to 143933 vertices
+22:30:26 | INFO: Starting glTF 2.0 export
+22:30:26 | INFO: Extracting primitive: geometry_0
+22:30:27 | INFO: Primitives created: 1
+22:30:27 | INFO: Finished glTF 2.0 export in 0.5977165699005127 s
+warning: registered duplicate command "extension", this will be inaccessible
+warning: registered duplicate command "asset_listing", this will be inaccessible
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+
+LOOPCUT smooth front=True r=0.03 s=1.0 x8: verts touched/stroke up to 3279, 23.0 s -> v2_smooth_front.glb
+Warning: addon-module bl_pkg found module but without '__addon_enabled__' field, possible name collision from file: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py'
+module changed on disk: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py' reloading...
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync', bl_idname 'extensions.repo_sync' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync_all', bl_idname 'extensions.repo_sync_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_refresh_all', bl_idname 'extensions.repo_refresh_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_enable_from_drop', bl_idname 'extensions.repo_enable_from_drop' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock', bl_idname 'extensions.repo_unlock' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_files', bl_idname 'extensions.package_install_files' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install', bl_idname 'extensions.package_install' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall', bl_idname 'extensions.package_uninstall' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_system', bl_idname 'extensions.package_uninstall_system' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_disable', bl_idname 'extensions.package_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_enable', bl_idname 'extensions.package_theme_enable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_disable', bl_idname 'extensions.package_theme_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_upgrade_all', bl_idname 'extensions.package_upgrade_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_marked', bl_idname 'extensions.package_install_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_marked', bl_idname 'extensions.package_uninstall_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear_errors', bl_idname 'extensions.status_clear_errors' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear', bl_idname 'extensions.status_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_set', bl_idname 'extensions.package_show_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_clear', bl_idname 'extensions.package_show_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set', bl_idname 'extensions.package_mark_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear', bl_idname 'extensions.package_mark_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set_all', bl_idname 'extensions.package_mark_set_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear_all', bl_idname 'extensions.package_mark_clear_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_settings', bl_idname 'extensions.package_show_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_obsolete_marked', bl_idname 'extensions.package_obsolete_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_lock_all', bl_idname 'extensions.repo_lock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock_all', bl_idname 'extensions.repo_unlock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_tags_set', bl_idname 'extensions.userpref_tags_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_for_update', bl_idname 'extensions.userpref_show_for_update' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_online', bl_idname 'extensions.userpref_show_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online', bl_idname 'extensions.userpref_allow_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online_popup', bl_idname 'extensions.userpref_allow_online_popup' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_addons_tags', bl_idname 'USERPREF_PT_addons_tags' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_addons_settings', bl_idname 'USERPREF_MT_addons_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_extensions_filter', bl_idname 'USERPREF_PT_extensions_filter' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_settings', bl_idname 'USERPREF_MT_extensions_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_item', bl_idname 'USERPREF_MT_extensions_item' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_active_repo_extra', bl_idname 'USERPREF_MT_extensions_active_repo_extra' has been registered before, unregistering previous
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+22:30:27 | INFO: Data are loaded, start creating Blender stuff
+22:30:27 | INFO: Blender create Mesh node geometry_0
+22:30:27 | INFO: glTF import finished in 0.20s
+LOOPCUT welded to 143933 vertices
+22:30:40 | INFO: Starting glTF 2.0 export
+22:30:40 | INFO: Extracting primitive: geometry_0
+22:30:40 | INFO: Primitives created: 1
+22:30:40 | INFO: Finished glTF 2.0 export in 0.599212646484375 s
+warning: registered duplicate command "extension", this will be inaccessible
+warning: registered duplicate command "asset_listing", this will be inaccessible
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+
+LOOPCUT flatten front=False r=0.03 s=1.0 x8: verts touched/stroke up to 5570, 11.9 s -> v2_flatten.glb
+Warning: addon-module bl_pkg found module but without '__addon_enabled__' field, possible name collision from file: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py'
+module changed on disk: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py' reloading...
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync', bl_idname 'extensions.repo_sync' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync_all', bl_idname 'extensions.repo_sync_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_refresh_all', bl_idname 'extensions.repo_refresh_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_enable_from_drop', bl_idname 'extensions.repo_enable_from_drop' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock', bl_idname 'extensions.repo_unlock' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_files', bl_idname 'extensions.package_install_files' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install', bl_idname 'extensions.package_install' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall', bl_idname 'extensions.package_uninstall' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_system', bl_idname 'extensions.package_uninstall_system' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_disable', bl_idname 'extensions.package_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_enable', bl_idname 'extensions.package_theme_enable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_disable', bl_idname 'extensions.package_theme_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_upgrade_all', bl_idname 'extensions.package_upgrade_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_marked', bl_idname 'extensions.package_install_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_marked', bl_idname 'extensions.package_uninstall_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear_errors', bl_idname 'extensions.status_clear_errors' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear', bl_idname 'extensions.status_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_set', bl_idname 'extensions.package_show_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_clear', bl_idname 'extensions.package_show_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set', bl_idname 'extensions.package_mark_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear', bl_idname 'extensions.package_mark_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set_all', bl_idname 'extensions.package_mark_set_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear_all', bl_idname 'extensions.package_mark_clear_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_settings', bl_idname 'extensions.package_show_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_obsolete_marked', bl_idname 'extensions.package_obsolete_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_lock_all', bl_idname 'extensions.repo_lock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock_all', bl_idname 'extensions.repo_unlock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_tags_set', bl_idname 'extensions.userpref_tags_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_for_update', bl_idname 'extensions.userpref_show_for_update' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_online', bl_idname 'extensions.userpref_show_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online', bl_idname 'extensions.userpref_allow_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online_popup', bl_idname 'extensions.userpref_allow_online_popup' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_addons_tags', bl_idname 'USERPREF_PT_addons_tags' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_addons_settings', bl_idname 'USERPREF_MT_addons_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_extensions_filter', bl_idname 'USERPREF_PT_extensions_filter' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_settings', bl_idname 'USERPREF_MT_extensions_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_item', bl_idname 'USERPREF_MT_extensions_item' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_active_repo_extra', bl_idname 'USERPREF_MT_extensions_active_repo_extra' has been registered before, unregistering previous
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+22:30:40 | INFO: Data are loaded, start creating Blender stuff
+22:30:40 | INFO: Blender create Mesh node geometry_0
+22:30:40 | INFO: glTF import finished in 0.21s
+LOOPCUT welded to 143933 vertices
+22:30:53 | INFO: Starting glTF 2.0 export
+22:30:53 | INFO: Extracting primitive: geometry_0
+22:30:54 | INFO: Primitives created: 1
+22:30:54 | INFO: Finished glTF 2.0 export in 0.6055259704589844 s
+
+LOOPCUT flatten front=True r=0.03 s=1.0 x8: verts touched/stroke up to 3935, 12.0 s -> v2_flatten_front.glb
+
+Blender quit

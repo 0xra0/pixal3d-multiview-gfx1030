@@ -1,0 +1,908 @@
+[32m[INFO][0m setup plugin alembic.autogenerate.schemas
+[32m[INFO][0m setup plugin alembic.autogenerate.tables
+[32m[INFO][0m setup plugin alembic.autogenerate.types
+[32m[INFO][0m setup plugin alembic.autogenerate.constraints
+[32m[INFO][0m setup plugin alembic.autogenerate.defaults
+[32m[INFO][0m setup plugin alembic.autogenerate.comments
+[32m[INFO][0m [ComfyUI-Manager] Using uv as Python module for pip operations.
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+[START] Security scan
+[DONE] Security scan
+** ComfyUI startup time: 2026-11-08 15:52:02.894
+** Platform: Linux
+** Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]
+** Python executable: /mnt/ssd/conda-envs/ComfyUI/bin/python3.12
+** ComfyUI Path: /mnt/ssd/ComfyUI
+** ComfyUI Base Folder Path: /mnt/ssd/ComfyUI
+** User directory: /mnt/ssd/ComfyUI/user
+** ComfyUI-Manager config path: /mnt/ssd/ComfyUI/user/__manager/config.ini
+** Log path: /mnt/ssd/ComfyUI/user/comfyui.log
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+[32m[INFO][0m [PRE] ComfyUI-Manager
+[32m[INFO][0m 
+Prestartup times for custom nodes:
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2-GGUF
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/rgthree-comfy
+[32m[INFO][0m 
+[32m[INFO][0m Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend hip: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple_dtype', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'stochastic_rounding_fp8']}
+[32m[INFO][0m Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'int8_linear', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Checkpoint files will always be loaded safely.
+[32m[INFO][0m Total VRAM 16368 MB, total RAM 48088 MB
+[32m[INFO][0m pytorch version: 2.12.0
+[32m[INFO][0m AMD arch: gfx1030
+[32m[INFO][0m ROCm version: (7, 2)
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Disabling smart memory management
+[32m[INFO][0m Device: cuda:0 AMD Radeon RX 6800 : native
+[32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+[32m[INFO][0m Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]
+[32m[INFO][0m ComfyUI version: 0.38.0
+[32m[INFO][0m comfy-aimdo version: 0.5.5
+[32m[INFO][0m comfy-kitchen version: 0.2.36
+[1m[33m[WARNING][0m Dynamic vram disabled with argument. If you have any issues with dynamic vram enabled please give us a detailed reports as this argument will be removed soon. If you use gguf we recommend keeping dynamic vram enabled and using native ComfyUI model formats instead. ComfyUI native formats like fp8, int8 and w4a8 will be faster even if they are larger than your memory.
+[32m[INFO][0m comfyui-frontend-package version: 1.53.6
+[32m[INFO][0m comfyui-workflow-templates version: 0.11.70
+[32m[INFO][0m comfyui-embedded-docs version: 0.5.12
+[32m[INFO][0m comfy-kitchen version: 0.2.36
+[32m[INFO][0m comfy-aimdo version: 0.5.5
+[32m[INFO][0m [Prompt Server] web root: /mnt/ssd/ComfyUI/.runtime-deps/comfyui_frontend_package/static
+[32m[INFO][0m Asset seeder disabled
+[32m[INFO][0m [START] ComfyUI-Manager
+[ComfyUI-Manager] Using GitPython backend
+[32m[INFO][0m [ComfyUI-Manager] network_mode: public
+[32m[INFO][0m No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+/mnt/ssd/ComfyUI/custom_nodes/comfyui-umeairt-toolkit/modules/monitor_hardware.py:271: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml
+[UmeAiRT-Toolkit] ⚠️ pynvml init failed: NVML Shared Library Not Found
+[UmeAiRT-Toolkit] 🖥️ AMD GPU monitoring: 1 device(s) detected
+[UmeAiRT-Toolkit] 📊 Hardware monitor started (rate: 1.0s)
+[UmeAiRT-Toolkit] 🧩 Loaded 71 nodes.
+[UmeAiRT-Toolkit] ⚡ Optimisation check: SageAttention ❌ | Triton ✅
+[UmeAiRT-Toolkit] 📊 Initial CUDA memory: 15.80GB free / 15.98GB total
+[UmeAiRT-Toolkit] ✅ Initialization Complete.
+⚠️  SeedVR2 optimizations check: SageAttention ❌ | Flash Attention ❌ | Triton ✅
+💡 Optional: pip install sageattention flash-attn
+📊 Initial CUDA memory: 15.74GB free / 15.98GB total
+W1108 15:52:43.048000 675828 site-packages/torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+flash_attn is installed but failed to import: No module named 'flash_attn.flash_attn_interface'. Falling back to native PyTorch attention.
+W1108 15:52:43.278000 675828 site-packages/torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[32m[INFO][0m ComfyUI-GGUF: Allowing full torch compile
+[32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+(RES4LYF) Init
+(RES4LYF) Importing beta samplers.
+(RES4LYF) Importing legacy samplers.
+[/mnt/ssd/ComfyUI/custom_nodes/comfy-mtb] | INFO -> loaded 103 nodes successfuly
+[/mnt/ssd/ComfyUI/custom_nodes/comfy-mtb] | INFO -> Some nodes (5) could not be loaded. This can be ignored, but go to http://127.0.0.1:8188/mtb if you want more information.
+
+[rgthree-comfy] Loaded 48 fantastic nodes. 🎉
+
+[rgthree-comfy] ComfyUI's new Node 2.0 rendering may be incompatible with some rgthree-comfy nodes and features, breaking some rendering as well as losing the ability to access a node's properties (a vital part of many nodes). It also appears to run MUCH more slowly spiking CPU usage and causing jankiness and unresponsiveness, especially with large workflows. Personally I am not planning to use the new Nodes 2.0 and, unfortunately, am not able to invest the time to investigate and overhaul rgthree-comfy where needed. If you have issues when Nodes 2.0 is enabled, I'd urge you to switch it off as well and join me in hoping ComfyUI is not planning to deprecate the existing, stable canvas rendering all together.
+
+[Trellis2] GPU Type: AMD ROCm
+[Trellis2-GGUF] Successfully monkeypatched DinoV3ProjFeatureExtractor.forward
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[Trellis2-GGUF] Successfully monkeypatched Trellis2ImageTo3DPipeline.get_proj_cond_shape
+[32m[INFO][0m ComfyUI-GGUF: Allowing full torch compile
+[Trellis2] Using native ComfyUI-GGUF support (ops/dequant/loader)
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+LOADED 5 FONTS
+
+
+███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗███████╗               
+████╗ ████║██╔══██╗██╔════╝██║  ██║██║████╗  ██║██╔════╝               
+██╔████╔██║███████║██║     ███████║██║██╔██╗ ██║█████╗                 
+██║╚██╔╝██║██╔══██║██║     ██╔══██║██║██║╚██╗██║██╔══╝                 
+██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██║██║██║ ╚████║███████╗               
+╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝               
+                                                                       
+██████╗ ███████╗██╗     ██╗   ██╗███████╗██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██╔════╝██║     ██║   ██║██╔════╝██║██╔═══██╗████╗  ██║██╔════╝
+██║  ██║█████╗  ██║     ██║   ██║███████╗██║██║   ██║██╔██╗ ██║███████╗
+██║  ██║██╔══╝  ██║     ██║   ██║╚════██║██║██║   ██║██║╚██╗██║╚════██║
+██████╔╝███████╗███████╗╚██████╔╝███████║██║╚██████╔╝██║ ╚████║███████║
+╚═════╝ ╚══════╝╚══════╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+                                                                       
+
+
+### ComfyUI-Workflow-Encrypt: Copy .js from '/mnt/ssd/ComfyUI/custom_nodes/comfyui-workflow-encrypt/js/comfyui-workflow-encrypt.js' to '/mnt/ssd/ComfyUI/web/extensions/comfyui-workflow-encrypt'
+USDU batch patches applied successfully.
+[32m[INFO][0m USDU batch patches applied successfully.
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `/mnt/ssd/ComfyUI/custom_nodes/was-ns/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 220 nodes successfully.
+
+	"Art is the breath of life." - Liza Donnelly
+
+[QwenVL Debug] SAGE_ATTENTION_AVAILABLE: False
+[QwenVL Debug] CUDA capability: 10.3
+[QwenVL Debug] Final ATTENTION_MODES: ['auto', 'sage', 'flash_attention_2', 'sdpa']
+[QwenVL] NOTE: SageAttention option shown for testing. Install with: pip install sageattention
+[llama-cpp-python].find_library: loaded library from libggml-base.so.0
+[llama-cpp-python].find_library: loaded library from libggml.so.0
+[llama-cpp-python].find_library: loaded library from libllama.so.0
+[ComfyUI-Easy-Use] server: v1.3.6 Loaded
+[ComfyUI-Easy-Use] web root: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use/web_version/v2 Loaded
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[ATTENTION] Using backend: flash_attn
+------------------------------------------
+Comfyroll Studio v1.76 :  175 Nodes Loaded
+------------------------------------------
+** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+------------------------------------------
+----------------------------------------------------------------------
+  AusBoss v2.9.0  |  42 nodes loaded
+  https://github.com/ausboss/ComfyUI-AusBoss
+----------------------------------------------------------------------
+[32m[INFO][0m ### Loading: ComfyUI-Impact-Subpack (V1.3.5)
+[32m[INFO][0m [Impact Pack/Subpack] Using folder_paths to determine whitelist path: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+[32m[INFO][0m [Impact Pack/Subpack] Ensured whitelist directory exists: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack
+[32m[INFO][0m [Impact Pack/Subpack] Loaded 0 model(s) from whitelist: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+[32m[INFO][0m [Impact Subpack] ultralytics_bbox: /mnt/ssd/ComfyUI/models/ultralytics/bbox
+[32m[INFO][0m [Impact Subpack] ultralytics_segm: /mnt/ssd/ComfyUI/models/ultralytics/segm
+[Crystools INFO] Crystools version: 1.27.4
+[Crystools INFO] Platform release: 7.2.11-zen1_1
+[Crystools INFO] JETSON: Not detected.
+[Crystools INFO] CPU: AMD Ryzen 7 5700X 8-Core Processor - Arch: x86_64 - OS: Linux 7.2.11-zen1_1
+[Crystools ERROR] Could not init pynvml (NVIDIA). NVML Shared Library Not Found
+[Crystools WARNING] No GPU monitoring libraries available.
+[32m[INFO][0m ### Loading: ComfyUI-Impact-Pack (V8.28.3)
+[32m[INFO][0m [vsLinx] Combo type validation fix applied.
+[ComfyUI-HY-Motion1] Initializing custom node...
+[32m[INFO][0m Total VRAM 16368 MB, total RAM 48088 MB
+[32m[INFO][0m [Impact Pack] Wildcard total size (0.00 MB) is within cache limit (50.00 MB). Using full cache mode.
+[32m[INFO][0m pytorch version: 2.12.0
+[32m[INFO][0m AMD arch: gfx1030
+[32m[INFO][0m ROCm version: (7, 2)
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Disabling smart memory management
+[32m[INFO][0m Device: cuda:0 AMD Radeon RX 6800 : native
+[ComfyUI-HY-Motion1] [OK] Node classes imported successfully
+[ComfyUI-HY-Motion1] [OK] Static routes added: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-HY-Motion1/static
+[ComfyUI-HY-Motion1] [OK] Loaded successfully!
+[32m[INFO][0m [Impact Pack] Wildcards loading done.
+[32m[INFO][0m 
+Import times for custom nodes:
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/websocket_image_save.py
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfy-image-saver
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-mxtoolkit
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-florence2
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UnloadModels
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-inpaint-cropandstitch
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/cg-use-everywhere
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Flux2Klein-Enhancer
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-impact-subpack
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-DeGrid
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/Qwen-Image-2.1-Character-Sheet-Designer
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-custom-scripts
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI_JPS-Nodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-workflow-encrypt
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-HY-Motion1
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-vslinx-nodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/demonalone-nodes-comfyui
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/derfuu_comfyui_moddednodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-GGUF
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_ultimatesdupscale
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-frame-interpolation
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-image-saver
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-KJNodes
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-AusBoss
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-MediaMixer
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/rgthree-comfy
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-levelpixel
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_layerstyle
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-impact-pack
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-logicutils
+[32m[INFO][0m    0.2 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-various
+[32m[INFO][0m    0.2 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UltraTex
+[32m[INFO][0m    0.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-QwenVL-Mod
+[32m[INFO][0m    0.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/RES4LYF
+[32m[INFO][0m    0.4 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfy-mtb
+[32m[INFO][0m    0.5 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Crystools
+[32m[INFO][0m    0.8 seconds: /mnt/ssd/ComfyUI/custom_nodes/was-ns
+[32m[INFO][0m    0.8 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-umeairt-toolkit
+[32m[INFO][0m    0.9 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-propost
+[32m[INFO][0m    2.9 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-videohelpersuite
+[32m[INFO][0m    3.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2-GGUF
+[32m[INFO][0m    4.9 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_fill-nodes
+[32m[INFO][0m    6.4 seconds: /mnt/ssd/ComfyUI/custom_nodes/seedvr2_videoupscaler
+[32m[INFO][0m 
+[32m[INFO][0m Context impl SQLiteImpl.
+[32m[INFO][0m Will assume non-transactional DDL.
+[32m[INFO][0m Disabling intermediate node cache.
+[32m[INFO][0m Starting server
+
+[32m[INFO][0m To see the GUI go to: http://127.0.0.1:8188
+[32m[INFO][0m Disabling intermediate node cache.
+[32m[INFO][0m got prompt
+[Pixal3D-GGUF-MV Loader] FORCING official MultiView model set
+[Trellis2-GGUF] model=Pixal3D-GGUF-MV path=/mnt/ssd/ComfyUI/models/Pixal3D-GGUF-MV config=pipeline_mv.json
+[Pixal3D-GGUF-MV] Verified official *_mv flow checkpoint names.
+[ModelManager] Verifying 9 model components (GGUF Q8_0)...
+[Pixal3D MV INPUT GUARD] incoming canvases: front=1024x1024, left=1024x1024, back=1024x1024, right=1024x1024
+/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+[Pixal3D MV input] front: existing alpha retained
+[Pixal3D MV input] front: size=(1024, 1024), alpha_coverage=0.4599, bbox=(159, 41, 864, 986)
+[Pixal3D MV input] left: existing alpha retained
+[Pixal3D MV input] left: size=(1024, 1024), alpha_coverage=0.2587, bbox=(267, 40, 757, 987)
+[Pixal3D MV input] back: existing alpha retained
+[Pixal3D MV input] back: size=(1024, 1024), alpha_coverage=0.4458, bbox=(184, 40, 838, 987)
+[Pixal3D MV input] right: existing alpha retained
+[Pixal3D MV input] right: size=(1024, 1024), alpha_coverage=0.2732, bbox=(244, 41, 779, 987)
+[Pixal3D MV input] debug views saved to /mnt/ssd/ComfyUI/output/_pixal3d_mv_debug
+[Pixal3D MV official sampler] using pipeline-configured samplers; guidance_interval overrides disabled
+[Pixal3D MV camera] official/conventional side mapping: right=az90(+X), left=az270(-X)
+[Pixal3D MV] views=['front', 'right', 'back', 'left'], fov=20.00deg, distances=[front:3.1192,right:3.1192,back:3.1192,left:3.1192], mesh_scale=1.000
+[Pixal3D-GGUF MV] Using camera-projected conditioning (dedicated *_mv weights).
+Loading Sparse Structure model ...
+[32m[INFO][0m GGUF: ss_flow_img_dit_1_3B_64_bf16_mv_Q8_0.gguf
+[Trellis2] Loading GGUF checkpoint: ss_flow_img_dit_1_3B_64_bf16_mv_Q8_0.gguf
+[Trellis2]   1 metadata fields
+[Trellis2]     general.architecture: flux
+[ATTENTION] Using backend: sdpa
+[32m[INFO][0m Regenerating rope_phases for GGUF model to restore complex float32 positional embeddings...
+[Sparse decoder CPU/FP32] load placement: keeping Stage-1 occupancy decoder on CPU
+[Pixal3D MV] Loading projected image conditioner: ss
+[Pixal3D MV DINO] official final normalization: parameterless F.layer_norm (no learned DINO affine)
+[Pixal3D MV DINO VERIFY] source=/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2/trellis2/trainers/flow_matching/mixins/image_conditioned_proj.py; official_parameterless_norm=ACTIVE
+[Pixal3D MV DINO] 512 stage: using full-view batch
+[Pixal3D DINO ROCm FP32/eager] attention 'sdpa' -> 'eager'
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=4096, chunk=32768, finite=4194304/4194304, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=4096, chunk=32768, finite=4194304/4194304, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=4096, chunk=32768, finite=4194304/4194304, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=4096, chunk=32768, finite=4194304/4194304, bad=0 [CPU-reduced]
+COND global: 0.5304369330406189 proj: 0.37309926748275757
+  [SS cond 'global'] shape=torch.Size([1, 5, 1024]), dtype=torch.float32, mean=0.0000, std=0.9682
+  [SS cond 'proj'] shape=torch.Size([1, 4096, 1024]), dtype=torch.float32, mean=-0.0000, std=0.9561
+  [SS neg_cond 'global'] shape=torch.Size([1, 5, 1024]), dtype=torch.float32, mean=0.0000
+  [SS neg_cond 'proj'] shape=torch.Size([1, 4096, 1024]), dtype=torch.float32, mean=0.0000
+Sampling sparse structure:   0%|          | 0/12 [00:00<?, ?it/s]  [SS step  0] t=1.000 pred_x0: mean=0.0142, std=1.0414, max=6.2583, min=-10.1197
+Sampling sparse structure:   8%|▊         | 1/12 [00:09<01:45,  9.63s/it]Sampling sparse structure:  17%|█▋        | 2/12 [00:14<01:08,  6.83s/it]Sampling sparse structure:  25%|██▌       | 3/12 [00:23<01:11,  7.98s/it]Sampling sparse structure:  33%|███▎      | 4/12 [00:33<01:07,  8.50s/it]  [SS step  4] t=0.909 pred_x0: mean=0.0372, std=0.8959, max=9.3420, min=-10.6459
+Sampling sparse structure:  42%|████▏     | 5/12 [00:46<01:12, 10.42s/it]Sampling sparse structure:  50%|█████     | 6/12 [00:51<00:51,  8.52s/it]Sampling sparse structure:  58%|█████▊    | 7/12 [01:01<00:43,  8.79s/it]Sampling sparse structure:  67%|██████▋   | 8/12 [01:10<00:35,  8.96s/it]  [SS step  8] t=0.714 pred_x0: mean=0.0079, std=0.5967, max=5.2412, min=-7.0518
+Sampling sparse structure:  75%|███████▌  | 9/12 [01:24<00:31, 10.49s/it]Sampling sparse structure:  83%|████████▎ | 10/12 [01:29<00:17,  8.75s/it]Sampling sparse structure:  92%|█████████▏| 11/12 [01:33<00:07,  7.50s/it]Sampling sparse structure: 100%|██████████| 12/12 [01:38<00:00,  6.64s/it]Sampling sparse structure: 100%|██████████| 12/12 [01:38<00:00,  8.21s/it]
+z_s stats: torch.Size([1, 8, 16, 16, 16]) 3.0653674602508545 -3.8707616329193115 0.005426257383078337 torch.float32
+[Sparse decoder CPU/FP32] gfx1030 correctness mode: Stage-1 occupancy decoder -> CPU FP32; z_s sha256=f0729c8491c60f04
+[Sparse decoder CPU/FP32] decoded finite=262144/262144, occupied=8,765, logits sha256=f816687816d17761
+decoded stats: torch.Size([1, 1, 64, 64, 64]) 175.76866149902344 -205.06239318847656 -150.01336669921875 torch.float32
+[Sparse] occupied before shell=2,156
+[Pixal3D MV Sparse] official mode: shell pruning BYPASSED
+[Pixal3D MV Sparse] official occupied coords=2,156
+[Pixal3D MV SS checkpoint] resolution=32, tokens=2156
+[Pixal3D MV] Loading projected image conditioner: shape_512
+[Pixal3D MV DINO] official final normalization: parameterless F.layer_norm (no learned DINO affine)
+[Pixal3D MV DINO VERIFY] source=/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2/trellis2/trainers/flow_matching/mixins/image_conditioned_proj.py; official_parameterless_norm=ACTIVE
+[Pixal3D MV DINO] 512 stage: using full-view batch
+[Pixal3D DINO ROCm FP32/eager] attention 'sdpa' -> 'eager'
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[natten-flex] installed FlexAttention natten (NATTEN border rule, FP32)
+[Trellis2] real-NAF: _natten_flex natten installed; loading NAF via torch.hub...
+Using cache found in /home/home/.cache/torch/hub/valeoai_NAF_main
+[Trellis2] real-NAF dtype=fp32 (BF16 wrapper disabled)
+[Trellis2] NAF ready: type=NAF
+[Pixal3D MV NAF] tile_factor requested=4, effective=1
+[Pixal3D MV NAF finite] NAF output shape=(1, 1024, 512, 512), finite=268435456/268435456, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=512, W=512, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=1, effective=1
+[Pixal3D MV NAF finite] NAF output shape=(1, 1024, 512, 512), finite=268435456/268435456, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=512, W=512, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=1, effective=1
+[Pixal3D MV NAF finite] NAF output shape=(1, 1024, 512, 512), finite=268435456/268435456, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=512, W=512, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=32, W=32, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=1, effective=1
+[Pixal3D MV NAF finite] NAF output shape=(1, 1024, 512, 512), finite=268435456/268435456, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=512, W=512, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+[Pixal3D MV] Loading projected image conditioner: shape_1024
+[Pixal3D DINO STATE] pristine full-model CPU master cached: 415 tensors, 1156.3 MiB
+[Pixal3D MV DINO] official final normalization: parameterless F.layer_norm (no learned DINO affine)
+[Pixal3D MV DINO VERIFY] source=/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2/trellis2/trainers/flow_matching/mixins/image_conditioned_proj.py; official_parameterless_norm=ACTIVE
+[Pixal3D DINO CPU1024] selective .to(): keeping DINO on CPU; projection/NAF -> cuda
+[Pixal3D MV DINO] chunked extraction: 4 view(s), chunk=1, image=(1024, 1024)
+[Pixal3D MV DINO] ROCm view isolation: completed DINO outputs are stashed on CPU
+[Pixal3D DINO ROCm FP32/eager] attention 'sdpa' -> 'eager'
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[32m[INFO][0m FETCH ComfyRegistry Data [DONE]
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 1)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=18.2326
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[32m[INFO][0m [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: /mnt/ssd/ComfyUI/user/__manager/cache/1514988643_custom-node-list.json [DONE]
+[32m[INFO][0m [ComfyUI-Manager] All startup tasks have been completed.
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138440
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138411
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138407
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138405
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138403
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138392
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138387
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138375
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138353
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138332
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138347
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138342
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138392
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138379
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138432
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138542
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138696
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138864
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139802
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137617
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3313
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 2)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=18.04
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137857
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137829
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137823
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137823
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137820
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137810
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137805
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137793
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137772
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137752
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137768
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137767
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137818
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137807
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137863
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137969
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138118
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138273
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139194
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137019
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3326
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 3)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=14.1778
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139961
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139932
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139924
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139913
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139909
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139897
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139875
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139855
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139869
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139868
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139920
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139911
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139967
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140079
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140223
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140390
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=141304
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139126
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3332
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 4)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=15.6473
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137905
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137877
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137871
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137871
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137869
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137858
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137853
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137841
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137820
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137800
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137816
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137815
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137865
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137854
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137910
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138015
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138161
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138316
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139237
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137061
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.332
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV STRICT NAF] 1024 ROCm conditioner: bilinear semantic fallback DISABLED; running real NAF in spatial tiles and failing hard on NaN/Inf
+[Trellis2] real-NAF: _natten_flex natten installed; loading NAF via torch.hub...
+Using cache found in /home/home/.cache/torch/hub/valeoai_NAF_main
+[Trellis2] real-NAF dtype=fp32 (BF16 wrapper disabled)
+[Trellis2] NAF ready: type=NAF
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (8.0 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (8.0 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=2156, chunk=32768, finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (8.0 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=2207744/2207744, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=4415488/4415488, bad=0 [CPU-reduced]
+Loading Shape Slat Flow 512 model ...
+[32m[INFO][0m GGUF: slat_flow_img2shape_dit_1_3B_512_bf16_mv_Q8_0.gguf
+[Trellis2] Loading GGUF checkpoint: slat_flow_img2shape_dit_1_3B_512_bf16_mv_Q8_0.gguf
+[Trellis2]   1 metadata fields
+[Trellis2]     general.architecture: flux
+Loading Shape Slat Flow 1024 model ...
+[32m[INFO][0m GGUF: slat_flow_img2shape_dit_1_3B_1024_bf16_mv_Q8_0.gguf
+[Trellis2] Loading GGUF checkpoint: slat_flow_img2shape_dit_1_3B_1024_bf16_mv_Q8_0.gguf
+[Trellis2]   1 metadata fields
+[Trellis2]     general.architecture: flux
+Sampling shape SLat (LR):   0%|          | 0/12 [00:00<?, ?it/s][SPARSE] flash_attn unavailable, using SDPA: TypeError: 'NoneType' object is not callable
+Sampling shape SLat (LR):   8%|▊         | 1/12 [00:05<01:00,  5.47s/it]Sampling shape SLat (LR):  17%|█▋        | 2/12 [00:09<00:48,  4.81s/it]Sampling shape SLat (LR):  25%|██▌       | 3/12 [00:14<00:41,  4.59s/it]Sampling shape SLat (LR):  33%|███▎      | 4/12 [00:18<00:35,  4.49s/it]Sampling shape SLat (LR):  42%|████▏     | 5/12 [00:22<00:31,  4.43s/it]Sampling shape SLat (LR):  50%|█████     | 6/12 [00:27<00:26,  4.40s/it]Sampling shape SLat (LR):  58%|█████▊    | 7/12 [00:31<00:21,  4.38s/it]Sampling shape SLat (LR):  67%|██████▋   | 8/12 [00:35<00:17,  4.36s/it]Sampling shape SLat (LR):  75%|███████▌  | 9/12 [00:40<00:13,  4.35s/it]Sampling shape SLat (LR):  83%|████████▎ | 10/12 [00:42<00:07,  3.67s/it]Sampling shape SLat (LR):  92%|█████████▏| 11/12 [00:44<00:03,  3.21s/it]Sampling shape SLat (LR): 100%|██████████| 12/12 [00:46<00:00,  2.89s/it]Sampling shape SLat (LR): 100%|██████████| 12/12 [00:46<00:00,  3.88s/it]
+[Shape LR latent] tokens=2,156, channels=32, finite=68,992/68,992, min=-25.537420, max=23.629305, mean=0.081884, std=5.945563
+[Shape LR coords] min=[4, 0, 7], max=[27, 31, 24]
+Loading Shape Slat decoder model ...
+[Shape upsample 0] parents=2,156, active_parents=2,156, positive_children=9,093/17,248, finite=17,248/17,248, logits[min=-182.375000, max=329.000000, mean=24.387335]
+[Shape upsample 0] output_coords=9,093
+[Shape upsample 1] parents=9,093, active_parents=9,086, positive_children=38,480/72,744, finite=72,744/72,744, logits[min=-202.125000, max=252.875000, mean=11.925394]
+[Shape upsample 1] output_coords=38,480
+[Shape upsample 2] parents=38,480, active_parents=38,328, positive_children=165,542/307,840, finite=307,840/307,840, logits[min=-143.375000, max=97.437500, mean=-4.797401]
+[Shape upsample 2] output_coords=165,542
+[Shape upsample 3] parents=165,542, active_parents=165,292, positive_children=736,647/1,324,336, finite=1,324,336/1,324,336, logits[min=-123.250000, max=103.000000, mean=-0.254608]
+[Shape upsample 3] output_coords=736,647
+[Pixal3D MV OFFICIAL CASCADE] resolution=1536, grid_res=96, tokens=20759, min=[13, 0, 23], max=[82, 94, 73]
+[Pixal3D MV OFFICIAL CASCADE] HR conditioning grid_res=96
+[Pixal3D MV get_proj_cond_shape] delegating to sparse MV conditioner
+[Pixal3D MV DINO] chunked extraction: 4 view(s), chunk=1, image=(1024, 1024)
+[Pixal3D MV DINO] ROCm view isolation: completed DINO outputs are stashed on CPU
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 5)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=18.2326
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138440
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138411
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138407
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138405
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138403
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138392
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138387
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138375
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138353
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138332
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138347
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138342
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138392
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138379
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138432
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138542
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138696
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138864
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139802
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137617
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3313
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 6)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=18.04
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137857
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137829
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137823
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137823
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137820
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137810
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137805
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137793
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137772
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137752
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137768
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137767
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137818
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137807
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137863
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137969
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138118
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138273
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139194
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137019
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3326
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 7)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=14.1778
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139961
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139932
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139924
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139913
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139909
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139897
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139875
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139855
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139869
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139868
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139920
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139911
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139967
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140079
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140223
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140390
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=141304
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139126
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3332
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 8)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=15.6473
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137905
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137877
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137871
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137871
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137869
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137858
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137853
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137841
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137820
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137800
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137816
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137815
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137865
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137854
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137910
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138015
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138161
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138316
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139237
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137061
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.332
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (5.6 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (5.6 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (5.6 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+[Pixal3D MV HR COND] cond.global: shape=(1, 5, 1024), dtype=torch.float32, finite=5120/5120, min=-29.332304, max=9.600664
+[Pixal3D MV HR COND] cond.proj: shape=(20759, 2048), dtype=torch.float32, finite=42514432/42514432, min=-6.769882, max=24.126667
+[Pixal3D MV HR COND] neg_cond.global: shape=(1, 5, 1024), dtype=torch.float32, finite=5120/5120, min=0.000000, max=0.000000
+[Pixal3D MV HR COND] neg_cond.proj: shape=(20759, 2048), dtype=torch.float32, finite=42514432/42514432, min=0.000000, max=0.000000
+[HR sampler ROCm] forcing FP32 activations/dequantized matmuls: torch.bfloat16 -> torch.float32; GGUF weights remain quantized
+[HR sampler ROCm] sparse attention backend: flash_attn -> sdpa (HR call only)
+Sampling shape SLat (HR):   0%|          | 0/12 [00:00<?, ?it/s]  [HR step  0 INPUT] t=1.000000->0.970588 finite=664,288/664,288 min=-4.402911 max=4.741088 mean=0.000692 std=0.999488
+  [HR step  0 X0]    finite=664,288/664,288 min=-11.902128 max=8.696106 mean=0.008004 std=0.938327
+  [HR step  0 PREV]  finite=664,288/664,288 min=-4.303769 max=4.589788 mean=0.000907 std=0.969951
+Sampling shape SLat (HR):   8%|▊         | 1/12 [01:06<12:11, 66.54s/it]  [HR step  1 INPUT] t=0.970588->0.937500 finite=664,288/664,288 min=-4.303769 max=4.589788 mean=0.000907 std=0.969951
+  [HR step  1 X0]    finite=664,288/664,288 min=-9.766418 max=8.672156 mean=0.007753 std=0.946131
+  [HR step  1 PREV]  finite=664,288/664,288 min=-4.199728 max=4.426693 mean=0.001140 std=0.937952
+Sampling shape SLat (HR):  17%|█▋        | 2/12 [02:11<10:54, 65.43s/it]  [HR step  2 INPUT] t=0.937500->0.900000 finite=664,288/664,288 min=-4.199728 max=4.426693 mean=0.001140 std=0.937952
+  [HR step  2 X0]    finite=664,288/664,288 min=-12.723570 max=13.598953 mean=0.010580 std=0.960331
+  [HR step  2 PREV]  finite=664,288/664,288 min=-4.084723 max=4.244915 mean=0.001518 std=0.903231
+Sampling shape SLat (HR):  25%|██▌       | 3/12 [03:15<09:45, 65.05s/it]  [HR step  3 INPUT] t=0.900000->0.857143 finite=664,288/664,288 min=-4.084723 max=4.244915 mean=0.001518 std=0.903231
+  [HR step  3 X0]    finite=664,288/664,288 min=-10.161933 max=8.460821 mean=0.015595 std=0.977047
+  [HR step  3 PREV]  finite=664,288/664,288 min=-3.935764 max=4.029703 mean=0.002188 std=0.865877
+Sampling shape SLat (HR):  33%|███▎      | 4/12 [04:20<08:38, 64.87s/it]  [HR step  4 INPUT] t=0.857143->0.807692 finite=664,288/664,288 min=-3.935764 max=4.029703 mean=0.002188 std=0.865877
+  [HR step  4 X0]    finite=664,288/664,288 min=-8.616803 max=7.931759 mean=0.021046 std=0.984279
+  [HR step  4 PREV]  finite=664,288/664,288 min=-3.730496 max=3.787514 mean=0.003276 std=0.826265
+Sampling shape SLat (HR):  42%|████▏     | 5/12 [05:24<07:33, 64.77s/it]  [HR step  5 INPUT] t=0.807692->0.750000 finite=664,288/664,288 min=-3.730496 max=3.787514 mean=0.003276 std=0.826265
+  [HR step  5 X0]    finite=664,288/664,288 min=-9.793479 max=8.344416 mean=0.026184 std=0.983726
+  [HR step  5 PREV]  finite=664,288/664,288 min=-3.560111 max=3.503324 mean=0.004912 std=0.785259
+Sampling shape SLat (HR):  50%|█████     | 6/12 [06:29<06:28, 64.69s/it]  [HR step  6 INPUT] t=0.750000->0.681818 finite=664,288/664,288 min=-3.560111 max=3.503324 mean=0.004912 std=0.785259
+  [HR step  6 X0]    finite=664,288/664,288 min=-6.616925 max=8.723286 mean=0.025629 std=0.978686
+  [HR step  6 PREV]  finite=664,288/664,288 min=-3.373129 max=3.404389 mean=0.006796 std=0.745079
+Sampling shape SLat (HR):  58%|█████▊    | 7/12 [07:34<05:23, 64.66s/it]  [HR step  7 INPUT] t=0.681818->0.600000 finite=664,288/664,288 min=-3.373129 max=3.404389 mean=0.006796 std=0.745079
+  [HR step  7 X0]    finite=664,288/664,288 min=-5.546797 max=6.070402 mean=0.022331 std=0.970962
+  [HR step  7 PREV]  finite=664,288/664,288 min=-3.153180 max=3.294478 mean=0.008660 std=0.711161
+Sampling shape SLat (HR):  67%|██████▋   | 8/12 [08:38<04:18, 64.70s/it]  [HR step  8 INPUT] t=0.600000->0.500000 finite=664,288/664,288 min=-3.153180 max=3.294478 mean=0.008660 std=0.711161
+  [HR step  8 X0]    finite=664,288/664,288 min=-6.478649 max=5.881917 mean=0.018330 std=0.967195
+  [HR step  8 PREV]  finite=664,288/664,288 min=-3.231037 max=3.369459 mean=0.010272 std=0.694177
+Sampling shape SLat (HR):  75%|███████▌  | 9/12 [09:43<03:13, 64.65s/it]  [HR step  9 INPUT] t=0.500000->0.375000 finite=664,288/664,288 min=-3.231037 max=3.369459 mean=0.010272 std=0.694177
+  [HR step  9 X0]    finite=664,288/664,288 min=-4.297161 max=4.894223 mean=0.020503 std=0.948099
+  [HR step  9 PREV]  finite=664,288/664,288 min=-3.326515 max=3.435746 mean=0.012829 std=0.712644
+Sampling shape SLat (HR):  83%|████████▎ | 10/12 [10:15<01:49, 54.72s/it]  [HR step 10 INPUT] t=0.375000->0.214286 finite=664,288/664,288 min=-3.326515 max=3.435746 mean=0.012829 std=0.712644
+  [HR step 10 X0]    finite=664,288/664,288 min=-4.502939 max=4.958922 mean=0.020446 std=0.957814
+  [HR step 10 PREV]  finite=664,288/664,288 min=-3.725378 max=4.017864 mean=0.016094 std=0.792420
+Sampling shape SLat (HR):  92%|█████████▏| 11/12 [10:48<00:47, 47.85s/it]  [HR step 11 INPUT] t=0.214286->0.000000 finite=664,288/664,288 min=-3.725378 max=4.017864 mean=0.016094 std=0.792420
+  [HR step 11 X0]    finite=664,288/664,288 min=-4.632799 max=4.950677 mean=0.020528 std=0.965452
+  [HR step 11 PREV]  finite=664,288/664,288 min=-4.632803 max=4.950683 mean=0.020528 std=0.965453
+Sampling shape SLat (HR): 100%|██████████| 12/12 [11:20<00:00, 43.11s/it]Sampling shape SLat (HR): 100%|██████████| 12/12 [11:20<00:00, 56.71s/it]
+[HR sampler ROCm] restored sparse attention backend: flash_attn
+[HR sampler ROCm] restored model dtype: torch.bfloat16
+[Shape HR latent] tokens=20,759, channels=32, finite=664,288/664,288, min=-24.162325, max=24.244316, mean=0.063222, std=5.391317
+[Shape HR coords] min=[13, 0, 23], max=[82, 94, 73]
+Loading Texture Slat Flow 1024 model ...
+[32m[INFO][0m GGUF: slat_flow_imgshape2tex_dit_1_3B_1024_bf16_mv_Q8_0.gguf
+[Trellis2] Loading GGUF checkpoint: slat_flow_imgshape2tex_dit_1_3B_1024_bf16_mv_Q8_0.gguf
+[Trellis2]   1 metadata fields
+[Trellis2]     general.architecture: flux
+[Pixal3D MV] Loading projected image conditioner: tex_1024
+[Pixal3D DINO STATE] pristine full-model CPU master cached: 415 tensors, 1156.3 MiB
+[Pixal3D MV DINO] official final normalization: parameterless F.layer_norm (no learned DINO affine)
+[Pixal3D MV DINO VERIFY] source=/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2/trellis2/trainers/flow_matching/mixins/image_conditioned_proj.py; official_parameterless_norm=ACTIVE
+[Pixal3D DINO CPU1024] selective .to(): keeping DINO on CPU; projection/NAF -> cuda
+[Pixal3D MV DINO] chunked extraction: 4 view(s), chunk=1, image=(1024, 1024)
+[Pixal3D MV DINO] ROCm view isolation: completed DINO outputs are stashed on CPU
+[Pixal3D DINO ROCm FP32/eager] attention 'sdpa' -> 'eager'
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 1)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=18.2326
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138440
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138411
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138407
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138406
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138405
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138403
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138392
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138387
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138375
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138353
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138332
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138347
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138342
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138392
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138379
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138432
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138542
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138696
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138864
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139802
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137617
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3313
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 2)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=18.04
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137857
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137829
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137824
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137823
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137823
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137820
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137810
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137805
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137793
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137772
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137752
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137768
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137767
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137818
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137807
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137863
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137969
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138118
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138273
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139194
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137019
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3326
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 3)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=14.1778
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139961
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139932
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139928
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139927
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139924
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139913
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139909
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139897
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139875
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139855
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139869
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139868
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139920
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139911
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139967
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140079
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140223
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=140390
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=141304
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139126
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.3332
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D DINO CPU1024] gfx1030 correctness mode: running the complete 1024 DINO transformer on CPU
+[Pixal3D DINO STATE] full model restored from CPU master (view pass 4)
+[Pixal3D DINO CPU1024] attention backend='sdpa'
+[Pixal3D DINO CPU1024] embeddings: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=15.6473
+[Pixal3D DINO CPU1024] rope_cos: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999999
+[Pixal3D DINO CPU1024] rope_sin: shape=(4096, 64), dtype=torch.float32, bad=0, absmax=0.999921
+[Pixal3D DINO CPU1024] layer_0: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137905
+[Pixal3D DINO CPU1024] layer_1: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137877
+[Pixal3D DINO CPU1024] layer_2: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_3: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_4: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_5: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137872
+[Pixal3D DINO CPU1024] layer_6: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137871
+[Pixal3D DINO CPU1024] layer_7: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137871
+[Pixal3D DINO CPU1024] layer_8: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137869
+[Pixal3D DINO CPU1024] layer_9: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137858
+[Pixal3D DINO CPU1024] layer_10: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137853
+[Pixal3D DINO CPU1024] layer_11: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137841
+[Pixal3D DINO CPU1024] layer_12: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137820
+[Pixal3D DINO CPU1024] layer_13: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137800
+[Pixal3D DINO CPU1024] layer_14: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137816
+[Pixal3D DINO CPU1024] layer_15: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137815
+[Pixal3D DINO CPU1024] layer_16: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137865
+[Pixal3D DINO CPU1024] layer_17: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137854
+[Pixal3D DINO CPU1024] layer_18: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137910
+[Pixal3D DINO CPU1024] layer_19: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138015
+[Pixal3D DINO CPU1024] layer_20: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138161
+[Pixal3D DINO CPU1024] layer_21: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=138316
+[Pixal3D DINO CPU1024] layer_22: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=139237
+[Pixal3D DINO CPU1024] layer_23: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=137061
+[Pixal3D DINO CPU1024] final_layer_norm: shape=(1, 4101, 1024), dtype=torch.float32, bad=0, absmax=29.332
+[Pixal3D DINO CPU1024] completed; validated features copied back to cuda:0
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV STRICT NAF] 1024 ROCm conditioner: bilinear semantic fallback DISABLED; running real NAF in spatial tiles and failing hard on NaN/Inf
+[Trellis2] real-NAF: _natten_flex natten installed; loading NAF via torch.hub...
+Using cache found in /home/home/.cache/torch/hub/valeoai_NAF_main
+[Trellis2] real-NAF dtype=fp32 (BF16 wrapper disabled)
+[Trellis2] NAF ready: type=NAF
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (2.5 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (2.5 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+[Pixal3D MV ROCm sampler] manual bilinear: B=1, C=1024, H=64, W=64, K=20759, chunk=32768, finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF] tile_factor requested=4, effective=4
+[Trellis2 NAF bands] encoder on CPU (2.5 GiB free on GPU)
+[Pixal3D MV NAF finite] HR projection finite=21257216/21257216, bad=0 [CPU-reduced]
+[Pixal3D MV NAF finite] combined finite=42514432/42514432, bad=0 [CPU-reduced]
+Sampling texture SLat:   0%|          | 0/12 [00:00<?, ?it/s]Sampling texture SLat:   8%|▊         | 1/12 [01:01<11:11, 61.08s/it]Sampling texture SLat:  17%|█▋        | 2/12 [02:02<10:14, 61.48s/it]Sampling texture SLat:  25%|██▌       | 3/12 [03:04<09:13, 61.52s/it]Sampling texture SLat:  33%|███▎      | 4/12 [04:05<08:11, 61.44s/it]Sampling texture SLat:  42%|████▏     | 5/12 [05:07<07:10, 61.55s/it]Sampling texture SLat:  50%|█████     | 6/12 [06:08<06:08, 61.46s/it]Sampling texture SLat:  58%|█████▊    | 7/12 [07:10<05:07, 61.41s/it]Sampling texture SLat:  67%|██████▋   | 8/12 [08:11<04:05, 61.47s/it]Sampling texture SLat:  75%|███████▌  | 9/12 [09:12<03:04, 61.39s/it]Sampling texture SLat:  83%|████████▎ | 10/12 [10:14<02:02, 61.43s/it]Sampling texture SLat:  92%|█████████▏| 11/12 [11:15<01:01, 61.48s/it]Sampling texture SLat: 100%|██████████| 12/12 [12:17<00:00, 61.49s/it]Sampling texture SLat: 100%|██████████| 12/12 [12:17<00:00, 61.46s/it]
+Loading Shape Slat decoder model ...
+[Trellis2 Decoder] ROCm safe mode: algo=implicit_gemm_splitk, hashmap_ratio=4.0, neighbor_cache=off, decoder_low_vram=off
+[Pixal3D MV decoder] OFFICIAL non-tiled decode (useTiled disabled)
+[Final decode subdiv 0] parents=20,759, active_parents=20,759, positive_children=89,157/166,072, finite=166,072/166,072, logits[min=-167.875000, max=298.250000, mean=28.336050, std=123.235977]
+[Final decode subdiv 0] output_coords=89,157
+[Final decode subdiv 1] parents=89,157, active_parents=89,047, positive_children=382,000/713,256, finite=713,256/713,256, logits[min=-201.625000, max=279.500000, mean=8.714094, std=100.525414]
+[Final decode subdiv 1] output_coords=382,000
+[Final decode subdiv 2] parents=382,000, active_parents=380,410, positive_children=1,583,412/3,056,000, finite=3,056,000/3,056,000, logits[min=-146.875000, max=102.062500, mean=-6.354894, std=43.357796]
+[Final decode subdiv 2] output_coords=1,583,412
+[Final decode subdiv 3] parents=1,583,412, active_parents=1,581,445, positive_children=6,483,906/12,667,296, finite=12,667,296/12,667,296, logits[min=-116.250000, max=102.250000, mean=-1.071203, std=28.023878]
+[Final decode subdiv 3] output_coords=6,483,906
+Fast Tiled Decoding:   0%|          | 0/756 [00:00<?, ?it/s]Fast Tiled Decoding:   2%|▏         | 16/756 [00:00<00:04, 156.65it/s]Fast Tiled Decoding:   4%|▍         | 33/756 [00:00<00:04, 159.15it/s]Fast Tiled Decoding:   6%|▋         | 49/756 [00:00<00:04, 151.67it/s]Fast Tiled Decoding:   9%|▊         | 65/756 [00:00<00:04, 151.20it/s]Fast Tiled Decoding:  11%|█         | 81/756 [00:00<00:04, 148.70it/s]Fast Tiled Decoding:  13%|█▎        | 99/756 [00:00<00:04, 157.64it/s]Fast Tiled Decoding:  15%|█▌        | 115/756 [00:00<00:04, 152.85it/s]Fast Tiled Decoding:  17%|█▋        | 131/756 [00:00<00:04, 150.08it/s]Fast Tiled Decoding:  19%|█▉        | 147/756 [00:00<00:04, 150.87it/s]Fast Tiled Decoding:  22%|██▏       | 163/756 [00:01<00:03, 149.61it/s]Fast Tiled Decoding:  24%|██▍       | 180/756 [00:01<00:03, 154.04it/s]Fast Tiled Decoding:  26%|██▌       | 196/756 [00:01<00:03, 153.42it/s]Fast Tiled Decoding:  28%|██▊       | 212/756 [00:01<00:03, 153.28it/s]Fast Tiled Decoding:  30%|███       | 229/756 [00:01<00:03, 155.50it/s]Fast Tiled Decoding:  32%|███▏      | 245/756 [00:01<00:03, 151.72it/s]Fast Tiled Decoding:  35%|███▍      | 261/756 [00:01<00:03, 152.77it/s]Fast Tiled Decoding:  37%|███▋      | 277/756 [00:01<00:03, 152.89it/s]Fast Tiled Decoding:  39%|███▉      | 293/756 [00:01<00:02, 154.76it/s]Fast Tiled Decoding:  41%|████      | 309/756 [00:02<00:02, 155.10it/s]Fast Tiled Decoding:  43%|████▎     | 325/756 [00:02<00:02, 156.43it/s]Fast Tiled Decoding:  45%|████▌     | 342/756 [00:02<00:02, 159.27it/s]Fast Tiled Decoding:  47%|████▋     | 359/756 [00:02<00:02, 159.73it/s]Fast Tiled Decoding:  50%|████▉     | 376/756 [00:02<00:02, 160.92it/s]Fast Tiled Decoding:  52%|█████▏    | 393/756 [00:02<00:02, 157.76it/s]Fast Tiled Decoding:  54%|█████▍    | 410/756 [00:02<00:02, 159.05it/s]Fast Tiled Decoding:  56%|█████▋    | 427/756 [00:02<00:02, 161.74it/s]Fast Tiled Decoding:  59%|█████▊    | 444/756 [00:02<00:01, 158.43it/s]Fast Tiled Decoding:  61%|██████    | 461/756 [00:02<00:01, 158.24it/s]Fast Tiled Decoding:  63%|██████▎   | 477/756 [00:03<00:01, 156.96it/s]Fast Tiled Decoding:  65%|██████▌   | 493/756 [00:03<00:01, 156.80it/s]Fast Tiled Decoding:  67%|██████▋   | 510/756 [00:03<00:01, 159.27it/s]Fast Tiled Decoding:  70%|██████▉   | 526/756 [00:03<00:01, 159.40it/s]Fast Tiled Decoding:  72%|███████▏  | 542/756 [00:03<00:01, 155.51it/s]Fast Tiled Decoding:  74%|███████▍  | 559/756 [00:03<00:01, 156.34it/s]Fast Tiled Decoding:  76%|███████▌  | 575/756 [00:03<00:01, 155.19it/s]Fast Tiled Decoding:  78%|███████▊  | 591/756 [00:03<00:01, 155.50it/s]Fast Tiled Decoding:  80%|████████  | 607/756 [00:03<00:00, 155.23it/s]Fast Tiled Decoding:  82%|████████▏ | 623/756 [00:04<00:00, 153.42it/s]Fast Tiled Decoding:  85%|████████▍ | 639/756 [00:04<00:00, 149.57it/s]Fast Tiled Decoding:  87%|████████▋ | 655/756 [00:04<00:00, 151.59it/s]Fast Tiled Decoding:  89%|████████▉ | 671/756 [00:04<00:00, 148.87it/s]Fast Tiled Decoding:  91%|█████████▏| 690/756 [00:04<00:00, 157.23it/s]Fast Tiled Decoding:  94%|█████████▍| 709/756 [00:04<00:00, 165.07it/s]Fast Tiled Decoding:  96%|█████████▌| 726/756 [00:04<00:00, 157.83it/s]Fast Tiled Decoding:  98%|█████████▊| 743/756 [00:04<00:00, 160.76it/s]Fast Tiled Decoding: 100%|██████████| 756/756 [00:04<00:00, 155.86it/s]
+[Trellis2 Decoder] mesh extracted: 6,483,906 vertices, 13,370,434 faces
+[Trellis2] Offloading all models to CPU...
+Loading Texture Slat decoder model ...
+[Trellis2 Tex Decoder] ROCm safe mode: algo=implicit_gemm_splitk, decoder_low_vram=off
+Building BVH for current mesh...
+Removing floater ...
+Current faces: 13370434
+After removing floater: 13364448
+Current vertices: 6479868, faces: 13364448
+Cleaning mesh...
+Performing Dual Contouring ...
+Sparse Grid:   0%|          | 0/6 [00:00<?, ?it/s]Sparse Grid: 100%|██████████| 6/6 [00:00<00:00, 46.15it/s]Sparse Grid: 100%|██████████| 6/6 [00:00<00:00, 19.06it/s]
+Dual Contouring ...
+Quad Topology ...
+Re-indexing vertices ...
+Removing Inner Layer for 4382696 quads ...
+Re-indexing vertices after quad filtering ...
+Triangulation ...
+Removing floater ...
+Current faces: 8487304
+After removing floater: 8428466
+After remeshing: 4241367 vertices, 8428466 faces
+Simplifying:   0%|          | 0/8128466 [00:00<?, ?it/s]Simplifying [thres=1.00e-08]:   0%|          | 0/8128466 [00:00<?, ?it/s]Simplifying [thres=1.00e-08]:   7%|▋         | 589086/8128466 [00:00<00:02, 2577571.35it/s]Simplifying [thres=1.00e-08]:   7%|▋         | 589086/8128466 [00:00<00:02, 2577571.35it/s]Simplifying [thres=1.00e-08]:  14%|█▍        | 1127829/8128466 [00:00<00:02, 2577571.35it/s]Simplifying [thres=1.00e-08]:  20%|█▉        | 1611712/8128466 [00:00<00:02, 2577571.35it/s]Simplifying [thres=1.00e-08]:  25%|██▌       | 2038495/8128466 [00:00<00:00, 6321629.22it/s]Simplifying [thres=1.00e-08]:  25%|██▌       | 2038495/8128466 [00:00<00:00, 6321629.22it/s]Simplifying [thres=1.00e-08]:  30%|██▉       | 2409109/8128466 [00:00<00:00, 6321629.22it/s]Simplifying [thres=1.00e-08]:  34%|███▎      | 2727542/8128466 [00:00<00:00, 6321629.22it/s]Simplifying [thres=1.00e-08]:  37%|███▋      | 2995385/8128466 [00:00<00:00, 6971312.76it/s]Simplifying [thres=1.00e-08]:  37%|███▋      | 2995385/8128466 [00:00<00:00, 6971312.76it/s]Simplifying [thres=1.00e-08]:  40%|███▉      | 3217333/8128466 [00:00<00:00, 6971312.76it/s]Simplifying [thres=1.00e-08]:  42%|████▏     | 3399599/8128466 [00:00<00:00, 6971312.76it/s]Simplifying [thres=1.00e-08]:  44%|████▎     | 3546966/8128466 [00:00<00:00, 6971312.76it/s]Simplifying [thres=1.00e-08]:  45%|████▌     | 3666360/8128466 [00:00<00:00, 6971312.76it/s]Simplifying [thres=1.00e-08]:  46%|████▋     | 3764484/8128466 [00:00<00:00, 6971312.76it/s]Simplifying [thres=1.00e-08]:  47%|████▋     | 3845605/8128466 [00:00<00:00, 5962315.75it/s]Simplifying [thres=1.00e-08]:  47%|████▋     | 3845605/8128466 [00:00<00:00, 5962315.75it/s]Simplifying [thres=1.00e-08]:  48%|████▊     | 3911358/8128466 [00:00<00:00, 5962315.75it/s]Simplifying [thres=1.00e-08]:  49%|████▉     | 3966828/8128466 [00:00<00:00, 5962315.75it/s]Simplifying [thres=1.00e-08]:  49%|████▉     | 4014075/8128466 [00:00<00:00, 5962315.75it/s]Simplifying [thres=1.00e-07]:  50%|████▉     | 4054973/8128466 [00:00<00:00, 5962315.75it/s]Simplifying [thres=1.00e-07]:  54%|█████▍    | 4392681/8128466 [00:00<00:00, 5962315.75it/s]Simplifying [thres=1.00e-07]:  58%|█████▊    | 4701648/8128466 [00:00<00:00, 5750555.94it/s]Simplifying [thres=1.00e-07]:  58%|█████▊    | 4701648/8128466 [00:00<00:00, 5750555.94it/s]Simplifying [thres=1.00e-07]:  61%|██████▏   | 4983979/8128466 [00:00<00:00, 5750555.94it/s]Simplifying [thres=1.00e-07]:  64%|██████▍   | 5241195/8128466 [00:00<00:00, 5750555.94it/s]Simplifying [thres=1.00e-07]:  67%|██████▋   | 5476230/8128466 [00:00<00:00, 5750555.94it/s]Simplifying [thres=1.00e-07]:  70%|██████▉   | 5688946/8128466 [00:00<00:00, 5750555.94it/s]Simplifying [thres=1.00e-07]:  72%|███████▏  | 5881977/8128466 [00:00<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  72%|███████▏  | 5881977/8128466 [00:00<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  75%|███████▍  | 6056390/8128466 [00:00<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  76%|███████▋  | 6215623/8128466 [00:00<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  78%|███████▊  | 6359699/8128466 [00:00<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  80%|███████▉  | 6489605/8128466 [00:00<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  81%|████████▏ | 6607294/8128466 [00:00<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  83%|████████▎ | 6713038/8128466 [00:01<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  84%|████████▎ | 6807409/8128466 [00:01<00:00, 7198017.64it/s]Simplifying [thres=1.00e-07]:  85%|████████▍ | 6892969/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  85%|████████▍ | 6892969/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  86%|████████▌ | 6968901/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  87%|████████▋ | 7035981/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  87%|████████▋ | 7095834/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  88%|████████▊ | 7148644/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  89%|████████▊ | 7195261/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  89%|████████▉ | 7236388/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  89%|████████▉ | 7272534/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  90%|████████▉ | 7304537/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  90%|█████████ | 7332655/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  91%|█████████ | 7357824/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  91%|█████████ | 7379915/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  91%|█████████ | 7398952/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  91%|█████████ | 7415870/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  91%|█████████▏| 7430294/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  92%|█████████▏| 7443088/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-07]:  92%|█████████▏| 7454145/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-06]:  92%|█████████▏| 7463582/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-06]:  93%|█████████▎| 7546592/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-06]:  94%|█████████▎| 7617623/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-06]:  94%|█████████▍| 7681313/8128466 [00:01<00:00, 7758306.50it/s]Simplifying [thres=1.00e-06]:  95%|█████████▌| 7739648/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  95%|█████████▌| 7739648/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  96%|█████████▌| 7792639/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  96%|█████████▋| 7840540/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  97%|█████████▋| 7884806/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  97%|█████████▋| 7925089/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  98%|█████████▊| 7962263/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  98%|█████████▊| 7996253/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  99%|█████████▉| 8027780/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  99%|█████████▉| 8056533/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]:  99%|█████████▉| 8082761/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]: 100%|█████████▉| 8106561/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]: 100%|█████████▉| 8127836/8128466 [00:01<00:00, 6812060.60it/s]Simplifying [thres=1.00e-06]: 100%|██████████| 8128466/8128466 [00:01<00:00, 6511817.27it/s]
+After simplifying: 142981 vertices, 281547 faces
+898 holes found
+Filling holes:   0%|          | 0/898 [00:00<?, ?it/s]Filling holes: 997it [00:00, 15837.99it/s]            
+Baking colors on vertices...
+[Trellis2] ROCm safe vertex bake (CPU sampling)
+Finalizing mesh with vertex colors...
+[32m[INFO][0m [32mPrompt executed in 00:39:54[0m

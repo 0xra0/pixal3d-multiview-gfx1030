@@ -1,0 +1,2252 @@
+{
+  "schema_version": 2,
+  "name": "medallion_pendant_v3",
+  "engine": "witcher3",
+  "engine_preset": {
+    "normal": "template-dependent",
+    "packed": "separate source maps",
+    "preferred_format": "fbx",
+    "units": "meters",
+    "game": "The Witcher 3 Remastered",
+    "redengine": 3,
+    "tool": "REDkit"
+  },
+  "source": "/mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00005_.glb",
+  "source_sha256": "d03d8e5617c44fe879e76bf85ca5db5b9c87b7ed39c1e8e562f0956b55fa2a4a",
+  "blender": "5.2.2 LTS",
+  "options": {
+    "src": "/mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00005_.glb",
+    "dst": "/mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3",
+    "faces": 20000,
+    "source_up": "auto",
+    "yaw": 0.0,
+    "repair": "full",
+    "angle": 35.0,
+    "unwrap": "smart",
+    "uv_method": "xatlas",
+    "uv_angle": 66.0,
+    "uv_merge_faces": 20,
+    "texture_size": 2048,
+    "uv_margin_px": 4.0,
+    "weld_distance": 1e-06,
+    "hole_max_edges": null,
+    "hole_max_diameter": 0.03,
+    "min_component_faces": 0,
+    "dust_size": 0.015,
+    "smooth_iterations": 0,
+    "smooth_factor": 0.2,
+    "voxel_size": 0.0,
+    "quad_faces": 0,
+    "multires": 0,
+    "materials": "bake",
+    "formats": [
+      "glb",
+      "fbx",
+      "blend"
+    ],
+    "strict": false,
+    "preset": "prop",
+    "engine": "witcher3",
+    "game_version": "5.01",
+    "red_template": null,
+    "name": "medallion_pendant_v3",
+    "source_object": null,
+    "alpha_mode": "auto",
+    "two_sided": false,
+    "regions": null,
+    "surface_smooth": 2,
+    "surface_factor": 0.15,
+    "feature_angle": 55.0,
+    "protect_component_size": 0.12,
+    "retopology": "decimate",
+    "lod_ratios": [
+      1.0,
+      0.5,
+      0.25,
+      0.125
+    ],
+    "collision": "box",
+    "collision_max_hulls": 16,
+    "size_meters": 0.075,
+    "pivot": "base",
+    "pack_method": "CONVEX",
+    "uv_relax": true,
+    "chart_merge_angle": 20.0,
+    "max_chart_faces": 512,
+    "pack_search": false,
+    "pack_timeout": 20,
+    "bake_samples": 16,
+    "cage_extrusion": 0.01,
+    "ray_distance": 0.05,
+    "preview_size": 256,
+    "turntable_views": 6,
+    "skip_previews": false,
+    "quality": "review",
+    "min_uv_coverage": 0.4,
+    "max_vertices": 60000,
+    "max_materials": 1,
+    "max_texture_mib": 128.0,
+    "max_bake_miss": 0.02,
+    "max_shape_error": 0.02,
+    "engine_bin": null,
+    "engine_project": null,
+    "engine_check": "auto",
+    "texture_from": null
+  },
+  "stages": {
+    "1_component_cleanup": "completed",
+    "3_uv_efficiency": "completed",
+    "2_high_to_low_bake": "completed",
+    "4_budgets": "completed",
+    "5_lods": "completed",
+    "6_collision_engine_presets": "completed",
+    "7_quality_gates": "completed"
+  },
+  "status": "review_required",
+  "normalization": {
+    "scale_factor": 0.08029902614334539,
+    "source_pivot": [
+      9.880959987640381e-05,
+      0.001944350078701973,
+      -0.4698084890842438
+    ],
+    "units": "meters",
+    "size_was_explicit": true
+  },
+  "components": [
+    {
+      "id": 0,
+      "source_triangles": 294782,
+      "protected": false,
+      "diagonal": 0.08736574853517214,
+      "bounds": [
+        [
+          -0.02206953801214695,
+          -0.0038573232013732195,
+          0.0
+        ],
+        [
+          0.02206953801214695,
+          0.0038573232013732195,
+          0.07500000298023224
+        ]
+      ],
+      "region_actions": [
+        {
+          "region": "automatic",
+          "smoothed_vertices": 143639
+        }
+      ],
+      "high_triangles": 294782
+    },
+    {
+      "id": 1,
+      "source_triangles": 4020,
+      "protected": false,
+      "diagonal": 0.013742661205602224,
+      "bounds": [
+        [
+          0.006030176300555468,
+          -0.0017290334217250347,
+          0.04680389538407326
+        ],
+        [
+          0.015160811133682728,
+          -0.0008405935950577259,
+          0.05703634023666382
+        ]
+      ],
+      "region_actions": [
+        {
+          "region": "automatic",
+          "smoothed_vertices": 1935
+        }
+      ],
+      "high_triangles": 4020
+    },
+    {
+      "id": 2,
+      "source_triangles": 878,
+      "protected": true,
+      "diagonal": 0.007904293321179956,
+      "bounds": [
+        [
+          0.00991704873740673,
+          -0.001912678126245737,
+          0.0514850914478302
+        ],
+        [
+          0.015496582724153996,
+          -0.00013456678425427526,
+          0.05679404363036156
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 878
+    },
+    {
+      "id": 3,
+      "source_triangles": 520,
+      "protected": true,
+      "diagonal": 0.005153890925418266,
+      "bounds": [
+        [
+          0.007409281097352505,
+          -0.0017418430652469397,
+          0.04733223468065262
+        ],
+        [
+          0.010693533346056938,
+          -0.0011387690901756287,
+          0.05125812068581581
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 520
+    },
+    {
+      "id": 4,
+      "source_triangles": 94,
+      "protected": true,
+      "diagonal": 0.0019749301865643934,
+      "bounds": [
+        [
+          0.006332081742584705,
+          -0.001709683914668858,
+          0.05122465267777443
+        ],
+        [
+          0.0076003773137927055,
+          -0.001595233683474362,
+          0.05273418128490448
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 94
+    },
+    {
+      "id": 5,
+      "source_triangles": 92,
+      "protected": true,
+      "diagonal": 0.0008526527997880441,
+      "bounds": [
+        [
+          0.008806440979242325,
+          -0.0021859402768313885,
+          0.023526130244135857
+        ],
+        [
+          0.009279938414692879,
+          -0.0017875042976811528,
+          0.024112701416015625
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 92
+    },
+    {
+      "id": 6,
+      "source_triangles": 70,
+      "protected": true,
+      "diagonal": 0.0018744520270565443,
+      "bounds": [
+        [
+          0.0051619382575154305,
+          -0.001676585408858955,
+          0.05215160548686981
+        ],
+        [
+          0.006407557986676693,
+          -0.0014690124662593007,
+          0.053536854684352875
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 70
+    },
+    {
+      "id": 7,
+      "source_triangles": 62,
+      "protected": true,
+      "diagonal": 0.001089060233215203,
+      "bounds": [
+        [
+          -0.000557315070182085,
+          0.0008325512171722949,
+          0.05532752349972725
+        ],
+        [
+          0.0002490611223038286,
+          0.0015324049163609743,
+          0.05554203316569328
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 62
+    },
+    {
+      "id": 8,
+      "source_triangles": 40,
+      "protected": true,
+      "diagonal": 0.001847950484481249,
+      "bounds": [
+        [
+          0.014295218512415886,
+          -0.0017540290718898177,
+          0.05064131319522858
+        ],
+        [
+          0.015512391924858093,
+          -0.0015483326278626919,
+          0.0520164854824543
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 40
+    },
+    {
+      "id": 9,
+      "source_triangles": 30,
+      "protected": true,
+      "diagonal": 0.0007833708032649687,
+      "bounds": [
+        [
+          0.016116734594106674,
+          -0.0017988638719543815,
+          0.04996315762400627
+        ],
+        [
+          0.016482995823025703,
+          -0.0015821430133655667,
+          0.05062084645032883
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 30
+    },
+    {
+      "id": 10,
+      "source_triangles": 28,
+      "protected": true,
+      "diagonal": 0.0009650105914697507,
+      "bounds": [
+        [
+          0.0058476971462368965,
+          -0.0009729255107231438,
+          0.0538582019507885
+        ],
+        [
+          0.0066555519588291645,
+          -0.0008567548356950283,
+          0.05437310039997101
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 28
+    },
+    {
+      "id": 11,
+      "source_triangles": 20,
+      "protected": true,
+      "diagonal": 0.0007208307670761288,
+      "bounds": [
+        [
+          0.01306026242673397,
+          -0.0015274278121069074,
+          0.05526234582066536
+        ],
+        [
+          0.013464687392115593,
+          -0.001305104116909206,
+          0.05581606924533844
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 20
+    },
+    {
+      "id": 12,
+      "source_triangles": 20,
+      "protected": true,
+      "diagonal": 0.0008466703648968133,
+      "bounds": [
+        [
+          0.01535516045987606,
+          -0.0017933044582605362,
+          0.05098583549261093
+        ],
+        [
+          0.015939321368932724,
+          -0.0015328099252656102,
+          0.05154058709740639
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 20
+    },
+    {
+      "id": 13,
+      "source_triangles": 16,
+      "protected": true,
+      "diagonal": 0.0005607511293069986,
+      "bounds": [
+        [
+          0.00972388219088316,
+          -0.0017947284504771233,
+          0.05560823902487755
+        ],
+        [
+          0.010144826956093311,
+          -0.0016454977449029684,
+          0.05594732239842415
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 16
+    },
+    {
+      "id": 14,
+      "source_triangles": 16,
+      "protected": true,
+      "diagonal": 0.0007914707732203804,
+      "bounds": [
+        [
+          0.015453863888978958,
+          -0.001646788907237351,
+          0.05014641955494881
+        ],
+        [
+          0.016023727133870125,
+          -0.0015455198008567095,
+          0.05068625882267952
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 16
+    },
+    {
+      "id": 15,
+      "source_triangles": 14,
+      "protected": true,
+      "diagonal": 0.0005356890559473659,
+      "bounds": [
+        [
+          0.010295125655829906,
+          -0.0013590158196166158,
+          0.056557901203632355
+        ],
+        [
+          0.0107113067060709,
+          -0.001297028036788106,
+          0.05688943341374397
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 14
+    },
+    {
+      "id": 16,
+      "source_triangles": 12,
+      "protected": true,
+      "diagonal": 0.00019837362006994567,
+      "bounds": [
+        [
+          0.0011962867574766278,
+          0.0006016144179739058,
+          0.05739976465702057
+        ],
+        [
+          0.0012346830917522311,
+          0.0007512745796702802,
+          0.0575241819024086
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 12
+    },
+    {
+      "id": 17,
+      "source_triangles": 12,
+      "protected": true,
+      "diagonal": 0.0005870747194948288,
+      "bounds": [
+        [
+          0.0075828335247933865,
+          -0.001709683914668858,
+          0.05174896866083145
+        ],
+        [
+          0.007888381369411945,
+          -0.001643288997001946,
+          0.0522458478808403
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 12
+    },
+    {
+      "id": 18,
+      "source_triangles": 12,
+      "protected": true,
+      "diagonal": 0.0004243027433176005,
+      "bounds": [
+        [
+          0.008617937564849854,
+          -0.0009602219797670841,
+          0.05702555552124977
+        ],
+        [
+          0.008876713924109936,
+          -0.0008549467893317342,
+          0.05734490603208542
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 12
+    },
+    {
+      "id": 19,
+      "source_triangles": 12,
+      "protected": true,
+      "diagonal": 0.0003708879563976761,
+      "bounds": [
+        [
+          0.009182510897517204,
+          -0.0017048317240551114,
+          0.05035620927810669
+        ],
+        [
+          0.009389513172209263,
+          -0.001463413704186678,
+          0.05054706335067749
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 12
+    },
+    {
+      "id": 20,
+      "source_triangles": 12,
+      "protected": true,
+      "diagonal": 0.0006525202758708692,
+      "bounds": [
+        [
+          0.009816649369895458,
+          -0.0017690660897642374,
+          0.056095149368047714
+        ],
+        [
+          0.009906954132020473,
+          -0.0012726334389299154,
+          0.05650889128446579
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 12
+    },
+    {
+      "id": 21,
+      "source_triangles": 10,
+      "protected": true,
+      "diagonal": 0.0005396215473937124,
+      "bounds": [
+        [
+          0.009308007545769215,
+          -0.0017237889114767313,
+          0.049477916210889816
+        ],
+        [
+          0.009666050784289837,
+          -0.0017114088404923677,
+          0.049881454557180405
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 10
+    },
+    {
+      "id": 22,
+      "source_triangles": 10,
+      "protected": true,
+      "diagonal": 0.00030806339476188856,
+      "bounds": [
+        [
+          0.00991181842982769,
+          -0.001721519511193037,
+          0.049018338322639465
+        ],
+        [
+          0.010120794177055359,
+          -0.001603232230991125,
+          0.04921131581068039
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 10
+    },
+    {
+      "id": 23,
+      "source_triangles": 10,
+      "protected": true,
+      "diagonal": 0.00045826445144157347,
+      "bounds": [
+        [
+          0.013229822739958763,
+          -0.0015209863195195794,
+          0.05575220286846161
+        ],
+        [
+          0.01356946025043726,
+          -0.0013565021799877286,
+          0.05601219832897186
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 10
+    },
+    {
+      "id": 24,
+      "source_triangles": 10,
+      "protected": true,
+      "diagonal": 0.0006706394486558651,
+      "bounds": [
+        [
+          0.014046338386833668,
+          -0.0007860608166083694,
+          0.053885649889707565
+        ],
+        [
+          0.014108404517173767,
+          -0.0001715101534500718,
+          0.054146863520145416
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 10
+    },
+    {
+      "id": 25,
+      "source_triangles": 10,
+      "protected": true,
+      "diagonal": 0.0010503098628666804,
+      "bounds": [
+        [
+          0.015514100901782513,
+          -0.0010628020390868187,
+          0.05143890902400017
+        ],
+        [
+          0.015961023047566414,
+          -0.0002585635520517826,
+          0.05194547772407532
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 10
+    },
+    {
+      "id": 26,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.00015671364412906292,
+      "bounds": [
+        [
+          -0.0010900642955675721,
+          -0.0016552316956222057,
+          0.06764279305934906
+        ],
+        [
+          -0.0009978063171729445,
+          -0.0015546131180599332,
+          0.06771975755691528
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 27,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.0002525077966164651,
+      "bounds": [
+        [
+          -5.106367461849004e-05,
+          -0.0019323539454489946,
+          0.055730435997247696
+        ],
+        [
+          0.00016747351037338376,
+          -0.0018259653588756919,
+          0.05579886958003044
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 28,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.00013259388619397142,
+      "bounds": [
+        [
+          0.0021412577480077744,
+          0.0010092835873365402,
+          0.06665994226932526
+        ],
+        [
+          0.002183313248679042,
+          0.001105283503420651,
+          0.06674116104841232
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 29,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.00039260732986354994,
+      "bounds": [
+        [
+          0.007932170294225216,
+          -0.0017066483851522207,
+          0.05019725114107132
+        ],
+        [
+          0.008203028701245785,
+          -0.0015213623410090804,
+          0.05041276291012764
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 30,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.0006803937089568698,
+      "bounds": [
+        [
+          0.008934990502893925,
+          -0.0011695908615365624,
+          0.047809623181819916
+        ],
+        [
+          0.009351899847388268,
+          -0.0009770018514245749,
+          0.04831165075302124
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 31,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.0004911146304268948,
+      "bounds": [
+        [
+          0.010343112051486969,
+          -0.0019131734734401107,
+          0.0557391382753849
+        ],
+        [
+          0.010714855045080185,
+          -0.0018571249675005674,
+          0.05605514347553253
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 32,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 8.53747215787661e-05,
+      "bounds": [
+        [
+          -0.0022031909320503473,
+          0.001300862175412476,
+          0.0669330507516861
+        ],
+        [
+          -0.00216339947655797,
+          0.0013480717316269875,
+          0.06699201464653015
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 33,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.00012921189758531993,
+      "bounds": [
+        [
+          0.0021420896518975496,
+          0.001105283503420651,
+          0.06674116104841232
+        ],
+        [
+          0.002179396105930209,
+          0.0011931282933801413,
+          0.06682826578617096
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 34,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.0002524446504182456,
+      "bounds": [
+        [
+          0.0055456277914345264,
+          -0.0016398681327700615,
+          0.052481528371572495
+        ],
+        [
+          0.005730832926928997,
+          -0.0015981642063707113,
+          0.05264792591333389
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 35,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.0004949867303700566,
+      "bounds": [
+        [
+          0.006298170890659094,
+          -0.0016284885350614786,
+          0.05319024249911308
+        ],
+        [
+          0.006598342210054398,
+          -0.0012717577628791332,
+          0.053356532007455826
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 36,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.00036602322850521674,
+      "bounds": [
+        [
+          0.006245823111385107,
+          -0.0008633017423562706,
+          0.05540820583701134
+        ],
+        [
+          0.006504599470645189,
+          -0.0008566654869355261,
+          0.055666979402303696
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 37,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.0003710123575596717,
+      "bounds": [
+        [
+          0.006332081742584705,
+          -0.0008572103688493371,
+          0.05480439215898514
+        ],
+        [
+          0.006633986718952656,
+          -0.0008565732860006392,
+          0.0550200380384922
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 38,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.00041388904859461116,
+      "bounds": [
+        [
+          0.008316032588481903,
+          -0.001716074999421835,
+          0.05090118199586868
+        ],
+        [
+          0.008639025501906872,
+          -0.0017125953454524279,
+          0.05115996301174164
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 39,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.00022612199406056352,
+      "bounds": [
+        [
+          0.013448426499962807,
+          -0.0015452494844794273,
+          0.05609739199280739
+        ],
+        [
+          0.013625070452690125,
+          -0.0014796486357226968,
+          0.05622239038348198
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 40,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.00045847671692284437,
+      "bounds": [
+        [
+          0.013707201927900314,
+          -0.0008412096067331731,
+          0.047666482627391815
+        ],
+        [
+          0.014052237384021282,
+          -0.0008396064513362944,
+          0.047968391329050064
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 41,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.0005407490973844995,
+      "bounds": [
+        [
+          0.015071169473230839,
+          -0.0017153494991362095,
+          0.051074955612421036
+        ],
+        [
+          0.015382017008960247,
+          -0.0015493013197556138,
+          0.0514850914478302
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 42,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.00013449775629150858,
+      "bounds": [
+        [
+          0.0021589738316833973,
+          0.0012575185392051935,
+          0.06689846515655518
+        ],
+        [
+          0.0021943955216556787,
+          0.0013448207173496485,
+          0.06699445098638535
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 43,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.00043191990415478285,
+      "bounds": [
+        [
+          0.006226401776075363,
+          -0.0012946439674124122,
+          0.05346054583787918
+        ],
+        [
+          0.006496873218566179,
+          -0.000995748327113688,
+          0.05361566320061684
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 44,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0003110764491669495,
+      "bounds": [
+        [
+          0.007065280340611935,
+          -0.0008557482506148517,
+          0.05674521252512932
+        ],
+        [
+          0.007324057165533304,
+          -0.0008493778295814991,
+          0.05691773071885109
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 45,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.00042589938110461546,
+      "bounds": [
+        [
+          0.007654309272766113,
+          -0.0017136746319010854,
+          0.05113839730620384
+        ],
+        [
+          0.007992561906576157,
+          -0.001710257027298212,
+          0.0513971708714962
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 46,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0003231737859389483,
+      "bounds": [
+        [
+          0.007512747775763273,
+          -0.0008532195934094489,
+          0.05698242783546448
+        ],
+        [
+          0.007798480335623026,
+          -0.0008498214301653206,
+          0.05713338032364845
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 47,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.000409165283406396,
+      "bounds": [
+        [
+          0.008186643943190575,
+          -0.0008564906311221421,
+          0.05676678195595741
+        ],
+        [
+          0.008316032588481903,
+          -0.0008539701229892671,
+          0.05715494230389595
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 48,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0003518257779588776,
+      "bounds": [
+        [
+          0.009701735340058804,
+          -0.0016890589613467455,
+          0.04961468651890755
+        ],
+        [
+          0.009869880974292755,
+          -0.0015814402140676975,
+          0.049904387444257736
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 49,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.00025240575162987366,
+      "bounds": [
+        [
+          0.012196342460811138,
+          -0.001728137256577611,
+          0.05639005824923515
+        ],
+        [
+          0.012415043078362942,
+          -0.001668439945206046,
+          0.056501030921936035
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 50,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.00047726950007245073,
+      "bounds": [
+        [
+          0.013467371463775635,
+          -0.0017801430076360703,
+          0.05507230386137962
+        ],
+        [
+          0.013718178495764732,
+          -0.0016206264263018966,
+          0.05544571578502655
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 51,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.00031229126551870486,
+      "bounds": [
+        [
+          0.014637314714491367,
+          -0.0010777894640341401,
+          0.049479808658361435
+        ],
+        [
+          0.014825452119112015,
+          -0.0009242595988325775,
+          0.04967617243528366
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 52,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0005471471472914462,
+      "bounds": [
+        [
+          0.01495357509702444,
+          -0.00033943119342438877,
+          0.05219465121626854
+        ],
+        [
+          0.01524865347892046,
+          -5.178588253329508e-06,
+          0.0525117851793766
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 53,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 8.704869762362565e-05,
+      "bounds": [
+        [
+          0.0009339567623101175,
+          0.001105590141378343,
+          0.06773898750543594
+        ],
+        [
+          0.0009795448277145624,
+          0.0011639900039881468,
+          0.06778468936681747
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    }
+  ],
+  "repair": {
+    "welded_vertices": 42,
+    "degenerate_faces": 68,
+    "split_edges": 0,
+    "holes_filled": 0,
+    "holes_skipped": 52,
+    "loose_elements": 0,
+    "component_faces_removed": 0,
+    "dust_faces_removed": 53,
+    "split_vertices": 6,
+    "duplicate_faces_removed": 0
+  },
+  "component_triangle_budgets": [
+    15330,
+    2504,
+    878,
+    520,
+    94,
+    92,
+    70,
+    62,
+    40,
+    30,
+    28,
+    20,
+    20,
+    16,
+    16,
+    14,
+    12,
+    12,
+    12,
+    12,
+    12,
+    10,
+    10,
+    10,
+    10,
+    10,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "reduction_fallbacks": [],
+  "uv": {
+    "quality": {
+      "vertices": 10094,
+      "faces": 19996,
+      "triangles": 19996,
+      "boundary_edges": 0,
+      "overconnected_edges": 0,
+      "nonmanifold_vertices": 0,
+      "loose_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces": 0,
+      "uv_layer": "GameUV",
+      "invalid_uv_corners": 0,
+      "zero_area_uv_faces": 0,
+      "uv_area_sum": 0.566376644926781,
+      "uv_overlap_check": "complete",
+      "uv_overlap_pairs": 0,
+      "uv_overlap_samples": [],
+      "uv_overlap_faces": []
+    },
+    "metrics": {
+      "islands": 679,
+      "islands_under_one_pixel": 2,
+      "coverage": 0.5663766449267811,
+      "texel_density_pixels_per_meter": {
+        "p10": 21956.40356262097,
+        "median": 23509.030052567527,
+        "p90": 24624.704495248443
+      }
+    },
+    "pack_candidates": [
+      {
+        "method": "xatlas",
+        "coverage": 0.566376644926781
+      }
+    ],
+    "isolated_faces": 0,
+    "chart_relaxation": {
+      "enabled": false
+    },
+    "method": "xatlas",
+    "method_fallback": null,
+    "degenerate_faces_removed": 0
+  },
+  "lod_uvs": [
+    {
+      "quality": {
+        "vertices": 10094,
+        "faces": 19996,
+        "triangles": 19996,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.566376644926781,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 679,
+        "islands_under_one_pixel": 2,
+        "coverage": 0.5663766449267811,
+        "texel_density_pixels_per_meter": {
+          "p10": 21956.40356262097,
+          "median": 23509.030052567527,
+          "p90": 24624.704495248443
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.566376644926781
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    },
+    {
+      "quality": {
+        "vertices": 5081,
+        "faces": 9970,
+        "triangles": 9970,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.5704625840212282,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 533,
+        "islands_under_one_pixel": 20,
+        "coverage": 0.5704625840212276,
+        "texel_density_pixels_per_meter": {
+          "p10": 10810.440776347268,
+          "median": 11816.909278881121,
+          "p90": 12587.162282723577
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.5704625840212282
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    },
+    {
+      "quality": {
+        "vertices": 2589,
+        "faces": 4986,
+        "triangles": 4986,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.5894004094394538,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 392,
+        "islands_under_one_pixel": 33,
+        "coverage": 0.5894004094394534,
+        "texel_density_pixels_per_meter": {
+          "p10": 5164.925056606511,
+          "median": 6034.445122194363,
+          "p90": 6614.326984762035
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.5894004094394538
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    },
+    {
+      "quality": {
+        "vertices": 1340,
+        "faces": 2488,
+        "triangles": 2488,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.4840186657476561,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 369,
+        "islands_under_one_pixel": 98,
+        "coverage": 0.48401866574765595,
+        "texel_density_pixels_per_meter": {
+          "p10": 2448.334628448427,
+          "median": 2747.121677321107,
+          "p90": 3242.3437064173436
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.4840186657476561
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    }
+  ],
+  "bake_groups": {
+    "groups": 6,
+    "physical_components": 54,
+    "max_components_per_group": 32
+  },
+  "bake": {
+    "method": "matched_component_selected_to_active",
+    "cage_fraction": 0.01,
+    "ray_distance_fraction_without_cage": 0.05,
+    "projection_miss": [
+      {
+        "lod": 0,
+        "uv_pixels": 2375578,
+        "fraction": 0.0
+      },
+      {
+        "lod": 1,
+        "uv_pixels": 598449,
+        "fraction": 0.0
+      },
+      {
+        "lod": 2,
+        "uv_pixels": 154462,
+        "fraction": 0.0
+      },
+      {
+        "lod": 3,
+        "uv_pixels": 31750,
+        "fraction": 0.0
+      }
+    ],
+    "source_materials_present": true,
+    "alpha_mode": "opaque",
+    "emission_used": false,
+    "basecolor_black_fraction": 0.5617862263415472,
+    "runtime_rgba8_mip_estimate_mib": 141.66666666666669,
+    "runtime_estimate_excludes_platform_compression": true,
+    "paths": {
+      "normal_lod0": "textures/lod0/normal_lod0.png",
+      "normal_dx_lod0": "textures/lod0/normal_dx_lod0.png",
+      "basecolor": "textures/lod0/basecolor.png",
+      "roughness": "textures/lod0/roughness.png",
+      "metallic": "textures/lod0/metallic.png",
+      "ao": "textures/lod0/ao.png",
+      "emission": "textures/lod0/emission.png",
+      "orm": "textures/lod0/orm.png",
+      "normal_lod1": "textures/lod1/normal_lod0.png",
+      "normal_dx_lod1": "textures/lod1/normal_dx_lod0.png",
+      "normal_lod2": "textures/lod2/normal_lod0.png",
+      "normal_dx_lod2": "textures/lod2/normal_dx_lod0.png",
+      "normal_lod3": "textures/lod3/normal_lod0.png",
+      "normal_dx_lod3": "textures/lod3/normal_dx_lod0.png"
+    },
+    "runtime_estimate_basis": "Separate source maps; native texture packing/compression not configured",
+    "index": 0,
+    "lod_bakes": [
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 2375578,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.5617862263415472,
+        "runtime_rgba8_mip_estimate_mib": 106.66666666666667,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod0/normal_lod0.png",
+          "normal_dx_lod0": "textures/lod0/normal_dx_lod0.png",
+          "basecolor": "textures/lod0/basecolor.png",
+          "roughness": "textures/lod0/roughness.png",
+          "metallic": "textures/lod0/metallic.png",
+          "ao": "textures/lod0/ao.png",
+          "emission": "textures/lod0/emission.png",
+          "orm": "textures/lod0/orm.png"
+        },
+        "runtime_estimate_basis": "Separate source maps; native texture packing/compression not configured",
+        "index": 0
+      },
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 598449,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.56097344970081,
+        "runtime_rgba8_mip_estimate_mib": 26.666666666666668,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod1/normal_lod0.png",
+          "normal_dx_lod0": "textures/lod1/normal_dx_lod0.png",
+          "basecolor": "textures/lod1/basecolor.png",
+          "roughness": "textures/lod1/roughness.png",
+          "metallic": "textures/lod1/metallic.png",
+          "ao": "textures/lod1/ao.png",
+          "emission": "textures/lod1/emission.png",
+          "orm": "textures/lod1/orm.png"
+        },
+        "runtime_estimate_basis": "Separate source maps; native texture packing/compression not configured",
+        "index": 1
+      },
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 154462,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.5667542826067252,
+        "runtime_rgba8_mip_estimate_mib": 6.666666666666667,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod2/normal_lod0.png",
+          "normal_dx_lod0": "textures/lod2/normal_dx_lod0.png",
+          "basecolor": "textures/lod2/basecolor.png",
+          "roughness": "textures/lod2/roughness.png",
+          "metallic": "textures/lod2/metallic.png",
+          "ao": "textures/lod2/ao.png",
+          "emission": "textures/lod2/emission.png",
+          "orm": "textures/lod2/orm.png"
+        },
+        "runtime_estimate_basis": "Separate source maps; native texture packing/compression not configured",
+        "index": 2
+      },
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 31750,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.5682204724409449,
+        "runtime_rgba8_mip_estimate_mib": 1.6666666666666667,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod3/normal_lod0.png",
+          "normal_dx_lod0": "textures/lod3/normal_dx_lod0.png",
+          "basecolor": "textures/lod3/basecolor.png",
+          "roughness": "textures/lod3/roughness.png",
+          "metallic": "textures/lod3/metallic.png",
+          "ao": "textures/lod3/ao.png",
+          "emission": "textures/lod3/emission.png",
+          "orm": "textures/lod3/orm.png"
+        },
+        "runtime_estimate_basis": "Separate source maps; native texture packing/compression not configured",
+        "index": 3
+      }
+    ],
+    "lods_use_independent_validated_atlases": true
+  },
+  "lods": [
+    {
+      "index": 0,
+      "ratio": 1.0,
+      "files": {
+        "glb": "meshes/medallion_pendant_v3_LOD0.glb",
+        "fbx": "meshes/medallion_pendant_v3_LOD0.fbx"
+      },
+      "quality": {
+        "vertices": 10094,
+        "faces": 19996,
+        "triangles": 19996,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.5663766449267807,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 19996,
+        "vertices": 17416,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 10057148
+      },
+      "shape_error": {
+        "max_relative": 0.0013661361877344309,
+        "p95_relative": 0.0003019624645774051,
+        "samples": 3365,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod0/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod0/normal_dx_lod0.png",
+        "basecolor": "textures/lod0/basecolor.png",
+        "roughness": "textures/lod0/roughness.png",
+        "metallic": "textures/lod0/metallic.png",
+        "ao": "textures/lod0/ao.png",
+        "emission": "textures/lod0/emission.png",
+        "orm": "textures/lod0/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.5
+    },
+    {
+      "index": 1,
+      "ratio": 0.5,
+      "files": {
+        "glb": "meshes/medallion_pendant_v3_LOD1.glb",
+        "fbx": "meshes/medallion_pendant_v3_LOD1.fbx"
+      },
+      "quality": {
+        "vertices": 5081,
+        "faces": 9970,
+        "triangles": 9970,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.5704625840212281,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 9970,
+        "vertices": 10338,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 3497628
+      },
+      "shape_error": {
+        "max_relative": 0.0013097753180685958,
+        "p95_relative": 0.00047197508344401723,
+        "samples": 5081,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod1/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod1/normal_dx_lod0.png",
+        "basecolor": "textures/lod1/basecolor.png",
+        "roughness": "textures/lod1/roughness.png",
+        "metallic": "textures/lod1/metallic.png",
+        "ao": "textures/lod1/ao.png",
+        "emission": "textures/lod1/emission.png",
+        "orm": "textures/lod1/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.25
+    },
+    {
+      "index": 2,
+      "ratio": 0.25,
+      "files": {
+        "glb": "meshes/medallion_pendant_v3_LOD2.glb",
+        "fbx": "meshes/medallion_pendant_v3_LOD2.fbx"
+      },
+      "quality": {
+        "vertices": 2589,
+        "faces": 4986,
+        "triangles": 4986,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.5894004094394536,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 4986,
+        "vertices": 6354,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 1153232
+      },
+      "shape_error": {
+        "max_relative": 0.001832636278576247,
+        "p95_relative": 0.0008571021033800707,
+        "samples": 2589,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod2/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod2/normal_dx_lod0.png",
+        "basecolor": "textures/lod2/basecolor.png",
+        "roughness": "textures/lod2/roughness.png",
+        "metallic": "textures/lod2/metallic.png",
+        "ao": "textures/lod2/ao.png",
+        "emission": "textures/lod2/emission.png",
+        "orm": "textures/lod2/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.125
+    },
+    {
+      "index": 3,
+      "ratio": 0.125,
+      "files": {
+        "glb": "meshes/medallion_pendant_v3_LOD3.glb",
+        "fbx": "meshes/medallion_pendant_v3_LOD3.fbx"
+      },
+      "quality": {
+        "vertices": 1340,
+        "faces": 2488,
+        "triangles": 2488,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.4840186657476562,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 2488,
+        "vertices": 3978,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 416984
+      },
+      "shape_error": {
+        "max_relative": 0.00274399222163589,
+        "p95_relative": 0.0016028310069370023,
+        "samples": 1340,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod3/normal_lod0.png",
+        "normal_dx_lod0": "textures/lod3/normal_dx_lod0.png",
+        "basecolor": "textures/lod3/basecolor.png",
+        "roughness": "textures/lod3/roughness.png",
+        "metallic": "textures/lod3/metallic.png",
+        "ao": "textures/lod3/ao.png",
+        "emission": "textures/lod3/emission.png",
+        "orm": "textures/lod3/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.01
+    }
+  ],
+  "collision": {
+    "mode": "box",
+    "hulls": 1,
+    "triangles": 12,
+    "glb": "meshes/medallion_pendant_v3_Collision.glb"
+  },
+  "redengine_handoff": {
+    "manifest": "redengine/handoff.json",
+    "instructions": "redengine/IMPORT.md",
+    "status": "prepared_for_manual_import",
+    "native_import_status": "not_run",
+    "details": {
+      "schema_version": 1,
+      "engine": "witcher3",
+      "requested_game_version": "5.01",
+      "version_compatibility": "unverified",
+      "native_import_status": "not_run",
+      "asset_type": "static_prop",
+      "native_template_depot_path": null,
+      "native_resources_generated": false,
+      "lod_policy": "Separate native mesh targets with independent textures; no automatic native LOD assembly",
+      "normal_policy": "GLB preview uses OpenGL. OpenGL and DirectX source maps supplied; match the native shader template.",
+      "material_policy": "Source PBR maps require native shader assignment; ORM is a preview, not a REDengine convention",
+      "collision_policy": "Reference hulls only; assign/cook native physics in the game tools",
+      "reference": "https://cdprojektred.atlassian.net/wiki/spaces/W3REDkit/pages/6326771",
+      "lods": [
+        {
+          "source_lod": 0,
+          "role": "primary",
+          "textures": {
+            "normal_lod0": "textures/lod0/normal_lod0.png",
+            "normal_dx_lod0": "textures/lod0/normal_dx_lod0.png",
+            "basecolor": "textures/lod0/basecolor.png",
+            "roughness": "textures/lod0/roughness.png",
+            "metallic": "textures/lod0/metallic.png",
+            "ao": "textures/lod0/ao.png",
+            "emission": "textures/lod0/emission.png",
+            "orm": "textures/lod0/orm.png"
+          },
+          "alpha_mode": "opaque",
+          "emission_used": false,
+          "mesh": "meshes/medallion_pendant_v3_LOD0.fbx"
+        },
+        {
+          "source_lod": 1,
+          "role": "alternative mesh target",
+          "textures": {
+            "normal_lod0": "textures/lod1/normal_lod0.png",
+            "normal_dx_lod0": "textures/lod1/normal_dx_lod0.png",
+            "basecolor": "textures/lod1/basecolor.png",
+            "roughness": "textures/lod1/roughness.png",
+            "metallic": "textures/lod1/metallic.png",
+            "ao": "textures/lod1/ao.png",
+            "emission": "textures/lod1/emission.png",
+            "orm": "textures/lod1/orm.png"
+          },
+          "alpha_mode": "opaque",
+          "emission_used": false,
+          "mesh": "meshes/medallion_pendant_v3_LOD1.fbx"
+        },
+        {
+          "source_lod": 2,
+          "role": "alternative mesh target",
+          "textures": {
+            "normal_lod0": "textures/lod2/normal_lod0.png",
+            "normal_dx_lod0": "textures/lod2/normal_dx_lod0.png",
+            "basecolor": "textures/lod2/basecolor.png",
+            "roughness": "textures/lod2/roughness.png",
+            "metallic": "textures/lod2/metallic.png",
+            "ao": "textures/lod2/ao.png",
+            "emission": "textures/lod2/emission.png",
+            "orm": "textures/lod2/orm.png"
+          },
+          "alpha_mode": "opaque",
+          "emission_used": false,
+          "mesh": "meshes/medallion_pendant_v3_LOD2.fbx"
+        },
+        {
+          "source_lod": 3,
+          "role": "alternative mesh target",
+          "textures": {
+            "normal_lod0": "textures/lod3/normal_lod0.png",
+            "normal_dx_lod0": "textures/lod3/normal_dx_lod0.png",
+            "basecolor": "textures/lod3/basecolor.png",
+            "roughness": "textures/lod3/roughness.png",
+            "metallic": "textures/lod3/metallic.png",
+            "ao": "textures/lod3/ao.png",
+            "emission": "textures/lod3/emission.png",
+            "orm": "textures/lod3/orm.png"
+          },
+          "alpha_mode": "opaque",
+          "emission_used": false,
+          "mesh": "meshes/medallion_pendant_v3_LOD3.fbx"
+        }
+      ],
+      "collision_reference": "redengine/medallion_pendant_v3_collision_reference.fbx"
+    }
+  },
+  "previews": {
+    "images": [
+      {
+        "label": "high_00",
+        "file": "previews/high_00.png"
+      },
+      {
+        "label": "lod0_clay_00",
+        "file": "previews/lod0_clay_00.png"
+      },
+      {
+        "label": "lod1_clay_00",
+        "file": "previews/lod1_clay_00.png"
+      },
+      {
+        "label": "lod2_clay_00",
+        "file": "previews/lod2_clay_00.png"
+      },
+      {
+        "label": "lod3_clay_00",
+        "file": "previews/lod3_clay_00.png"
+      },
+      {
+        "label": "lod0_wire_00",
+        "file": "previews/lod0_wire_00.png"
+      },
+      {
+        "label": "lod0_checker_00",
+        "file": "previews/lod0_checker_00.png"
+      },
+      {
+        "label": "high_01",
+        "file": "previews/high_01.png"
+      },
+      {
+        "label": "lod0_clay_01",
+        "file": "previews/lod0_clay_01.png"
+      },
+      {
+        "label": "lod1_clay_01",
+        "file": "previews/lod1_clay_01.png"
+      },
+      {
+        "label": "lod2_clay_01",
+        "file": "previews/lod2_clay_01.png"
+      },
+      {
+        "label": "lod3_clay_01",
+        "file": "previews/lod3_clay_01.png"
+      },
+      {
+        "label": "lod0_wire_01",
+        "file": "previews/lod0_wire_01.png"
+      },
+      {
+        "label": "lod0_checker_01",
+        "file": "previews/lod0_checker_01.png"
+      },
+      {
+        "label": "high_02",
+        "file": "previews/high_02.png"
+      },
+      {
+        "label": "lod0_clay_02",
+        "file": "previews/lod0_clay_02.png"
+      },
+      {
+        "label": "lod1_clay_02",
+        "file": "previews/lod1_clay_02.png"
+      },
+      {
+        "label": "lod2_clay_02",
+        "file": "previews/lod2_clay_02.png"
+      },
+      {
+        "label": "lod3_clay_02",
+        "file": "previews/lod3_clay_02.png"
+      },
+      {
+        "label": "lod0_wire_02",
+        "file": "previews/lod0_wire_02.png"
+      },
+      {
+        "label": "lod0_checker_02",
+        "file": "previews/lod0_checker_02.png"
+      },
+      {
+        "label": "high_03",
+        "file": "previews/high_03.png"
+      },
+      {
+        "label": "lod0_clay_03",
+        "file": "previews/lod0_clay_03.png"
+      },
+      {
+        "label": "lod1_clay_03",
+        "file": "previews/lod1_clay_03.png"
+      },
+      {
+        "label": "lod2_clay_03",
+        "file": "previews/lod2_clay_03.png"
+      },
+      {
+        "label": "lod3_clay_03",
+        "file": "previews/lod3_clay_03.png"
+      },
+      {
+        "label": "lod0_wire_03",
+        "file": "previews/lod0_wire_03.png"
+      },
+      {
+        "label": "lod0_checker_03",
+        "file": "previews/lod0_checker_03.png"
+      },
+      {
+        "label": "high_04",
+        "file": "previews/high_04.png"
+      },
+      {
+        "label": "lod0_clay_04",
+        "file": "previews/lod0_clay_04.png"
+      },
+      {
+        "label": "lod1_clay_04",
+        "file": "previews/lod1_clay_04.png"
+      },
+      {
+        "label": "lod2_clay_04",
+        "file": "previews/lod2_clay_04.png"
+      },
+      {
+        "label": "lod3_clay_04",
+        "file": "previews/lod3_clay_04.png"
+      },
+      {
+        "label": "lod0_wire_04",
+        "file": "previews/lod0_wire_04.png"
+      },
+      {
+        "label": "lod0_checker_04",
+        "file": "previews/lod0_checker_04.png"
+      },
+      {
+        "label": "high_05",
+        "file": "previews/high_05.png"
+      },
+      {
+        "label": "lod0_clay_05",
+        "file": "previews/lod0_clay_05.png"
+      },
+      {
+        "label": "lod1_clay_05",
+        "file": "previews/lod1_clay_05.png"
+      },
+      {
+        "label": "lod2_clay_05",
+        "file": "previews/lod2_clay_05.png"
+      },
+      {
+        "label": "lod3_clay_05",
+        "file": "previews/lod3_clay_05.png"
+      },
+      {
+        "label": "lod0_wire_05",
+        "file": "previews/lod0_wire_05.png"
+      },
+      {
+        "label": "lod0_checker_05",
+        "file": "previews/lod0_checker_05.png"
+      }
+    ],
+    "silhouette": [
+      {
+        "lod": 0,
+        "minimum_iou": 0.9970368059887711,
+        "views": [
+          0.9981348777854128,
+          0.9973416731821736,
+          0.9970368059887711,
+          0.9987234878240377,
+          0.9974976540506725,
+          0.9979719188767551
+        ]
+      },
+      {
+        "lod": 1,
+        "minimum_iou": 0.9954807542465326,
+        "views": [
+          0.9970562260818369,
+          0.9964073726960325,
+          0.9954807542465326,
+          0.9968608985677849,
+          0.9968735344692825,
+          0.9954807542465326
+        ]
+      },
+      {
+        "lod": 2,
+        "minimum_iou": 0.9915835411471322,
+        "views": [
+          0.9940231236527532,
+          0.9915835411471322,
+          0.9926825470963724,
+          0.9941234084231146,
+          0.9931357254290172,
+          0.9919066147859922
+        ]
+      },
+      {
+        "lod": 3,
+        "minimum_iou": 0.9851185862656953,
+        "views": [
+          0.9879718364952083,
+          0.9853969240329346,
+          0.9851185862656953,
+          0.9877762566008215,
+          0.9867971419695558,
+          0.987437965260546
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "issues": [
+      {
+        "code": "subpixel_islands",
+        "severity": "review",
+        "message": "Some UV islands occupy under one texel; inspect checker previews and mip behavior."
+      },
+      {
+        "code": "texture_budget",
+        "severity": "review",
+        "message": "Estimated uncompressed runtime texture memory exceeds the preset budget."
+      },
+      {
+        "code": "redengine_native_import",
+        "severity": "review",
+        "message": "REDengine handoff needs native material, LOD and collision setup, cooking and in-game validation; see redengine/IMPORT.md."
+      },
+      {
+        "code": "redengine_template",
+        "severity": "review",
+        "message": "Choose a compatible native .mesh/.w2mesh template or REDkit resource before integration."
+      },
+      {
+        "code": "surface_review",
+        "severity": "info",
+        "message": "Review the intended shape: automatic smoothing/remeshing cannot identify every generated fold."
+      }
+    ],
+    "technical_passed": true,
+    "review_required": true,
+    "shipping_certified": false
+  },
+  "editable_blend": "medallion_pendant_v3.blend",
+  "validation_passed": true,
+  "engine_check": {
+    "status": "not_run",
+    "engine": "witcher3",
+    "reason": "Native WolvenKit/REDkit import adapter is not implemented; follow redengine/IMPORT.md and test in game"
+  },
+  "review_page": "review.html"
+}

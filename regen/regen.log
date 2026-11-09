@@ -1,0 +1,48 @@
+11-08 00:02:59 start ComfyUI
+11-08 00:03:50 vampire_chestplate_v2: views + mesh + asset
+11-08 02:18:29 FAILED: vampire_chestplate_v2 all
+11-08 02:18:29 ComfyUI 56039 stopped
+11-08 02:20:21 start ComfyUI
+11-08 02:21:12 vampire_chestplate_v2: mesh
+11-08 03:37:23 vampire_chestplate_v2: mesh /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_v2_00004_.glb
+11-08 03:37:23 vampire_chestplate_v2: UltraTex 2048
+11-08 04:04:32 FAILED: vampire_chestplate_v2 texture
+11-08 04:04:32 ComfyUI 772488 stopped
+11-08 04:06:12 start ComfyUI
+11-08 04:06:57 vampire_chestplate_v2: paint
+11-08 04:06:57 vampire_chestplate_v2: mesh /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_v2_00004_.glb
+11-08 04:06:57 vampire_chestplate_v2: UltraTex 2048
+11-08 04:50:34 FAILED: vampire_chestplate_v2 texture
+11-08 04:50:34 ComfyUI 1310501 stopped
+11-08 04:52:51 start ComfyUI
+11-08 04:53:26 vampire_chestplate_v2: paint
+11-08 04:53:26 vampire_chestplate_v2: mesh /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_v2_00004_.glb
+11-08 04:53:26 vampire_chestplate_v2: UltraTex 1536
+11-08 07:56:25 vampire_chestplate_v2: painted vampire_chestplate_v2_00001_.glb
+11-08 07:56:25 vampire_chestplate_v2: asset with paint
+11-08 07:59:56 vampire_chestplate_v2: done
+11-08 07:59:56 medallion_necklace_v2: all
+11-08 09:35:16 medallion_necklace_v2: mesh /mnt/ssd/ComfyUI/output/3D/medallion_necklace_v2_00002_.glb
+11-08 09:35:16 medallion_necklace_v2: UltraTex 2048
+11-08 10:01:43 FAILED: medallion_necklace_v2 texture
+11-08 10:01:43 ComfyUI 1547823 stopped
+11-08 10:05:02 start ComfyUI
+11-08 10:05:53 medallion_pendant_v3: all
+11-08 12:12:27 medallion_pendant_v3: mesh /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00004_.glb
+11-08 12:12:27 medallion_pendant_v3: mesh only (NO_PAINT=1), paint later
+11-08 12:12:27 vampire_chestplate_v3: all
+11-08 15:51:56 FAILED: vampire_chestplate_v3 all
+11-08 15:51:56 ComfyUI 3119321 stopped
+11-08 15:52:00 lr test: start ComfyUI
+11-08 16:36:39 lr test: pa.py mesh exit 0
+11-08 16:36:39 lr test: ComfyUI 675828 stopped
+11-08 16:39:09 regen4: side-camera fix rerun
+11-08 16:39:09 start ComfyUI
+11-08 16:39:34 vampire_chestplate_v3: mesh
+11-08 19:23:41 vampire_chestplate_v3: mesh /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_v3_00004_.glb
+11-08 19:23:41 vampire_chestplate_v3: mesh only (NO_PAINT=1), paint later
+11-08 19:23:41 medallion_pendant_v3: mesh
+11-08 20:50:19 medallion_pendant_v3: mesh /mnt/ssd/ComfyUI/output/3D/medallion_pendant_v3_00005_.glb
+11-08 20:50:19 medallion_pendant_v3: mesh only (NO_PAINT=1), paint later
+11-08 20:50:19 all done
+11-08 20:50:19 ComfyUI 918302 stopped

@@ -1,0 +1,132 @@
+  detail spec: large, medium, small, materials, avoid | views: back, left, right
+  seed 33721049879913
+  sheet: negative prompt supplied -> enabling CFG=1.5
+  left view
+  unloaded models before view
+  memory before view: RAM 33.1 GiB available, VRAM 15.5 GiB free
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 71s  running 76s  running 81s  running 86s  running 91s  running 96s  running 101s  running 106s  running 111s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 201s  running 206s  running 211s  running 216s  running 221s  running 226s  running 231s  running 236s  running 241s  running 246s  running 251s  running 256s  running 261s  running 266s  running 271s  running 276s  running 281s  running 286s  running 291s  running 296s  running 301s  running 306s  running 311s  running 317s  running 322s  running 327s  running 332s  running 337s  running 342s  running 347s  running 352s  running 357s  running 362s  running 367s  running 372s  running 377s  running 382s  running 387s  running 392s  running 397s  running 402s  running 407s  running 412s  running 417s  running 422s  running 427s  running 432s  running 437s  running 442s  running 447s  running 452s  running 457s  running 462s  running 467s  running 472s  running 477s  running 482s  running 487s  running 492s  running 497s  running 502s  running 507s  running 512s  running 517s  running 522s  running 527s  running 532s  running 537s  running 542s  running 547s  running 552s  running 557s  running 562s  running 568s  running 573s  running 578s  running 583s  running 588s  running 593s  running 598s  running 603s  running 608s  running 613s  running 618s  running 623s  running 628s  running 633s  running 638s  running 643s  running 648s  running 653s  running 658s  running 663s  running 668s  running 673s  running 678s  running 683s  running 688s  running 693s  running 698s  running 703s  running 708s  running 713s  running 718s  running 723s  running 728s  running 733s  running 738s  running 743s  running 748s  running 753s  running 758s  running 763s  running 768s  running 773s  running 778s  running 783s  running 788s  running 793s  running 798s  running 803s  running 808s  running 813s  running 818s  running 824s  running 829s  running 834s  running 839s  running 844s  running 849s  running 854s  running 859s  running 864s  running 869s  running 874s  running 879s  running 884s  running 889s  running 894s  running 899s  running 904s  running 909s  running 914s  running 919s  running 924s  success in 929s
+  -> /mnt/ssd/ComfyUI/output/PixelArtistry/medallion_necklace_v2_02_left_00001_.png
+  sheet: negative prompt supplied -> enabling CFG=1.5
+  back view
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 81s  running 86s  running 91s  running 96s  running 101s  running 106s  running 111s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 201s  running 206s  running 211s  running 216s  running 221s  running 226s  running 231s  running 236s  running 241s  running 246s  running 251s  running 256s  running 261s  running 266s  running 272s  running 277s  running 282s  running 287s  running 292s  running 297s  running 302s  running 307s  running 312s  running 317s  running 322s  running 327s  running 332s  running 337s  running 342s  running 347s  running 352s  running 357s  running 362s  running 367s  running 372s  running 377s  running 382s  running 387s  running 392s  running 397s  running 402s  running 407s  running 412s  running 417s  running 422s  running 427s  running 432s  running 437s  running 442s  running 447s  running 452s  running 457s  running 462s  running 467s  running 473s  running 478s  running 483s  running 488s  running 493s  running 498s  running 503s  running 508s  running 513s  running 518s  running 523s  running 528s  running 533s  running 538s  running 543s  running 548s  running 553s  running 558s  running 563s  running 568s  running 573s  running 578s  running 583s  running 588s  running 593s  running 598s  running 603s  running 608s  running 613s  running 618s  running 623s  running 628s  running 633s  running 638s  running 643s  running 648s  running 653s  running 658s  running 664s  running 669s  running 674s  running 679s  running 684s  running 689s  running 694s  running 699s  running 704s  running 709s  running 714s  running 719s  running 724s  running 729s  running 734s  running 739s  running 744s  running 749s  running 754s  running 759s  running 764s  running 769s  running 774s  running 780s  running 785s  running 790s  running 795s  running 800s  running 805s  running 810s  running 815s  running 820s  running 825s  running 830s  running 835s  running 840s  running 845s  running 850s  running 855s  success in 860s
+  -> /mnt/ssd/ComfyUI/output/PixelArtistry/medallion_necklace_v2_02_back_00001_.png
+  sheet: negative prompt supplied -> enabling CFG=1.5
+  right view
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 90s  running 95s  running 101s  running 106s  running 111s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 201s  running 206s  running 211s  running 216s  running 221s  running 226s  running 231s  running 236s  running 241s  running 246s  running 251s  running 256s  running 261s  running 266s  running 272s  running 277s  running 282s  running 287s  running 292s  running 297s  running 302s  running 307s  running 312s  running 317s  running 322s  running 327s  running 332s  running 337s  running 342s  running 347s  running 352s  running 357s  running 362s  running 367s  running 372s  running 377s  running 382s  running 387s  running 392s  running 397s  running 402s  running 408s  running 413s  running 418s  running 423s  running 428s  running 433s  running 438s  running 443s  running 448s  running 453s  running 458s  running 463s  running 468s  running 473s  running 478s  running 483s  running 488s  running 493s  running 498s  running 503s  running 508s  running 513s  running 518s  running 523s  running 528s  running 533s  running 538s  running 543s  running 548s  running 553s  running 558s  running 563s  running 568s  running 573s  running 578s  running 583s  running 588s  running 593s  running 598s  running 603s  running 608s  running 613s  running 618s  running 623s  running 628s  running 634s  running 639s  running 644s  running 649s  running 654s  running 659s  running 664s  running 669s  running 674s  running 679s  running 684s  running 689s  running 694s  running 699s  running 704s  running 709s  running 714s  running 719s  running 724s  running 729s  running 734s  running 739s  running 744s  running 749s  running 754s  running 759s  running 764s  running 769s  running 774s  running 779s  running 784s  running 790s  running 795s  running 800s  running 805s  running 810s  running 815s  running 820s  running 825s  running 830s  running 835s  front alpha coverage 0.0976
+  left alpha coverage 0.0331
+  back alpha coverage 0.0955
+  right alpha coverage 0.0371
+  VIEW CHECK: left/right silhouettes are not mirror images (IoU 0.39): inconsistent proportions or a rotated view
+  VIEW CHECK: front covers only 9.8% of its canvas
+  VIEW CHECK: back covers only 9.6% of its canvas
+  views INCONSISTENT - regenerate or fix before meshing (views_qa.json)
+  success in 840s
+  -> /mnt/ssd/ComfyUI/output/PixelArtistry/medallion_necklace_v2_02_right_00001_.png
+  views -> /mnt/ssd/ComfyUI/input/medallion_necklace_v2_views (look at them before meshing!)
+  NAF check: strict real NAF
+  VIEW WARNING: left/right silhouettes are not mirror images (IoU 0.39): inconsistent proportions or a rotated view
+  VIEW WARNING: front covers only 9.8% of its canvas
+  VIEW WARNING: back covers only 9.6% of its canvas
+  reconstruction 1/3
+  seed 1224497798
+  unloaded models before mesh
+  memory before mesh: RAM 35.9 GiB available, VRAM 15.4 GiB free
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 90s  running 95s  running 100s  running 105s  running 110s  running 115s  running 120s  running 125s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 201s  running 206s  running 211s  running 216s  running 221s  running 226s  running 231s  running 236s  running 241s  running 246s  running 251s  running 256s  running 261s  running 266s  running 271s  running 276s  running 281s  running 286s  running 291s  running 296s  running 301s  running 306s  running 312s  running 317s  running 322s  running 327s  running 332s  running 337s  running 342s  running 347s  running 352s  running 358s  running 363s  running 368s  running 373s  running 378s  running 383s  running 388s  running 393s  running 398s  running 403s  running 408s  running 413s  running 418s  running 423s  running 428s  running 433s  running 438s  running 443s  running 448s  running 453s  running 458s  running 463s  running 468s  running 473s  running 478s  running 483s  running 488s  running 493s  running 498s  running 503s  running 508s  running 513s  running 518s  running 523s  running 528s  running 533s  running 538s  running 543s  running 548s  running 554s  running 559s  running 564s  running 569s  running 574s  running 579s  running 584s  running 589s  running 594s  running 599s  running 604s  running 609s  running 614s  running 619s  running 624s  running 629s  running 634s  running 639s  running 644s  running 649s  running 654s  running 659s  running 664s  running 669s  running 674s  running 679s  running 684s  running 689s  running 694s  running 699s  running 704s  running 709s  running 714s  running 719s  running 724s  running 729s  running 734s  running 739s  running 744s  running 750s  running 755s  running 760s  running 765s  running 770s  running 775s  running 780s  running 785s  running 790s  running 795s  running 800s  running 805s  running 810s  running 815s  running 820s  running 825s  running 830s  running 835s  running 840s  running 845s  running 850s  running 855s  running 860s  running 865s  running 870s  running 875s  running 880s  running 885s  running 890s  running 896s  running 901s  running 906s  running 911s  running 916s  running 921s  running 926s  running 931s  running 936s  running 941s  running 946s  running 951s  running 956s  running 961s  running 966s  running 971s  running 976s  running 981s  running 986s  running 991s  running 996s  running 1001s  running 1008s  running 1013s  success in 1018s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/medallion_necklace_v2_00001_.glb
+  mesh QA: score 0.681, IoU front 0.64 left 0.43 back 0.70 right 0.35
+  MESH WARNING: front: mesh silhouette matches the reference poorly (IoU 0.64, 19% of the reference missing)
+  MESH WARNING: left: mesh silhouette matches the reference poorly (IoU 0.43, 29% of the reference missing)
+  MESH WARNING: back: mesh silhouette matches the reference poorly (IoU 0.70, 14% of the reference missing)
+  MESH WARNING: right: mesh silhouette matches the reference poorly (IoU 0.35, 43% of the reference missing)
+  reconstruction 2/3
+  seed 1577288165
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 90s  running 95s  running 100s  running 105s  running 110s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 201s  running 206s  running 211s  running 216s  running 221s  running 226s  running 231s  running 236s  running 241s  running 246s  running 251s  running 256s  running 261s  running 267s  running 272s  running 277s  running 282s  running 287s  running 292s  running 297s  running 302s  running 307s  running 312s  running 317s  running 322s  running 327s  running 332s  running 337s  running 342s  running 347s  running 352s  running 357s  running 362s  running 367s  running 372s  running 377s  running 382s  running 387s  running 392s  running 397s  running 402s  running 407s  running 412s  running 417s  running 422s  running 427s  running 432s  running 437s  running 442s  running 447s  running 452s  running 457s  running 462s  running 467s  running 473s  running 478s  running 483s  running 488s  running 493s  running 498s  running 503s  running 508s  running 513s  running 518s  running 523s  running 528s  running 533s  running 538s  running 543s  running 548s  running 553s  running 558s  running 563s  running 568s  running 573s  running 578s  running 583s  running 588s  running 593s  running 598s  running 604s  running 609s  running 614s  running 619s  running 624s  running 629s  running 634s  running 639s  running 644s  running 649s  running 654s  running 659s  running 664s  running 669s  running 674s  running 679s  running 684s  running 689s  running 694s  running 699s  running 704s  running 709s  running 714s  running 719s  running 725s  running 730s  running 735s  running 740s  running 745s  running 750s  running 755s  running 760s  running 765s  running 770s  running 775s  running 780s  running 785s  running 790s  running 795s  running 800s  running 805s  running 810s  running 815s  running 820s  running 825s  running 830s  running 835s  running 840s  running 845s  running 850s  running 855s  running 860s  running 865s  running 870s  running 875s  running 880s  running 885s  running 890s  running 895s  running 900s  running 906s  running 911s  running 916s  running 921s  running 926s  running 931s  running 936s  running 941s  running 947s  running 952s  running 958s  success in 963s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/medallion_necklace_v2_00002_.glb
+  mesh QA: score 0.688, IoU front 0.64 left 0.47 back 0.70 right 0.33
+  MESH WARNING: front: mesh silhouette matches the reference poorly (IoU 0.64, 19% of the reference missing)
+  MESH WARNING: left: mesh silhouette matches the reference poorly (IoU 0.47, 27% of the reference missing)
+  MESH WARNING: back: mesh silhouette matches the reference poorly (IoU 0.70, 14% of the reference missing)
+  MESH WARNING: right: mesh silhouette matches the reference poorly (IoU 0.33, 47% of the reference missing)
+  reconstruction 3/3
+  seed 775421371
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 90s  running 95s  running 100s  running 105s  running 110s  running 115s  running 120s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 166s  running 171s  running 176s  running 181s  running 186s  running 191s  running 196s  running 201s  running 206s  running 211s  running 216s  running 221s  running 226s  running 232s  running 237s  running 242s  running 247s  running 252s  running 257s  running 262s  running 267s  running 272s  running 277s  running 282s  running 287s  running 292s  running 297s  running 302s  running 307s  running 312s  running 317s  running 322s  running 327s  running 333s  running 338s  running 343s  running 348s  running 353s  running 358s  running 363s  running 368s  running 373s  running 378s  running 383s  running 388s  running 393s  running 398s  running 403s  running 408s  running 413s  running 418s  running 423s  running 428s  running 433s  running 438s  running 443s  running 449s  running 454s  running 459s  running 464s  running 469s  running 474s  running 479s  running 484s  running 489s  running 494s  running 499s  running 504s  running 509s  running 514s  running 519s  running 524s  running 529s  running 534s  running 539s  running 544s  running 549s  running 554s  running 559s  running 564s  running 569s  running 575s  running 580s  running 585s  running 590s  running 595s  running 600s  running 605s  running 610s  running 615s  running 620s  running 625s  running 630s  running 635s  running 640s  running 645s  running 650s  running 655s  running 660s  running 665s  running 671s  running 676s  running 681s  running 686s  running 691s  running 696s  running 701s  running 706s  running 711s  running 716s  running 721s  running 726s  running 731s  running 736s  running 741s  running 746s  running 751s  running 756s  running 761s  running 766s  running 771s  running 776s  running 781s  running 786s  running 791s  running 796s  running 801s  running 806s  running 811s  running 816s  running 821s  running 826s  running 831s  running 837s  running 842s  running 847s  running 852s  running 857s  running 862s  running 867s  running 872s  running 877s  running 882s  running 887s  running 892s  running 897s  running 902s  running 907s  running 912s  running 917s  running 922s  running 927s  running 932s  running 937s  running 942s  running 947s  running 952s  running 957s  running 963s  running 968s  running 973s  success in 978s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/medallion_necklace_v2_00003_.glb
+  mesh QA: score 0.666, IoU front 0.64 left 0.44 back 0.69 right 0.37
+  MESH WARNING: front: mesh silhouette matches the reference poorly (IoU 0.64, 19% of the reference missing)
+  MESH WARNING: left: mesh silhouette matches the reference poorly (IoU 0.44, 28% of the reference missing)
+  MESH WARNING: back: mesh silhouette matches the reference poorly (IoU 0.69, 15% of the reference missing)
+  MESH WARNING: right: mesh silhouette matches the reference poorly (IoU 0.37, 41% of the reference missing)
+  MESH WARNING: 740 loose fragments (1.3% of faces)
+  keeping seed 1577288165 (score 0.688) of 3 reconstructions
+  ASSET stage 1/7 component-aware surface cleanup
+  ASSET components 32 protected 31
+  ASSET stage 2/7 low mesh and high-resolution source
+  ASSET reduce LOD 0 component 0 / 32
+  ASSET stage 3/7 shared Smart UV atlas
+  ASSET stage 5/7 LOD geometry
+  ASSET reduce LOD 1 component 0 / 32
+  ASSET reduce LOD 2 component 0 / 32
+  ASSET reduce LOD 3 component 0 / 32
+  ASSET bake groups {'groups': 2, 'physical_components': 32, 'max_components_per_group': 32}
+  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+  ASSET full PBR bake LOD 0 resolution 2048
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 1 resolution 1024
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 2 resolution 512
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 3 resolution 256
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET stage 4/7 asset and runtime budgets
+  ASSET stage 6/7 collision and engine exports
+  ASSET stage 7/7 visual and import quality gates
+  ASSET NEEDS REVIEW /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace_v2/asset_report.json
+  NOT production-ready - review these before shipping:
+   - subpixel_islands : Some UV islands occupy under one texel; inspect checker previews and mip behavior.
+   - texture_budget : Estimated uncompressed runtime texture memory exceeds the preset budget.
+   - redengine_native_import : REDengine handoff needs native material, LOD and collision setup, cooking and in-game validation; see redengine/IMPORT.md.
+   - redengine_template : Choose a compatible native .mesh/.w2mesh template or REDkit resource before integration.
+  production asset -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace_v2
+  report -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace_v2/asset_report.json
+  review -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace_v2/review.html
+  engine check: not_run

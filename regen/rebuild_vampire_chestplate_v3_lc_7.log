@@ -1,0 +1,78 @@
+  ASSET stage 1/7 component-aware surface cleanup
+  ASSET components 110 protected 109
+  ASSET stage 2/7 low mesh and high-resolution source
+  ASSET reduce LOD 0 component 0 / 110
+  ASSET reduce LOD 0 component 50 / 110
+  ASSET reduce LOD 0 component 100 / 110
+  ASSET stage 3/7 shared Smart UV atlas
+  ASSET colour source /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_v3_00001_.glb
+  ASSET stage 5/7 LOD geometry
+  ASSET reduce LOD 1 component 0 / 110
+  ASSET reduce LOD 1 component 50 / 110
+  ASSET reduce LOD 1 component 100 / 110
+  ASSET reduce LOD 2 component 0 / 110
+  ASSET reduce LOD 2 component 50 / 110
+  ASSET reduce LOD 2 component 100 / 110
+  ASSET reduce LOD 3 component 0 / 110
+  ASSET reduce LOD 3 component 50 / 110
+  ASSET reduce LOD 3 component 100 / 110
+  ASSET bake groups {'groups': 6, 'physical_components': 110, 'max_components_per_group': 32}
+  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+  ASSET full PBR bake LOD 0 resolution 2048
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 1 resolution 1024
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 2 resolution 512
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 3 resolution 256
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET bake metallic
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET stage 4/7 asset and runtime budgets
+  ASSET stage 6/7 collision and engine exports
+  ASSET stage 7/7 visual and import quality gates
+  ASSET NEEDS REVIEW /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc/asset_report.json
+  NOT production-ready - review these before shipping:
+   - scale_unverified : Source units were assumed to be meters; verify the intended real-world dimensions.
+   - subpixel_islands : Some UV islands occupy under one texel; inspect checker previews and mip behavior.
+   - texture_budget : Estimated uncompressed runtime texture memory exceeds the preset budget.
+   - open_topology : LOD0 contains open/non-manifold geometry.
+   - open_topology : LOD1 contains open/non-manifold geometry.
+   - open_topology : LOD2 contains open/non-manifold geometry.
+   - open_topology : LOD3 contains open/non-manifold geometry.
+   - redengine_native_import : REDengine handoff needs native material, LOD and collision setup, cooking and in-game validation; see redengine/IMPORT.md.
+   - redengine_template : Choose a compatible native .mesh/.w2mesh template or REDkit resource before integration.
+  production asset -> /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc
+  report -> /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc/asset_report.json
+  review -> /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc/review.html
+  engine check: not_run

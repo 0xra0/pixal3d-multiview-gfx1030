@@ -1,0 +1,38 @@
+{
+ "passed": false,
+ "issues": [
+  "left: mesh silhouette matches the reference poorly (IoU 0.69, 10% of the reference missing)"
+ ],
+ "mean_iou": 0.8506447449941863,
+ "views": {
+  "front": {
+   "iou": 0.9562222222222222,
+   "missing": 0.033576642335766425,
+   "extra": 0.01091828525456844
+  },
+  "left": {
+   "iou": 0.6935568360398114,
+   "missing": 0.09993201903467029,
+   "extra": 0.24858115777525538
+  },
+  "back": {
+   "iou": 0.9587669460538899,
+   "missing": 0.02152821631551754,
+   "extra": 0.020572348005976324
+  },
+  "right": {
+   "iou": 0.7940329756608218,
+   "missing": 0.0891624136895827,
+   "extra": 0.13904653802497163
+  }
+ },
+ "topology": {
+  "faces": 301142,
+  "components": 160,
+  "fragments": 152,
+  "fragment_share": 0.002596781584767319,
+  "boundary_edge_ratio": 0.0,
+  "nonmanifold_edge_ratio": 0.0006978351602583984
+ },
+ "score": 1.1852512482419735
+}

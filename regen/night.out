@@ -1,0 +1,2 @@
+Terminated                 TMPDIR=/mnt/ssd/work/loopcut-local/tmp PYTHONDONTWRITEBYTECODE=1 python3 loopcut/harness/local_evals/run.py --label "IQ2_XS, no skills, vram reserve 3072" --no-skills > /mnt/ssd/work/loopcut-local/eval-noskills-v1.log 2>&1
+/mnt/ssd/work/regen/night_2026-11-08.sh: line 16: 3455794 Aborted                    ./launch_comfy_qwen.sh > "$W/night_comfy.log" 2>&1

@@ -1,0 +1,5 @@
+#!/bin/sh
+# Run Tracee as root, outputting JSON to stdout for svlogd.
+# Strata's engine is left out of the trace: tracing it grew tracee ~1 GB/min (2026-11-08).
+exec 2>&1
+exec /usr/bin/tracee --output json --scope 'comm!=strata,strata-vision'

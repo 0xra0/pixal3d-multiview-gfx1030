@@ -1,0 +1,29 @@
+11-08 23:50:16 evals --no-skills
+11-09 00:17:54 evals exited non-zero (see eval-noskills-v1.log)
+11-09 00:17:54 evals done: [00:15:19] gn_scatter ...
+11-09 00:17:54 stopping Strata server 3043463
+11-09 00:18:27 Strata stopped; VRAM used 133 MiB
+11-09 00:19:44 ComfyUI up (3455794)
+11-09 00:19:44 vampire_chestplate_v3_lc: UltraTex 1536 on /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc/meshes/vampire_chestplate_v3_lc_LOD0.glb
+11-09 00:51:04 FAILED: vampire_chestplate_v3_lc texture
+11-09 00:51:05 medallion_pendant_v3: UltraTex 1536 on /mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3/meshes/medallion_pendant_v3_LOD0.glb
+11-09 00:51:05 FAILED: medallion_pendant_v3 texture
+11-09 00:51:05 night done
+11-09 00:52:59 retry texturing, PA_TEXTURE_MEMORY_FACTOR=16
+11-09 00:53:50 ComfyUI up (3633777)
+11-09 00:53:50 vampire_chestplate_v3_lc: UltraTex 1536 on /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc/meshes/vampire_chestplate_v3_lc_LOD0.glb
+11-09 04:45:12 vampire_chestplate_v3_lc: painted vampire_chestplate_v3_00001_.glb
+11-09 04:51:36 FAILED: vampire_chestplate_v3_lc asset rebuild (backup in /mnt/ssd/work/regen/pre-paint/vampire_chestplate_v3_lc)
+11-09 04:51:36 medallion_pendant_v3: UltraTex 1536 on /mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3/meshes/medallion_pendant_v3_LOD0.glb
+11-09 05:57:03 vampire_chestplate_v3_lc: rebuild try 1/12
+11-09 06:06:21 vampire_chestplate_v3_lc: rebuild try 2/12
+11-09 06:17:34 vampire_chestplate_v3_lc: rebuild try 3/12
+11-09 06:30:15 medallion_pendant_v3: painted medallion_pendant_v3_00001_.glb
+11-09 06:30:22 vampire_chestplate_v3_lc: rebuild try 4/12
+11-09 06:33:53 medallion_pendant_v3: rebuilt with paint
+11-09 06:33:53 night done
+11-09 06:33:53 ComfyUI 3633777 stopped
+11-09 06:37:01 vampire_chestplate_v3_lc: rebuild try 5/12
+11-09 06:42:56 vampire_chestplate_v3_lc: rebuild try 6/12
+11-09 06:48:59 vampire_chestplate_v3_lc: rebuild try 7/12
+11-09 06:57:21 vampire_chestplate_v3_lc: rebuilt with paint on try 7

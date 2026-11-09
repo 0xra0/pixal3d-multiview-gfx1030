@@ -1,0 +1,194 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+warning: registered duplicate command "extension", this will be inaccessible
+warning: registered duplicate command "asset_listing", this will be inaccessible
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+Warning: addon-module bl_pkg found module but without '__addon_enabled__' field, possible name collision from file: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py'
+module changed on disk: '/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py' reloading...
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync', bl_idname 'extensions.repo_sync' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_sync_all', bl_idname 'extensions.repo_sync_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_refresh_all', bl_idname 'extensions.repo_refresh_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_enable_from_drop', bl_idname 'extensions.repo_enable_from_drop' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock', bl_idname 'extensions.repo_unlock' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_files', bl_idname 'extensions.package_install_files' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install', bl_idname 'extensions.package_install' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall', bl_idname 'extensions.package_uninstall' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_system', bl_idname 'extensions.package_uninstall_system' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_disable', bl_idname 'extensions.package_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_enable', bl_idname 'extensions.package_theme_enable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_theme_disable', bl_idname 'extensions.package_theme_disable' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_upgrade_all', bl_idname 'extensions.package_upgrade_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_install_marked', bl_idname 'extensions.package_install_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_uninstall_marked', bl_idname 'extensions.package_uninstall_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear_errors', bl_idname 'extensions.status_clear_errors' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_status_clear', bl_idname 'extensions.status_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_set', bl_idname 'extensions.package_show_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_clear', bl_idname 'extensions.package_show_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set', bl_idname 'extensions.package_mark_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear', bl_idname 'extensions.package_mark_clear' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_set_all', bl_idname 'extensions.package_mark_set_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_mark_clear_all', bl_idname 'extensions.package_mark_clear_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_show_settings', bl_idname 'extensions.package_show_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_package_obsolete_marked', bl_idname 'extensions.package_obsolete_marked' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_lock_all', bl_idname 'extensions.repo_lock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_repo_unlock_all', bl_idname 'extensions.repo_unlock_all' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_tags_set', bl_idname 'extensions.userpref_tags_set' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_for_update', bl_idname 'extensions.userpref_show_for_update' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_show_online', bl_idname 'extensions.userpref_show_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online', bl_idname 'extensions.userpref_allow_online' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'EXTENSIONS_OT_userpref_allow_online_popup', bl_idname 'extensions.userpref_allow_online_popup' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_addons_tags', bl_idname 'USERPREF_PT_addons_tags' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_addons_settings', bl_idname 'USERPREF_MT_addons_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'USERPREF_PT_extensions_filter', bl_idname 'USERPREF_PT_extensions_filter' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_settings', bl_idname 'USERPREF_MT_extensions_settings' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_item', bl_idname 'USERPREF_MT_extensions_item' has been registered before, unregistering previous
+register_class(...):
+Info: Registering menu class: 'USERPREF_MT_extensions_active_repo_extra', bl_idname 'USERPREF_MT_extensions_active_repo_extra' has been registered before, unregistering previous
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+PREP source-up z
+08:59:26 | INFO: Data are loaded, start creating Blender stuff
+08:59:26 | INFO: Blender create Mesh node geometry_0
+08:59:26 | INFO: glTF import finished in 0.16s
+PREP yaw 0
+08:59:27 | INFO: Data are loaded, start creating Blender stuff
+08:59:27 | INFO: Blender create Mesh node geometry_0.331
+08:59:27 | INFO: glTF import finished in 0.09s
+FLAG lod0 faces 18585 flagged 214
+FLAG lod0 front-grid counts (rows top->bottom, x left->right); front y<0: 0.57
+FLAG      0    3    5    0    0    1    0    8    6    0
+FLAG      0    3    2    3    2    1    4    3    8    0
+FLAG      1    1    3    7   15   18   10    0    2    2
+FLAG      0   15    1    9    3    4    2    0   45    2
+FLAG      2    0    0    0    4    4    0    0    0    1
+FLAG      5    0    0    0    0    0    0    0    0    0
+FLAG      0    0    1    0    0    0    1    0    4    0
+FLAG      0    0    0    0    0    1    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    1    1
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG lod0 centroid [ 0.0491 -0.0184  0.2003] extent x [-0.3221  0.2913] z [-0.1713  0.4384] y [-0.2447  0.2254] (size 0.980)
+08:59:27 | INFO: Data are loaded, start creating Blender stuff
+08:59:27 | INFO: Blender create Mesh node geometry_0.661
+08:59:27 | INFO: glTF import finished in 0.04s
+FLAG lod1 faces 9250 flagged 225
+FLAG lod1 front-grid counts (rows top->bottom, x left->right); front y<0: 0.73
+FLAG      0    1   13    0    0    0    0   20    4    0
+FLAG      0    3   10    6    1    0    5   28    5    0
+FLAG      1    1    6    1   11   17   24    0    0    9
+FLAG      1    0    0    6    3    3    3    0   13    1
+FLAG      2    0    0    0    0    4    1    0    2    5
+FLAG      5    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    4    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    1    0    0    0    0    0    0    0
+FLAG      0    0    0    0    3    0    2    0    0    0
+FLAG lod1 centroid [ 0.0584 -0.0719  0.2464] extent x [-0.3206  0.3097] z [-0.3757  0.4775] y [-0.2337  0.2079] (size 0.980)
+08:59:27 | INFO: Data are loaded, start creating Blender stuff
+08:59:27 | INFO: Blender create Mesh node geometry_0.880
+08:59:27 | INFO: glTF import finished in 0.03s
+FLAG lod2 faces 6467 flagged 40
+FLAG lod2 front-grid counts (rows top->bottom, x left->right); front y<0: 0.95
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    1    0    0    0    0    0    0    0    0
+FLAG      2    0    2    1    9   10    1    0    0    1
+FLAG      0    1    0    1    2    3    1    0    1    0
+FLAG      1    0    0    0    2    1    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG lod2 centroid [-0.0349 -0.1773  0.2042] extent x [-0.3144  0.2518] z [0.0704 0.2859] y [-0.2444  0.2209] (size 0.980)
+08:59:27 | INFO: Data are loaded, start creating Blender stuff
+08:59:27 | INFO: Blender create Mesh node geometry_0.1099
+08:59:27 | INFO: glTF import finished in 0.03s
+FLAG lod3 faces 5547 flagged 73
+FLAG lod3 front-grid counts (rows top->bottom, x left->right); front y<0: 0.97
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    1    0    0   36   27    0    0    0    0
+FLAG      0    1    0    1    1    5    1    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG      0    0    0    0    0    0    0    0    0    0
+FLAG lod3 centroid [-0.0094 -0.1872  0.2166] extent x [-0.1689  0.0717] z [0.1156 0.2391] y [-0.2242  0.0495] (size 0.980)
+
+Blender quit

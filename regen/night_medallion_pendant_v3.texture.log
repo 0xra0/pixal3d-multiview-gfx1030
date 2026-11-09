@@ -1,0 +1,4 @@
+  mesh: /mnt/ssd/ComfyUI/output/GameAssets/medallion_pendant_v3/meshes/medallion_pendant_v3_LOD0.glb
+  seed 1513361365
+  memory before texture: RAM 36.4 GiB available, VRAM unknown
+ComfyUI not reachable: [Errno 111] Connection refused

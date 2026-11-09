@@ -1,0 +1,46 @@
+{
+  "large": [
+    "a masculine breastplate from just below the collarbone to the natural waist, broad pectorals, tapered waist, inverted-triangle silhouette",
+    "forged steel plates with a consistent real thickness of about 1 cm and a slightly raised gothic neckline",
+    "strong beveled side contours and a pointed lower edge over overlapping lower rib plates"
+  ],
+  "medium": [
+    "a raised circular blackened-steel medallion at the sternum holding an inverted five-pointed pentagram with exactly five clear points",
+    "two symmetrical bat-wing reliefs spreading outward from the medallion across the upper pectoral plates, membranes as shallow grooves",
+    "two small stylized skull reliefs on opposite sides beneath the medallion",
+    "pointed worn-silver beveled borders along every plate edge"
+  ],
+  "small": [
+    "a thin ring of necromantic runes around the pentagram inside a thick silver bezel",
+    "a polished deep-crimson gem in a claw setting just below the medallion",
+    "thorned gothic scrollwork framing the lower chest",
+    "restrained scratches, patina and tool marks on the flat steel"
+  ],
+  "materials": [
+    "aged blackened steel and dark oxidized iron plates",
+    "worn silver edge trim, bezel and ornaments",
+    "subtle crimson enamel and a dark-red gem"
+  ],
+  "views": {
+    "left": [
+      "a strict 90-degree side profile: the breastplate seen exactly edge-on from its left side",
+      "only the thin curved plate edge, the chest curving forward to the sternum ridge, the neckline at the top and the waist point at the bottom",
+      "the medallion and the bat-wing relief stand only a few millimetres proud of the surface; the front face is NOT visible"
+    ],
+    "right": [
+      "a strict 90-degree side profile, the exact mirror image of the left side, the front face NOT visible"
+    ],
+    "back": [
+      "the rear of the breastplate seen straight from behind, with the same outline as the front",
+      "a plain closed back surface of smooth dark steel, slightly concave, with two dark leather buckle straps",
+      "no pentagram, no medallion, no bat wings, no skulls and no gem on the back"
+    ]
+  },
+  "avoid": [
+    "three-quarter view",
+    "front face shown in the side views",
+    "front ornaments repeated on the back",
+    "pauldrons",
+    "complete cuirass"
+  ]
+}

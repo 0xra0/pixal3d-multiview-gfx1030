@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+00:01.497  blend            | Read blend: "/mnt/ssd/work/regen/medfix/asset/vampire_chestplate_v3_lc.blend"
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+REBAKE high faces 297869 deleted back-skin faces 4464
+Info: Baking map saved to internal image, save it externally or pack it
+REBAKE lod 0 2048
+Info: Baking map saved to internal image, save it externally or pack it
+REBAKE lod 1 1024
+Info: Baking map saved to internal image, save it externally or pack it
+REBAKE lod 2 512
+Info: Baking map saved to internal image, save it externally or pack it
+REBAKE lod 3 256
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+
+Blender quit

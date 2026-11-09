@@ -1,0 +1,102 @@
+  NAF check: strict real NAF
+  views consistent (mirror IoU front/back 0.88, left/right 0.85)
+  seed 1777044552
+  unloaded models before mesh
+  memory before mesh: RAM 36.6 GiB available, VRAM 15.7 GiB free
+  running 5s  running 10s  running 15s  running 20s  running 25s  running 30s  running 35s  running 40s  running 45s  running 50s  running 55s  running 60s  running 65s  running 70s  running 75s  running 80s  running 85s  running 91s  running 96s  running 101s  running 106s  running 111s  running 116s  running 121s  running 126s  running 131s  running 136s  running 141s  running 146s  running 151s  running 156s  running 161s  running 167s  running 172s  running 177s  running 182s  running 187s  running 192s  running 197s  running 202s  running 207s  running 212s  running 217s  running 222s  running 227s  running 232s  running 237s  running 243s  running 248s  running 253s  running 258s  running 263s  running 268s  running 273s  running 278s  running 283s  running 288s  running 293s  running 298s  running 303s  running 308s  running 313s  running 318s  running 323s  running 328s  running 333s  running 338s  running 343s  running 349s  running 354s  running 359s  running 364s  running 369s  running 374s  running 379s  running 384s  running 389s  running 394s  running 399s  running 404s  running 409s  running 414s  running 419s  running 424s  running 429s  running 434s  running 439s  running 444s  running 450s  running 455s  running 460s  running 465s  running 470s  running 475s  running 480s  running 485s  running 490s  running 495s  running 500s  running 505s  running 510s  running 515s  running 520s  running 525s  running 530s  running 535s  running 540s  running 545s  running 550s  running 555s  running 560s  running 565s  running 570s  running 575s  running 580s  running 585s  running 590s  running 595s  running 600s  running 606s  running 611s  running 616s  running 621s  running 626s  running 631s  running 636s  running 641s  running 646s  running 651s  running 656s  running 661s  running 666s  running 671s  running 676s  running 681s  running 686s  running 691s  running 697s  running 702s  running 707s  running 712s  running 717s  running 722s  running 727s  running 732s  running 737s  running 742s  running 747s  running 752s  running 757s  running 762s  running 767s  running 772s  running 777s  running 782s  running 787s  running 792s  running 797s  running 802s  running 807s  running 812s  running 817s  running 822s  running 827s  running 832s  running 837s  running 842s  running 847s  running 852s  running 857s  running 862s  running 867s  running 873s  running 878s  running 883s  running 888s  running 893s  running 898s  running 903s  running 908s  running 913s  running 918s  running 923s  running 928s  running 933s  running 938s  running 943s  running 948s  running 953s  running 958s  running 963s  running 968s  running 973s  running 978s  running 983s  running 988s  running 993s  running 998s  running 1003s  running 1008s  running 1013s  running 1018s  running 1023s  running 1028s  running 1033s  running 1038s  running 1043s  running 1048s  running 1053s  running 1058s  running 1063s  running 1068s  running 1073s  running 1078s  running 1084s  running 1089s  running 1094s  running 1099s  running 1104s  running 1109s  running 1114s  running 1119s  running 1124s  running 1129s  running 1134s  running 1139s  running 1144s  running 1149s  running 1154s  running 1159s  running 1164s  running 1169s  running 1174s  running 1179s  running 1184s  running 1189s  running 1194s  running 1199s  running 1204s  running 1209s  running 1214s  running 1219s  running 1224s  running 1229s  running 1234s  running 1239s  running 1244s  running 1249s  running 1254s  running 1259s  running 1264s  running 1269s  running 1274s  running 1279s  running 1284s  running 1289s  running 1295s  running 1300s  running 1305s  running 1310s  running 1315s  running 1320s  running 1325s  running 1330s  running 1335s  running 1340s  running 1345s  running 1350s  running 1355s  running 1360s  running 1365s  running 1370s  running 1376s  running 1381s  running 1386s  running 1391s  running 1396s  running 1401s  running 1406s  running 1411s  running 1416s  running 1421s  running 1426s  running 1431s  running 1436s  running 1441s  running 1447s  running 1452s  running 1457s  running 1462s  running 1467s  running 1472s  running 1477s  running 1482s  running 1487s  running 1492s  running 1497s  running 1502s  running 1507s  running 1512s  running 1517s  running 1522s  running 1527s  running 1532s  running 1537s  running 1542s  running 1547s  running 1552s  running 1557s  running 1562s  running 1567s  running 1572s  running 1577s  running 1582s  running 1587s  running 1592s  running 1598s  running 1603s  running 1608s  running 1613s  running 1618s  running 1623s  running 1628s  running 1633s  running 1638s  running 1643s  running 1648s  running 1653s  running 1658s  running 1663s  running 1668s  running 1673s  running 1678s  running 1683s  running 1688s  running 1693s  running 1698s  running 1703s  running 1708s  running 1713s  running 1718s  running 1723s  running 1728s  running 1733s  running 1738s  running 1743s  running 1748s  running 1753s  running 1758s  running 1763s  running 1768s  running 1773s  running 1778s  running 1783s  running 1788s  running 1793s  running 1798s  running 1804s  running 1809s  running 1814s  running 1819s  running 1824s  running 1829s  running 1834s  running 1839s  running 1844s  running 1849s  running 1854s  running 1859s  running 1864s  running 1869s  running 1874s  running 1879s  running 1884s  running 1889s  running 1894s  running 1899s  running 1904s  running 1909s  running 1914s  running 1919s  running 1924s  running 1929s  running 1934s  running 1939s  running 1944s  running 1949s  running 1954s  running 1959s  running 1964s  running 1969s  running 1975s  running 1980s  running 1985s  running 1990s  running 1995s  running 2000s  running 2005s  running 2010s  running 2015s  running 2020s  running 2025s  running 2030s  running 2035s  running 2040s  running 2045s  running 2050s  running 2055s  running 2060s  running 2065s  running 2070s  running 2075s  running 2080s  running 2085s  running 2090s  running 2095s  running 2100s  running 2105s  running 2110s  running 2115s  running 2120s  running 2125s  running 2130s  running 2135s  running 2140s  running 2145s  running 2150s  running 2155s  running 2160s  running 2165s  running 2170s  running 2175s  running 2180s  running 2185s  running 2190s  running 2196s  running 2201s  running 2206s  running 2211s  running 2216s  running 2221s  running 2226s  running 2231s  running 2236s  running 2241s  running 2246s  running 2251s  running 2256s  running 2261s  running 2266s  running 2271s  running 2276s  running 2281s  running 2286s  running 2291s  running 2297s  running 2302s  running 2307s  running 2312s  running 2317s  running 2322s  running 2327s  running 2332s  running 2344s  running 2351s  running 2356s  running 2361s  running 2366s  running 2375s  running 2385s  running 2390s  success in 2395s
+  GLB export recovered from this run -> /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_v3lr_00001_.glb
+  mesh QA: score 1.109, IoU front 0.94 left 0.75 back 0.91 right 0.77
+  MESH WARNING: 1422 loose fragments (1.2% of faces)
+  MESH WARNING: 0.82% non-manifold edges
+  mesh judge (agy): FAIL 3/10  sheet /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_v3lr_00001_.judge.png
+    - front: central pentagram medallion and flanking skulls are melted into distorted blobs
+    - front: collar rim is jagged and warped, and surface fluting is smeared
+    - back: plain polished back plates are covered in noisy wrinkled relief with an incorrect doubled central ridge and an added spike at the bottom tip
+    - left: bat-wing relief and side fluting are melted, blobby, and crumpled
+    - right: crisp layered side plates are smeared and distorted
+  MESH WARNING: no reconstruction passed the agy judge; keeping the best-rated one
+  ASSET stage 1/7 component-aware surface cleanup
+  ASSET components 128 protected 127
+  ASSET stage 2/7 low mesh and high-resolution source
+  ASSET reduce LOD 0 component 0 / 128
+  ASSET reduce LOD 0 component 50 / 128
+  ASSET reduce LOD 0 component 100 / 128
+  ASSET stage 3/7 shared Smart UV atlas
+  ASSET stage 5/7 LOD geometry
+  ASSET reduce LOD 1 component 0 / 128
+  ASSET reduce LOD 1 component 50 / 128
+  ASSET reduce LOD 1 component 100 / 128
+  ASSET reduce LOD 2 component 0 / 128
+  ASSET reduce LOD 2 component 50 / 128
+  ASSET reduce LOD 2 component 100 / 128
+  ASSET reduce LOD 3 component 0 / 128
+  ASSET reduce LOD 3 component 50 / 128
+  ASSET reduce LOD 3 component 100 / 128
+  ASSET bake groups {'groups': 6, 'physical_components': 128, 'max_components_per_group': 32}
+  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+  ASSET full PBR bake LOD 0 resolution 2048
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 1 resolution 1024
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 2 resolution 512
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 3 resolution 256
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET stage 4/7 asset and runtime budgets
+  ASSET stage 6/7 collision and engine exports
+  ASSET stage 7/7 visual and import quality gates
+  ASSET NEEDS REVIEW /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3lr/asset_report.json
+  NOT production-ready - review these before shipping:
+   - scale_unverified : Source units were assumed to be meters; verify the intended real-world dimensions.
+   - subpixel_islands : Some UV islands occupy under one texel; inspect checker previews and mip behavior.
+   - texture_budget : Estimated uncompressed runtime texture memory exceeds the preset budget.
+   - open_topology : LOD0 contains open/non-manifold geometry.
+   - open_topology : LOD1 contains open/non-manifold geometry.
+   - open_topology : LOD2 contains open/non-manifold geometry.
+   - open_topology : LOD3 contains open/non-manifold geometry.
+   - redengine_native_import : REDengine handoff needs native material, LOD and collision setup, cooking and in-game validation; see redengine/IMPORT.md.
+   - redengine_template : Choose a compatible native .mesh/.w2mesh template or REDkit resource before integration.
+  production asset -> /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3lr
+  report -> /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3lr/asset_report.json
+  review -> /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3lr/review.html
+  engine check: not_run

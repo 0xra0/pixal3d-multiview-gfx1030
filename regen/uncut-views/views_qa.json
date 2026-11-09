@@ -1,0 +1,56 @@
+{
+ "raw": {
+  "passed": true,
+  "issues": [],
+  "height_px": {
+   "front": 1024,
+   "left": 1024,
+   "back": 1024,
+   "right": 1024
+  },
+  "width_px": {
+   "front": 1024,
+   "left": 1024,
+   "back": 1024,
+   "right": 1024
+  },
+  "height_spread": 0.0,
+  "mirror_iou": {
+   "front_back": 1.0,
+   "left_right": 1.0
+  },
+  "coverage": {
+   "front": 1.0,
+   "left": 1.0,
+   "back": 1.0,
+   "right": 1.0
+  }
+ },
+ "normalized": {
+  "passed": true,
+  "issues": [],
+  "height_px": {
+   "front": 1024,
+   "left": 1024,
+   "back": 1024,
+   "right": 1024
+  },
+  "width_px": {
+   "front": 1024,
+   "left": 1024,
+   "back": 1024,
+   "right": 1024
+  },
+  "height_spread": 0.0,
+  "mirror_iou": {
+   "front_back": 1.0,
+   "left_right": 1.0
+  },
+  "coverage": {
+   "front": 1.0,
+   "left": 1.0,
+   "back": 1.0,
+   "right": 1.0
+  }
+ }
+}

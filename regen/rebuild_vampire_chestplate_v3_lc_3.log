@@ -1,0 +1,79 @@
+  ASSET stage 1/7 component-aware surface cleanup
+  ASSET components 110 protected 109
+  ASSET stage 2/7 low mesh and high-resolution source
+  ASSET reduce LOD 0 component 0 / 110
+  ASSET reduce LOD 0 component 50 / 110
+  ASSET reduce LOD 0 component 100 / 110
+  ASSET stage 3/7 shared Smart UV atlas
+  ASSET colour source /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_v3_00001_.glb
+  ASSET FAILED report /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc.building_5mqgd1_3/asset_report.json
+Production asset build failed. See /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc.build.log
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+ASSET stage 1/7 component-aware surface cleanup
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+PREP source-up z
+06:17:37 | INFO: Data are loaded, start creating Blender stuff
+06:17:37 | INFO: Blender create Mesh node geometry_0
+06:17:38 | INFO: glTF import finished in 0.22s
+PREP yaw 0.0
+PREP boundary weld 1106
+PREP degenerates
+PREP overconnected edges 2247
+PREP hole boundaries 1407
+ASSET components 110 protected 109
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 110
+ASSET reduce LOD 0 component 50 / 110
+ASSET reduce LOD 0 component 100 / 110
+ASSET stage 3/7 shared Smart UV atlas
+PREP xatlas 18585 triangles
+PREP rts 3785 utilization 0.8381 folded 38
+xatlas pass 3 charts 3811 utilization 0.8409 folded 26
+xatlas pass 4 charts 3844 utilization 0.8392 folded 6
+xatlas pass 5 charts 3866 utilization 0.8374 folded 0
+ASSET colour source /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_v3_00001_.glb
+06:30:22 | INFO: Data are loaded, start creating Blender stuff
+06:30:22 | INFO: Blender create Mesh node geometry_0
+06:30:22 | INFO: glTF import finished in 0.09s
+ASSET FAILED report /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate_v3_lc.building_5mqgd1_3/asset_report.json
+Traceback (most recent call last):
+  File "/mnt/ssd/work/pixal3d-mv/build_asset.py", line 253, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/ssd/work/pixal3d-mv/build_asset.py", line 127, in main
+    originals = painted_sources(lod0_parts, args.texture_from)
+  File "/mnt/ssd/work/pixal3d-mv/asset_bake.py", line 111, in painted_sources
+    raise ValueError("--texture-from was painted on a different LOD0 atlas: rebuild with the painted build's "
+                     "source, --faces and --pivot (the pivot moves the mesh before xatlas), or re-run pa.py texture")
+ValueError: --texture-from was painted on a different LOD0 atlas: rebuild with the painted build's source, --faces and --pivot (the pivot moves the mesh before xatlas), or re-run pa.py texture
+
+Error: script failed, file: '/mnt/ssd/work/pixal3d-mv/build_asset.py', exiting.
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+
+Blender quit
+
