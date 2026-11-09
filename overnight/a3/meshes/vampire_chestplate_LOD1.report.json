@@ -1,0 +1,12 @@
+{
+  "status": "exported",
+  "validation_passed": true,
+  "options": {
+    "unwrap": "smart"
+  },
+  "outputs": [
+    "meshes/vampire_chestplate_LOD1.glb"
+  ],
+  "portable_root": "..",
+  "production_manifest": "../asset_report.json"
+}

@@ -1,0 +1,1514 @@
+{
+  "schema_version": 2,
+  "name": "vampire_chestplate",
+  "engine": "generic",
+  "engine_preset": {
+    "normal": "OpenGL",
+    "packed": "ORM",
+    "preferred_format": "glb",
+    "units": "meters"
+  },
+  "source": "/mnt/ssd/ComfyUI/output/3D/vampire_chestplate_00002_.glb",
+  "source_sha256": "e43864949b97843a4e88d7cb83bd4419ea074797754106177d6ae9f58865dacb",
+  "blender": "5.2.2 LTS",
+  "options": {
+    "src": "/mnt/ssd/ComfyUI/output/3D/vampire_chestplate_00002_.glb",
+    "dst": "/mnt/ssd/work/overnight/a6",
+    "faces": 20000,
+    "source_up": "z",
+    "repair": "full",
+    "angle": 35,
+    "unwrap": "smart",
+    "uv_method": "xatlas",
+    "uv_angle": 66,
+    "uv_merge_faces": 20,
+    "texture_size": 2048,
+    "uv_margin_px": 4,
+    "weld_distance": 1e-06,
+    "hole_max_edges": null,
+    "hole_max_diameter": 0.03,
+    "min_component_faces": 0,
+    "dust_size": 0.01,
+    "smooth_iterations": 0,
+    "smooth_factor": 0.2,
+    "voxel_size": 0,
+    "quad_faces": 0,
+    "multires": 0,
+    "materials": "bake",
+    "formats": [
+      "glb",
+      "fbx",
+      "blend"
+    ],
+    "strict": false,
+    "preset": "prop",
+    "engine": "generic",
+    "game_version": null,
+    "red_template": null,
+    "name": "vampire_chestplate",
+    "source_object": null,
+    "alpha_mode": "auto",
+    "two_sided": false,
+    "regions": null,
+    "surface_smooth": 2,
+    "surface_factor": 0.15,
+    "feature_angle": 55,
+    "protect_component_size": 0.12,
+    "retopology": "decimate",
+    "lod_ratios": [
+      1.0,
+      0.5,
+      0.25,
+      0.125
+    ],
+    "collision": "box",
+    "collision_max_hulls": 16,
+    "size_meters": 0,
+    "pivot": "base",
+    "pack_method": "CONVEX",
+    "uv_relax": true,
+    "chart_merge_angle": 20,
+    "max_chart_faces": 512,
+    "pack_search": false,
+    "pack_timeout": 20,
+    "bake_samples": 16,
+    "cage_extrusion": 0.01,
+    "ray_distance": 0.05,
+    "preview_size": 256,
+    "turntable_views": 6,
+    "skip_previews": false,
+    "quality": "review",
+    "min_uv_coverage": 0.4,
+    "max_vertices": 60000,
+    "max_materials": 1,
+    "max_texture_mib": 128,
+    "max_bake_miss": 0.02,
+    "max_shape_error": 0.02,
+    "engine_bin": null,
+    "engine_project": null,
+    "engine_check": "auto"
+  },
+  "stages": {
+    "1_component_cleanup": "completed",
+    "3_uv_efficiency": "completed",
+    "2_high_to_low_bake": "completed",
+    "4_budgets": "completed",
+    "5_lods": "completed",
+    "6_collision_engine_presets": "completed",
+    "7_quality_gates": "completed"
+  },
+  "status": "review_required",
+  "normalization": {
+    "scale_factor": 1.0,
+    "source_pivot": [
+      0.00017304718494415283,
+      0.005233153700828552,
+      -0.3458651304244995
+    ],
+    "units": "meters",
+    "size_was_explicit": false
+  },
+  "components": [
+    {
+      "id": 0,
+      "source_triangles": 281682,
+      "protected": false,
+      "diagonal": 1.0298774138898186,
+      "bounds": [
+        [
+          -0.29659032821655273,
+          -0.16665859520435333,
+          0.0
+        ],
+        [
+          0.29659032821655273,
+          0.16665859520435333,
+          0.7731001377105713
+        ]
+      ],
+      "region_actions": [
+        {
+          "region": "automatic",
+          "smoothed_vertices": 104127
+        }
+      ],
+      "high_triangles": 281682
+    },
+    {
+      "id": 1,
+      "source_triangles": 112,
+      "protected": true,
+      "diagonal": 0.0329933554633357,
+      "bounds": [
+        [
+          0.07169743627309799,
+          0.13169555366039276,
+          0.4090135097503662
+        ],
+        [
+          0.09863921999931335,
+          0.14215092360973358,
+          0.4249316453933716
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 112
+    },
+    {
+      "id": 2,
+      "source_triangles": 22,
+      "protected": true,
+      "diagonal": 0.005193047388378158,
+      "bounds": [
+        [
+          0.002432772424072027,
+          0.1539924591779709,
+          0.4062791168689728
+        ],
+        [
+          0.005752759985625744,
+          0.1560370773077011,
+          0.4097091257572174
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 22
+    },
+    {
+      "id": 3,
+      "source_triangles": 16,
+      "protected": true,
+      "diagonal": 0.004233507453301008,
+      "bounds": [
+        [
+          -0.157329261302948,
+          0.043726399540901184,
+          0.362776517868042
+        ],
+        [
+          -0.15481609106063843,
+          0.04679690673947334,
+          0.364252507686615
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 16
+    },
+    {
+      "id": 4,
+      "source_triangles": 14,
+      "protected": true,
+      "diagonal": 0.003615896808170038,
+      "bounds": [
+        [
+          -0.17715348303318024,
+          0.0575869083404541,
+          0.40857595205307007
+        ],
+        [
+          -0.17472608387470245,
+          0.060020044445991516,
+          0.4096994698047638
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 14
+    },
+    {
+      "id": 5,
+      "source_triangles": 12,
+      "protected": true,
+      "diagonal": 0.006083610868022396,
+      "bounds": [
+        [
+          -0.2541414499282837,
+          -0.07021181285381317,
+          0.47070175409317017
+        ],
+        [
+          -0.2502894997596741,
+          -0.06810630112886429,
+          0.4749135971069336
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 12
+    },
+    {
+      "id": 6,
+      "source_triangles": 12,
+      "protected": true,
+      "diagonal": 0.003362358820435845,
+      "bounds": [
+        [
+          0.06705372780561447,
+          0.11437200009822845,
+          0.20959702134132385
+        ],
+        [
+          0.06870456784963608,
+          0.11680717021226883,
+          0.21122494339942932
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 12
+    },
+    {
+      "id": 7,
+      "source_triangles": 10,
+      "protected": true,
+      "diagonal": 0.014669254485209598,
+      "bounds": [
+        [
+          -0.06462617218494415,
+          0.14264671504497528,
+          0.40539848804473877
+        ],
+        [
+          -0.051067713648080826,
+          0.14783403277397156,
+          0.4075072705745697
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 10
+    },
+    {
+      "id": 8,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.002240719997823954,
+      "bounds": [
+        [
+          0.005554720759391785,
+          0.14129242300987244,
+          0.39385396242141724
+        ],
+        [
+          0.006778756156563759,
+          0.1429426521062851,
+          0.3947480022907257
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 9,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.001955054881966224,
+      "bounds": [
+        [
+          0.10672830790281296,
+          0.060926660895347595,
+          0.18620553612709045
+        ],
+        [
+          0.10782305151224136,
+          0.06197727471590042,
+          0.18743841350078583
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 10,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.0016120635510189641,
+      "bounds": [
+        [
+          0.18294505774974823,
+          0.02473689243197441,
+          0.34551912546157837
+        ],
+        [
+          0.1840350180864334,
+          0.025443388149142265,
+          0.34647390246391296
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 11,
+      "source_triangles": 8,
+      "protected": true,
+      "diagonal": 0.002514971465427395,
+      "bounds": [
+        [
+          0.1997222751379013,
+          -0.028307393193244934,
+          0.6321535110473633
+        ],
+        [
+          0.20139187574386597,
+          -0.026783756911754608,
+          0.6332562565803528
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 8
+    },
+    {
+      "id": 12,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.0035442217985342038,
+      "bounds": [
+        [
+          -0.12026432156562805,
+          0.10598638653755188,
+          0.4767882227897644
+        ],
+        [
+          -0.11834739148616791,
+          0.10890030115842819,
+          0.4774174988269806
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 13,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.003257828412554282,
+      "bounds": [
+        [
+          -0.09597040712833405,
+          0.13438479602336884,
+          0.4180966317653656
+        ],
+        [
+          -0.09419107437133789,
+          0.13630717992782593,
+          0.42003360390663147
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 14,
+      "source_triangles": 6,
+      "protected": true,
+      "diagonal": 0.002034549467405077,
+      "bounds": [
+        [
+          0.1051190122961998,
+          0.12104286253452301,
+          0.4663941264152527
+        ],
+        [
+          0.10633419454097748,
+          0.12197743356227875,
+          0.467731773853302
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 6
+    },
+    {
+      "id": 15,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.002402812863320263,
+      "bounds": [
+        [
+          -0.22405697405338287,
+          -0.030026743188500404,
+          0.40153977274894714
+        ],
+        [
+          -0.22280828654766083,
+          -0.029094746336340904,
+          0.40336889028549194
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 16,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.002076824898052066,
+      "bounds": [
+        [
+          0.001572886249050498,
+          0.1549350768327713,
+          0.40875935554504395
+        ],
+        [
+          0.0025596737395972013,
+          0.15614022314548492,
+          0.4101330637931824
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 17,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0019700691945415305,
+      "bounds": [
+        [
+          0.005004728212952614,
+          0.14132529497146606,
+          0.39315351843833923
+        ],
+        [
+          0.005815386772155762,
+          0.14289593696594238,
+          0.3940236270427704
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 18,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0015613580038381497,
+      "bounds": [
+        [
+          0.005004728212952614,
+          0.1404687762260437,
+          0.39385396242141724
+        ],
+        [
+          0.005852845497429371,
+          0.14154990017414093,
+          0.3945953845977783
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 19,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.002005178351361055,
+      "bounds": [
+        [
+          0.028784243389964104,
+          0.1371176689863205,
+          0.3656376302242279
+        ],
+        [
+          0.030347643420100212,
+          0.13805407285690308,
+          0.36647409200668335
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 20,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.003301232591392573,
+      "bounds": [
+        [
+          0.07511019706726074,
+          0.1405721753835678,
+          0.4110170602798462
+        ],
+        [
+          0.0777292549610138,
+          0.14238712191581726,
+          0.4118799865245819
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 21,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.005278205448557686,
+      "bounds": [
+        [
+          0.161000594496727,
+          0.023240240290760994,
+          0.2704790234565735
+        ],
+        [
+          0.16301511228084564,
+          0.024846164509654045,
+          0.27508577704429626
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 22,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0023994428803027763,
+      "bounds": [
+        [
+          0.16794449090957642,
+          0.03470718488097191,
+          0.2963569164276123
+        ],
+        [
+          0.16855433583259583,
+          0.03594302013516426,
+          0.2983211278915405
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 23,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.0020891255182103837,
+      "bounds": [
+        [
+          -0.10936519503593445,
+          0.023510253056883812,
+          0.6974626779556274
+        ],
+        [
+          -0.10777966678142548,
+          0.024204997345805168,
+          0.6986322402954102
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    },
+    {
+      "id": 24,
+      "source_triangles": 4,
+      "protected": true,
+      "diagonal": 0.001792498884993816,
+      "bounds": [
+        [
+          0.25488394498825073,
+          -0.06696686148643494,
+          0.46816086769104004
+        ],
+        [
+          0.2560986876487732,
+          -0.0661475881934166,
+          0.4691934585571289
+        ]
+      ],
+      "region_actions": [],
+      "high_triangles": 4
+    }
+  ],
+  "repair": {
+    "welded_vertices": 39,
+    "degenerate_faces": 50,
+    "split_edges": 0,
+    "holes_filled": 0,
+    "holes_skipped": 87,
+    "loose_elements": 0,
+    "component_faces_removed": 0,
+    "dust_faces_removed": 91,
+    "split_vertices": 6,
+    "duplicate_faces_removed": 0
+  },
+  "component_triangle_budgets": [
+    19712,
+    112,
+    22,
+    16,
+    14,
+    12,
+    12,
+    10,
+    8,
+    8,
+    8,
+    8,
+    6,
+    6,
+    6,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "reduction_fallbacks": [],
+  "uv": {
+    "quality": {
+      "vertices": 9465,
+      "faces": 19998,
+      "triangles": 19998,
+      "boundary_edges": 0,
+      "overconnected_edges": 0,
+      "nonmanifold_vertices": 0,
+      "loose_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces": 0,
+      "uv_layer": "GameUV",
+      "invalid_uv_corners": 0,
+      "zero_area_uv_faces": 0,
+      "uv_area_sum": 0.43148721172060545,
+      "uv_overlap_check": "complete",
+      "uv_overlap_pairs": 0,
+      "uv_overlap_samples": [],
+      "uv_overlap_faces": []
+    },
+    "metrics": {
+      "islands": 3183,
+      "islands_under_one_pixel": 4,
+      "coverage": 0.43148721172060533,
+      "texel_density_pixels_per_meter": {
+        "p10": 1130.2247954480638,
+        "median": 1198.3161125394217,
+        "p90": 1269.3391038437546
+      }
+    },
+    "pack_candidates": [
+      {
+        "method": "xatlas",
+        "coverage": 0.43148721172060545
+      }
+    ],
+    "isolated_faces": 0,
+    "chart_relaxation": {
+      "enabled": false
+    },
+    "method": "xatlas",
+    "method_fallback": null,
+    "degenerate_faces_removed": 0
+  },
+  "lod_uvs": [
+    {
+      "quality": {
+        "vertices": 9465,
+        "faces": 19998,
+        "triangles": 19998,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.43148721172060545,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 3183,
+        "islands_under_one_pixel": 4,
+        "coverage": 0.43148721172060533,
+        "texel_density_pixels_per_meter": {
+          "p10": 1130.2247954480638,
+          "median": 1198.3161125394217,
+          "p90": 1269.3391038437546
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.43148721172060545
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    },
+    {
+      "quality": {
+        "vertices": 4465,
+        "faces": 9998,
+        "triangles": 9998,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.4678285817829906,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 1891,
+        "islands_under_one_pixel": 46,
+        "coverage": 0.4678285817829902,
+        "texel_density_pixels_per_meter": {
+          "p10": 604.3256265390917,
+          "median": 639.7450734326708,
+          "p90": 695.0223446418447
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.4678285817829906
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    },
+    {
+      "quality": {
+        "vertices": 1964,
+        "faces": 4996,
+        "triangles": 4996,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.4718259080837856,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 1364,
+        "islands_under_one_pixel": 77,
+        "coverage": 0.4718259080837858,
+        "texel_density_pixels_per_meter": {
+          "p10": 319.6993356459007,
+          "median": 330.5308408345141,
+          "p90": 381.8118838820322
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.4718259080837856
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    },
+    {
+      "quality": {
+        "vertices": 1235,
+        "faces": 3538,
+        "triangles": 3538,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.30846075392116806,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "metrics": {
+        "islands": 1221,
+        "islands_under_one_pixel": 256,
+        "coverage": 0.30846075392116795,
+        "texel_density_pixels_per_meter": {
+          "p10": 121.1644540983775,
+          "median": 127.0697604778347,
+          "p90": 166.780792640471
+        }
+      },
+      "pack_candidates": [
+        {
+          "method": "xatlas",
+          "coverage": 0.30846075392116806
+        }
+      ],
+      "isolated_faces": 0,
+      "chart_relaxation": {
+        "enabled": false
+      },
+      "method": "xatlas",
+      "method_fallback": null,
+      "degenerate_faces_removed": 0
+    }
+  ],
+  "bake_groups": {
+    "groups": 3,
+    "physical_components": 25,
+    "max_components_per_group": 32
+  },
+  "bake": {
+    "method": "matched_component_selected_to_active",
+    "cage_fraction": 0.01,
+    "ray_distance_fraction_without_cage": 0.05,
+    "projection_miss": [
+      {
+        "lod": 0,
+        "uv_pixels": 1810031,
+        "fraction": 0.0
+      },
+      {
+        "lod": 1,
+        "uv_pixels": 490759,
+        "fraction": 0.0
+      },
+      {
+        "lod": 2,
+        "uv_pixels": 123669,
+        "fraction": 0.0
+      },
+      {
+        "lod": 3,
+        "uv_pixels": 20240,
+        "fraction": 0.0
+      }
+    ],
+    "source_materials_present": true,
+    "alpha_mode": "opaque",
+    "emission_used": false,
+    "basecolor_black_fraction": 0.3233386610505566,
+    "runtime_rgba8_mip_estimate_mib": 85.0,
+    "runtime_estimate_excludes_platform_compression": true,
+    "paths": {
+      "normal_lod0": "textures/lod0/normal_lod0.png",
+      "basecolor": "textures/lod0/basecolor.png",
+      "roughness": "textures/lod0/roughness.png",
+      "metallic": "textures/lod0/metallic.png",
+      "ao": "textures/lod0/ao.png",
+      "emission": "textures/lod0/emission.png",
+      "orm": "textures/lod0/orm.png",
+      "normal_lod1": "textures/lod1/normal_lod0.png",
+      "normal_lod2": "textures/lod2/normal_lod0.png",
+      "normal_lod3": "textures/lod3/normal_lod0.png"
+    },
+    "index": 0,
+    "lod_bakes": [
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 1810031,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.3233386610505566,
+        "runtime_rgba8_mip_estimate_mib": 64.0,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod0/normal_lod0.png",
+          "basecolor": "textures/lod0/basecolor.png",
+          "roughness": "textures/lod0/roughness.png",
+          "metallic": "textures/lod0/metallic.png",
+          "ao": "textures/lod0/ao.png",
+          "emission": "textures/lod0/emission.png",
+          "orm": "textures/lod0/orm.png"
+        },
+        "index": 0
+      },
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 490759,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.32380251814026845,
+        "runtime_rgba8_mip_estimate_mib": 16.0,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod1/normal_lod0.png",
+          "basecolor": "textures/lod1/basecolor.png",
+          "roughness": "textures/lod1/roughness.png",
+          "metallic": "textures/lod1/metallic.png",
+          "ao": "textures/lod1/ao.png",
+          "emission": "textures/lod1/emission.png",
+          "orm": "textures/lod1/orm.png"
+        },
+        "index": 1
+      },
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 123669,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.3322255375235508,
+        "runtime_rgba8_mip_estimate_mib": 4.0,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod2/normal_lod0.png",
+          "basecolor": "textures/lod2/basecolor.png",
+          "roughness": "textures/lod2/roughness.png",
+          "metallic": "textures/lod2/metallic.png",
+          "ao": "textures/lod2/ao.png",
+          "emission": "textures/lod2/emission.png",
+          "orm": "textures/lod2/orm.png"
+        },
+        "index": 2
+      },
+      {
+        "method": "matched_component_selected_to_active",
+        "cage_fraction": 0.01,
+        "ray_distance_fraction_without_cage": 0.05,
+        "projection_miss": [
+          {
+            "lod": 0,
+            "uv_pixels": 20240,
+            "fraction": 0.0
+          }
+        ],
+        "source_materials_present": true,
+        "alpha_mode": "opaque",
+        "emission_used": false,
+        "basecolor_black_fraction": 0.35276679841897235,
+        "runtime_rgba8_mip_estimate_mib": 1.0,
+        "runtime_estimate_excludes_platform_compression": true,
+        "paths": {
+          "normal_lod0": "textures/lod3/normal_lod0.png",
+          "basecolor": "textures/lod3/basecolor.png",
+          "roughness": "textures/lod3/roughness.png",
+          "metallic": "textures/lod3/metallic.png",
+          "ao": "textures/lod3/ao.png",
+          "emission": "textures/lod3/emission.png",
+          "orm": "textures/lod3/orm.png"
+        },
+        "index": 3
+      }
+    ],
+    "lods_use_independent_validated_atlases": true
+  },
+  "lods": [
+    {
+      "index": 0,
+      "ratio": 1.0,
+      "files": {
+        "glb": "meshes/vampire_chestplate_LOD0.glb",
+        "fbx": "meshes/vampire_chestplate_LOD0.fbx"
+      },
+      "quality": {
+        "vertices": 9465,
+        "faces": 19998,
+        "triangles": 19998,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.43148721172060545,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 19998,
+        "vertices": 32276,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 15953356
+      },
+      "shape_error": {
+        "max_relative": 0.0014331047443039721,
+        "p95_relative": 0.0007613588043278284,
+        "samples": 3155,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod0/normal_lod0.png",
+        "basecolor": "textures/lod0/basecolor.png",
+        "roughness": "textures/lod0/roughness.png",
+        "metallic": "textures/lod0/metallic.png",
+        "ao": "textures/lod0/ao.png",
+        "emission": "textures/lod0/emission.png",
+        "orm": "textures/lod0/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.5
+    },
+    {
+      "index": 1,
+      "ratio": 0.5,
+      "files": {
+        "glb": "meshes/vampire_chestplate_LOD1.glb",
+        "fbx": "meshes/vampire_chestplate_LOD1.fbx"
+      },
+      "quality": {
+        "vertices": 4465,
+        "faces": 9998,
+        "triangles": 9998,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.4678285817829906,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 9998,
+        "vertices": 17174,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 5257464
+      },
+      "shape_error": {
+        "max_relative": 0.0044299001636023995,
+        "p95_relative": 0.0011588161053565959,
+        "samples": 4465,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod1/normal_lod0.png",
+        "basecolor": "textures/lod1/basecolor.png",
+        "roughness": "textures/lod1/roughness.png",
+        "metallic": "textures/lod1/metallic.png",
+        "ao": "textures/lod1/ao.png",
+        "emission": "textures/lod1/emission.png",
+        "orm": "textures/lod1/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.25
+    },
+    {
+      "index": 2,
+      "ratio": 0.25,
+      "files": {
+        "glb": "meshes/vampire_chestplate_LOD2.glb",
+        "fbx": "meshes/vampire_chestplate_LOD2.fbx"
+      },
+      "quality": {
+        "vertices": 1964,
+        "faces": 4996,
+        "triangles": 4996,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.4718259080837856,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 4996,
+        "vertices": 9466,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 1506396
+      },
+      "shape_error": {
+        "max_relative": 0.004256790035926808,
+        "p95_relative": 0.0018951461591320132,
+        "samples": 1964,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod2/normal_lod0.png",
+        "basecolor": "textures/lod2/basecolor.png",
+        "roughness": "textures/lod2/roughness.png",
+        "metallic": "textures/lod2/metallic.png",
+        "ao": "textures/lod2/ao.png",
+        "emission": "textures/lod2/emission.png",
+        "orm": "textures/lod2/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.125
+    },
+    {
+      "index": 3,
+      "ratio": 0.125,
+      "files": {
+        "glb": "meshes/vampire_chestplate_LOD3.glb",
+        "fbx": "meshes/vampire_chestplate_LOD3.fbx"
+      },
+      "quality": {
+        "vertices": 1235,
+        "faces": 3538,
+        "triangles": 3538,
+        "boundary_edges": 0,
+        "overconnected_edges": 0,
+        "nonmanifold_vertices": 0,
+        "loose_edges": 0,
+        "loose_vertices": 0,
+        "degenerate_faces": 0,
+        "uv_layer": "GameUV",
+        "invalid_uv_corners": 0,
+        "zero_area_uv_faces": 0,
+        "uv_area_sum": 0.30846075392116806,
+        "uv_overlap_check": "complete",
+        "uv_overlap_pairs": 0,
+        "uv_overlap_samples": [],
+        "uv_overlap_faces": []
+      },
+      "export_metrics": {
+        "triangles": 3538,
+        "vertices": 7418,
+        "materials": 1,
+        "primitives": 1,
+        "bytes": 579288
+      },
+      "shape_error": {
+        "max_relative": 0.0073503979248084215,
+        "p95_relative": 0.0020030290291349713,
+        "samples": 1235,
+        "direction": "low_vertices_to_high_surface"
+      },
+      "textures": {
+        "normal_lod0": "textures/lod3/normal_lod0.png",
+        "basecolor": "textures/lod3/basecolor.png",
+        "roughness": "textures/lod3/roughness.png",
+        "metallic": "textures/lod3/metallic.png",
+        "ao": "textures/lod3/ao.png",
+        "emission": "textures/lod3/emission.png",
+        "orm": "textures/lod3/orm.png"
+      },
+      "alpha_mode": "opaque",
+      "emission_used": false,
+      "screen_height": 0.01
+    }
+  ],
+  "collision": {
+    "mode": "box",
+    "hulls": 1,
+    "triangles": 12,
+    "glb": "meshes/vampire_chestplate_Collision.glb"
+  },
+  "previews": {
+    "images": [
+      {
+        "label": "high_00",
+        "file": "previews/high_00.png"
+      },
+      {
+        "label": "lod0_clay_00",
+        "file": "previews/lod0_clay_00.png"
+      },
+      {
+        "label": "lod1_clay_00",
+        "file": "previews/lod1_clay_00.png"
+      },
+      {
+        "label": "lod2_clay_00",
+        "file": "previews/lod2_clay_00.png"
+      },
+      {
+        "label": "lod3_clay_00",
+        "file": "previews/lod3_clay_00.png"
+      },
+      {
+        "label": "lod0_wire_00",
+        "file": "previews/lod0_wire_00.png"
+      },
+      {
+        "label": "lod0_checker_00",
+        "file": "previews/lod0_checker_00.png"
+      },
+      {
+        "label": "high_01",
+        "file": "previews/high_01.png"
+      },
+      {
+        "label": "lod0_clay_01",
+        "file": "previews/lod0_clay_01.png"
+      },
+      {
+        "label": "lod1_clay_01",
+        "file": "previews/lod1_clay_01.png"
+      },
+      {
+        "label": "lod2_clay_01",
+        "file": "previews/lod2_clay_01.png"
+      },
+      {
+        "label": "lod3_clay_01",
+        "file": "previews/lod3_clay_01.png"
+      },
+      {
+        "label": "lod0_wire_01",
+        "file": "previews/lod0_wire_01.png"
+      },
+      {
+        "label": "lod0_checker_01",
+        "file": "previews/lod0_checker_01.png"
+      },
+      {
+        "label": "high_02",
+        "file": "previews/high_02.png"
+      },
+      {
+        "label": "lod0_clay_02",
+        "file": "previews/lod0_clay_02.png"
+      },
+      {
+        "label": "lod1_clay_02",
+        "file": "previews/lod1_clay_02.png"
+      },
+      {
+        "label": "lod2_clay_02",
+        "file": "previews/lod2_clay_02.png"
+      },
+      {
+        "label": "lod3_clay_02",
+        "file": "previews/lod3_clay_02.png"
+      },
+      {
+        "label": "lod0_wire_02",
+        "file": "previews/lod0_wire_02.png"
+      },
+      {
+        "label": "lod0_checker_02",
+        "file": "previews/lod0_checker_02.png"
+      },
+      {
+        "label": "high_03",
+        "file": "previews/high_03.png"
+      },
+      {
+        "label": "lod0_clay_03",
+        "file": "previews/lod0_clay_03.png"
+      },
+      {
+        "label": "lod1_clay_03",
+        "file": "previews/lod1_clay_03.png"
+      },
+      {
+        "label": "lod2_clay_03",
+        "file": "previews/lod2_clay_03.png"
+      },
+      {
+        "label": "lod3_clay_03",
+        "file": "previews/lod3_clay_03.png"
+      },
+      {
+        "label": "lod0_wire_03",
+        "file": "previews/lod0_wire_03.png"
+      },
+      {
+        "label": "lod0_checker_03",
+        "file": "previews/lod0_checker_03.png"
+      },
+      {
+        "label": "high_04",
+        "file": "previews/high_04.png"
+      },
+      {
+        "label": "lod0_clay_04",
+        "file": "previews/lod0_clay_04.png"
+      },
+      {
+        "label": "lod1_clay_04",
+        "file": "previews/lod1_clay_04.png"
+      },
+      {
+        "label": "lod2_clay_04",
+        "file": "previews/lod2_clay_04.png"
+      },
+      {
+        "label": "lod3_clay_04",
+        "file": "previews/lod3_clay_04.png"
+      },
+      {
+        "label": "lod0_wire_04",
+        "file": "previews/lod0_wire_04.png"
+      },
+      {
+        "label": "lod0_checker_04",
+        "file": "previews/lod0_checker_04.png"
+      },
+      {
+        "label": "high_05",
+        "file": "previews/high_05.png"
+      },
+      {
+        "label": "lod0_clay_05",
+        "file": "previews/lod0_clay_05.png"
+      },
+      {
+        "label": "lod1_clay_05",
+        "file": "previews/lod1_clay_05.png"
+      },
+      {
+        "label": "lod2_clay_05",
+        "file": "previews/lod2_clay_05.png"
+      },
+      {
+        "label": "lod3_clay_05",
+        "file": "previews/lod3_clay_05.png"
+      },
+      {
+        "label": "lod0_wire_05",
+        "file": "previews/lod0_wire_05.png"
+      },
+      {
+        "label": "lod0_checker_05",
+        "file": "previews/lod0_checker_05.png"
+      }
+    ],
+    "silhouette": [
+      {
+        "lod": 0,
+        "minimum_iou": 0.9942632074663926,
+        "views": [
+          0.9956833618993207,
+          0.9942632074663926,
+          0.9956060997673818,
+          0.9953000952683392,
+          0.9952013710368466,
+          0.9952667814113597
+        ]
+      },
+      {
+        "lod": 1,
+        "minimum_iou": 0.9873483088045443,
+        "views": [
+          0.9888973480522776,
+          0.9880157507276152,
+          0.9878511114940548,
+          0.9886392485402387,
+          0.9880106191658816,
+          0.9873483088045443
+        ]
+      },
+      {
+        "lod": 2,
+        "minimum_iou": 0.9673763736263736,
+        "views": [
+          0.9743524792603382,
+          0.9682987268221823,
+          0.9690562145435792,
+          0.9743443557582668,
+          0.969803250641574,
+          0.9673763736263736
+        ]
+      },
+      {
+        "lod": 3,
+        "minimum_iou": 0.9368130142578984,
+        "views": [
+          0.9371310136917472,
+          0.945602049530316,
+          0.9412864304528847,
+          0.9368130142578984,
+          0.94521835740535,
+          0.9391392920804685
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "issues": [
+      {
+        "code": "scale_unverified",
+        "severity": "review",
+        "message": "Source units were assumed to be meters; verify the intended real-world dimensions."
+      },
+      {
+        "code": "subpixel_islands",
+        "severity": "review",
+        "message": "Some UV islands occupy under one texel; inspect checker previews and mip behavior."
+      },
+      {
+        "code": "surface_review",
+        "severity": "info",
+        "message": "Review the intended shape: automatic smoothing/remeshing cannot identify every generated fold."
+      }
+    ],
+    "technical_passed": true,
+    "review_required": true,
+    "shipping_certified": false
+  },
+  "editable_blend": "vampire_chestplate.blend",
+  "validation_passed": true,
+  "engine_check": {
+    "status": "not_run",
+    "engine": "generic",
+    "reason": "disabled or generic preset"
+  },
+  "review_page": "review.html"
+}
