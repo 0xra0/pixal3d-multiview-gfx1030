@@ -1,0 +1,14 @@
+{
+ "id": "real_size",
+ "prompt": "Scale Sword uniformly so it is 1.28 m tall, then apply the scale.",
+ "passed": true,
+ "detail": "size (0.256, 0.026, 1.280), scale (1.000, 1.000, 1.000)",
+ "error": "",
+ "seconds": 62,
+ "steps": 1,
+ "failed_calls": 0,
+ "tools": [
+  "run_python"
+ ],
+ "final": "Done. Scale applied uniformly by 0.256 (the original 1 : 0.1 : 5 proportions are baked into the mesh, so the shape is unchanged):\n\n- Scale is now exactly (1, 1, 1), no leftover object scale\n- World height = 1.28 m (bounds z: \u22120.64 \u2026 0.64), footprint 0.256 \u00d7 0.0256 m\n- 8 verts / 6 faces, unchanged\n\nThe capture shows the thin, tall blade silhouette as before, just proportionally smaller."
+}

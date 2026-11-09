@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Set Statue's origin to the centre of its base (the bottom middle), and move Statue so that point sits at the world origin."
+  },
+  {
+   "kind": "assistant",
+   "text": "I'll find the base's bottom-middle point, then shift the mesh so that point becomes the origin and place the origin at the world origin."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Origin \u00e0 la base (point m\u00e9dian du pied), puis origin \u00e0 l'origine du monde",
+   "output": "base verts used: 32  bottom plane z=0.500  base centre P=(2.0, 1.0, 0.5)\nnew origin: (0.0, 0.0, 0.0)\nbounds now: (1.63, 0.847, 1.5) (2.37, 1.153, 3.5)\n\nScene changes (+ added, - removed, ~ changed; bounds are world space):\n~ Statue: location (2.0, 1.0, 1.5) -> (0.0, 0.0, 0.0); mesh vertices moved (64v, same counts); bounds now [-0.4, -0.4, 0.0]..[0.4, 0.4, 2.0]\n\nImage attached: three_quarter view of Statue; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x1405 px.",
+   "code": "\nimport math\nfrom mathutils import Vector\n\nobj = bpy.data.objects[\"Statue\"]\nmw = obj.matrix_world\n\n# World-space vertices\nverts_world = [mw @ v.co for v in obj.data.vertices]\nzmin = min(v.z for v in verts_world)\n\n# Centre of the base: mean of the lowest vertices (footprint centre), at the bottom plane\nbottom = [v for v in verts_world if abs(v.z - zmin) < 1e-5]\nP = sum(bottom, Vector()) / len(bottom)\nP.z = zmin\nprint(f\"base verts used: {len(bottom)}  bottom plane z={zmin:.3f}  base centre P={tuple(round(c,3) for c in P)}\")\n\n# Point in local space, then make it the origin\nlocalP = mw.inverted() @ P\nfor v in obj.data.vertices:\n    v.co = v.co - localP\n\n# Origin now sits at world origin\nobj.location = Vector((0, 0, 0))\nobj.rotation_euler = (0, 0, 0)\nobj.scale = (1, 1, 1)\n\nobj.data.update()\nprint(\"new origin:\", tuple(round(c, 3) for c in obj.location))\nbb = [mw_new for mw_new in [obj.matrix_world]]\nbbmin = min(obj.matrix_world @ v.co for v in obj.data.vertices)\nbbmax = max(obj.matrix_world @ v.co for v in obj.data.vertices)\nprint(\"bounds now:\", tuple(round(c,3) for c in bbmin), tuple(round(c,3) for c in bbmax))\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "Done. The base's bottom-middle point was at (2.0, 1.0, 0.5) \u2014 the centre of the 32-vertex bottom face, on the plane z = 0.5.\n\n- **Origin**: moved to that point (mesh vertices shifted so the origin lands on the base centre).\n- **Placement**: origin set to (0, 0, 0), so the base centre now sits exactly on the world origin; the statue stands on the ground plane, bounds `[-0.40, -0.40, 0.0] \u2026 [0.40, 0.40, 2.0]`.\n\nRotation and scale were left untouched (already identity)."
+  },
+  {
+   "kind": "changes",
+   "text": "1 changed"
+  }
+ ]
+}

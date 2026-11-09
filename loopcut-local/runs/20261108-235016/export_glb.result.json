@@ -1,0 +1,22 @@
+{
+ "id": "export_glb",
+ "prompt": "Export only Gem, with its modifiers applied, as a binary glTF file to /mnt/ssd/work/loopcut-local/runs/20261108-235016/export_glb.out/gem.glb.",
+ "passed": true,
+ "detail": "magic b'glTF', nodes ['Gem'], exported triangles 116, Gem evaluated 116",
+ "error": "",
+ "seconds": 138,
+ "steps": 9,
+ "failed_calls": 2,
+ "tools": [
+  "get_object_info",
+  "inspect_api",
+  "read_result",
+  "read_result",
+  "read_result",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Exported. `Gem` only, modifiers applied (Bevel baked in: 240 vertices / 20-face-triangulated primitives from the base 12-vertex mesh), binary glTF v2.\n\n- File: `/mnt/ssd/work/loopcut-local/runs/20261108-235016/export_glb.out/gem.glb` \u2014 9,384 bytes, one node named `Gem` with POSITION/NORMAL/TEXCOORD_0 (`UVMap`).\n- No materials or images in the file, since Gem has no material assigned.\n- Draco/MeshOptimizer warnings in the log are just missing optional bridge libraries; both were off, so the export is uncompressed and finished cleanly."
+}

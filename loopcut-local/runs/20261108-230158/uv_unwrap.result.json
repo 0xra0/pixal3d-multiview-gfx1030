@@ -1,0 +1,14 @@
+{
+ "id": "uv_unwrap",
+ "prompt": "Give Crate a UV map: every face unwrapped, no overlapping islands, everything inside 0-1.",
+ "passed": true,
+ "detail": "0 grid cells overlap, 41750 covered, 0 UVs outside 0-1",
+ "error": "",
+ "seconds": 38,
+ "steps": 1,
+ "failed_calls": 0,
+ "tools": [
+  "uv_unwrap"
+ ],
+ "final": "Done \u2014 `Crate` now has a UV map named **UVMap**.\n\nAudit at 1024 px with 8 px padding:\n- 6 faces \u2192 6 separate islands, one per face, smart-projected at 66\u00b0\n- All UVs inside 0\u20131, no overlaps, no zero-area or flipped faces\n- Stretch: 1.00 (none), even texel density 333 px/m across all faces\n- Coverage 64% of the tile, min gutter 8.0 px, 4.0 px border margin\n\nThe cube looks unchanged in the viewport because there's no texture yet \u2014 the UVs only show up once an image or checker texture is applied. Say the word if you want a checker map to eyeball the layout, or a different packing (seams-based, or all six faces in a cross shape for a specific texture)."
+}

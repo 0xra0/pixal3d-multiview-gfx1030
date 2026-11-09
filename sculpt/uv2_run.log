@@ -1,0 +1,5 @@
+  mesh: /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_00002_.glb
+  PREP WARNING Neutral material: bake/apply textures before shipping.
+  PREP WARNING Smoothing/remeshing changes shape; inspect thin parts and silhouette.
+  PREP OK triangles 282111 -> 89304; boundary edges 0; UV GameUV; report /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_sculpt.report.json
+228.43 s 8862476 KB

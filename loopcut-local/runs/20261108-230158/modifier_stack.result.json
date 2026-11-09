@@ -1,0 +1,18 @@
+{
+ "id": "modifier_stack",
+ "prompt": "Add a Mirror modifier on X to Hull, and after it a Bevel modifier with width 0.02 m and 3 segments.",
+ "passed": true,
+ "detail": "mirror x True, bevel width 0.0200, segments 3",
+ "error": "",
+ "seconds": 204,
+ "steps": 5,
+ "failed_calls": 2,
+ "tools": [
+  "run_python",
+  "inspect_api",
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Done \u2014 Hull now has **Mirror \u2192 Bevel** in that order.\n\n- **Mirror** (`Mirror`), X axis only (`use_axis = [True, False, False]`), merge threshold 0.001 m.\n- **Bevel** (`Bevel`), width 0.02 m, 3 segments.\n- Evaluated result: 192 verts / 196 faces from the 8-vert base cube.\n\nOne note, not fixed since you didn't ask: the cube is centered on its own origin, so the X-mirror lands exactly on top of the original \u2014 96 of the 192 verts are coincident duplicates. The mirror is applying, but it changes nothing visible (the beveled box in the capture is just the bevel). If you want a real mirrored half, tell me and I'll either offset the mirror (`mirror_object` or `use_mirror_offset`), shift the origin, or move Hull so its half sits on one side of X=0."
+}

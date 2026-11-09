@@ -1,0 +1,16 @@
+{
+ "id": "red_sphere",
+ "prompt": "Add a UV sphere of radius 0.5 m resting on top of the cube, centred on it, with a pure red material (red base colour).",
+ "passed": true,
+ "detail": "size (1.000, 1.000, 1.000), bottom 1.000, centre (0.000, 0.000, 1.500), base colour (1.0, 0.0, 0.0)",
+ "error": "",
+ "seconds": 107,
+ "steps": 3,
+ "failed_calls": 1,
+ "tools": [
+  "run_python",
+  "check_contact",
+  "get_object_info"
+ ],
+ "final": "Done \u2014 the failure is expected, since resting on top means touching.\n\n- **Sphere** (UV sphere, radius 0.5 m, 512 faces) at origin `(0, 0, 1.5)`: centred on the cube in X/Y, tangent to its top face at z = 1.\n- **Red** material, Principled BSDF with Base Color `(1, 0, 0)` \u2014 pure red, no tint from `diffuse_color`.\n\nVerified by Loopcut on this scene: 1 of 2 checks.\nPassed: sphere rests on cube.\nFailed: sphere does not have the required clearance from cube. It is too close to cube."
+}

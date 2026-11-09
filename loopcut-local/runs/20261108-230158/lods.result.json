@@ -1,0 +1,14 @@
+{
+ "id": "lods",
+ "prompt": "Make three LOD copies of Barrel named Barrel_LOD1, Barrel_LOD2 and Barrel_LOD3 with about 50%, 25% and 12.5% of its triangles. Leave Barrel itself unchanged.",
+ "passed": true,
+ "detail": "Barrel 3072 (was 3072); LOD1 1536, LOD2 768, LOD3 384",
+ "error": "",
+ "seconds": 89,
+ "steps": 1,
+ "failed_calls": 0,
+ "tools": [
+  "run_python"
+ ],
+ "final": "Done \u2014 three decimated copies, exact ratios, Barrel itself untouched:\n\n| Object | Faces | Triangles | vs Barrel |\n|---|---|---|---|\n| Barrel | 1536 | 3072 | 100% |\n| Barrel_LOD1 | 1097 | 1536 | 50.0% |\n| Barrel_LOD2 | 640 | 768 | 25.0% |\n| Barrel_LOD3 | 350 | 384 | 12.5% |\n\nEach was made as a copy of Barrel's mesh data, then Decimate (Collapse) applied, so they share Barrel's material slots, UV map, smooth/sharp edge flags and sit at the same origin \u2014 so all LODs share its pivot. They look identical in the capture because they occupy the same space, as LODs should."
+}

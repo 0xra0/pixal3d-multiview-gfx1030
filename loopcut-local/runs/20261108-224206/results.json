@@ -1,0 +1,39 @@
+{
+ "label": "IQ2_XS + skills v1",
+ "model": "strata",
+ "base_url": "http://127.0.0.1:8099/v1",
+ "skills": "/mnt/sata/loopcut/local-skills",
+ "started": "2026-11-08 22:42:06",
+ "results": [
+  {
+   "id": "red_sphere",
+   "prompt": "Add a UV sphere of radius 0.5 m resting on top of the cube, centred on it, with a pure red material (red base colour).",
+   "passed": true,
+   "detail": "size (1.000, 1.000, 1.000), bottom 1.000, centre (0.000, 0.000, 1.500), base colour (1.0, 0.0, 0.0)",
+   "error": "",
+   "seconds": 201,
+   "steps": 2,
+   "failed_calls": 0,
+   "tools": [
+    "run_python",
+    "check_contact"
+   ],
+   "final": "Done \u2014 verified contact passes (sphere's lowest point touches the cube's top face), centred on it, and the \"Red\" material has pure red Base Color on the Principled BSDF.\n\nVerified by Loopcut on this scene: 1 of 1 checks.\nPassed: sphere rests on cube."
+  },
+  {
+   "id": "steel_material",
+   "prompt": "Give Plate a dark brushed steel material: metallic 1, roughness 0.35, base colour dark grey (about 0.05).",
+   "passed": false,
+   "detail": "Plate has no node material with a Principled BSDF",
+   "error": "Local model endpoint http://127.0.0.1:8099/v1 refused the connection. Check that Strata (or your local provider) is running. If it stopped during a Blender task, check RAM/earlyoom logs before restarting; then press Try again.",
+   "seconds": 392,
+   "steps": 2,
+   "failed_calls": 1,
+   "tools": [
+    "inspect_api",
+    "run_python"
+   ],
+   "final": "Tangent node confirmed (`RADIAL`, axis X). Building the material now."
+  }
+ ]
+}

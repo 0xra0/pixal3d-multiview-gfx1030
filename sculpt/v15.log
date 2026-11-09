@@ -1,0 +1,64 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+PREP import /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_00002_.glb
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+21:35:18 | INFO: Data are loaded, start creating Blender stuff
+21:35:18 | INFO: Blender create Mesh node geometry_0
+21:35:18 | INFO: glTF import finished in 0.19s
+PREP input {"vertices": 140749, "faces": 282111, "triangles": 282111, "boundary_edges": 273, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 48, "uv_layer": null, "invalid_uv_corners": 0, "zero_area_uv_faces": 0, "uv_area_sum": 0.0, "uv_overlap_check": "not_measured"}
+PREP repair
+PREP boundary weld 363
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 87
+PREP boundary weld 0
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 0
+PREP Smart UV
+PREP UV project
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP UV isolate foldovers 1562124
+PREP UV isolate foldovers 1550483
+PREP UV isolate foldovers 1550548
+/mnt/ssd/work/pixal3d-mv/prep_mesh.py:608: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+PREP validate {"vertices": 780816, "faces": 1562124, "triangles": 1562124, "boundary_edges": 0, "overconnected_edges": 0, "nonmanifold_vertices": 0, "loose_edges": 0, "loose_vertices": 0, "degenerate_faces": 0, "uv_layer": "GameUV", "invalid_uv_corners": 4556787, "zero_area_uv_faces": 1550645, "uv_area_sum": 4.2867561334414966e-11, "uv_overlap_check": "not_measured"}
+Traceback (most recent call last):
+  File "/mnt/ssd/work/pixal3d-mv/prep_mesh.py", line 672, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/ssd/work/pixal3d-mv/prep_mesh.py", line 643, in main
+    raise ValueError(f"Mesh validation failed; see {report_path}")
+ValueError: Mesh validation failed; see /mnt/ssd/work/sculpt/chest_v15.report.json
+
+Error: script failed, file: '/mnt/ssd/work/pixal3d-mv/prep_mesh.py', exiting.
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+
+Blender quit

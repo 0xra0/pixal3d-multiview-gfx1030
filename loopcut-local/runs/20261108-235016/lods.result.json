@@ -1,0 +1,20 @@
+{
+ "id": "lods",
+ "prompt": "Make three LOD copies of Barrel named Barrel_LOD1, Barrel_LOD2 and Barrel_LOD3 with about 50%, 25% and 12.5% of its triangles. Leave Barrel itself unchanged.",
+ "passed": true,
+ "detail": "Barrel 3072 (was 3072); LOD1 1536, LOD2 768, LOD3 384",
+ "error": "",
+ "seconds": 288,
+ "steps": 7,
+ "failed_calls": 3,
+ "tools": [
+  "get_object_info",
+  "studio_guide",
+  "studio_guide",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Done \u2014 three LOD copies created, each all-triangle so the counts are exact.\n\n| Object | Triangles | vs. Barrel |\n|---|---|---|\n| Barrel | 3072 (1536 quads, untouched) | 100% |\n| Barrel_LOD1 | 1536 | 50.0% |\n| Barrel_LOD2 | 768 | 25.0% |\n| Barrel_LOD3 | 384 | 12.5% |\n\nAll three sit at Barrel's origin in the same collection, modifiers applied so they're plain meshes, and Barrel itself is unchanged (still 1536 quads, no modifiers).\n\nOne note on how I got there: my first decimate loop measured the evaluated mesh without updating the depsgraph, so it read the pre-decimate count every time and drove the ratios to near-zero \u2014 LOD1 was reduced to 24 faces. Rebuilding the copies with `dg.update()` before each measurement fixed it, and the ratios settled on clean 0.5 / 0.25 / 0.125."
+}

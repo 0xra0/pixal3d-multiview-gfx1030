@@ -1,0 +1,35 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Add a UV sphere of radius 0.5 m resting on top of the cube, centred on it, with a pure red material (red base colour)."
+  },
+  {
+   "kind": "assistant",
+   "text": "Simple build: cube top is at z=1.0, so the sphere (r=0.5) centres at z=1.5. I'll add it plus a pure-red Principled material."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Add UV sphere (r=0.5) centred on top of the cube with a pure red material",
+   "output": "Sphere <Vector (0.0000, 0.0000, 1.5000)>\n\nScene changes (+ added, - removed, ~ changed; bounds are world space):\n+ Sphere (mesh) at [-0.5, -0.5, 1.0]..[0.5, 0.5, 2.0]\n+ material Red\n~ collection Collection: +Sphere\n\nImage attached: three_quarter view of Sphere; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x992 px. Nearest to the viewpoint first: Sphere 2.4 m, Cube 3.3 m.",
+   "code": "\nimport bpy\n\nbpy.ops.mesh.primitive_uv_sphere_add(radius=0.5, location=(0.0, 0.0, 1.5), segments=32, ring_count=16)\nsphere = bpy.context.active_object\nsphere.name = \"Sphere\"\n\nmat = bpy.data.materials.new(\"Red\")\nmat.use_nodes = True\nbsdf = next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")\nbsdf.inputs[\"Base Color\"].default_value = (1.0, 0.0, 0.0, 1.0)\nsphere.data.materials.append(mat)\n\nprint(sphere.name, sphere.location)\n"
+  },
+  {
+   "kind": "tool",
+   "name": "check_contact",
+   "status": "done",
+   "summary": "Check contact: Sphere rests_on Cube",
+   "output": "Contact: 1 pass, 0 fail, 0 unavailable (tolerance 2.0 mm; moves are world-space, nothing was moved).\npass: Sphere rests_on Cube: 1 support touching."
+  },
+  {
+   "kind": "assistant",
+   "text": "Done \u2014 verified contact passes (sphere's lowest point touches the cube's top face), centred on it, and the \"Red\" material has pure red Base Color on the Principled BSDF.\n\nVerified by Loopcut on this scene: 1 of 1 checks.\nPassed: sphere rests on cube."
+  },
+  {
+   "kind": "changes",
+   "text": "2 added, 1 changed"
+  }
+ ]
+}

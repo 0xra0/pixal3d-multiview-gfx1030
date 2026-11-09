@@ -1,0 +1,17 @@
+{
+ "id": "steel_material",
+ "prompt": "Give Plate a dark brushed steel material: metallic 1, roughness 0.35, base colour dark grey (about 0.05).",
+ "passed": true,
+ "detail": "metallic 1.00, roughness 0.35, base colour (0.050, 0.050, 0.055)",
+ "error": "",
+ "seconds": 113,
+ "steps": 4,
+ "failed_calls": 2,
+ "tools": [
+  "run_python",
+  "inspect_api",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Done \u2014 `BrushedSteel` is on Plate:\n\n- **Base colour** 0.05 / 0.05 / 0.055, **metallic 1**, **roughness 0.35**\n- Roughness is driven by a stretched noise (Mapping scale \u00d714 on Y, Map Range 0.30\u20130.42) so the surface reads as brushed grain rather than a flat specular\n- A faint bump (strength 0.03) from the same noise catches highlights along the streaks\n\nThe capture confirms the grain on the top face. It's a plain cube named Plate \u2014 say the word if you want the streaks aligned to a different axis, or the grain stronger."
+}

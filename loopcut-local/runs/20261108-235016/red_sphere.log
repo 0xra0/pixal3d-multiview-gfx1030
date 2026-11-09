@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+00:09.673  cycles           | WARNING CUEW initialization failed: Error opening the library
+00:09.706  blend            | Writing user preferences: "/home/home/.config/loopcut/5.2/config/userpref.blend" 
+Loopcut: shader compilation set to Subprocess (Preferences > System); it applies after a restart.
+Info: Preferences saved
+Loopcut: the interface was blocked for 232 ms by starting a look's shader preview
+Loopcut: the interface was blocked for 2168 ms by the capture_viewport tool
+LOCAL_EVAL red_sphere PASS size (1.000, 1.000, 1.000), bottom 1.000, centre (0.000, 0.000, 1.500), base colour (1.0, 0.0, 0.0)

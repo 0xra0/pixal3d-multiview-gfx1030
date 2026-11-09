@@ -1,0 +1,35 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Add a UV sphere of radius 0.5 m resting on top of the cube, centred on it, with a pure red material (red base colour)."
+  },
+  {
+   "kind": "assistant",
+   "text": "Creating the sphere on the cube's top face (top at z=1, so centre at z=1.5) and a pure red material."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Add UV sphere (r=0.5) centred on top of the cube with a pure red material",
+   "output": "Sphere <Vector (0.0000, 0.0000, 1.5000)> 482 512\n\nScene changes (+ added, - removed, ~ changed; bounds are world space):\n+ Sphere (mesh) at [-0.5, -0.5, 1.0]..[0.5, 0.5, 2.0]\n+ material Red\n~ collection Collection: +Sphere\n\nImage attached: three_quarter view of Sphere; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x690 px. Nearest to the viewpoint first: Sphere 1.8 m, Cube 2.8 m.",
+   "code": "import bpy\n\n# Create UV sphere of radius 0.5\nbpy.ops.mesh.primitive_uv_sphere_add(radius=0.5, segments=32, ring_count=16, location=(0.0, 0.0, 1.5))\nsphere = bpy.context.active_object\nsphere.name = \"Sphere\"\n\n# Pure red material\nmat = bpy.data.materials.new(\"Red\")\nmat.use_nodes = True\nbsdf = mat.node_tree.nodes.get(\"Principled BSDF\")\nbsdf.inputs[\"Base Color\"].default_value = (1.0, 0.0, 0.0, 1.0)\n\nsphere.data.materials.append(mat)\nprint(sphere.name, sphere.location, len(sphere.data.vertices), len(sphere.data.polygons))\n"
+  },
+  {
+   "kind": "tool",
+   "name": "check_contact",
+   "status": "done",
+   "summary": "Check contact: Sphere rests_on Cube",
+   "output": "Contact: 1 pass, 0 fail, 0 unavailable (tolerance 2.0 mm; moves are world-space, nothing was moved).\npass: Sphere rests_on Cube: 1 support touching."
+  },
+  {
+   "kind": "assistant",
+   "text": "Done.\n\n- **Sphere** \u2014 UV sphere, radius 0.5 m (32 segments / 16 rings, 482 verts), origin at `(0, 0, 1.5)`, so it sits tangent on the cube's top face at z = 1, centred in X/Y. Contact check confirms it touches the cube with no penetration.\n- **Material `Red`** \u2014 Principled BSDF, Base Color `(1, 0, 0)`. The capture looks slightly washed because AgX view transform tone-maps pure red; the material value itself is pure red.\n\nVerified by Loopcut on this scene: 1 of 1 checks.\nPassed: sphere rests on cube."
+  },
+  {
+   "kind": "changes",
+   "text": "2 added, 1 changed"
+  }
+ ]
+}

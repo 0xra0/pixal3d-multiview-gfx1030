@@ -1,0 +1,15 @@
+{
+ "id": "red_sphere",
+ "prompt": "Add a UV sphere of radius 0.5 m resting on top of the cube, centred on it, with a pure red material (red base colour).",
+ "passed": true,
+ "detail": "size (1.000, 1.000, 1.000), bottom 1.000, centre (0.000, 0.000, 1.500), base colour (1.0, 0.0, 0.0)",
+ "error": "",
+ "seconds": 201,
+ "steps": 2,
+ "failed_calls": 0,
+ "tools": [
+  "run_python",
+  "check_contact"
+ ],
+ "final": "Done \u2014 verified contact passes (sphere's lowest point touches the cube's top face), centred on it, and the \"Red\" material has pure red Base Color on the Principled BSDF.\n\nVerified by Loopcut on this scene: 1 of 1 checks.\nPassed: sphere rests on cube."
+}

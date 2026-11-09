@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+00:02.619  cycles           | WARNING CUEW initialization failed: Error opening the library
+00:02.631  blend            | Writing user preferences: "/home/home/.config/loopcut/5.2/config/userpref.blend" 
+00:13.044  bpy.rna          | WARNING current value '0' matches no enum in 'EnumProperty', 'export_format', 'default'
+Loopcut: shader compilation set to Subprocess (Preferences > System); it applies after a restart.
+Info: Preferences saved
+Loopcut: the interface was blocked for 411 ms by the run_python tool
+LOCAL_EVAL export_glb PASS magic b'glTF', nodes ['Gem'], exported triangles 116, Gem evaluated 116

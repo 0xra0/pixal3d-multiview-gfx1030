@@ -1,0 +1,52 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Animate Door rotating 90 degrees around Z from frame 1 to frame 48, and make the scene end at frame 48."
+  },
+  {
+   "kind": "assistant",
+   "text": "I'll keyframe the Door's Z rotation at frames 1 and 48, then set the scene range."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Keyframe Door's Z rotation 0\u00b0\u219290\u00b0 over frames 1\u201348 and set scene end to 48",
+   "output": "action: DoorAction\n\nTraceback (most recent call last):\n  File \"<loopcut>\", line 23, in <module>\nAttributeError: 'Keyframe' object has no attribute 'frame'\nNOTE: Closest on Keyframe: keyframe_insert, keyframe_delete.\n\nThe code made these changes before the error; they stay in the scene.\nScene changes (+ added, - removed, ~ changed; bounds are world space):\n~ Door: rotation_deg (0.0, -0.0, 0.0) -> (0.0, -0.0, 90.0); animated False -> True\n~ scene frame_end 250 -> 48\n\nImage attached: three_quarter view of Door; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x1420 px.",
+   "code": "\nimport math\n\ndoor = bpy.data.objects[\"Door\"]\n\ndoor.rotation_euler = (0.0, 0.0, 0.0)\ndoor.keyframe_insert(data_path=\"rotation_euler\", index=2, frame=1)\n\ndoor.rotation_euler = (0.0, 0.0, math.radians(90.0))\ndoor.keyframe_insert(data_path=\"rotation_euler\", index=2, frame=48)\n\nscene = bpy.context.scene\nscene.frame_start = 1\nscene.frame_end = 48\n\n# report the created action/keyframes\naction = door.animation_data.action\nprint(\"action:\", action.name if action else None)\nfrom bpy_extras import anim_utils\nslot = action.slots[0]\nbag = anim_utils.action_ensure_channelbag_for_slot(action, slot)\nfor fc in bag.fcurves:\n    pts = [(kf.frame, round(math.degrees(kf.co[0]), 2)) for kf in fc.keyframe_points]\n    print(f\"{fc.data_path}[{fc.array_index}] interpolation={fc.interpolation} keys={pts}\")\nprint(\"frame range:\", scene.frame_start, scene.frame_end)\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "Keyframes and the frame range were set correctly; only my reporting line failed (`Keyframe` has no `.frame` \u2014 frame lives in `co[0]`). Let me verify the actual keyframes and how they evaluate."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Verify Door's keyframes and evaluated rotation at frames 1, 24, 48",
+   "output": "Traceback (most recent call last):\n  File \"<loopcut>\", line 11, in <module>\nAttributeError: 'FCurve' object has no attribute 'interpolation'. Did you mean: 'extrapolation'?\nNOTE: Closest on FCurve: extrapolation.\nRelated types: Keyframe.interpolation via FCurve.keyframe_points[...].\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "\nimport math\nfrom bpy_extras import anim_utils\n\ndoor = bpy.data.objects[\"Door\"]\naction = door.animation_data.action\nslot = action.slots[0]\nbag = anim_utils.action_ensure_channelbag_for_slot(action, slot)\n\nfor fc in bag.fcurves:\n    print(f\"{fc.data_path}[{fc.array_index}] interp={fc.interpolation} extend={fc.extrapolation}\")\n    for kp in fc.keyframe_points:\n        print(\"  frame\", kp.co[0], \"value\", round(math.degrees(kp.co[1]), 2), \"handle\", kp.interpolation)\n\n# sample the evaluated rotation at start, middle, end\nfor f in (1, 24, 48):\n    v = bag.fcurves[0].evaluate(f)\n    print(f\"frame {f}: {round(math.degrees(v), 2)} deg\")\n\nprint(\"frame range:\", bpy.context.scene.frame_start, bpy.context.scene.frame_end)\nprint(\"action frame range:\", action.frame_start, action.frame_end)\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "Interpolation is per keyframe here, not per FCurve. Re-checking."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Read keyframes and evaluated rotation at frames 1, 24, 48",
+   "output": "rotation_euler[2] extrapolation=CONSTANT\n  frame 1.0 value 0.0 interp BEZIER\n  frame 48.0 value 90.0 interp BEZIER\nevaluated frame 1: 0.0 deg\nevaluated frame 24: 43.56 deg\nevaluated frame 48: 90.0 deg\nscene range: 1 48\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "\nimport math\nfrom bpy_extras import anim_utils\n\ndoor = bpy.data.objects[\"Door\"]\naction = door.animation_data.action\nbag = anim_utils.action_ensure_channelbag_for_slot(action, action.slots[0])\n\nfor fc in bag.fcurves:\n    print(f\"{fc.data_path}[{fc.array_index}] extrapolation={fc.extrapolation}\")\n    for kp in fc.keyframe_points:\n        print(\"  frame\", kp.co[0], \"value\", round(math.degrees(kp.co[1]), 2), \"interp\", kp.interpolation)\n\nfor f in (1, 24, 48):\n    print(f\"evaluated frame {f}: {round(math.degrees(fc.evaluate(f)), 2)} deg\")\n\nprint(\"scene range:\", bpy.context.scene.frame_start, bpy.context.scene.frame_end)\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "Done \u2014 verified in the scene:\n\n**Door** \u2014 one FCurve on `rotation_euler[2]`, keyframes at frame 1 (0\u00b0) and frame 48 (90\u00b0), Bezier interpolation. Evaluated values: frame 1 = 0\u00b0, frame 24 = 43.56\u00b0, frame 48 = 90\u00b0 (eased in/out, so mid-animation is ahead of linear).\n\n**Scene range** \u2014 1 to 48 (`frame_end` was 250, now 48).\n\nBoth errors were in my reporting code only (`Keyframe.frame` \u2192 `co[0]`; `FCurve.interpolation` \u2192 keyframe-level), so no scene state was affected.\n\nTwo things you might want to decide:\n- **Timing feel:** the Bezier keys ease the motion. Say the word and I'll set both keyframes to linear so it sweeps at a constant 2\u00b0/frame.\n- **Pivot:** the rotation is around Door's origin, which is the cube's centre. A door normally hinges at its edge \u2014 if you want that, I can move the origin (or add an empty parent) to a hinge line."
+  },
+  {
+   "kind": "changes",
+   "text": "2 changed"
+  }
+ ]
+}

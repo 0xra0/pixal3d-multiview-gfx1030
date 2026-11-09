@@ -1,0 +1,135 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Export only Gem, with its modifiers applied, as a binary glTF file to /mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb."
+  },
+  {
+   "kind": "assistant",
+   "text": "Let me look at Gem first, then export it."
+  },
+  {
+   "kind": "tool",
+   "name": "get_object_info",
+   "status": "done",
+   "summary": "Checking object details",
+   "output": "[{\"name\":\"Gem\",\"type\":\"MESH\",\"location\":[0.0,0.0,0.0],\"rotation_deg\":[0.0,0.0,0.0],\"scale\":[1.0,1.0,1.0],\"visible\":true,\"selected\":false,\"bounds\":{\"min\":[-0.088,-0.083,-0.094],\"max\":[0.088,0.083,0.094]},\"modifiers\":[\"Bevel (BEVEL)\"],\"dimensions\":[0.1751,0.1666,0.1879],\"children\":[],\"mesh\":{\"verts\":12,\"edges\":30,\"faces\":20}}]"
+  },
+  {
+   "kind": "assistant",
+   "text": "Gem is a 20-face mesh with a Bevel modifier. Exporting it alone with modifiers applied."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Export only Gem (modifiers applied) as binary glTF",
+   "output": "ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so\nERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so\n23:19:40 | INFO: Starting glTF 2.0 export\n23:19:40 | INFO: Extracting primitive: Gem\n23:19:40 | INFO: Primitives created: 1\n23:19:40 | INFO: Finished glTF 2.0 export in 0.08735299110412598 s\n\nexport result: {'FINISHED'}\nexists: True size: 9384\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import os, bpy\nout_dir = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out\"\nos.makedirs(out_dir, exist_ok=True)\n\n# select only Gem\nbpy.ops.object.select_all(action='DESELECT')\ngem = bpy.data.objects[\"Gem\"]\ngem.select_set(True)\nbpy.context.view_layer.objects.active = gem\n\nresult = bpy.ops.export_scene.gltf(\n    filepath=os.path.join(out_dir, \"gem.glb\"),\n    export_format=\"GLB\",\n    use_selection=True,\n    export_apply=True,\n)\nprint(\"export result:\", result)\npath = os.path.join(out_dir, \"gem.glb\")\nprint(\"exists:\", os.path.exists(path), \"size:\", os.path.getsize(path) if os.path.exists(path) else 0)\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Verify the GLB header and mesh contents",
+   "output": "magic ok: False version: 2 chunks: 1\nnodes: ['Gem']\n\nTraceback (most recent call last):\n  File \"<loopcut>\", line 10, in <module>\nTypeError: object of type 'int' has no len()\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nmagic, ver, total = struct.unpack('<III', d[:12])\nclen, ctype = struct.unpack('<I4s', d[12:20])\nj = json.loads(d[20:20+clen])\nprint(\"magic ok:\", magic == 0x464C47, \"version:\", ver, \"chunks:\", len(j['chunks']) if 'chunks' in j else 1)\nprint(\"nodes:\", [n.get('name') for n in j.get('nodes',[])])\nfor m in j.get('meshes',[]):\n    print(\"mesh:\", m.get('name'), \"primitives:\", [(len(p['attributes']['POSITION']) if 'attributes' in p else 0, p.get('mode')) for p in m['primitives']])\n    for prim in m['primitives']:\n        print(\"  attrs:\", {k: len(v) for k,v in prim['attributes'].items()}, \"material:\", prim.get('material'))\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Re-verify GLB structure with correct magic and accessor counts",
+   "output": "magic: b'glTF' version: 2 total bytes: 9384\njson chunk: 980 bin chunk bytes: 0 sum+20+8 = 1008 -> matches file: False\nnodes: [('Gem', 0)]\n\nTraceback (most recent call last):\n  File \"<loopcut>\", line 15, in <module>\nAttributeError: 'list' object has no attribute 'get'\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nmagic, ver, total = struct.unpack('<III', d[:12])\nprint(\"magic:\", d[:4], \"version:\", ver, \"total bytes:\", total)\nclen, ctype = struct.unpack('<I4s', d[12:20])\nj = json.loads(d[20:20+clen])\nbinsum = sum(c['length'] for c in j.get('chunks',[]))\nprint(\"json chunk:\", clen, \"bin chunk bytes:\", binsum, \"sum+20+8 =\", clen+binsum+28, \"-> matches file:\", clen+binsum+28 == len(d))\nprint(\"nodes:\", [(n.get('name'), n.get('mesh')) for n in j.get('nodes',[])])\nfor m in j.get('meshes',[]):\n    for prim in m['primitives']:\n        acc = j['accessors']\n        print(\"mesh\", m.get('name'), \"prim attrs:\", {k: (acc[v]['count'], acc[v]['componentType'], acc[v]['type']) for k,v in prim['attributes'].items()},\n              \"indices:\", acc.get(prim.get('indices',-1),{}).get('count'), \"material:\", prim.get('material'))\nprint(\"materials:\", [mm.get('name') for mm in j.get('materials',[])])\nprint(\"images:\", [i.get('mimeType') for i in j.get('images',[])], \"textures:\", len(j.get('textures',[])))\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Parse GLB chunks and accessors correctly",
+   "output": "chunks: [('JSON', 980), ('BIN\\x00', 8376)] declared total: 9384 actual: 9384\njson keys: ['asset', 'scene', 'scenes', 'nodes', 'meshes', 'accessors', 'bufferViews', 'buffers']\naccessor 0: count=240 type=VEC3 comp=5126 bufferView=0\naccessor 1: count=240 type=VEC3 comp=5126 bufferView=1\naccessor 2: count=240 type=VEC2 comp=5126 bufferView=2\naccessor 3: count=348 type=SCALAR comp=5123 bufferView=3\nnodes: [{'mesh': 0, 'name': 'Gem'}]\nprim attrs: {'POSITION': 0, 'NORMAL': 1, 'TEXCOORD_0': 2} indices: 3 material: None\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nmagic, ver, total = struct.unpack('<III', d[:12])\npos = 12; chunks = []\nwhile pos < len(d):\n    ln, typ = struct.unpack('<I4s', d[pos:pos+8])\n    chunks.append((typ.decode(), ln)); pos += 8 + ln\nprint(\"chunks:\", chunks, \"declared total:\", total, \"actual:\", len(d))\nj = json.loads(d[20:20+chunks[0][1]])\nprint(\"json keys:\", list(j.keys()))\naccs = j['accessors']\nfor i, a in enumerate(accs):\n    print(f\"accessor {i}: count={a['count']} type={a['type']} comp={a['componentType']} bufferView={a.get('bufferView')}\")\nprint(\"nodes:\", j['nodes'])\nfor m in j['meshes']:\n    for prim in m['primitives']:\n        print(\"prim attrs:\", prim['attributes'], \"indices:\", prim.get('indices'), \"material:\", prim.get('material'))\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Confirm indices stay in range and match Bevel-applied mesh",
+   "output": "Traceback (most recent call last):\n  File \"<loopcut>\", line 7, in <module>\nstruct.error: unpack requires a buffer of 1392 bytes\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json, bpy\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nj = json.loads(d[20:20+980])\nbinstart = 20 + 980 + 8\nbv = j['bufferViews'][3]\nidx = list(struct.unpack('<%dI' % j['accessors'][3]['count'], d[binstart+bv['byteOffset']:binstart+bv['byteOffset']+bv['byteLength']]))\nprint(\"indices:\", len(idx), \"max index:\", max(idx), \"min:\", min(idx))\ngem = bpy.data.objects['Gem']\ndg = bpy.context.evaluated_depsgraph_get()\nev = gem.evaluated_get(dg)\nprint(\"evaluated verts/faces:\", len(ev.data.vertices), len(ev.data.polygons), \"base:\", len(gem.data.vertices), len(gem.data.polygons))\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Decode GLB buffer correctly and validate index range",
+   "output": "buffers: [{'byteLength': 8376}]\nbufferViews: [{'buffer': 0, 'byteLength': 2880, 'byteOffset': 0, 'target': 34962}, {'buffer': 0, 'byteLength': 2880, 'byteOffset': 2880, 'target': 34962}, {'buffer': 0, 'byteLength': 1920, 'byteOffset': 5760, 'target': 34962}, {'buffer': 0, 'byteLength': 696, 'byteOffset': 7680, 'target': 34963}]\nbin chunk actual length: 8376\n\nTraceback (most recent call last):\n  File \"<loopcut>\", line 12, in <module>\nKeyError: '5126'\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json, bpy\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nj = json.loads(d[20:20+980])\nbinstart = 20 + 980 + 8\nprint(\"buffers:\", j['buffers'])\nprint(\"bufferViews:\", j['bufferViews'])\nprint(\"bin chunk actual length:\", len(d) - binstart)\nfor i, a in enumerate(j['accessors']):\n    bv = j['bufferViews'][a['bufferView']]\n    n = a['count']\n    comp = {'5120':'b','5121':'B','5123':'I','5125':'L'}[str(a['componentType'])]\n    per = {'SCALAR':1,'VEC2':2,'VEC3':3}[a['type']]\n    fmt = comp*per*n\n    seg = d[binstart+bv['byteOffset']:binstart+bv['byteOffset']+bv['byteLength']]\n    vals = list(struct.unpack('<'+fmt, seg))\n    if i == 3:\n        print(\"indices count:\", len(vals), \"max:\", max(vals), \"min:\", min(vals))\n        print(\"triangles:\", len(vals)/3)\n    else:\n        print(f\"accessor {i} first 3:\", vals[:3], \"max:\", max(vals))\nprint(\"bounds check (max pos):\")\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Decode buffer correctly, check index range vs evaluated mesh",
+   "output": "Traceback (most recent call last):\n  File \"<loopcut>\", line 10, in <module>\nstruct.error: bad char in struct format\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json, bpy\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nj = json.loads(d[20:20+980])\nbinstart = 20 + 980 + 8\nfor i, a in enumerate(j['accessors']):\n    bv = j['bufferViews'][a['bufferView']]\n    seg = d[binstart+bv['byteOffset']:binstart+bv['byteOffset']+bv['byteLength']]\n    if a['componentType'] == 5126:\n        vals = struct.unpack('<%df' % a['count']*({'SCALAR':1,'VEC2':2,'VEC3':3}[a['type']]), seg)\n    else:\n        vals = struct.unpack('<%dI' % a['count'], seg)\n    print(f\"accessor {i}: n={a['count']} min={min(vals)} max={max(vals)}\")\ngem = bpy.data.objects['Gem']\nev = gem.evaluated_get(bpy.context.evaluated_depsgraph_get())\nprint(\"evaluated mesh:\", len(ev.data.vertices), \"verts /\", len(ev.data.polygons), \"faces  -> exported:\", 240, \"verts (unshared),\", 116, \"tris\")\n# triangle count check: bevel adds faces\nprint(\"base mesh:\", len(gem.data.vertices), \"verts /\", len(gem.data.polygons), \"faces\")\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Decode GLB buffer values and compare with evaluated mesh",
+   "output": "accessor 0: n=240 min=-0.0939 max=0.0939\naccessor 1: n=240 min=-1.0000 max=1.0000\naccessor 2: n=240 min=0.0150 max=0.9990\n\nTraceback (most recent call last):\n  File \"<loopcut>\", line 14, in <module>\nstruct.error: unpack requires a buffer of 1392 bytes\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json, bpy\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nj = json.loads(d[20:20+980])\nbinstart = 20 + 980 + 8\nper = {'SCALAR':1,'VEC2':2,'VEC3':3}\nfor i, a in enumerate(j['accessors']):\n    bv = j['bufferViews'][a['bufferView']]\n    seg = d[binstart+bv['byteOffset']:binstart+bv['byteOffset']+bv['byteLength']]\n    n = a['count']*per[a['type']]\n    if a['componentType'] == 5126:\n        vals = struct.unpack('<' + 'f'*n, seg)\n    elif a['componentType'] == 5123:\n        vals = struct.unpack('<' + 'I'*n, seg)\n    print(\"accessor %d: n=%d min=%.4f max=%.4f\" % (i, a['count'], min(vals), max(vals)))\ngem = bpy.data.objects['Gem']\nev = gem.evaluated_get(bpy.context.evaluated_depsgraph_get())\nprint(\"evaluated:\", len(ev.data.vertices), \"verts /\", len(ev.data.polygons), \"faces\")\n"
+  },
+  {
+   "kind": "notice",
+   "text": "The last 4 steps failed and nothing in the scene changed. Stop to tell Loopcut what to try, or let it keep going."
+  },
+  {
+   "kind": "assistant",
+   "text": "Index accessor count vs bufferView length disagree, so let me re-read the JSON raw."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Print raw accessors JSON and decode index segment",
+   "output": "[\n {\n  \"bufferView\": 0,\n  \"componentType\": 5126,\n  \"count\": 240,\n  \"max\": [\n   0.08756649494171143,\n   0.09392936527729034,\n   0.08327988535165787\n  ],\n  \"min\": [\n   -0.08756649494171143,\n   -0.09392936527729034,\n   -0.08327988535165787\n  ],\n  \"type\": \"VEC3\"\n },\n {\n  \"bufferView\": 1,\n  \"componentType\": 5126,\n  \"count\": 240,\n  \"type\": \"VEC3\"\n },\n {\n  \"bufferView\": 2,\n  \"componentType\": 5126,\n  \"count\": 240,\n  \"type\": \"VEC2\"\n },\n {\n  \"bufferView\": 3,\n  \"componentType\": 5123,\n  \"count\": 348,\n  \"type\": \"SCALAR\"\n }\n]\nsegment bytes: 696\nindices: 174 min: 16 max: 15663261\ntriangles: 58\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nj = json.loads(d[20:20+980])\nprint(json.dumps(j['accessors'], indent=1))\nbinstart = 20 + 980 + 8\na = j['accessors'][3]\nbv = j['bufferViews'][3]\nseg = d[binstart+bv['byteOffset']:binstart+bv['byteOffset']+bv['byteLength']]\nprint(\"segment bytes:\", len(seg))\nidx = list(struct.unpack('<%dI' % (len(seg)//4), seg))\nprint(\"indices:\", len(idx), \"min:\", min(idx), \"max:\", max(idx))\nprint(\"triangles:\", len(idx)//3)\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "ComponentType 5123 is UNSIGNED_SHORT, not INT \u2014 that was my decode error. Final check with the right format."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Validate GLB index range against the Bevel-applied mesh",
+   "output": "indices: 348 max: 239 -> valid for 240 verts\ntriangles: 116\nevaluated faces: 62 (triangulated = 80 tris)\nfile: /mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb 9384 bytes | magic b'glTF' | version 2\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json, bpy\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nj = json.loads(d[20:20+980])\nbinstart = 20 + 980 + 8\nbv = j['bufferViews'][3]\nseg = d[binstart+bv['byteOffset']:binstart+bv['byteOffset']+bv['byteLength']]\nidx = list(struct.unpack('<%dH' % (len(seg)//2), seg))\nprint(\"indices:\", len(idx), \"max:\", max(idx), \"-> valid for\", j['accessors'][0]['count'], \"verts\")\nprint(\"triangles:\", len(idx)//3)\ngem = bpy.data.objects['Gem']\nev = gem.evaluated_get(bpy.context.evaluated_depsgraph_get())\nprint(\"evaluated faces:\", len(ev.data.polygons), \"(triangulated =\", sum(len(f.vertices) for f in ev.data.polygons)//3, \"tris)\")\nprint(\"file:\", p, len(d), \"bytes | magic\", d[:4], \"| version\", struct.unpack('<I', d[4:8])[0])\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Confirm only Gem is in the file and triangulation matches the Bevel result",
+   "output": "evaluated: faces 62 corner-verts 240 triangles 116\nexported: position count 240 index count 348\nnodes in file: ['Gem'] | meshes: 1 | materials: 0\nscene nodes present: [{'mesh': 0, 'name': 'Gem'}]\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "import struct, json, bpy\np = \"/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb\"\nd = open(p,'rb').read()\nj = json.loads(d[20:20+980])\ngem = bpy.data.objects['Gem']\nev = gem.evaluated_get(bpy.context.evaluated_depsgraph_get())\ntris = sum(len(f.vertices)-2 for f in ev.data.polygons)\ncorners = sum(len(f.vertices) for f in ev.data.polygons)\nprint(\"evaluated: faces\", len(ev.data.polygons), \"corner-verts\", corners, \"triangles\", tris)\nprint(\"exported: position count\", j['accessors'][0]['count'], \"index count\", j['accessors'][3]['count'])\nprint(\"nodes in file:\", [n.get('name') for n in j['nodes']], \"| meshes:\", len(j['meshes']), \"| materials:\", len(j.get('materials',[])))\nprint(\"scene nodes present:\", j.get('nodes'))\n"
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Restore your original selection",
+   "output": "selection restored to Table\n\nScene changes: none. (Tracked: objects, transforms, visibility, modifiers, meshes and their active UV maps, lights, cameras, light probes, materials and worlds node by node, image pixels, text blocks, collections and render settings; not custom properties, keyframes, drivers, constraints or inside node groups. If you expected a tracked one to change, the code did not do what you think.)",
+   "code": "bpy.ops.object.select_all(action='DESELECT')\nbpy.data.objects['Table'].select_set(True)\nbpy.context.view_layer.objects.active = bpy.data.objects['Table']\nprint(\"selection restored to Table\")\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "Exported. `gem.glb` is written and validated.\n\n**File:** `/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb` \u2014 9,384 bytes, valid glTF 2.0 binary (magic `glTF`, JSON chunk 980 B + BIN chunk 8,376 B, header total matches file size).\n\nContents, verified by parsing the chunks:\n- Exactly one node, `Gem`; no `Table` in the file.\n- Bevel applied via `export_apply=True`: 240 corner-vertices / 116 triangles, matching the evaluated mesh (62 faces) rather than the base 12-vertex/20-face cage.\n- Accessors: POSITION, NORMAL, TEXCOORD_0, indices; index max 239 \u2192 valid for the 240 exported verts. Position bounds \u2248 \u00b10.088/0.094/0.083 m, consistent with Gem's size.\n- No materials or images \u2014 Gem has no material assigned, so nothing to export there.\n\nTwo notes: the export printed warnings that the Draco and MeshOptimizer bridge libraries aren't installed, so compression was skipped (uncompressed buffers \u2014 that's why the file is plain); and your selection is back on `Table` after the export."
+  }
+ ]
+}

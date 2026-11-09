@@ -1,0 +1,17 @@
+{
+ "id": "door_keys",
+ "prompt": "Animate Door rotating 90 degrees around Z from frame 1 to frame 48, and make the scene end at frame 48.",
+ "passed": true,
+ "detail": "Z at 1: 0.0 deg, at 48: 90.0 deg, frame_end 48",
+ "error": "",
+ "seconds": 112,
+ "steps": 4,
+ "failed_calls": 3,
+ "tools": [
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Done \u2014 Door is keyed on Z rotation:\n\n- **Action:** `Door_rotation` (slot `Door`), curves `rotation_euler[0..2]`; X/Y flat at 0 so only Z turns.\n- **Keys:** frame 1 = 0\u00b0, frame 48 = 90\u00b0 (verified at 1/12/24/36/48 \u2192 0\u00b0, 12.5\u00b0, 43.6\u00b0, 75.4\u00b0, 90\u00b0).\n- **Scene range:** 1\u201348, current frame reset to 1.\n\nNote: interpolation is Bezier with auto-easing, so it eases in and out. If you want a constant-speed sweep, say so and I'll switch those curves to Linear."
+}

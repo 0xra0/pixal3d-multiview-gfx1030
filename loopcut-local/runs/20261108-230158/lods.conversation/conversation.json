@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Make three LOD copies of Barrel named Barrel_LOD1, Barrel_LOD2 and Barrel_LOD3 with about 50%, 25% and 12.5% of its triangles. Leave Barrel itself unchanged."
+  },
+  {
+   "kind": "assistant",
+   "text": "Barrel has 1536 faces (3072 triangles if all quads). I'll make three single-user mesh copies and decimate each to the requested triangle ratios, keeping them at Barrel's origin so the LODs share its pivot."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Create Barrel_LOD1/2/3 as decimated copies at 50%, 25%, 12.5% triangles",
+   "output": "Barrel: 1536 faces, 3072 triangles\nBarrel_LOD1: 1097 faces, 1536 triangles (50.0%)\nBarrel_LOD2: 640 faces, 768 triangles (25.0%)\nBarrel_LOD3: 350 faces, 384 triangles (12.5%)\n\nScene changes (+ added, - removed, ~ changed; bounds are world space):\n+ Barrel_LOD1 (mesh) at [-0.4738, -0.4738, -0.5874]..[0.4738, 0.4738, 0.5874]\n+ Barrel_LOD2 (mesh) at [-0.4709, -0.4709, -0.5874]..[0.4709, 0.4709, 0.5874]\n+ Barrel_LOD3 (mesh) at [-0.4704, -0.4704, -0.5874]..[0.4704, 0.4704, 0.5874]\n~ collection Collection: +Barrel_LOD1, Barrel_LOD2, Barrel_LOD3\n\nImage attached: three_quarter view of Barrel_LOD1, Barrel_LOD2, Barrel_LOD3; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x1405 px. Nearest to the viewpoint first: Barrel 3.3 m, Barrel_LOD1 3.3 m, Barrel_LOD2 3.3 m, Barrel_LOD3 3.3 m.",
+   "code": "import bpy\n\nsrc = bpy.data.objects[\"Barrel\"]\n\ndef tri_count(me):\n    return sum(len(p.vertices) - 2 for p in me.polygons)\n\nbase = tri_count(src.data)\nprint(f\"Barrel: {len(src.data.polygons)} faces, {base} triangles\")\n\ntargets = [(\"Barrel_LOD1\", 0.50), (\"Barrel_LOD2\", 0.25), (\"Barrel_LOD3\", 0.125)]\ncoll = src.users_collection[0]\nprev_active = bpy.context.view_layer.objects.active\n\nfor name, ratio in targets:\n    me = src.data.copy()\n    me.name = name\n    ob = bpy.data.objects.new(name, me)\n    ob.location = src.location\n    ob.rotation_euler = src.rotation_euler\n    ob.scale = src.scale\n    coll.objects.link(ob)\n\n    mod = ob.modifiers.new(\"Decimate\", \"DECIMATE\")\n    mod.decimate_type = \"COLLAPSE\"\n    mod.ratio = ratio\n    bpy.context.view_layer.objects.active = ob\n    bpy.ops.object.modifier_apply(modifier=mod.name)\n\n    pct = 100.0 * tri_count(me) / base\n    print(f\"{name}: {len(me.polygons)} faces, {tri_count(me)} triangles ({pct:.1f}%)\")\n\nbpy.context.view_layer.objects.active = prev_active\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "Done \u2014 three decimated copies, exact ratios, Barrel itself untouched:\n\n| Object | Faces | Triangles | vs Barrel |\n|---|---|---|---|\n| Barrel | 1536 | 3072 | 100% |\n| Barrel_LOD1 | 1097 | 1536 | 50.0% |\n| Barrel_LOD2 | 640 | 768 | 25.0% |\n| Barrel_LOD3 | 350 | 384 | 12.5% |\n\nEach was made as a copy of Barrel's mesh data, then Decimate (Collapse) applied, so they share Barrel's material slots, UV map, smooth/sharp edge flags and sit at the same origin \u2014 so all LODs share its pivot. They look identical in the capture because they occupy the same space, as LODs should."
+  },
+  {
+   "kind": "changes",
+   "text": "3 added, 1 changed"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "modifier_stack",
+ "prompt": "Add a Mirror modifier on X to Hull, and after it a Bevel modifier with width 0.02 m and 3 segments.",
+ "passed": true,
+ "detail": "mirror x True, bevel width 0.0200, segments 3",
+ "error": "",
+ "seconds": 105,
+ "steps": 4,
+ "failed_calls": 2,
+ "tools": [
+  "inspect_api",
+  "inspect_api",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Both modifiers are on `Hull` in order: **Mirror** (X axis, clipping on, merge threshold 0.001) then **Bevel** (width 0.02 m, 3 segments).\n\nOne thing to flag: the mirror works about the object's origin, which sits at x = 0.6 \u2014 inside the hull. So the mirrored copy lands exactly on top of the original (evaluated mesh is symmetric, still spanning x 0.1 \u2192 1.1, now ~192 verts from the bevel), rather than extending the hull to \u2212x. If you meant to mirror about the world X origin, tell me and I'll either move Hull's origin to x = 0 or give the modifier a `mirror_object` empty at the origin."
+}

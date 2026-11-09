@@ -1,0 +1,16 @@
+{
+ "id": "triangle_budget",
+ "prompt": "Reduce Rock to at most 5000 triangles, keeping its shape, and apply it so the mesh itself has the lower count.",
+ "passed": true,
+ "detail": "5000 triangles in the mesh itself, modifiers [], size (2.400, 2.001, 1.599)",
+ "error": "",
+ "seconds": 124,
+ "steps": 3,
+ "failed_calls": 1,
+ "tools": [
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Done \u2014 the mesh itself now holds exactly 5000 triangles, no modifier left.\n\n- **Decimate (Collapse)** with ratio 5000/20480, then applied: 10242 verts / 20480 faces \u2192 **2502 verts / 5000 faces**, all triangles (the source was all quads, so faces = triangles).\n- Shape retained: world bounds unchanged within rounding, `[-1.1998,-1.0006,-0.7998] \u2026 [1.1998,1.0006,0.7997]` vs the original `[-1.2,-1.0,-0.8] \u2026 [1.2,1.0,0.8]`.\n- `UVMap` survived the apply; no shape keys, no other modifiers.\n\nThe viewport look is smoother than before because collapse removes detail while keeping the silhouette \u2014 expected at 4\u00d7 reduction. If you want to keep the chunkier facets of the rock, say so and I can redo it with the **Planar** or **Planar (triangles)** type instead, though at 5000 triangles that's a tight budget for a boulder."
+}

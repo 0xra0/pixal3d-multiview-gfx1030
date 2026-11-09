@@ -1,0 +1,46 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Add a UV sphere of radius 0.5 m resting on top of the cube, centred on it, with a pure red material (red base colour)."
+  },
+  {
+   "kind": "assistant",
+   "text": "Simple build: cube top is at z=1, so the sphere centre goes at z=1.5."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "failed",
+   "summary": "Ajoute une sph\u00e8re UV de rayon 0,5 m centr\u00e9e sur le cube, pos\u00e9e dessus, avec un mat\u00e9riau rouge pur.",
+   "output": "Traceback (most recent call last):\n  File \"<loopcut>\", line 14, in <module>\nAttributeError: 'Mesh' object has no attribute 'location'\nNOTE: Closest on Mesh: texspace_location.\nRelated types: GeometryNodeCurveToMesh.location, GeometryNodeDualMesh.location, GeometryNodeExtrudeMesh.location, GeometryNodeGridToMesh.location, GeometryNodeSubdivideMesh.location, ...\n\nThe code made these changes before the error; they stay in the scene.\nScene changes (+ added, - removed, ~ changed; bounds are world space):\n+ Sphere (mesh) at [-0.5, -0.5, 1.0]..[0.5, 0.5, 2.0]\n+ material Red\n~ collection Collection: +Sphere\n\nImage attached: three_quarter view of Sphere; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x992 px. Nearest to the viewpoint first: Sphere 2.4 m, Cube 3.3 m.",
+   "code": "\nimport bpy\n\nbpy.ops.mesh.primitive_uv_sphere_add(radius=0.5, location=(0.0, 0.0, 1.5), segments=32, ring_count=16)\nsphere = bpy.context.active_object\nsphere.name = \"Sphere\"\n\nmat = bpy.data.materials.new(\"Red\")\nmat.use_nodes = True\nbsdf = next(n for n in mat.node_tree.nodes if n.type == \"BSDF_PRINCIPLED\")\nbsdf.inputs[\"Base Color\"].default_value = (1.0, 0.0, 0.0, 1.0)\nsphere.data.materials.append(mat)\n\nprint(sphere.name, sphere.data.location, len(sphere.data.polygons))\n"
+  },
+  {
+   "kind": "assistant",
+   "text": "The error was only in my print line (`Mesh` has no `location`); everything before it landed. Verifying contact and the material."
+  },
+  {
+   "kind": "tool",
+   "name": "check_contact",
+   "status": "done",
+   "summary": "Check contact: Sphere rests_on Cube, Sphere clear_of Cube",
+   "output": "Contact: 1 pass, 1 fail, 0 unavailable (tolerance 2.0 mm; moves are world-space, nothing was moved).\npass: Sphere rests_on Cube: 1 support touching.\nFAIL: Sphere clear_of Cube: touching. Fix: move Sphere by (0, 0, 0.002) m."
+  },
+  {
+   "kind": "tool",
+   "name": "get_object_info",
+   "status": "done",
+   "summary": "Checking object details",
+   "output": "[{\"name\":\"Sphere\",\"type\":\"MESH\",\"location\":[0.0,0.0,1.5],\"rotation_deg\":[0.0,0.0,0.0],\"scale\":[1.0,1.0,1.0],\"visible\":true,\"selected\":true,\"bounds\":{\"min\":[-0.5,-0.5,1.0],\"max\":[0.5,0.5,2.0]},\"dimensions\":[1.0,1.0,1.0],\"children\":[],\"material_slots\":[\"Red\"],\"mesh\":{\"verts\":482,\"edges\":992,\"faces\":512}}]"
+  },
+  {
+   "kind": "assistant",
+   "text": "Done \u2014 the failure is expected, since resting on top means touching.\n\n- **Sphere** (UV sphere, radius 0.5 m, 512 faces) at origin `(0, 0, 1.5)`: centred on the cube in X/Y, tangent to its top face at z = 1.\n- **Red** material, Principled BSDF with Base Color `(1, 0, 0)` \u2014 pure red, no tint from `diffuse_color`.\n\nVerified by Loopcut on this scene: 1 of 2 checks.\nPassed: sphere rests on cube.\nFailed: sphere does not have the required clearance from cube. It is too close to cube."
+  },
+  {
+   "kind": "changes",
+   "text": "2 added, 1 changed"
+  }
+ ]
+}

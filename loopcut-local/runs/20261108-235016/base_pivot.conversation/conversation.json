@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Set Statue's origin to the centre of its base (the bottom middle), and move Statue so that point sits at the world origin."
+  },
+  {
+   "kind": "assistant",
+   "text": "I'll find the base centre from the actual lowest vertices rather than assuming the bounding-box centre, then shift the mesh so that point becomes the origin and put it at the world origin."
+  },
+  {
+   "kind": "tool",
+   "name": "run_python",
+   "status": "done",
+   "summary": "Recentre Statue's origin to its base centre and move that point to the world origin",
+   "output": "verts at base: 32 base centre world: (2.0, 1.0, 0.5)\nnew origin world: (2.0, 1.0, 1.5)\n\nScene changes (+ added, - removed, ~ changed; bounds are world space):\n~ Statue: location (2.0, 1.0, 1.5) -> (0.0, 0.0, 0.0); mesh vertices moved (64v, same counts); bounds now [-0.4, -0.4, 0.0]..[0.4, 0.4, 2.0]\n\nImage attached: three_quarter view of Statue; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x690 px.",
+   "code": "import mathutils\nob = bpy.data.objects[\"Statue\"]\nme = ob.data\nmw = ob.matrix_world\n\nzs = [ (mw @ v.co).z for v in me.vertices ]\nzmin = min(zs)\nbase = [ v for v in me.vertices if (mw @ v.co).z <= zmin + 1e-4 ]\nC = sum(((mw @ v.co) for v in base), mathutils.Vector()) / len(base)\nprint(\"verts at base:\", len(base), \"base centre world:\", tuple(round(x,4) for x in C))\n\n# origin -> base centre: shift mesh data so that point is the local origin, then place origin at world origin\nC_local = ob.matrix_local.inverted() @ C\nme.transform(mathutils.Matrix.Translation(-C_local))\nob.location = (0,0,0)\nob.data.update()\nprint(\"new origin world:\", tuple(round(x,4) for x in (ob.matrix_world @ mathutils.Vector())))"
+  },
+  {
+   "kind": "assistant",
+   "text": "Done \u2014 Statue's origin is now its base centre, and that point sits at the world origin.\n\n- Base centre measured from the 32 lowest verts (the base ring), not the bounding-box centre: was at world (2.0, 1.0, 0.5).\n- Mesh data was offset so that point is the local origin; object location set to (0,0,0).\n- Verified by measured bounds: `[-0.4, -0.4, 0.0]`..`[0.4, 0.4, 2.0]` \u2014 the base ring is at z=0, centred on the origin.\n\n(The earlier print of the origin position was stale, from before the depsgraph re-evaluated; the measured scene changes above are the true state.)"
+  },
+  {
+   "kind": "changes",
+   "text": "1 changed"
+  }
+ ]
+}

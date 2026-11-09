@@ -1,0 +1,16 @@
+checking sha256 of /mnt/ssd/Strata-data/gguf/IQ2_XS/16f3dac504a46de784e9c3b6b894bd240988f486a6bdba92b02ced1b01ae25c9
+checking sha256 of /mnt/ssd/Strata-data/gguf/IQ2_XS/076b2d0a4caf02721223e96412f1c683a06e63296a734e36c87c229cba91b73e
+tokenizer/: vocab 248320, merges 247587, pre qwen35, specials {'tokenizer.ggml.eos_token_id': 248046, 'tokenizer.ggml.padding_token_id': 248044, 'tokenizer.ggml.bos_token_id': 248044}
+model shards: Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS-00001-of-00002.gguf, Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS-00002-of-00002.gguf
+index.txt: 1079 tensors, 302 served natively, 0 in extra.bin, arena 1.43 GiB
+model shards: Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS-00001-of-00002.gguf, Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS-00002-of-00002.gguf
+index.txt: 1079 tensors, 302 served natively, 0 in extra.bin, arena 1.43 GiB
+  layer  0  IQ2_S   /Q2_0    blob  1510400  at 0.00 GiB
+  layer  8  IQ1_M   /Q2_0    blob  1177600  at 5.57 GiB
+  layer 16  IQ2_S   /Q2_0    blob  1510400  at 10.62 GiB
+  layer 24  IQ2_S   /Q2_0    blob  1510400  at 16.19 GiB
+  layer 32  IQ2_S   /Q2_0    blob  1510400  at 21.66 GiB
+  layer 40  IQ2_S   /Q2_0    blob  1510400  at 27.26 GiB
+experts.bin: 48 layers, 33.02 GiB
+config: --pack /mnt/ssd/Strata-data/packs/iq2_xs --native /mnt/ssd/Strata-data/gguf/IQ2_XS/Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS-00001-of-00002.gguf --ple-gguf /mnt/ssd/Strata-data/gguf/IQ2_XS/Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS-00002-of-00002.gguf --expert-profile /mnt/ssd/Strata/data/expert-profile.bin --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp /mnt/ssd/Strata-data/mtp/rt --max-context 65536 --kv int8 --resident-experts --vision --vram-reserve-mib 700
+ready: /mnt/ssd/Strata/run-iq2_xs.sh

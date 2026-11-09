@@ -1,0 +1,27 @@
+{
+ "items": [
+  {
+   "kind": "user",
+   "text": "Give Crate a UV map: every face unwrapped, no overlapping islands, everything inside 0-1."
+  },
+  {
+   "kind": "assistant",
+   "text": "I'll unwrap the cube with angle-based seams \u2014 for a cube each face is a distinct island (90\u00b0 between faces), so nothing can overlap \u2014 then audit it."
+  },
+  {
+   "kind": "tool",
+   "name": "uv_unwrap",
+   "status": "done",
+   "summary": "UV unwrap Crate (angle_seams)",
+   "output": "Unwrapped Crate with angle_seams (30 deg) into each its own 0-1 layout, 8 px padding at 1024 px.\nMade UV map UVMap on Crate.\nMarked 12 seams on Crate.\nCrate (UVMap): 6 faces, 6 islands, 64% of the tile covered.\n  all inside 0-1 | zero-area: none | flipped: none\n  overlap: none\n  stretch: angle 1.00 mean (1.00 = none), 0% of area over 1.5x; area 0% of area 1.5x off the median density\n  density px/m: 333 / 333 / 333 (min / median / max)\n  gutter: min 8.0 px (islands at faces 4/5), 0 pairs under 8 px; border 4.0 px\n\nImage attached: three_quarter view of Crate; studio lighting, not the scene's lights or world. Drawn: the viewport, Material Preview, AgX view, 640x690 px."
+  },
+  {
+   "kind": "assistant",
+   "text": "Done \u2014 `UVMap` on Crate passes every check:\n\n- **6 islands, one per face** (12 seams marked at the 90\u00b0 angles), 64% of the tile covered\n- **All UVs inside 0\u20131**, no zero-area or flipped faces\n- **No overlaps**; min island gutter 8 px, closest island 4 px from the tile border\n- **Stretch-free**: angle 1.00, area density uniform at 333 px/m across all islands\n\nThe capture shows the cube geometry only \u2014 UVs aren't visible until a texture is assigned, so I verified the layout with the UV audit rather than by eye."
+  },
+  {
+   "kind": "changes",
+   "text": "1 changed"
+  }
+ ]
+}

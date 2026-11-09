@@ -1,0 +1,18 @@
+{
+ "id": "mesh_cleanup",
+ "prompt": "Clean up Scan: merge vertices closer than 0.0001 m, remove the duplicate faces that leaves, and delete the loose vertices and edges.",
+ "passed": true,
+ "detail": "8 vertices (8 distinct), 0 not on a face, 6 faces",
+ "error": "",
+ "seconds": 132,
+ "steps": 5,
+ "failed_calls": 2,
+ "tools": [
+  "get_object_info",
+  "inspect_api",
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Done. `Scan` went from 23 verts / 25 edges / 12 faces \u2192 **8 verts / 12 edges / 6 faces** (it was a cube with 15 doubled verts and 6 duplicate faces).\n\nWhat happened per step:\n- **Merge by distance 0.0001 m** \u2014 collapsed 15 duplicate vertices (23 \u2192 8); the closest remaining pair is 1.0 m apart, so nothing within tolerance is left.\n- **Duplicate faces** \u2014 the merge made 6 faces degenerate (fewer than 3 distinct verts), which are exactly the doubled ones; removing them left 6 unique faces, and a second pass found no remaining same-vertex duplicates.\n- **Loose vertices / edges** \u2014 none remained after the face cleanup (0 and 0).\n\nThe mesh is now a clean closed cube, verified as no loose elements, no duplicate or degenerate faces."
+}

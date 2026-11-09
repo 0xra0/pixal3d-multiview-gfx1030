@@ -1,0 +1,26 @@
+{
+ "id": "export_glb",
+ "prompt": "Export only Gem, with its modifiers applied, as a binary glTF file to /mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb.",
+ "passed": true,
+ "detail": "magic b'glTF', nodes ['Gem'], exported triangles 116, Gem evaluated 116",
+ "error": "",
+ "seconds": 315,
+ "steps": 13,
+ "failed_calls": 6,
+ "tools": [
+  "get_object_info",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Exported. `gem.glb` is written and validated.\n\n**File:** `/mnt/ssd/work/loopcut-local/runs/20261108-230158/export_glb.out/gem.glb` \u2014 9,384 bytes, valid glTF 2.0 binary (magic `glTF`, JSON chunk 980 B + BIN chunk 8,376 B, header total matches file size).\n\nContents, verified by parsing the chunks:\n- Exactly one node, `Gem`; no `Table` in the file.\n- Bevel applied via `export_apply=True`: 240 corner-vertices / 116 triangles, matching the evaluated mesh (62 faces) rather than the base 12-vertex/20-face cage.\n- Accessors: POSITION, NORMAL, TEXCOORD_0, indices; index max 239 \u2192 valid for the 240 exported verts. Position bounds \u2248 \u00b10.088/0.094/0.083 m, consistent with Gem's size.\n- No materials or images \u2014 Gem has no material assigned, so nothing to export there.\n\nTwo notes: the export printed warnings that the Draco and MeshOptimizer bridge libraries aren't installed, so compression was skipped (uncompressed buffers \u2014 that's why the file is plain); and your selection is back on `Table` after the export."
+}

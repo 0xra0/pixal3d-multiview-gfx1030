@@ -1,0 +1,15 @@
+{
+ "id": "red_sphere",
+ "prompt": "Add a UV sphere of radius 0.5 m resting on top of the cube, centred on it, with a pure red material (red base colour).",
+ "passed": true,
+ "detail": "size (1.000, 1.000, 1.000), bottom 1.000, centre (0.000, 0.000, 1.500), base colour (1.0, 0.0, 0.0)",
+ "error": "",
+ "seconds": 172,
+ "steps": 2,
+ "failed_calls": 0,
+ "tools": [
+  "run_python",
+  "check_contact"
+ ],
+ "final": "Done.\n\n- **Sphere** \u2014 UV sphere, radius 0.5 m (32 segments / 16 rings, 482 verts), origin at `(0, 0, 1.5)`, so it sits tangent on the cube's top face at z = 1, centred in X/Y. Contact check confirms it touches the cube with no penetration.\n- **Material `Red`** \u2014 Principled BSDF, Base Color `(1, 0, 0)`. The capture looks slightly washed because AgX view transform tone-maps pure red; the material value itself is pure red.\n\nVerified by Loopcut on this scene: 1 of 1 checks.\nPassed: sphere rests on cube."
+}

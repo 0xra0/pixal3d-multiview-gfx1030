@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+00:04.328  cycles           | WARNING CUEW initialization failed: Error opening the library
+00:04.439  blend            | Writing user preferences: "/home/home/.config/loopcut/5.2/config/userpref.blend" 
+Loopcut: shader compilation set to Subprocess (Preferences > System); it applies after a restart.
+Info: Preferences saved
+Loopcut: the interface was blocked for 158 ms by Blender's main thread outside Loopcut's tasks (the pump ran late)
+Loopcut: the interface was blocked for 19670 ms by Blender's main thread outside Loopcut's tasks, while shaders compiled for a look (the pump ran late)
+Loopcut: the interface was blocked for 472 ms by Blender's main thread outside Loopcut's tasks, while shaders compiled for a look (the pump ran late)
+Loopcut: the look's shaders were still compiling after 20 s; taking it anyway (the interface may pause while the rest compile).
+Loopcut: the interface was blocked for 74139 ms by the capture_viewport tool
+Loopcut: the interface was blocked for 1803 ms by Blender's main thread outside Loopcut's tasks (the pump ran late)
+Loopcut: the interface was blocked for 239 ms by Blender's main thread outside Loopcut's tasks (the pump ran late)
+LOCAL_EVAL red_sphere PASS size (1.000, 1.000, 1.000), bottom 1.000, centre (0.000, 0.000, 1.500), base colour (1.0, 0.0, 0.0)

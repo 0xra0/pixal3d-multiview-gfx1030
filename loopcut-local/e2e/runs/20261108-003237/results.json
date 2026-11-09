@@ -1,0 +1,17 @@
+{
+ "label": "e2e fake model",
+ "model": "strata",
+ "base_url": "http://127.0.0.1:8766/v1",
+ "skills": "/mnt/sata/loopcut/local-skills",
+ "started": "2026-11-08 00:32:37",
+ "results": [
+  {
+   "id": "red_sphere",
+   "passed": false,
+   "detail": "no result (see red_sphere.log)",
+   "steps": 0,
+   "seconds": 0,
+   "failed_calls": 0
+  }
+ ]
+}

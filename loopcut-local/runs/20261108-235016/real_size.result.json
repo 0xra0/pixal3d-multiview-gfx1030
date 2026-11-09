@@ -1,0 +1,14 @@
+{
+ "id": "real_size",
+ "prompt": "Scale Sword uniformly so it is 1.28 m tall, then apply the scale.",
+ "passed": true,
+ "detail": "size (0.256, 0.026, 1.280), scale (1.000, 1.000, 1.000)",
+ "error": "",
+ "seconds": 81,
+ "steps": 1,
+ "failed_calls": 0,
+ "tools": [
+  "run_python"
+ ],
+ "final": "Done \u2014 Sword is now 1.28 m tall with scale applied (1, 1, 1).\n\n- I baked the original non-uniform scale (1, 0.1, 5) into the mesh first, so the proportions you see were kept rather than squaring up to a cube.\n- Then uniform factor 0.256 and applied: new bounds `[-0.128, -0.0128, -0.64] .. [0.128, 0.0128, 0.64]`, i.e. 0.256 \u00d7 0.128 \u00d7 1.28 m."
+}

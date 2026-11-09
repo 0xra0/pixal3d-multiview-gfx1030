@@ -1,0 +1,4 @@
+{"strata": [
+ {"tool": "run_python", "arguments": {"summary": "red sphere on the cube", "code": "import bpy\nbpy.ops.mesh.primitive_uv_sphere_add(radius=0.5, location=(0, 0, 1.5))\ns = bpy.context.active_object\ns.name = 'Ball'\nm = bpy.data.materials.new('Red')\nm.use_nodes = True\nnext(n for n in m.node_tree.nodes if n.type == 'BSDF_PRINCIPLED').inputs['Base Color'].default_value = (1, 0, 0, 1)\ns.data.materials.append(m)\nprint('ok')"}},
+ {"text": "Added a red sphere of radius 0.5 m on top of the cube."}
+]}

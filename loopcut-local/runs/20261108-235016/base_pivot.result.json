@@ -1,0 +1,14 @@
+{
+ "id": "base_pivot",
+ "prompt": "Set Statue's origin to the centre of its base (the bottom middle), and move Statue so that point sits at the world origin.",
+ "passed": true,
+ "detail": "origin (0.000, 0.000, 0.000), world bounds (-0.400, -0.400, 0.000)..(0.400, 0.400, 2.000), lowest vertex above origin 0.000",
+ "error": "",
+ "seconds": 61,
+ "steps": 1,
+ "failed_calls": 0,
+ "tools": [
+  "run_python"
+ ],
+ "final": "Done \u2014 Statue's origin is now its base centre, and that point sits at the world origin.\n\n- Base centre measured from the 32 lowest verts (the base ring), not the bounding-box centre: was at world (2.0, 1.0, 0.5).\n- Mesh data was offset so that point is the local origin; object location set to (0,0,0).\n- Verified by measured bounds: `[-0.4, -0.4, 0.0]`..`[0.4, 0.4, 2.0]` \u2014 the base ring is at z=0, centred on the origin.\n\n(The earlier print of the origin position was stale, from before the depsgraph re-evaluated; the measured scene changes above are the true state.)"
+}

@@ -1,0 +1,16 @@
+{
+ "id": "door_keys",
+ "prompt": "Animate Door rotating 90 degrees around Z from frame 1 to frame 48, and make the scene end at frame 48.",
+ "passed": true,
+ "detail": "Z at 1: 0.0 deg, at 48: 90.0 deg, frame_end 48",
+ "error": "",
+ "seconds": 106,
+ "steps": 3,
+ "failed_calls": 2,
+ "tools": [
+  "run_python",
+  "run_python",
+  "run_python"
+ ],
+ "final": "Done \u2014 verified in the scene:\n\n**Door** \u2014 one FCurve on `rotation_euler[2]`, keyframes at frame 1 (0\u00b0) and frame 48 (90\u00b0), Bezier interpolation. Evaluated values: frame 1 = 0\u00b0, frame 24 = 43.56\u00b0, frame 48 = 90\u00b0 (eased in/out, so mid-animation is ahead of linear).\n\n**Scene range** \u2014 1 to 48 (`frame_end` was 250, now 48).\n\nBoth errors were in my reporting code only (`Keyframe.frame` \u2192 `co[0]`; `FCurve.interpolation` \u2192 keyframe-level), so no scene state was affected.\n\nTwo things you might want to decide:\n- **Timing feel:** the Bezier keys ease the motion. Say the word and I'll set both keyframes to linear so it sweeps at a constant 2\u00b0/frame.\n- **Pivot:** the rotation is around Door's origin, which is the cube's centre. A door normally hinges at its edge \u2014 if you want that, I can move the origin (or add an empty parent) to a hinge line."
+}
