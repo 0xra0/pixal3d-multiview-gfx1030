@@ -1,0 +1,61 @@
+  detail spec: large, medium, small, materials, avoid | views: back, left, right
+  front: negative prompt supplied -> enabling CFG=1.5
+===== front: 189 words, cfg 1.5
+a dark fantasy necklace with a gothic medallion pendant. A single object, front view, orthographic, centered, the whole object in frame, upright, flat even studio lighting, plain white background, no shadow, no text.
+
+DETAIL SPECIFICATION, follow exactly:
+Large-scale forms (silhouette, main masses, proportions): elongated tapered gothic medallion ending in one sharp lower tip, about 4 cm thick at the rim; one top bail with two necklace chain strands leaving toward the upper left and upper right; large circular raised bezel in the upper two thirds of the medallion.
+Secondary forms (raised parts, bevels, ornaments): a six-pointed star made of two interlocking equilateral triangles inside the bezel, raised 3 mm; four small symmetrical skull reliefs around the bezel at 2, 4, 8 and 10 o'clock; a beveled silver rim around the whole outline.
+Fine surface detail (engravings, rivets, scratches): a thin ring of rune engravings between the bezel and the rim; a dark red gem set in the centre of the star; fine scratches and oxidation on the flat iron surfaces.
+Materials and colours: blackened forged iron body; worn aged silver rim, bezel and star; small oval iron chain links.
+----- negative
+keyring, front design repeated on the back, fused chain links
+
+  sheet: negative prompt supplied -> enabling CFG=1.5
+===== sheet: 367 words, cfg 1.5
+Turn the object in <image1> (a dark fantasy necklace with a gothic medallion pendant) into an orthographic 3D modeling reference sheet: a single horizontal row of four equal-width tall panels, evenly spaced. From left to right: 1) front view, identical to <image1>. 2) left side view, an exact 90° profile. 3) back view, exactly 180°, the same outline as the front view. 4) right side view, an exact 90° profile, mirror of view 2. The camera orbits a completely static object at the same height: the object never turns toward the camera. Identical shapes, colors, materials and scale in all views, each view centered in its panel, top and bottom at the same heights in every panel, no overlap between views. Flat, even lighting, plain white background, no text, no labels.
+
+DETAIL SPECIFICATION, follow exactly:
+Large-scale forms (silhouette, main masses, proportions): elongated tapered gothic medallion ending in one sharp lower tip, about 4 cm thick at the rim; one top bail with two necklace chain strands leaving toward the upper left and upper right; large circular raised bezel in the upper two thirds of the medallion.
+Secondary forms (raised parts, bevels, ornaments): a six-pointed star made of two interlocking equilateral triangles inside the bezel, raised 3 mm; four small symmetrical skull reliefs around the bezel at 2, 4, 8 and 10 o'clock; a beveled silver rim around the whole outline.
+Fine surface detail (engravings, rivets, scratches): a thin ring of rune engravings between the bezel and the rim; a dark red gem set in the centre of the star; fine scratches and oxidation on the flat iron surfaces.
+Materials and colours: blackened forged iron body; worn aged silver rim, bezel and star; small oval iron chain links.
+In the LEFT panel only: a thin side profile showing the rim, the raised bezel and the star standing proud of the body.
+In the BACK panel only: a flat backing plate with the same outline as the front; a deeply engraved circular sigil in the centre of the backing plate, NOT the front star repeated; a raised silver rim around the backing plate.
+In the RIGHT panel only: a thin side profile, the mirror image of the left side.
+----- negative
+keyring, front design repeated on the back, fused chain links
+
+  sheet: negative prompt supplied -> enabling CFG=1.5
+===== view left: 160 words, cfg 1.5
+Show the object in <image1> (a dark fantasy necklace with a gothic medallion pendant) from its left side: an exact 90 degree side profile. The same static object: identical shape, proportions, colors, materials and scale as <image1>. Orthographic camera at the same height as in <image1>, the whole object in frame, upright, centered, flat even studio lighting, plain white background, no shadow, no text.
+
+DETAIL SPECIFICATION, follow exactly:
+Large-scale forms (silhouette, main masses, proportions): elongated tapered gothic medallion ending in one sharp lower tip, about 4 cm thick at the rim; one top bail with two necklace chain strands leaving toward the upper left and upper right; large circular raised bezel in the upper two thirds of the medallion.
+Materials and colours: blackened forged iron body; worn aged silver rim, bezel and star; small oval iron chain links.
+Seen from the LEFT: a thin side profile showing the rim, the raised bezel and the star standing proud of the body.
+----- negative
+keyring, front design repeated on the back, fused chain links
+
+  sheet: negative prompt supplied -> enabling CFG=1.5
+===== view back: 184 words, cfg 1.5
+Show the object in <image1> (a dark fantasy necklace with a gothic medallion pendant) from behind: an exact 180 degree back view with the same outline as the front, mirrored. The same static object: identical shape, proportions, colors, materials and scale as <image1>. Orthographic camera at the same height as in <image1>, the whole object in frame, upright, centered, flat even studio lighting, plain white background, no shadow, no text.
+
+DETAIL SPECIFICATION, follow exactly:
+Large-scale forms (silhouette, main masses, proportions): elongated tapered gothic medallion ending in one sharp lower tip, about 4 cm thick at the rim; one top bail with two necklace chain strands leaving toward the upper left and upper right; large circular raised bezel in the upper two thirds of the medallion.
+Materials and colours: blackened forged iron body; worn aged silver rim, bezel and star; small oval iron chain links.
+Seen from the BACK: a flat backing plate with the same outline as the front; a deeply engraved circular sigil in the centre of the backing plate, NOT the front star repeated; a raised silver rim around the backing plate.
+----- negative
+keyring, front design repeated on the back, fused chain links
+
+  sheet: negative prompt supplied -> enabling CFG=1.5
+===== view right: 161 words, cfg 1.5
+Show the object in <image1> (a dark fantasy necklace with a gothic medallion pendant) from its right side: an exact 90 degree side profile, the mirror image of the left side view. The same static object: identical shape, proportions, colors, materials and scale as <image1>. Orthographic camera at the same height as in <image1>, the whole object in frame, upright, centered, flat even studio lighting, plain white background, no shadow, no text.
+
+DETAIL SPECIFICATION, follow exactly:
+Large-scale forms (silhouette, main masses, proportions): elongated tapered gothic medallion ending in one sharp lower tip, about 4 cm thick at the rim; one top bail with two necklace chain strands leaving toward the upper left and upper right; large circular raised bezel in the upper two thirds of the medallion.
+Materials and colours: blackened forged iron body; worn aged silver rim, bezel and star; small oval iron chain links.
+Seen from the RIGHT: a thin side profile, the mirror image of the left side.
+----- negative
+keyring, front design repeated on the back, fused chain links
+

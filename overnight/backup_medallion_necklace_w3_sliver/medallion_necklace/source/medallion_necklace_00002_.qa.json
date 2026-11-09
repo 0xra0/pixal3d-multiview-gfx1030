@@ -1,0 +1,41 @@
+{
+ "passed": false,
+ "issues": [
+  "front: mesh silhouette matches the reference poorly (IoU 0.70, 17% of the reference missing)",
+  "left: mesh silhouette matches the reference poorly (IoU 0.43, 44% of the reference missing)",
+  "right: mesh silhouette matches the reference poorly (IoU 0.57, 26% of the reference missing)",
+  "769 loose fragments (1.7% of faces)"
+ ],
+ "mean_iou": 0.6133928173357573,
+ "views": {
+  "front": {
+   "iou": 0.6955815134586084,
+   "missing": 0.1713455953533398,
+   "extra": 0.1875667338948867
+  },
+  "left": {
+   "iou": 0.42935206869633097,
+   "missing": 0.4410569105691057,
+   "extra": 0.35064935064935066
+  },
+  "back": {
+   "iou": 0.7548153666063637,
+   "missing": 0.12008435677955588,
+   "extra": 0.15850041523312375
+  },
+  "right": {
+   "iou": 0.5738223205817262,
+   "missing": 0.25523184242921626,
+   "extra": 0.2857142857142857
+  }
+ },
+ "topology": {
+  "faces": 305950,
+  "components": 772,
+  "fragments": 769,
+  "fragment_share": 0.016548455630004903,
+  "boundary_edge_ratio": 0.0,
+  "nonmanifold_edge_ratio": 0.00381037375348063
+ },
+ "score": 0.7568682028891067
+}

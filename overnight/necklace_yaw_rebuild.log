@@ -1,0 +1,86 @@
+  run record: mesh pick -> /mnt/ssd/ComfyUI/output/3D/medallion_necklace_00002_.glb
+  ASSET stage 1/7 component-aware surface cleanup
+  ASSET components 241 protected 240
+  ASSET stage 2/7 low mesh and high-resolution source
+  ASSET reduce LOD 0 component 0 / 241
+  ASSET reduce LOD 0 component 50 / 241
+  ASSET reduce LOD 0 component 100 / 241
+  ASSET reduce LOD 0 component 150 / 241
+  ASSET reduce LOD 0 component 200 / 241
+  ASSET stage 3/7 shared Smart UV atlas
+  ASSET stage 5/7 LOD geometry
+  ASSET reduce LOD 1 component 0 / 241
+  ASSET reduce LOD 1 component 50 / 241
+  ASSET reduce LOD 1 component 100 / 241
+  ASSET reduce LOD 1 component 150 / 241
+  ASSET reduce LOD 1 component 200 / 241
+  ASSET reduce LOD 2 component 0 / 241
+  ASSET reduce LOD 2 component 50 / 241
+  ASSET reduce LOD 2 component 100 / 241
+  ASSET reduce LOD 2 component 150 / 241
+  ASSET reduce LOD 2 component 200 / 241
+  ASSET reduce LOD 3 component 0 / 241
+  ASSET reduce LOD 3 component 50 / 241
+  ASSET reduce LOD 3 component 100 / 241
+  ASSET reduce LOD 3 component 150 / 241
+  ASSET reduce LOD 3 component 200 / 241
+  ASSET bake groups {'groups': 10, 'physical_components': 241, 'max_components_per_group': 32}
+  ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+  ASSET full PBR bake LOD 0 resolution 2048
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 1 resolution 1024
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 2 resolution 512
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET full PBR bake LOD 3 resolution 256
+  ASSET bake basecolor
+  ASSET bake roughness
+  ASSET constant roughness 0.5
+  ASSET bake metallic
+  ASSET constant metallic 0.0
+  ASSET bake alpha
+  ASSET constant alpha 1.0
+  ASSET bake emission
+  ASSET constant emission 0.0
+  ASSET bake AO
+  ASSET bake high-to-low normal LOD 0
+  ASSET stage 4/7 asset and runtime budgets
+  ASSET stage 6/7 collision and engine exports
+  ASSET stage 7/7 visual and import quality gates
+  ASSET NEEDS REVIEW /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace/asset_report.json
+  NOT production-ready - review these before shipping:
+   - subpixel_islands : Some UV islands occupy under one texel; inspect checker previews and mip behavior.
+  production asset -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace
+  report -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace/asset_report.json
+  review -> /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace/review.html
+  engine check: not_run

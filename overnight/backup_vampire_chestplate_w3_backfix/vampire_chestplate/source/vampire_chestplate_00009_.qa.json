@@ -1,0 +1,39 @@
+{
+ "passed": false,
+ "issues": [
+  "841 loose fragments (1.3% of faces)",
+  "0.62% non-manifold edges"
+ ],
+ "mean_iou": 0.8994551333106219,
+ "views": {
+  "front": {
+   "iou": 0.9316385561802331,
+   "missing": 0.03891737412793141,
+   "extra": 0.031837425910245555
+  },
+  "left": {
+   "iou": 0.8929860752965446,
+   "missing": 0.0683848057677822,
+   "extra": 0.04437330978530824
+  },
+  "back": {
+   "iou": 0.9017038714547612,
+   "missing": 0.04742103614251944,
+   "extra": 0.05591780280576961
+  },
+  "right": {
+   "iou": 0.8714920303109486,
+   "missing": 0.057427085688446754,
+   "extra": 0.07964015674154203
+  }
+ },
+ "topology": {
+  "faces": 305859,
+  "components": 848,
+  "fragments": 841,
+  "fragment_share": 0.01286540530113549,
+  "boundary_edge_ratio": 0.0,
+  "nonmanifold_edge_ratio": 0.0062136867801784925
+ },
+ "score": 1.2473334700620404
+}

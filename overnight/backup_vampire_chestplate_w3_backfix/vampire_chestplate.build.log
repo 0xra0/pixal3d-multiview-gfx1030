@@ -1,0 +1,690 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+ASSET stage 1/7 component-aware surface cleanup
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+PREP source-up z
+20:06:24 | INFO: Data are loaded, start creating Blender stuff
+20:06:24 | INFO: Blender create Mesh node geometry_0
+20:06:24 | INFO: glTF import finished in 0.23s
+PREP yaw 0.0
+PREP boundary weld 1834
+PREP degenerates
+PREP overconnected edges 6
+PREP hole boundaries 209
+ASSET components 206 protected 205
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 206
+ASSET reduce LOD 0 component 50 / 206
+ASSET reduce LOD 0 component 100 / 206
+ASSET reduce LOD 0 component 150 / 206
+ASSET reduce LOD 0 component 200 / 206
+ASSET stage 3/7 shared Smart UV atlas
+PREP xatlas 19998 triangles
+PREP rts 3064 utilization 0.7981 folded 105
+xatlas pass 1 charts 3149 utilization 0.7863 folded 3
+xatlas pass 2 charts 3144 utilization 0.7865 folded 6
+xatlas pass 3 charts 3150 utilization 0.7922 folded 0
+ASSET colour source /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_backfix_00003_.glb
+20:07:05 | INFO: Data are loaded, start creating Blender stuff
+20:07:05 | INFO: Blender create Mesh node geometry_0
+20:07:05 | INFO: glTF import finished in 0.09s
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 206
+ASSET reduce LOD 1 component 50 / 206
+ASSET WARNING vampire_chestplate_LOD1_part0076 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0077 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0078 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0079 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0080 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0081 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0082 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0083 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0084 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0085 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0086 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0087 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0088 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0089 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0090 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0091 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0092 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0093 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0094 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0095 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0096 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0097 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0098 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0099 preserved because reduction would erase it
+ASSET reduce LOD 1 component 100 / 206
+ASSET WARNING vampire_chestplate_LOD1_part0100 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0101 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0102 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0103 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0104 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0105 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0106 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0107 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0108 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0109 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0110 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0111 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0112 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0113 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0114 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0115 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0116 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0117 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0118 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0119 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0120 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0121 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0122 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0123 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0124 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0125 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0126 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0127 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0128 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0129 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0130 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0131 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0132 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0133 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0134 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0135 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0136 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0137 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0138 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0139 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0140 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0141 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0142 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0143 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD1_part0144 preserved because reduction would erase it
+ASSET reduce LOD 1 component 150 / 206
+ASSET reduce LOD 1 component 200 / 206
+PREP xatlas 10122 triangles
+PREP rts 2263 utilization 0.8135 folded 24
+xatlas pass 2 charts 2283 utilization 0.8113 folded 24
+xatlas pass 3 charts 2305 utilization 0.8221 folded 4
+xatlas pass 4 charts 2312 utilization 0.8226 folded 0
+ASSET reduce LOD 2 component 0 / 206
+ASSET WARNING vampire_chestplate_LOD2_part0037 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0038 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0039 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0040 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0041 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0042 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0043 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0044 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0045 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0046 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0047 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0048 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0049 preserved because reduction would erase it
+ASSET reduce LOD 2 component 50 / 206
+ASSET WARNING vampire_chestplate_LOD2_part0050 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0051 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0052 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0053 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0054 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0055 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0056 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0057 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0058 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0059 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0060 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0061 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0062 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0063 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0064 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0065 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0066 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0067 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0068 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0069 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0070 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0071 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0072 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0073 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0074 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0075 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0076 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0077 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0078 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0079 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0080 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0081 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0082 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0083 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0084 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0085 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0086 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0087 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0088 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0089 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0090 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0091 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0092 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0093 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0094 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0095 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0096 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0097 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0098 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0099 preserved because reduction would erase it
+ASSET reduce LOD 2 component 100 / 206
+ASSET WARNING vampire_chestplate_LOD2_part0100 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0101 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0102 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0103 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0104 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0105 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0106 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0107 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0108 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0109 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0110 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0111 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0112 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0113 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0114 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0115 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0116 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0117 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0118 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0119 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0120 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0121 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0122 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0123 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0124 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0125 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0126 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0127 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0128 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0129 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0130 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0131 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0132 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0133 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0134 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0135 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0136 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0137 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0138 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0139 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0140 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0141 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0142 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0143 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD2_part0144 preserved because reduction would erase it
+ASSET reduce LOD 2 component 150 / 206
+ASSET reduce LOD 2 component 200 / 206
+PREP xatlas 5624 triangles
+PREP xatlas pass 0 charts 1760 utilization 0.8534 folded 66
+xatlas pass 1 charts 1849 utilization 0.8422 folded 6
+xatlas pass 2 charts 1850 utilization 0.8402 folded 0
+ASSET reduce LOD 3 component 0 / 206
+ASSET WARNING vampire_chestplate_LOD3_part0014 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0015 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0016 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0017 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0018 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0019 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0020 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0021 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0022 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0023 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0024 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0025 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0026 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0027 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0028 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0029 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0030 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0031 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0032 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0033 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0034 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0035 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0036 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0037 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0038 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0039 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0040 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0041 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0042 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0043 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0044 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0045 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0046 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0047 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0048 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0049 preserved because reduction would erase it
+ASSET reduce LOD 3 component 50 / 206
+ASSET WARNING vampire_chestplate_LOD3_part0050 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0051 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0052 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0053 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0054 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0055 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0056 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0057 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0058 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0059 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0060 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0061 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0062 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0063 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0064 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0065 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0066 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0067 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0068 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0069 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0070 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0071 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0072 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0073 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0074 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0075 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0076 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0077 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0078 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0079 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0080 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0081 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0082 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0083 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0084 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0085 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0086 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0087 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0088 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0089 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0090 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0091 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0092 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0093 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0094 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0095 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0096 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0097 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0098 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0099 preserved because reduction would erase it
+ASSET reduce LOD 3 component 100 / 206
+ASSET WARNING vampire_chestplate_LOD3_part0100 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0101 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0102 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0103 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0104 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0105 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0106 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0107 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0108 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0109 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0110 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0111 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0112 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0113 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0114 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0115 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0116 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0117 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0118 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0119 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0120 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0121 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0122 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0123 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0124 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0125 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0126 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0127 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0128 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0129 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0130 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0131 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0132 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0133 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0134 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0135 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0136 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0137 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0138 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0139 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0140 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0141 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0142 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0143 preserved because reduction would erase it
+ASSET WARNING vampire_chestplate_LOD3_part0144 preserved because reduction would erase it
+ASSET reduce LOD 3 component 150 / 206
+ASSET reduce LOD 3 component 200 / 206
+PREP xatlas 5734 triangles
+PREP rts 1771 utilization 0.836 folded 61
+xatlas pass 1 charts 1839 utilization 0.8372 folded 27
+xatlas pass 2 charts 1867 utilization 0.8394 folded 13
+xatlas pass 3 charts 1884 utilization 0.8358 folded 0
+ASSET bake groups {'groups': 8, 'physical_components': 206, 'max_components_per_group': 32}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 2048
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 1024
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 2 resolution 512
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 3 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so
+ERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so
+20:09:47 | INFO: Starting glTF 2.0 export
+20:09:47 | INFO: Extracting primitive: Collision
+20:09:47 | INFO: Primitives created: 1
+20:09:47 | INFO: Finished glTF 2.0 export in 0.00416254997253418 s
+
+20:09:47 | INFO: Starting glTF 2.0 export
+20:09:47 | INFO: Extracting primitive: geometry_0.619
+20:09:48 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:09:48 | INFO: Primitives created: 1
+20:09:48 | INFO: Finished glTF 2.0 export in 0.9259943962097168 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/meshes/vampire_chestplate_LOD0.fbx'
+export finished in 0.0959 sec.
+20:09:49 | INFO: Starting glTF 2.0 export
+20:09:49 | INFO: Extracting primitive: geometry_0.1306
+20:09:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:09:50 | INFO: Primitives created: 1
+20:09:50 | INFO: Finished glTF 2.0 export in 0.2555534839630127 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/meshes/vampire_chestplate_LOD1.fbx'
+export finished in 0.0442 sec.
+20:09:50 | INFO: Starting glTF 2.0 export
+20:09:50 | INFO: Extracting primitive: geometry_0.1825
+20:09:50 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:09:51 | INFO: Primitives created: 1
+20:09:51 | INFO: Finished glTF 2.0 export in 0.0788276195526123 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/meshes/vampire_chestplate_LOD2.fbx'
+export finished in 0.0265 sec.
+20:09:51 | INFO: Starting glTF 2.0 export
+20:09:51 | INFO: Extracting primitive: geometry_0.2367
+20:09:51 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:09:51 | INFO: Primitives created: 1
+20:09:51 | INFO: Finished glTF 2.0 export in 0.03354310989379883 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/meshes/vampire_chestplate_LOD3.fbx'
+export finished in 0.0264 sec.
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/redengine/vampire_chestplate_collision_reference.fbx'
+export finished in 0.0024 sec.
+ASSET stage 7/7 visual and import quality gates
+03:34.793  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/high_00.png'
+03:35.224  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_clay_00.png'
+03:35.573  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod1_clay_00.png'
+03:35.912  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod2_clay_00.png'
+03:36.213  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod3_clay_00.png'
+03:36.654  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_wire_00.png'
+03:37.110  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_checker_00.png'
+03:37.429  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/high_01.png'
+03:37.863  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_clay_01.png'
+03:38.205  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod1_clay_01.png'
+03:38.517  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod2_clay_01.png'
+03:38.843  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod3_clay_01.png'
+03:39.282  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_wire_01.png'
+03:39.701  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_checker_01.png'
+03:40.049  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/high_02.png'
+03:40.487  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_clay_02.png'
+03:40.839  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod1_clay_02.png'
+03:41.146  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod2_clay_02.png'
+03:41.438  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod3_clay_02.png'
+03:41.899  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_wire_02.png'
+03:42.337  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_checker_02.png'
+03:42.663  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/high_03.png'
+03:43.147  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_clay_03.png'
+03:43.466  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod1_clay_03.png'
+03:43.780  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod2_clay_03.png'
+03:44.148  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod3_clay_03.png'
+03:44.565  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_wire_03.png'
+03:44.986  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_checker_03.png'
+03:45.316  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/high_04.png'
+03:45.720  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_clay_04.png'
+03:46.062  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod1_clay_04.png'
+03:46.354  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod2_clay_04.png'
+03:46.629  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod3_clay_04.png'
+03:47.031  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_wire_04.png'
+03:47.455  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_checker_04.png'
+03:47.788  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/high_05.png'
+03:48.237  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_clay_05.png'
+03:48.561  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod1_clay_05.png'
+03:48.870  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod2_clay_05.png'
+03:49.182  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod3_clay_05.png'
+03:49.580  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_wire_05.png'
+03:50.008  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate.building_2w88cwgx/previews/lod0_checker_05.png'
+Info: Saved as "vampire_chestplate.blend"
+ASSET NEEDS REVIEW /mnt/ssd/ComfyUI/output/GameAssets/vampire_chestplate/asset_report.json
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+
+Blender quit

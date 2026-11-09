@@ -1,0 +1,5 @@
+base_s1	84262749	512	{}	475s	front 0.893	back 0.815	sides 0.794 0.863	/mnt/ssd/ComfyUI/output/UltraTex/vt_base_s1_views_00001_.png
+chunk1024_s1	84262749	512	{'chunk': '1024'}	920s	front 0.891	back 0.814	sides 0.802 0.874	/mnt/ssd/ComfyUI/output/UltraTex/vt_chunk1024_s1_views_00001_.png
+dense1024_cd_s1	84262749	1024	{'attention': 'comfy_default'}	1382s	front 0.731	back 0.748	sides 0.777 0.770	/mnt/ssd/ComfyUI/output/UltraTex/vt_dense1024_cd_s1_views_00001_.png
+sparse1536_s1	84262749	1536	{}	5129s	front 0.749	back 0.800	sides 0.831 0.863	/mnt/ssd/ComfyUI/output/UltraTex/vt_sparse1536_s1_views_00001_.png
+dense1536_cd_s1	84262749	1536	{'attention': 'comfy_default'}	7202s	front 0.731	back 0.820	sides 0.790 0.842	/mnt/ssd/ComfyUI/output/UltraTex/vt_dense1536_cd_s1_views_00001_.png

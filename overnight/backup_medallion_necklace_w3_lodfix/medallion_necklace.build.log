@@ -1,0 +1,803 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+ASSET stage 1/7 component-aware surface cleanup
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+PREP source-up z
+20:13:28 | INFO: Data are loaded, start creating Blender stuff
+20:13:28 | INFO: Blender create Mesh node geometry_0
+20:13:28 | INFO: glTF import finished in 0.22s
+PREP yaw 0.0
+PREP boundary weld 1658
+PREP degenerates
+PREP overconnected edges 3
+PREP hole boundaries 141
+ASSET components 241 protected 240
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 241
+ASSET reduce LOD 0 component 50 / 241
+ASSET reduce LOD 0 component 100 / 241
+ASSET reduce LOD 0 component 150 / 241
+ASSET reduce LOD 0 component 200 / 241
+ASSET stage 3/7 shared Smart UV atlas
+PREP xatlas 19998 triangles
+PREP xatlas pass 0 charts 2522 utilization 0.7771 folded 39
+xatlas pass 1 charts 2564 utilization 0.7799 folded 0
+ASSET colour source /mnt/ssd/ComfyUI/output/UltraTex/medallion_necklace_00002_.glb
+20:13:51 | INFO: Data are loaded, start creating Blender stuff
+20:13:51 | INFO: Blender create Mesh node geometry_0
+20:13:51 | INFO: glTF import finished in 0.09s
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 241
+ASSET reduce LOD 1 component 50 / 241
+ASSET WARNING medallion_necklace_LOD1_part0098 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0099 preserved because reduction would erase it
+ASSET reduce LOD 1 component 100 / 241
+ASSET WARNING medallion_necklace_LOD1_part0100 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0101 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0102 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0103 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0104 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0105 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0106 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0107 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0108 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0109 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0110 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0111 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0112 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0113 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0114 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0115 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0116 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0117 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0118 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0119 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0120 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0121 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0122 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0123 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0124 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0125 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0126 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0127 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0128 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0129 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0130 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0131 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0132 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0133 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0134 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0135 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0136 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0137 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0138 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0139 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0140 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0141 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0142 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0143 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0144 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0145 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0146 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0147 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0148 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0149 preserved because reduction would erase it
+ASSET reduce LOD 1 component 150 / 241
+ASSET WARNING medallion_necklace_LOD1_part0150 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0151 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0152 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0153 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0154 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0155 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0156 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0157 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0158 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0159 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0160 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0161 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0162 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0163 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0164 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0165 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0166 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0167 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0168 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0169 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0170 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0171 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0172 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0173 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0174 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0175 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0176 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0177 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0178 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0179 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0180 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0181 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0182 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD1_part0183 preserved because reduction would erase it
+ASSET reduce LOD 1 component 200 / 241
+PREP xatlas 10160 triangles
+PREP xatlas pass 0 charts 2003 utilization 0.7808 folded 9
+xatlas pass 1 charts 2018 utilization 0.7807 folded 0
+ASSET reduce LOD 2 component 0 / 241
+ASSET WARNING medallion_necklace_LOD2_part0047 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0048 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0049 preserved because reduction would erase it
+ASSET reduce LOD 2 component 50 / 241
+ASSET WARNING medallion_necklace_LOD2_part0050 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0051 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0052 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0053 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0054 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0055 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0056 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0057 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0058 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0059 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0060 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0061 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0062 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0063 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0064 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0065 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0066 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0067 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0068 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0069 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0070 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0071 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0072 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0073 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0074 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0075 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0076 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0077 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0078 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0079 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0080 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0081 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0082 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0083 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0084 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0085 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0086 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0087 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0088 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0089 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0090 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0091 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0092 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0093 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0094 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0095 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0096 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0097 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0098 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0099 preserved because reduction would erase it
+ASSET reduce LOD 2 component 100 / 241
+ASSET WARNING medallion_necklace_LOD2_part0100 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0101 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0102 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0103 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0104 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0105 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0106 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0107 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0108 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0109 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0110 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0111 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0112 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0113 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0114 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0115 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0116 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0117 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0118 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0119 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0120 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0121 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0122 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0123 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0124 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0125 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0126 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0127 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0128 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0129 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0130 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0131 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0132 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0133 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0134 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0135 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0136 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0137 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0138 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0139 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0140 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0141 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0142 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0143 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0144 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0145 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0146 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0147 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0148 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0149 preserved because reduction would erase it
+ASSET reduce LOD 2 component 150 / 241
+ASSET WARNING medallion_necklace_LOD2_part0150 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0151 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0152 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0153 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0154 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0155 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0156 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0157 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0158 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0159 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0160 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0161 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0162 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0163 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0164 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0165 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0166 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0167 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0168 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0169 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0170 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0171 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0172 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0173 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0174 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0175 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0176 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0177 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0178 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0179 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0180 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0181 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0182 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD2_part0183 preserved because reduction would erase it
+ASSET reduce LOD 2 component 200 / 241
+PREP xatlas 5792 triangles
+PREP xatlas pass 0 charts 1678 utilization 0.7904 folded 9
+xatlas pass 1 charts 1687 utilization 0.7975 folded 0
+ASSET reduce LOD 3 component 0 / 241
+ASSET WARNING medallion_necklace_LOD3_part0019 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0020 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0021 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0022 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0023 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0024 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0025 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0026 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0027 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0028 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0029 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0030 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0031 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0032 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0033 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0034 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0035 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0036 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0037 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0038 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0039 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0040 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0041 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0042 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0043 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0044 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0045 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0046 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0047 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0048 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0049 preserved because reduction would erase it
+ASSET reduce LOD 3 component 50 / 241
+ASSET WARNING medallion_necklace_LOD3_part0050 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0051 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0052 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0053 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0054 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0055 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0056 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0057 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0058 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0059 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0060 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0061 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0062 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0063 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0064 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0065 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0066 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0067 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0068 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0069 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0070 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0071 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0072 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0073 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0074 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0075 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0076 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0077 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0078 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0079 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0080 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0081 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0082 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0083 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0084 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0085 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0086 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0087 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0088 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0089 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0090 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0091 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0092 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0093 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0094 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0095 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0096 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0097 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0098 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0099 preserved because reduction would erase it
+ASSET reduce LOD 3 component 100 / 241
+ASSET WARNING medallion_necklace_LOD3_part0100 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0101 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0102 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0103 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0104 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0105 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0106 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0107 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0108 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0109 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0110 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0111 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0112 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0113 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0114 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0115 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0116 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0117 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0118 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0119 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0120 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0121 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0122 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0123 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0124 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0125 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0126 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0127 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0128 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0129 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0130 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0131 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0132 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0133 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0134 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0135 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0136 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0137 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0138 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0139 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0140 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0141 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0142 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0143 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0144 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0145 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0146 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0147 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0148 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0149 preserved because reduction would erase it
+ASSET reduce LOD 3 component 150 / 241
+ASSET WARNING medallion_necklace_LOD3_part0150 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0151 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0152 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0153 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0154 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0155 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0156 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0157 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0158 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0159 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0160 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0161 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0162 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0163 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0164 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0165 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0166 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0167 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0168 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0169 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0170 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0171 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0172 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0173 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0174 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0175 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0176 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0177 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0178 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0179 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0180 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0181 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0182 preserved because reduction would erase it
+ASSET WARNING medallion_necklace_LOD3_part0183 preserved because reduction would erase it
+ASSET reduce LOD 3 component 200 / 241
+PREP xatlas 4392 triangles
+PREP xatlas pass 0 charts 1404 utilization 0.8441 folded 32
+xatlas pass 1 charts 1442 utilization 0.839 folded 0
+ASSET bake groups {'groups': 10, 'physical_components': 241, 'max_components_per_group': 32}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 2048
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 1024
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 2 resolution 512
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 3 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so
+ERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so
+20:16:58 | INFO: Starting glTF 2.0 export
+20:16:58 | INFO: Extracting primitive: Collision
+20:16:58 | INFO: Primitives created: 1
+20:16:58 | INFO: Finished glTF 2.0 export in 0.0049343109130859375 s
+
+20:16:58 | INFO: Starting glTF 2.0 export
+20:16:58 | INFO: Extracting primitive: geometry_0.724
+20:16:58 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:16:59 | INFO: Primitives created: 1
+20:16:59 | INFO: Finished glTF 2.0 export in 0.9094092845916748 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/meshes/medallion_necklace_LOD0.fbx'
+export finished in 0.0855 sec.
+20:17:00 | INFO: Starting glTF 2.0 export
+20:17:00 | INFO: Extracting primitive: geometry_0.1533
+20:17:00 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:17:00 | INFO: Primitives created: 1
+20:17:00 | INFO: Finished glTF 2.0 export in 0.2523629665374756 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/meshes/medallion_necklace_LOD1.fbx'
+export finished in 0.0472 sec.
+20:17:01 | INFO: Starting glTF 2.0 export
+20:17:01 | INFO: Extracting primitive: geometry_0.2151
+20:17:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:17:01 | INFO: Primitives created: 1
+20:17:01 | INFO: Finished glTF 2.0 export in 0.07539796829223633 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/meshes/medallion_necklace_LOD2.fbx'
+export finished in 0.0270 sec.
+20:17:02 | INFO: Starting glTF 2.0 export
+20:17:02 | INFO: Extracting primitive: geometry_0.2797
+20:17:02 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:17:02 | INFO: Primitives created: 1
+20:17:02 | INFO: Finished glTF 2.0 export in 0.028902053833007812 s
+
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/meshes/medallion_necklace_LOD3.fbx'
+export finished in 0.0212 sec.
+
+FBX export starting... '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/redengine/medallion_necklace_collision_reference.fbx'
+export finished in 0.0026 sec.
+ASSET stage 7/7 visual and import quality gates
+03:37.031  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/high_00.png'
+03:37.475  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_clay_00.png'
+03:37.810  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod1_clay_00.png'
+03:38.120  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod2_clay_00.png'
+03:38.437  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod3_clay_00.png'
+03:38.846  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_wire_00.png'
+03:39.247  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_checker_00.png'
+03:39.577  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/high_01.png'
+03:39.986  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_clay_01.png'
+03:40.312  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod1_clay_01.png'
+03:40.629  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod2_clay_01.png'
+03:40.929  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod3_clay_01.png'
+03:41.330  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_wire_01.png'
+03:41.752  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_checker_01.png'
+03:42.061  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/high_02.png'
+03:42.472  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_clay_02.png'
+03:42.802  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod1_clay_02.png'
+03:43.113  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod2_clay_02.png'
+03:43.414  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod3_clay_02.png'
+03:43.826  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_wire_02.png'
+03:44.258  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_checker_02.png'
+03:44.587  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/high_03.png'
+03:45.009  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_clay_03.png'
+03:45.335  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod1_clay_03.png'
+03:45.647  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod2_clay_03.png'
+03:45.948  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod3_clay_03.png'
+03:46.353  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_wire_03.png'
+03:46.785  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_checker_03.png'
+03:47.103  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/high_04.png'
+03:47.500  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_clay_04.png'
+03:47.850  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod1_clay_04.png'
+03:48.138  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod2_clay_04.png'
+03:48.420  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod3_clay_04.png'
+03:48.833  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_wire_04.png'
+03:49.238  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_checker_04.png'
+03:49.555  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/high_05.png'
+03:49.974  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_clay_05.png'
+03:50.298  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod1_clay_05.png'
+03:50.598  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod2_clay_05.png'
+03:50.890  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod3_clay_05.png'
+03:51.316  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_wire_05.png'
+03:51.720  render           | Saved: '/mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace.building_i9xz0on7/previews/lod0_checker_05.png'
+Info: Saved as "medallion_necklace.blend"
+ASSET NEEDS REVIEW /mnt/ssd/ComfyUI/output/GameAssets/medallion_necklace/asset_report.json
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+
+Blender quit

@@ -1,0 +1,239 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+ASSET stage 1/7 component-aware surface cleanup
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+PREP source-up z
+20:44:59 | INFO: Data are loaded, start creating Blender stuff
+20:44:59 | INFO: Blender create Mesh node geometry_0
+20:44:59 | INFO: glTF import finished in 0.28s
+PREP boundary weld 363
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 87
+ASSET components 25 protected 24
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 25
+ASSET stage 3/7 shared Smart UV atlas
+PREP xatlas 19998 triangles
+PREP rts 3103 utilization 0.7761 folded 14
+xatlas pass 3 charts 3156 utilization 0.7777 folded 11
+xatlas pass 4 charts 3171 utilization 0.7794 folded 3
+xatlas pass 5 charts 3183 utilization 0.7762 folded 0
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 25
+PREP xatlas 9998 triangles
+PREP xatlas pass 0 charts 1756 utilization 0.7875 folded 102
+xatlas pass 1 charts 1867 utilization 0.7916 folded 18
+xatlas pass 2 charts 1891 utilization 0.7946 folded 0
+ASSET reduce LOD 2 component 0 / 25
+PREP xatlas 4996 triangles
+PREP xatlas pass 0 charts 1322 utilization 0.8123 folded 33
+xatlas pass 1 charts 1364 utilization 0.8108 folded 0
+ASSET reduce LOD 3 component 0 / 25
+PREP xatlas 3538 triangles
+PREP xatlas pass 0 charts 1194 utilization 0.8096 folded 19
+xatlas pass 1 charts 1221 utilization 0.8101 folded 0
+ASSET bake groups {'groups': 3, 'physical_components': 25, 'max_components_per_group': 32}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 2048
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+ASSET constant roughness 0.5
+ASSET bake metallic
+ASSET constant metallic 0.0
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 1024
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+ASSET constant roughness 0.5
+ASSET bake metallic
+ASSET constant metallic 0.0
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 2 resolution 512
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+ASSET constant roughness 0.5
+ASSET bake metallic
+ASSET constant metallic 0.0
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 3 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+ASSET constant roughness 0.5
+ASSET bake metallic
+ASSET constant metallic 0.0
+ASSET bake alpha
+ASSET constant alpha 1.0
+ASSET bake emission
+ASSET constant emission 0.0
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so
+ERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so
+20:46:52 | INFO: Starting glTF 2.0 export
+20:46:52 | INFO: Extracting primitive: Collision
+20:46:52 | INFO: Primitives created: 1
+20:46:52 | INFO: Finished glTF 2.0 export in 0.002012491226196289 s
+
+20:46:52 | INFO: Starting glTF 2.0 export
+20:46:52 | INFO: Extracting primitive: geometry_0.076
+20:46:53 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:46:53 | INFO: Primitives created: 1
+20:46:53 | INFO: Finished glTF 2.0 export in 0.7389776706695557 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a7.building_82ntds2j/meshes/vampire_chestplate_LOD0.fbx'
+export finished in 0.0856 sec.
+20:46:54 | INFO: Starting glTF 2.0 export
+20:46:54 | INFO: Extracting primitive: geometry_0.125
+20:46:54 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:46:55 | INFO: Primitives created: 1
+20:46:55 | INFO: Finished glTF 2.0 export in 0.1937718391418457 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a7.building_82ntds2j/meshes/vampire_chestplate_LOD1.fbx'
+export finished in 0.0453 sec.
+20:46:55 | INFO: Starting glTF 2.0 export
+20:46:55 | INFO: Extracting primitive: geometry_0.174
+20:46:55 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:46:55 | INFO: Primitives created: 1
+20:46:55 | INFO: Finished glTF 2.0 export in 0.05720400810241699 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a7.building_82ntds2j/meshes/vampire_chestplate_LOD2.fbx'
+export finished in 0.0230 sec.
+20:46:56 | INFO: Starting glTF 2.0 export
+20:46:56 | INFO: Extracting primitive: geometry_0.223
+20:46:56 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+20:46:56 | INFO: Primitives created: 1
+20:46:56 | INFO: Finished glTF 2.0 export in 0.019672393798828125 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a7.building_82ntds2j/meshes/vampire_chestplate_LOD3.fbx'
+export finished in 0.0178 sec.
+ASSET stage 7/7 visual and import quality gates
+02:02.266  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/high_00.png'
+02:02.684  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_clay_00.png'
+02:03.025  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod1_clay_00.png'
+02:03.342  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod2_clay_00.png'
+02:03.631  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod3_clay_00.png'
+02:04.033  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_wire_00.png'
+02:04.427  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_checker_00.png'
+02:04.718  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/high_01.png'
+02:05.132  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_clay_01.png'
+02:05.442  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod1_clay_01.png'
+02:05.736  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod2_clay_01.png'
+02:06.032  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod3_clay_01.png'
+02:06.411  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_wire_01.png'
+02:06.816  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_checker_01.png'
+02:07.139  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/high_02.png'
+02:07.538  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_clay_02.png'
+02:07.859  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod1_clay_02.png'
+02:08.148  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod2_clay_02.png'
+02:08.424  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod3_clay_02.png'
+02:08.813  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_wire_02.png'
+02:09.232  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_checker_02.png'
+02:09.531  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/high_03.png'
+02:09.925  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_clay_03.png'
+02:10.249  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod1_clay_03.png'
+02:10.527  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod2_clay_03.png'
+02:10.815  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod3_clay_03.png'
+02:11.235  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_wire_03.png'
+02:11.630  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_checker_03.png'
+02:11.929  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/high_04.png'
+02:12.339  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_clay_04.png'
+02:12.648  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod1_clay_04.png'
+02:12.937  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod2_clay_04.png'
+02:13.237  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod3_clay_04.png'
+02:13.629  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_wire_04.png'
+02:14.022  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_checker_04.png'
+02:14.337  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/high_05.png'
+02:14.737  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_clay_05.png'
+02:15.042  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod1_clay_05.png'
+02:15.343  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod2_clay_05.png'
+02:15.613  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod3_clay_05.png'
+02:15.990  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_wire_05.png'
+02:16.409  render           | Saved: '/mnt/ssd/work/overnight/a7.building_82ntds2j/previews/lod0_checker_05.png'
+Info: Saved as "vampire_chestplate.blend"
+ASSET NEEDS REVIEW /mnt/ssd/work/overnight/a7/asset_report.json
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+
+Blender quit
+wall 2:23.96

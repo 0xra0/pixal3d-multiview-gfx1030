@@ -1,0 +1,272 @@
+[32m[INFO][0m setup plugin alembic.autogenerate.schemas
+[32m[INFO][0m setup plugin alembic.autogenerate.tables
+[32m[INFO][0m setup plugin alembic.autogenerate.types
+[32m[INFO][0m setup plugin alembic.autogenerate.constraints
+[32m[INFO][0m setup plugin alembic.autogenerate.defaults
+[32m[INFO][0m setup plugin alembic.autogenerate.comments
+[32m[INFO][0m [ComfyUI-Manager] Using uv as Python module for pip operations.
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+[START] Security scan
+[DONE] Security scan
+** ComfyUI startup time: 2026-11-04 21:56:18.867
+** Platform: Linux
+** Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]
+** Python executable: /mnt/ssd/conda-envs/ComfyUI/bin/python3.12
+** ComfyUI Path: /mnt/ssd/ComfyUI
+** ComfyUI Base Folder Path: /mnt/ssd/ComfyUI
+** User directory: /mnt/ssd/ComfyUI/user
+** ComfyUI-Manager config path: /mnt/ssd/ComfyUI/user/__manager/config.ini
+** Log path: /mnt/ssd/ComfyUI/user/comfyui.log
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+[32m[INFO][0m [PRE] ComfyUI-Manager
+[32m[INFO][0m 
+Prestartup times for custom nodes:
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2-GGUF
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/rgthree-comfy
+[32m[INFO][0m 
+[32m[INFO][0m Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'int8_linear', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend hip: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple_dtype', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'stochastic_rounding_fp8']}
+[32m[INFO][0m Checkpoint files will always be loaded safely.
+[32m[INFO][0m Total VRAM 16368 MB, total RAM 32008 MB
+[32m[INFO][0m pytorch version: 2.12.0
+[32m[INFO][0m AMD arch: gfx1030
+[32m[INFO][0m ROCm version: (7, 2)
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Disabling smart memory management
+[32m[INFO][0m Device: cuda:0 AMD Radeon RX 6800 : native
+[32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+[32m[INFO][0m Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]
+[32m[INFO][0m ComfyUI version: 0.38.0
+[32m[INFO][0m comfy-aimdo version: 0.5.5
+[32m[INFO][0m comfy-kitchen version: 0.2.36
+[1m[33m[WARNING][0m Dynamic vram disabled with argument. If you have any issues with dynamic vram enabled please give us a detailed reports as this argument will be removed soon. If you use gguf we recommend keeping dynamic vram enabled and using native ComfyUI model formats instead. ComfyUI native formats like fp8, int8 and w4a8 will be faster even if they are larger than your memory.
+[32m[INFO][0m comfyui-frontend-package version: 1.53.6
+[32m[INFO][0m comfyui-workflow-templates version: 0.11.70
+[32m[INFO][0m comfyui-embedded-docs version: 0.5.12
+[32m[INFO][0m comfy-kitchen version: 0.2.36
+[32m[INFO][0m comfy-aimdo version: 0.5.5
+[32m[INFO][0m [Prompt Server] web root: /mnt/ssd/ComfyUI/.runtime-deps/comfyui_frontend_package/static
+[32m[INFO][0m Asset seeder disabled
+[32m[INFO][0m [START] ComfyUI-Manager
+[ComfyUI-Manager] Using GitPython backend
+[32m[INFO][0m [ComfyUI-Manager] network_mode: public
+[32m[INFO][0m No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+/mnt/ssd/ComfyUI/custom_nodes/comfyui-umeairt-toolkit/modules/monitor_hardware.py:271: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml
+[UmeAiRT-Toolkit] ⚠️ pynvml init failed: NVML Shared Library Not Found
+[UmeAiRT-Toolkit] 🖥️ AMD GPU monitoring: 1 device(s) detected
+[UmeAiRT-Toolkit] 📊 Hardware monitor started (rate: 1.0s)
+[UmeAiRT-Toolkit] 🧩 Loaded 71 nodes.
+[UmeAiRT-Toolkit] ⚡ Optimisation check: SageAttention ❌ | Triton ✅
+[UmeAiRT-Toolkit] 📊 Initial CUDA memory: 15.80GB free / 15.98GB total
+[UmeAiRT-Toolkit] ✅ Initialization Complete.
+⚠️  SeedVR2 optimizations check: SageAttention ❌ | Flash Attention ❌ | Triton ✅
+💡 Optional: pip install sageattention flash-attn
+📊 Initial CUDA memory: 15.73GB free / 15.98GB total
+W1104 21:56:59.809000 2003581 site-packages/torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+flash_attn is installed but failed to import: No module named 'flash_attn.flash_attn_interface'. Falling back to native PyTorch attention.
+W1104 21:57:00.015000 2003581 site-packages/torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[32m[INFO][0m ComfyUI-GGUF: Allowing full torch compile
+[32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+(RES4LYF) Init
+(RES4LYF) Importing beta samplers.
+(RES4LYF) Importing legacy samplers.
+[/mnt/ssd/ComfyUI/custom_nodes/comfy-mtb] | INFO -> loaded 103 nodes successfuly
+[/mnt/ssd/ComfyUI/custom_nodes/comfy-mtb] | INFO -> Some nodes (5) could not be loaded. This can be ignored, but go to http://127.0.0.1:8188/mtb if you want more information.
+
+[rgthree-comfy] Loaded 48 magnificent nodes. 🎉
+
+[rgthree-comfy] ComfyUI's new Node 2.0 rendering may be incompatible with some rgthree-comfy nodes and features, breaking some rendering as well as losing the ability to access a node's properties (a vital part of many nodes). It also appears to run MUCH more slowly spiking CPU usage and causing jankiness and unresponsiveness, especially with large workflows. Personally I am not planning to use the new Nodes 2.0 and, unfortunately, am not able to invest the time to investigate and overhaul rgthree-comfy where needed. If you have issues when Nodes 2.0 is enabled, I'd urge you to switch it off as well and join me in hoping ComfyUI is not planning to deprecate the existing, stable canvas rendering all together.
+
+[Trellis2] GPU Type: AMD ROCm
+[Trellis2-GGUF] Successfully monkeypatched DinoV3ProjFeatureExtractor.forward
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[Trellis2-GGUF] Successfully monkeypatched Trellis2ImageTo3DPipeline.get_proj_cond_shape
+[32m[INFO][0m ComfyUI-GGUF: Allowing full torch compile
+[Trellis2] Using native ComfyUI-GGUF support (ops/dequant/loader)
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+LOADED 5 FONTS
+
+
+███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗███████╗               
+████╗ ████║██╔══██╗██╔════╝██║  ██║██║████╗  ██║██╔════╝               
+██╔████╔██║███████║██║     ███████║██║██╔██╗ ██║█████╗                 
+██║╚██╔╝██║██╔══██║██║     ██╔══██║██║██║╚██╗██║██╔══╝                 
+██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██║██║██║ ╚████║███████╗               
+╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝               
+                                                                       
+██████╗ ███████╗██╗     ██╗   ██╗███████╗██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██╔════╝██║     ██║   ██║██╔════╝██║██╔═══██╗████╗  ██║██╔════╝
+██║  ██║█████╗  ██║     ██║   ██║███████╗██║██║   ██║██╔██╗ ██║███████╗
+██║  ██║██╔══╝  ██║     ██║   ██║╚════██║██║██║   ██║██║╚██╗██║╚════██║
+██████╔╝███████╗███████╗╚██████╔╝███████║██║╚██████╔╝██║ ╚████║███████║
+╚═════╝ ╚══════╝╚══════╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+                                                                       
+
+
+### ComfyUI-Workflow-Encrypt: Copy .js from '/mnt/ssd/ComfyUI/custom_nodes/comfyui-workflow-encrypt/js/comfyui-workflow-encrypt.js' to '/mnt/ssd/ComfyUI/web/extensions/comfyui-workflow-encrypt'
+USDU batch patches applied successfully.
+[32m[INFO][0m USDU batch patches applied successfully.
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `/mnt/ssd/ComfyUI/custom_nodes/was-ns/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 220 nodes successfully.
+
+	"The biggest risk is not taking any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks." - Mark Zuckerberg
+
+[QwenVL Debug] SAGE_ATTENTION_AVAILABLE: False
+[QwenVL Debug] CUDA capability: 10.3
+[QwenVL Debug] Final ATTENTION_MODES: ['auto', 'sage', 'flash_attention_2', 'sdpa']
+[QwenVL] NOTE: SageAttention option shown for testing. Install with: pip install sageattention
+[llama-cpp-python].find_library: loaded library from libggml-base.so.0
+[llama-cpp-python].find_library: loaded library from libggml.so.0
+[llama-cpp-python].find_library: loaded library from libllama.so.0
+[ComfyUI-Easy-Use] server: v1.3.6 Loaded
+[ComfyUI-Easy-Use] web root: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use/web_version/v2 Loaded
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[ATTENTION] Using backend: flash_attn
+------------------------------------------
+Comfyroll Studio v1.76 :  175 Nodes Loaded
+------------------------------------------
+** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+------------------------------------------
+----------------------------------------------------------------------
+  AusBoss v2.9.0  |  42 nodes loaded
+  https://github.com/ausboss/ComfyUI-AusBoss
+----------------------------------------------------------------------
+[32m[INFO][0m ### Loading: ComfyUI-Impact-Subpack (V1.3.5)
+[32m[INFO][0m [Impact Pack/Subpack] Using folder_paths to determine whitelist path: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+[32m[INFO][0m [Impact Pack/Subpack] Ensured whitelist directory exists: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack
+[32m[INFO][0m [Impact Pack/Subpack] Loaded 0 model(s) from whitelist: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+[32m[INFO][0m [Impact Subpack] ultralytics_bbox: /mnt/ssd/ComfyUI/models/ultralytics/bbox
+[32m[INFO][0m [Impact Subpack] ultralytics_segm: /mnt/ssd/ComfyUI/models/ultralytics/segm
+[Crystools INFO] Crystools version: 1.27.4
+[Crystools INFO] Platform release: 7.2.11-zen1_1
+[Crystools INFO] JETSON: Not detected.
+[Crystools INFO] CPU: AMD Ryzen 7 5700X 8-Core Processor - Arch: x86_64 - OS: Linux 7.2.11-zen1_1
+[Crystools ERROR] Could not init pynvml (NVIDIA). NVML Shared Library Not Found
+[Crystools WARNING] No GPU monitoring libraries available.
+[32m[INFO][0m ### Loading: ComfyUI-Impact-Pack (V8.28.3)
+[32m[INFO][0m [vsLinx] Combo type validation fix applied.
+[32m[INFO][0m [Impact Pack] Wildcard total size (0.00 MB) is within cache limit (50.00 MB). Using full cache mode.
+[32m[INFO][0m [Impact Pack] Wildcards loading done.
+[ComfyUI-HY-Motion1] Initializing custom node...
+[32m[INFO][0m Total VRAM 16368 MB, total RAM 32008 MB
+[32m[INFO][0m pytorch version: 2.12.0
+[32m[INFO][0m AMD arch: gfx1030
+[32m[INFO][0m ROCm version: (7, 2)
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Disabling smart memory management
+[32m[INFO][0m Device: cuda:0 AMD Radeon RX 6800 : native
+[ComfyUI-HY-Motion1] [OK] Node classes imported successfully
+[ComfyUI-HY-Motion1] [OK] Static routes added: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-HY-Motion1/static
+[ComfyUI-HY-Motion1] [OK] Loaded successfully!
+[32m[INFO][0m 
+Import times for custom nodes:
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/websocket_image_save.py
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-DeGrid
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfy-image-saver
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-mxtoolkit
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-florence2
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UnloadModels
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/cg-use-everywhere
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-inpaint-cropandstitch
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI_JPS-Nodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-GGUF
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Flux2Klein-Enhancer
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-impact-subpack
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-custom-scripts
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-image-saver
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/Qwen-Image-2.1-Character-Sheet-Designer
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-HY-Motion1
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/demonalone-nodes-comfyui
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-workflow-encrypt
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-vslinx-nodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/derfuu_comfyui_moddednodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_ultimatesdupscale
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-frame-interpolation
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/rgthree-comfy
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-KJNodes
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-various
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-AusBoss
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-MediaMixer
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UltraTex
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-logicutils
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfy-mtb
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-levelpixel
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_layerstyle
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-impact-pack
+[32m[INFO][0m    0.2 seconds: /mnt/ssd/ComfyUI/custom_nodes/RES4LYF
+[32m[INFO][0m    0.2 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-QwenVL-Mod
+[32m[INFO][0m    0.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-videohelpersuite
+[32m[INFO][0m    0.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-propost
+[32m[INFO][0m    0.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Crystools
+[32m[INFO][0m    0.8 seconds: /mnt/ssd/ComfyUI/custom_nodes/was-ns
+[32m[INFO][0m    0.8 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-umeairt-toolkit
+[32m[INFO][0m    1.8 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2-GGUF
+[32m[INFO][0m    3.5 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_fill-nodes
+[32m[INFO][0m    5.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/seedvr2_videoupscaler
+[32m[INFO][0m 
+[32m[INFO][0m Context impl SQLiteImpl.
+[32m[INFO][0m Will assume non-transactional DDL.
+[32m[INFO][0m Disabling intermediate node cache.
+[32m[INFO][0m Starting server
+
+[32m[INFO][0m To see the GUI go to: http://127.0.0.1:8188
+[32m[INFO][0m got prompt
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/mnt/ssd/ComfyUI/models/background_removal/birefnet.safetensors']
+[32m[INFO][0m Requested to load BiRefNet
+[32m[INFO][0m loaded completely; 13254.80 MB usable, 419.43 MB loaded, full load: True
+[32m[INFO][0m UltraTex prep: keeping the mesh's existing UVs
+[32m[INFO][0m UltraTex prep: 32276 verts / 19998 faces, normalised extents [0.705 0.92  0.396]
+[32m[INFO][0m gguf qtypes: Q8_0 (254), F32 (145)
+[1m[33m[WARNING][0m Dequantizing token_embd.weight to prevent runtime OOM.
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load Flux2TEModel_
+[32m[INFO][0m loaded completely; 11698.80 MB usable, 10043.77 MB loaded, full load: True
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/mnt/ssd/ComfyUI/models/vae/flux2-vae.safetensors']
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m VAE load device: cpu, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m VAE load device: cpu, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m UltraTex: replaced 140 decoder tensors from ultratex_flux2_decoder.pt
+[32m[INFO][0m gguf qtypes: F32 (80), Q8_0 (112), BF16 (9)
+[32m[INFO][0m model weight dtype torch.float16, manual cast: None
+[32m[INFO][0m model_type FLUX
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m UltraTex LoRA ultratex_flux2_mr.safetensors (peft format): 80 layers patched of 80
+[32m[INFO][0m Requested to load AutoencoderKL
+[32m[INFO][0m loaded completely;  320.61 MB loaded, full load: True
+[32m[INFO][0m FETCH ComfyRegistry Data [DONE]
+[32m[INFO][0m [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: /mnt/ssd/ComfyUI/user/__manager/cache/1514988643_custom-node-list.json [DONE]
+[32m[INFO][0m [ComfyUI-Manager] All startup tasks have been completed.
+[32m[INFO][0m Requested to load Flux2
+[32m[INFO][0m loaded partially; 2847.00 MB usable, 2384.02 MB loaded, 7324.00 MB offloaded, 459.00 MB buffer reserved, lowvram patches: 0
+[32m[INFO][0m UltraTex flux2: 7797/24576 target tokens, 10347 reference tokens, 512 text tokens, torch.float16, cfg=False, attention=ultratex_sparse(top-k 0.2), chunk=8192, reserve=1.7 GB
+[32m[INFO][0m UltraTex: first step 76.8s
+[32m[INFO][0m UltraTex: 25 steps in 1328s (53.1s/step), peak VRAM 5.4 GB
+[32m[INFO][0m UltraTex LoRA ultratex_flux2.safetensors (peft format): 80 layers patched of 80
+[32m[INFO][0m Requested to load Flux2
+[32m[INFO][0m loaded partially; 5144.86 MB usable, 4940.02 MB loaded, 4768.00 MB offloaded, 204.00 MB buffer reserved, lowvram patches: 0
+[32m[INFO][0m UltraTex flux2: 7797/24576 target tokens, 10347 reference tokens, 512 text tokens, torch.float16, cfg=False, attention=ultratex_sparse(top-k 0.2), chunk=8192, reserve=1.7 GB
+[32m[INFO][0m UltraTex: first step 52.0s
+[32m[INFO][0m UltraTex: 25 steps in 1314s (52.6s/step), peak VRAM 7.5 GB
+[32m[INFO][0m UltraTex bake: UV coverage 0.432 of 2048^2 texels
+[32m[INFO][0m UltraTex bake: 0.899 of texels seen; filling the rest from nearest seen texels
+[32m[INFO][0m UltraTex bake: 0.900 of texels seen; filling the rest from nearest seen texels
+[32m[INFO][0m UltraTex: saved UltraTex/vampire_chestplate_00004_.glb
+[32m[INFO][0m [32mPrompt executed in 00:57:59[0m

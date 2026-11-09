@@ -1,0 +1,13 @@
+  mesh: /mnt/ssd/work/overnight/a6/meshes/vampire_chestplate_LOD0.glb
+  seed 916451919
+
+  success in 3564s
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_normals_00007_.png
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_normals_00008_.png
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_normals_00009_.png
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_normals_00010_.png
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_normals_00011_.png
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_normals_00012_.png
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_views_00001_.png
+  -> /mnt/ssd/ComfyUI/output/UltraTex/vampire_chestplate_00002_.glb
+wall 59:24.75

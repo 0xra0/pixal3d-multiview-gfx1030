@@ -1,0 +1,21 @@
+................../mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/open3d/__init__.py:80: ImportWarning: Open3D was built with CUDA support, but no suitable CUDA devices found. If your system has CUDA devices, check your CUDA drivers and runtime.
+  warnings.warn(
+...................../mnt/ssd/work/pixal3d-mv/tests/test_view_runtime.py:139: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmphk_p1b92/output/PixelArtistry/prop.run.json' mode='r' encoding='UTF-8'>
+  manifest = json.load(open(rt.manifest_path(comfy, "prop")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+./mnt/ssd/work/pixal3d-mv/tests/test_view_runtime.py:139: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_i4t0jbd/output/PixelArtistry/prop.run.json' mode='r' encoding='UTF-8'>
+  manifest = json.load(open(rt.manifest_path(comfy, "prop")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+...........
+----------------------------------------------------------------------
+Ran 51 tests in 2.658s
+
+OK
+  mesh: /tmp/tmpfpfbcpyn/meshes/prop_LOD0.glb
+  seed 1127768768
+  seed 123
+  mesh: source.glb
+  mesh: /prepared/prop_lp.glb
+  seed 1131747314
+  mesh: source.blend
+  PREP OK done

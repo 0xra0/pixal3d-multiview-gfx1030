@@ -1,0 +1,418 @@
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 986, in register
+    _remote_asset_library_restore_backups()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 580, in _remote_asset_library_restore_backups
+    from _bpy_internal.assets.remote_library import listing_downloader
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/assets/remote_library/listing_downloader.py", line 32, in <module>
+    from _bpy_internal.http import downloader as http_dl
+  File "/usr/share/blender/5.2/scripts/modules/_bpy_internal/http/downloader.py", line 51, in <module>
+    import cattrs
+ModuleNotFoundError: No module named 'cattrs'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+ASSET stage 1/7 component-aware surface cleanup
+Traceback (most recent call last):
+  File "/usr/share/blender/5.2/scripts/modules/addon_utils.py", line 544, in enable
+    mod.register()
+    ~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py", line 909, in register
+    bl_extension_ops.register()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/share/blender/5.2/scripts/addons_core/bl_pkg/bl_extension_ops.py", line 4108, in register
+    bpy.utils.register_class(cls)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+ValueError: register_class(...): already registered as a subclass 'EXTENSIONS_OT_repo_sync'
+Exception in module register(): /usr/share/blender/5.2/scripts/addons_core/bl_pkg/__init__.py
+23:48:48 | INFO: Data are loaded, start creating Blender stuff
+23:48:48 | INFO: Blender create Mesh node geometry_0
+23:48:48 | INFO: glTF import finished in 0.19s
+PREP boundary weld 363
+PREP degenerates
+PREP overconnected edges 0
+PREP hole boundaries 87
+ASSET components 112 protected 111
+ASSET stage 2/7 low mesh and high-resolution source
+ASSET reduce LOD 0 component 0 / 112
+ASSET reduce LOD 0 component 50 / 112
+ASSET reduce LOD 0 component 100 / 112
+ASSET stage 3/7 shared Smart UV atlas
+PREP UV project
+PREP UV merged small islands 5180
+Warning: Unwrap failed to solve 3 of 218 island(s), edge seams may need to be added
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP UV re-unwrap foldovers 7385
+PREP UV isolate foldovers 4337
+PREP UV isolate foldovers 2
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 6153, 'merged_boundaries': 2509, 'unfold_charts': 3644}
+PREP UV re-unwrap foldovers 3210
+PREP UV isolate foldovers 638
+ASSET UV pack candidate CONVEX timeout 20
+ASSET stage 5/7 LOD geometry
+ASSET reduce LOD 1 component 0 / 112
+ASSET reduce LOD 1 component 50 / 112
+ASSET reduce LOD 1 component 100 / 112
+PREP UV project
+PREP UV merged small islands 4803
+Warning: Unwrap failed to solve 1 of 183 island(s), edge seams may need to be added
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP UV re-unwrap foldovers 5891
+PREP UV isolate foldovers 4770
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 5833, 'merged_boundaries': 2551, 'unfold_charts': 3282}
+PREP UV re-unwrap foldovers 1524
+PREP UV isolate foldovers 397
+ASSET UV pack candidate CONVEX timeout 20
+ASSET reduce LOD 2 component 0 / 112
+ASSET reduce LOD 2 component 50 / 112
+ASSET reduce LOD 2 component 100 / 112
+PREP UV project
+PREP UV merged small islands 3073
+Warning: Unwrap failed to solve 2 of 147 island(s), edge seams may need to be added
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP UV re-unwrap foldovers 3727
+PREP UV isolate foldovers 3434
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 3884, 'merged_boundaries': 1479, 'unfold_charts': 2405}
+PREP UV re-unwrap foldovers 573
+PREP UV isolate foldovers 330
+ASSET UV pack candidate CONVEX timeout 20
+ASSET reduce LOD 3 component 0 / 112
+ASSET reduce LOD 3 component 50 / 112
+ASSET reduce LOD 3 component 100 / 112
+PREP UV project
+PREP UV merged small islands 2692
+Warning: Unwrap failed to solve 1 of 150 island(s), edge seams may need to be added
+PREP UV scale
+PREP UV pack
+PREP UV packed
+PREP UV re-unwrap foldovers 2945
+PREP UV isolate foldovers 2932
+ASSET UV chart relaxation {'enabled': True, 'smart_seed_charts': 3227, 'merged_boundaries': 999, 'unfold_charts': 2228}
+PREP UV re-unwrap foldovers 117
+PREP UV isolate foldovers 57
+ASSET UV pack candidate CONVEX timeout 20
+ASSET bake groups {'groups': 6, 'physical_components': 112, 'max_components_per_group': 32}
+ASSET stage 2/7 matched high-to-low PBR/normal/AO baking
+ASSET full PBR bake LOD 0 resolution 2048
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 1 resolution 1024
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 2 resolution 512
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET full PBR bake LOD 3 resolution 256
+ASSET bake basecolor
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake roughness
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake alpha
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake emission
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake AO
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET bake high-to-low normal LOD 0
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+ASSET stage 4/7 asset and runtime budgets
+ASSET stage 6/7 collision and engine exports
+ERROR Draco is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.so
+ERROR MeshOptimizer is not available because library could not be found at /usr/lib/blender/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.so
+23:55:10 | INFO: Starting glTF 2.0 export
+23:55:10 | INFO: Extracting primitive: Collision
+23:55:10 | INFO: Primitives created: 1
+23:55:10 | INFO: Finished glTF 2.0 export in 0.0021724700927734375 s
+
+23:55:10 | INFO: Starting glTF 2.0 export
+23:55:10 | INFO: Extracting primitive: geometry_0.337
+23:55:11 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+23:55:11 | INFO: Primitives created: 1
+23:55:11 | INFO: Finished glTF 2.0 export in 0.9879484176635742 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a1.building_b2ib95t0/meshes/vampire_chestplate_LOD0.fbx'
+export finished in 0.0888 sec.
+23:55:13 | INFO: Starting glTF 2.0 export
+23:55:13 | INFO: Extracting primitive: geometry_0.560
+23:55:13 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+23:55:13 | INFO: Primitives created: 1
+23:55:13 | INFO: Finished glTF 2.0 export in 0.20560216903686523 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a1.building_b2ib95t0/meshes/vampire_chestplate_LOD1.fbx'
+export finished in 0.0510 sec.
+23:55:14 | INFO: Starting glTF 2.0 export
+23:55:14 | INFO: Extracting primitive: geometry_0.783
+23:55:14 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+23:55:14 | INFO: Primitives created: 1
+23:55:14 | INFO: Finished glTF 2.0 export in 0.057121992111206055 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a1.building_b2ib95t0/meshes/vampire_chestplate_LOD2.fbx'
+export finished in 0.0274 sec.
+23:55:14 | INFO: Starting glTF 2.0 export
+23:55:14 | INFO: Extracting primitive: geometry_0.1006
+23:55:14 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+23:55:14 | INFO: Primitives created: 1
+23:55:14 | INFO: Finished glTF 2.0 export in 0.022443771362304688 s
+
+
+FBX export starting... '/mnt/ssd/work/overnight/a1.building_b2ib95t0/meshes/vampire_chestplate_LOD3.fbx'
+export finished in 0.0216 sec.
+ASSET stage 7/7 visual and import quality gates
+06:29.356  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/high_00.png'
+06:29.792  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_clay_00.png'
+06:30.117  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod1_clay_00.png'
+06:30.414  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod2_clay_00.png'
+06:30.727  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod3_clay_00.png'
+06:31.162  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_wire_00.png'
+06:31.548  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_checker_00.png'
+06:31.895  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/high_01.png'
+06:32.296  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_clay_01.png'
+06:32.612  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod1_clay_01.png'
+06:32.892  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod2_clay_01.png'
+06:33.193  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod3_clay_01.png'
+06:33.588  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_wire_01.png'
+06:33.990  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_checker_01.png'
+06:34.305  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/high_02.png'
+06:34.691  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_clay_02.png'
+06:35.006  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod1_clay_02.png'
+06:35.314  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod2_clay_02.png'
+06:35.603  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod3_clay_02.png'
+06:36.001  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_wire_02.png'
+06:36.404  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_checker_02.png'
+06:36.710  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/high_03.png'
+06:37.113  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_clay_03.png'
+06:37.441  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod1_clay_03.png'
+06:37.737  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod2_clay_03.png'
+06:38.019  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod3_clay_03.png'
+06:38.426  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_wire_03.png'
+06:38.826  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_checker_03.png'
+06:39.132  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/high_04.png'
+06:39.531  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_clay_04.png'
+06:39.845  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod1_clay_04.png'
+06:40.138  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod2_clay_04.png'
+06:40.433  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod3_clay_04.png'
+06:40.839  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_wire_04.png'
+06:41.240  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_checker_04.png'
+06:41.567  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/high_05.png'
+06:41.964  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_clay_05.png'
+06:42.279  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod1_clay_05.png'
+06:42.599  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod2_clay_05.png'
+06:42.875  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod3_clay_05.png'
+06:43.272  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_wire_05.png'
+06:43.677  render           | Saved: '/mnt/ssd/work/overnight/a1.building_b2ib95t0/previews/lod0_checker_05.png'
+Info: Saved as "vampire_chestplate.blend"
+ASSET NEEDS REVIEW /mnt/ssd/work/overnight/a1/asset_report.json
+Blender 5.2.2 LTS (hash 43c0e8fa0e7b built 2026-11-03 04:48:14)
+
+Blender quit
+	Command being timed: "blender -b --factory-startup --disable-autoexec --python-exit-code 1 --python /mnt/ssd/work/pixal3d-mv/build_asset.py -- /mnt/ssd/ComfyUI/output/3D/vampire_chestplate_00002_.glb /mnt/ssd/work/overnight/a1 --name vampire_chestplate"
+	User time (seconds): 747.89
+	System time (seconds): 146.08
+	Percent of CPU this job got: 220%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:44.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2075188
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 275
+	Minor (reclaiming a frame) page faults: 18765174
+	Voluntary context switches: 104369
+	Involuntary context switches: 3387055
+	Swaps: 0
+	File system inputs: 383512
+	File system outputs: 172672
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

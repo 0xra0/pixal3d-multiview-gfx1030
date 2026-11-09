@@ -1,0 +1,503 @@
+[32m[INFO][0m setup plugin alembic.autogenerate.schemas
+[32m[INFO][0m setup plugin alembic.autogenerate.tables
+[32m[INFO][0m setup plugin alembic.autogenerate.types
+[32m[INFO][0m setup plugin alembic.autogenerate.constraints
+[32m[INFO][0m setup plugin alembic.autogenerate.defaults
+[32m[INFO][0m setup plugin alembic.autogenerate.comments
+[32m[INFO][0m [ComfyUI-Manager] Using uv as Python module for pip operations.
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+[START] Security scan
+[DONE] Security scan
+** ComfyUI startup time: 2026-11-04 01:49:09.747
+** Platform: Linux
+** Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]
+** Python executable: /mnt/ssd/conda-envs/ComfyUI/bin/python3.12
+** ComfyUI Path: /mnt/ssd/ComfyUI
+** ComfyUI Base Folder Path: /mnt/ssd/ComfyUI
+** User directory: /mnt/ssd/ComfyUI/user
+** ComfyUI-Manager config path: /mnt/ssd/ComfyUI/user/__manager/config.ini
+** Log path: /mnt/ssd/ComfyUI/user/comfyui.log
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+Using Python 3.12.13 environment at: /mnt/ssd/conda-envs/ComfyUI
+[32m[INFO][0m [PRE] ComfyUI-Manager
+[32m[INFO][0m 
+Prestartup times for custom nodes:
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2-GGUF
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/rgthree-comfy
+[32m[INFO][0m 
+[32m[INFO][0m Found comfy_kitchen backend hip: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple_dtype', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'stochastic_rounding_fp8']}
+[32m[INFO][0m Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend triton: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'int8_linear', 'na3d', 'quantize_and_rotate_rowwise', 'quantize_int8_rowwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend ascend: {'available': False, 'disabled': False, 'unavailable_reason': "torch-npu is not installed: No module named 'torch_npu'", 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'fp16_conv3d', 'fp16_conv3d_out', 'fp16_linear', 'gemv_awq_w4a16', 'group_norm_silu_pad3d', 'group_norm_silu_pad3d_out', 'int8_linear', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'sol_attn', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Checkpoint files will always be loaded safely.
+[32m[INFO][0m Total VRAM 16368 MB, total RAM 32008 MB
+[32m[INFO][0m pytorch version: 2.12.0
+[32m[INFO][0m AMD arch: gfx1030
+[32m[INFO][0m ROCm version: (7, 2)
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Disabling smart memory management
+[32m[INFO][0m Device: cuda:0 AMD Radeon RX 6800 : native
+[32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+[32m[INFO][0m Python version: 3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]
+[32m[INFO][0m ComfyUI version: 0.38.0
+[32m[INFO][0m comfy-aimdo version: 0.5.5
+[32m[INFO][0m comfy-kitchen version: 0.2.36
+[1m[33m[WARNING][0m Dynamic vram disabled with argument. If you have any issues with dynamic vram enabled please give us a detailed reports as this argument will be removed soon. If you use gguf we recommend keeping dynamic vram enabled and using native ComfyUI model formats instead. ComfyUI native formats like fp8, int8 and w4a8 will be faster even if they are larger than your memory.
+[32m[INFO][0m comfyui-frontend-package version: 1.53.6
+[32m[INFO][0m comfyui-workflow-templates version: 0.11.70
+[32m[INFO][0m comfyui-embedded-docs version: 0.5.12
+[32m[INFO][0m comfy-kitchen version: 0.2.36
+[32m[INFO][0m comfy-aimdo version: 0.5.5
+[32m[INFO][0m [Prompt Server] web root: /mnt/ssd/ComfyUI/.runtime-deps/comfyui_frontend_package/static
+[32m[INFO][0m Asset seeder disabled
+[32m[INFO][0m [START] ComfyUI-Manager
+[ComfyUI-Manager] Using GitPython backend
+[32m[INFO][0m [ComfyUI-Manager] network_mode: public
+[32m[INFO][0m No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+/mnt/ssd/ComfyUI/custom_nodes/comfyui-umeairt-toolkit/modules/monitor_hardware.py:271: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml
+[UmeAiRT-Toolkit] ⚠️ pynvml init failed: NVML Shared Library Not Found
+[UmeAiRT-Toolkit] 🖥️ AMD GPU monitoring: 1 device(s) detected
+[UmeAiRT-Toolkit] 📊 Hardware monitor started (rate: 1.0s)
+[UmeAiRT-Toolkit] 🧩 Loaded 71 nodes.
+[UmeAiRT-Toolkit] ⚡ Optimisation check: SageAttention ❌ | Triton ✅
+[UmeAiRT-Toolkit] 📊 Initial CUDA memory: 15.80GB free / 15.98GB total
+[UmeAiRT-Toolkit] ✅ Initialization Complete.
+⚠️  SeedVR2 optimizations check: SageAttention ❌ | Flash Attention ❌ | Triton ✅
+💡 Optional: pip install sageattention flash-attn
+📊 Initial CUDA memory: 15.73GB free / 15.98GB total
+W1104 01:49:53.377000 1404744 site-packages/torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+flash_attn is installed but failed to import: No module named 'flash_attn.flash_attn_interface'. Falling back to native PyTorch attention.
+W1104 01:49:53.897000 1404744 site-packages/torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[32m[INFO][0m ComfyUI-GGUF: Allowing full torch compile
+[32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+(RES4LYF) Init
+(RES4LYF) Importing beta samplers.
+(RES4LYF) Importing legacy samplers.
+[/mnt/ssd/ComfyUI/custom_nodes/comfy-mtb] | INFO -> loaded 103 nodes successfuly
+[/mnt/ssd/ComfyUI/custom_nodes/comfy-mtb] | INFO -> Some nodes (5) could not be loaded. This can be ignored, but go to http://127.0.0.1:8188/mtb if you want more information.
+
+[rgthree-comfy] Loaded 48 exciting nodes. 🎉
+
+[rgthree-comfy] ComfyUI's new Node 2.0 rendering may be incompatible with some rgthree-comfy nodes and features, breaking some rendering as well as losing the ability to access a node's properties (a vital part of many nodes). It also appears to run MUCH more slowly spiking CPU usage and causing jankiness and unresponsiveness, especially with large workflows. Personally I am not planning to use the new Nodes 2.0 and, unfortunately, am not able to invest the time to investigate and overhaul rgthree-comfy where needed. If you have issues when Nodes 2.0 is enabled, I'd urge you to switch it off as well and join me in hoping ComfyUI is not planning to deprecate the existing, stable canvas rendering all together.
+
+[Trellis2] GPU Type: AMD ROCm
+[Trellis2-GGUF] Successfully monkeypatched DinoV3ProjFeatureExtractor.forward
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[Trellis2-GGUF] Successfully monkeypatched Trellis2ImageTo3DPipeline.get_proj_cond_shape
+[32m[INFO][0m ComfyUI-GGUF: Allowing full torch compile
+[Trellis2] Using native ComfyUI-GGUF support (ops/dequant/loader)
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+LOADED 5 FONTS
+
+
+███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗███████╗               
+████╗ ████║██╔══██╗██╔════╝██║  ██║██║████╗  ██║██╔════╝               
+██╔████╔██║███████║██║     ███████║██║██╔██╗ ██║█████╗                 
+██║╚██╔╝██║██╔══██║██║     ██╔══██║██║██║╚██╗██║██╔══╝                 
+██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██║██║██║ ╚████║███████╗               
+╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝               
+                                                                       
+██████╗ ███████╗██╗     ██╗   ██╗███████╗██╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██╔════╝██║     ██║   ██║██╔════╝██║██╔═══██╗████╗  ██║██╔════╝
+██║  ██║█████╗  ██║     ██║   ██║███████╗██║██║   ██║██╔██╗ ██║███████╗
+██║  ██║██╔══╝  ██║     ██║   ██║╚════██║██║██║   ██║██║╚██╗██║╚════██║
+██████╔╝███████╗███████╗╚██████╔╝███████║██║╚██████╔╝██║ ╚████║███████║
+╚═════╝ ╚══════╝╚══════╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+                                                                       
+
+
+### ComfyUI-Workflow-Encrypt: Copy .js from '/mnt/ssd/ComfyUI/custom_nodes/comfyui-workflow-encrypt/js/comfyui-workflow-encrypt.js' to '/mnt/ssd/ComfyUI/web/extensions/comfyui-workflow-encrypt'
+USDU batch patches applied successfully.
+[32m[INFO][0m USDU batch patches applied successfully.
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `/mnt/ssd/ComfyUI/custom_nodes/was-ns/was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 220 nodes successfully.
+
+	"Your time is now. Start where you are and never stop." - Roy T. Bennett
+
+[QwenVL Debug] SAGE_ATTENTION_AVAILABLE: False
+[QwenVL Debug] CUDA capability: 10.3
+[QwenVL Debug] Final ATTENTION_MODES: ['auto', 'sage', 'flash_attention_2', 'sdpa']
+[QwenVL] NOTE: SageAttention option shown for testing. Install with: pip install sageattention
+[llama-cpp-python].find_library: loaded library from libggml-base.so.0
+[llama-cpp-python].find_library: loaded library from libggml.so.0
+[llama-cpp-python].find_library: loaded library from libllama.so.0
+[ComfyUI-Easy-Use] server: v1.3.6 Loaded
+[ComfyUI-Easy-Use] web root: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use/web_version/v2 Loaded
+[SPARSE] Conv backend: flex_gemm; Attention backend: flash_attn
+[ATTENTION] Using backend: flash_attn
+------------------------------------------
+Comfyroll Studio v1.76 :  175 Nodes Loaded
+------------------------------------------
+** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+------------------------------------------
+----------------------------------------------------------------------
+  AusBoss v2.9.0  |  42 nodes loaded
+  https://github.com/ausboss/ComfyUI-AusBoss
+----------------------------------------------------------------------
+[32m[INFO][0m ### Loading: ComfyUI-Impact-Subpack (V1.3.5)
+[32m[INFO][0m [Impact Pack/Subpack] Using folder_paths to determine whitelist path: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+[32m[INFO][0m [Impact Pack/Subpack] Ensured whitelist directory exists: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack
+[32m[INFO][0m [Impact Pack/Subpack] Loaded 0 model(s) from whitelist: /mnt/ssd/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+[32m[INFO][0m [Impact Subpack] ultralytics_bbox: /mnt/ssd/ComfyUI/models/ultralytics/bbox
+[32m[INFO][0m [Impact Subpack] ultralytics_segm: /mnt/ssd/ComfyUI/models/ultralytics/segm
+[Crystools INFO] Crystools version: 1.27.4
+[Crystools INFO] Platform release: 7.2.11-zen1_1
+[Crystools INFO] JETSON: Not detected.
+[Crystools INFO] CPU: AMD Ryzen 7 5700X 8-Core Processor - Arch: x86_64 - OS: Linux 7.2.11-zen1_1
+[Crystools ERROR] Could not init pynvml (NVIDIA). NVML Shared Library Not Found
+[Crystools WARNING] No GPU monitoring libraries available.
+[32m[INFO][0m ### Loading: ComfyUI-Impact-Pack (V8.28.3)
+[32m[INFO][0m [vsLinx] Combo type validation fix applied.
+[ComfyUI-HY-Motion1] Initializing custom node...
+[32m[INFO][0m Total VRAM 16368 MB, total RAM 32008 MB
+[32m[INFO][0m pytorch version: 2.12.0
+[32m[INFO][0m AMD arch: gfx1030
+[32m[INFO][0m ROCm version: (7, 2)
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Disabling smart memory management
+[32m[INFO][0m Device: cuda:0 AMD Radeon RX 6800 : native
+[ComfyUI-HY-Motion1] [OK] Node classes imported successfully
+[ComfyUI-HY-Motion1] [OK] Static routes added: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-HY-Motion1/static
+[ComfyUI-HY-Motion1] [OK] Loaded successfully!
+[32m[INFO][0m [Impact Pack] Wildcard total size (0.00 MB) is within cache limit (50.00 MB). Using full cache mode.
+[32m[INFO][0m [Impact Pack] Wildcards loading done.
+[32m[INFO][0m 
+Import times for custom nodes:
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/websocket_image_save.py
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-DeGrid
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfy-image-saver
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-mxtoolkit
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-florence2
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-inpaint-cropandstitch
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/cg-use-everywhere
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI_JPS-Nodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UnloadModels
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-GGUF
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-impact-subpack
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Flux2Klein-Enhancer
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/Qwen-Image-2.1-Character-Sheet-Designer
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-image-saver
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-custom-scripts
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-HY-Motion1
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/demonalone-nodes-comfyui
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-vslinx-nodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-workflow-encrypt
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/derfuu_comfyui_moddednodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_ultimatesdupscale
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/rgthree-comfy
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-frame-interpolation
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+[32m[INFO][0m    0.0 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-KJNodes
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-various
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-AusBoss
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-easy-use
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-MediaMixer
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UltraTex
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-logicutils
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfy-mtb
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-levelpixel
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_layerstyle
+[32m[INFO][0m    0.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-impact-pack
+[32m[INFO][0m    0.2 seconds: /mnt/ssd/ComfyUI/custom_nodes/RES4LYF
+[32m[INFO][0m    0.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-QwenVL-Mod
+[32m[INFO][0m    0.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-propost
+[32m[INFO][0m    0.6 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Crystools
+[32m[INFO][0m    0.9 seconds: /mnt/ssd/ComfyUI/custom_nodes/was-ns
+[32m[INFO][0m    0.9 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-umeairt-toolkit
+[32m[INFO][0m    1.7 seconds: /mnt/ssd/ComfyUI/custom_nodes/ComfyUI-Trellis2-GGUF
+[32m[INFO][0m    2.1 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui-videohelpersuite
+[32m[INFO][0m    4.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/comfyui_fill-nodes
+[32m[INFO][0m    5.3 seconds: /mnt/ssd/ComfyUI/custom_nodes/seedvr2_videoupscaler
+[32m[INFO][0m 
+[32m[INFO][0m Context impl SQLiteImpl.
+[32m[INFO][0m Will assume non-transactional DDL.
+[32m[INFO][0m Disabling intermediate node cache.
+[32m[INFO][0m Starting server
+
+[32m[INFO][0m To see the GUI go to: http://127.0.0.1:8188
+[32m[INFO][0m got prompt
+[1m[31m[ERROR][0m Failed to validate prompt for output 23:
+[1m[31m[ERROR][0m * LoadBackgroundRemovalModel 3:
+[1m[31m[ERROR][0m   - Required input is missing: bg_removal_name
+[1m[31m[ERROR][0m Output will be ignored
+[1m[33m[WARNING][0m invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[UmeAiRT-Toolkit] Bundle Loader: 📡 Model manifest updated from HuggingFace.
+📊 Initial CUDA memory: 15.73GB free / 15.98GB total
+[32m[INFO][0m got prompt
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/mnt/ssd/ComfyUI/models/background_removal/birefnet.safetensors']
+[32m[INFO][0m Requested to load BiRefNet
+[32m[INFO][0m loaded completely; 13246.80 MB usable, 419.43 MB loaded, full load: True
+[32m[INFO][0m UltraTex prep: keeping the mesh's existing UVs
+[32m[INFO][0m UltraTex prep: 32070 verts / 19998 faces, normalised extents [0.705 0.396 0.92 ]
+[32m[INFO][0m gguf qtypes: Q8_0 (254), F32 (145)
+[1m[33m[WARNING][0m Dequantizing token_embd.weight to prevent runtime OOM.
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load Flux2TEModel_
+[32m[INFO][0m loaded completely; 11698.80 MB usable, 10043.77 MB loaded, full load: True
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/mnt/ssd/ComfyUI/models/vae/flux2-vae.safetensors']
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m VAE load device: cpu, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m VAE load device: cpu, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m UltraTex: replaced 140 decoder tensors from ultratex_flux2_decoder.pt
+[32m[INFO][0m gguf qtypes: F32 (80), Q8_0 (112), BF16 (9)
+[32m[INFO][0m model weight dtype torch.float16, manual cast: None
+[32m[INFO][0m model_type FLUX
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m UltraTex LoRA ultratex_flux2_mr.safetensors (peft format): 80 layers patched of 80
+[32m[INFO][0m Requested to load AutoencoderKL
+[32m[INFO][0m loaded completely;  320.61 MB loaded, full load: True
+[32m[INFO][0m FETCH ComfyRegistry Data [DONE]
+[32m[INFO][0m [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: /mnt/ssd/ComfyUI/user/__manager/cache/1514988643_custom-node-list.json [DONE]
+[32m[INFO][0m [ComfyUI-Manager] All startup tasks have been completed.
+[32m[INFO][0m Requested to load Flux2
+[32m[INFO][0m loaded partially; 3013.88 MB usable, 2554.02 MB loaded, 7154.00 MB offloaded, 459.00 MB buffer reserved, lowvram patches: 0
+[32m[INFO][0m UltraTex flux2: 7797/24576 target tokens, 8567 reference tokens, 512 text tokens, torch.float16, cfg=False, attention=ultratex_sparse(top-k 0.2), chunk=8192, reserve=1.5 GB
+[32m[INFO][0m UltraTex: first step 65.9s
+[32m[INFO][0m UltraTex: 25 steps in 1064s (42.6s/step), peak VRAM 5.4 GB
+[32m[INFO][0m UltraTex LoRA ultratex_flux2.safetensors (peft format): 80 layers patched of 80
+[32m[INFO][0m Requested to load Flux2
+[32m[INFO][0m loaded partially; 5473.61 MB usable, 5267.02 MB loaded, 4441.00 MB offloaded, 204.00 MB buffer reserved, lowvram patches: 0
+[32m[INFO][0m UltraTex flux2: 7797/24576 target tokens, 8567 reference tokens, 512 text tokens, torch.float16, cfg=False, attention=ultratex_sparse(top-k 0.2), chunk=8192, reserve=1.5 GB
+[32m[INFO][0m UltraTex: first step 40.8s
+[32m[INFO][0m UltraTex: 25 steps in 1033s (41.3s/step), peak VRAM 7.7 GB
+[32m[INFO][0m UltraTex bake: UV coverage 0.440 of 2048^2 texels
+[32m[INFO][0m UltraTex bake: 0.894 of texels seen; filling the rest from nearest seen texels
+[32m[INFO][0m UltraTex bake: 0.901 of texels seen; filling the rest from nearest seen texels
+[32m[INFO][0m UltraTex: saved UltraTex/vampire_chestplate_00001_.glb
+[32m[INFO][0m [32mPrompt executed in 00:49:38[0m
+[32m[INFO][0m got prompt
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/mnt/ssd/ComfyUI/models/background_removal/birefnet.safetensors']
+[32m[INFO][0m Requested to load BiRefNet
+[32m[INFO][0m loaded completely; 3710.55 MB usable, 419.43 MB loaded, full load: True
+[32m[INFO][0m UltraTex prep: keeping the mesh's existing UVs
+[32m[INFO][0m UltraTex prep: 32070 verts / 19998 faces, normalised extents [0.705 0.396 0.92 ]
+[32m[INFO][0m gguf qtypes: Q8_0 (254), F32 (145)
+[1m[33m[WARNING][0m Dequantizing token_embd.weight to prevent runtime OOM.
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m Requested to load Flux2TEModel_
+[32m[INFO][0m loaded partially; 3718.55 MB usable, 0.00 MB loaded, 10042.59 MB offloaded, 4339.97 MB buffer reserved, lowvram patches: 0
+[32m[INFO][0m Attempting to release mmap (145)
+[32m[INFO][0m Model storage policy: fast_disk=False paths=['/mnt/ssd/ComfyUI/models/vae/flux2-vae.safetensors']
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m VAE load device: cpu, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m Using split attention in VAE
+[32m[INFO][0m VAE load device: cpu, offload device: cpu, dtype: torch.float32
+[32m[INFO][0m UltraTex: replaced 140 decoder tensors from ultratex_flux2_decoder.pt
+[32m[INFO][0m gguf qtypes: F32 (80), Q8_0 (112), BF16 (9)
+[32m[INFO][0m model weight dtype torch.float16, manual cast: None
+[32m[INFO][0m model_type FLUX
+[32m[INFO][0m Model storage policy: fast_disk=False paths=[]
+[32m[INFO][0m UltraTex LoRA ultratex_flux2.safetensors (peft format): 80 layers patched of 80
+[32m[INFO][0m Requested to load AutoencoderKL
+[32m[INFO][0m loaded completely;  320.61 MB loaded, full load: True
+[32m[INFO][0m Requested to load Flux2
+[32m[INFO][0m loaded partially; 4163.66 MB usable, 3778.02 MB loaded, 5930.00 MB offloaded, 384.00 MB buffer reserved, lowvram patches: 0
+[32m[INFO][0m UltraTex flux2: 7797/24576 target tokens, 8268 reference tokens, 512 text tokens, torch.float16, cfg=False, attention=ultratex_sparse(top-k 0.2), chunk=8192, reserve=1.5 GB
+[32m[INFO][0m UltraTex: first step 76.8s
+[New LWP 1681842]
+[New LWP 1414373]
+[New LWP 1414355]
+[New LWP 1414352]
+[New LWP 1414344]
+[New LWP 1414343]
+[New LWP 1414342]
+[New LWP 1414330]
+[New LWP 1414329]
+[New LWP 1414328]
+[New LWP 1414327]
+[New LWP 1413641]
+[New LWP 1413640]
+[New LWP 1413639]
+[New LWP 1413637]
+[New LWP 1413636]
+[New LWP 1413635]
+[New LWP 1413634]
+[New LWP 1409083]
+[New LWP 1409025]
+[New LWP 1408998]
+[New LWP 1408997]
+[New LWP 1408996]
+[New LWP 1408134]
+[New LWP 1407892]
+[New LWP 1407269]
+[New LWP 1407268]
+[New LWP 1407005]
+warning: File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/pymeshlab/lib/plugins/libfilter_mesh_alpha_wrap.so" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/pymeshlab/lib/plugins/libfilter_mesh_alpha_wrap.so
+line to your configuration file "/home/home/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/home/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+warning: File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/pymeshlab/lib/plugins/libfilter_mesh_booleans.so" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/../lib64/libthread_db.so.1".
+__syscall_cancel_arch () at ../sysdeps/unix/sysv/linux/x86_64/syscall_cancel.S:56
+56		ret
+#0  __syscall_cancel_arch () at ../sysdeps/unix/sysv/linux/x86_64/syscall_cancel.S:56
+56		ret
+#1  0x00007f0e0d8dfc34 in __internal_syscall_cancel (a1=<optimized out>, a2=a2@entry=139645738347376, a3=a3@entry=2, a4=a4@entry=-1, a5=a5@entry=0, a6=a6@entry=0, nr=232) at cancellation.c:49
+49	  result = __syscall_cancel_arch (&pd->cancelhandling, nr, a1, a2, a3, a4, a5,
+#2  0x00007f0e0d8dfc7d in __syscall_cancel (a1=<optimized out>, a2=a2@entry=139645738347376, a3=a3@entry=2, a4=a4@entry=-1, a5=a5@entry=0, a6=a6@entry=0, nr=232) at cancellation.c:75
+75	  long int r = __internal_syscall_cancel (a1, a2, a3, a4, a5, a6,
+#3  0x00007f0e0d96334d in epoll_wait (epfd=<optimized out>, events=events@entry=0x7f01cea0eb70, maxevents=maxevents@entry=2, timeout=timeout@entry=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+30	  return SYSCALL_CANCEL (epoll_wait, epfd, events, maxevents, timeout);
+#4  0x00007f0e0c879848 in select_epoll_poll_impl (self=0x7f0e09455050, timeout_obj=<optimized out>, maxevents=<optimized out>) at /usr/local/src/conda/python-3.12.13/Modules/selectmodule.c:1620
+warning: 1620	/usr/local/src/conda/python-3.12.13/Modules/selectmodule.c: No such file or directory
+#5  select_epoll_poll (self=0x7f0e09455050, args=<optimized out>, nargs=<optimized out>, kwnames=<optimized out>) at /usr/local/src/conda/python-3.12.13/Modules/clinic/selectmodule.c.h:962
+warning: 962	/usr/local/src/conda/python-3.12.13/Modules/clinic/selectmodule.c.h: No such file or directory
+#6  0x000055752e7d71ca in _PyEval_EvalFrameDefault (tstate=<optimized out>, frame=<optimized out>, throwflag=<optimized out>) at Python/bytecodes.c:3123
+warning: 3123	Python/bytecodes.c: No such file or directory
+#7  0x000055752e88d3df in PyEval_EvalCode (co=co@entry=0x55755a84eae0, globals=globals@entry=0x7f0e0cffb140, locals=locals@entry=0x7f0e0cffb140) at /usr/local/src/conda/python-3.12.13/Python/ceval.c:580
+warning: 580	/usr/local/src/conda/python-3.12.13/Python/ceval.c: No such file or directory
+#8  0x000055752e8c901a in run_eval_code_obj (tstate=tstate@entry=0x55752ec68790 <_PyRuntime+458992>, co=co@entry=0x55755a84eae0, globals=globals@entry=0x7f0e0cffb140, locals=locals@entry=0x7f0e0cffb140) at /usr/local/src/conda/python-3.12.13/Python/pythonrun.c:1757
+warning: 1757	/usr/local/src/conda/python-3.12.13/Python/pythonrun.c: No such file or directory
+#9  0x000055752e8c3c85 in run_mod (mod=mod@entry=0x55755a7b4eb0, filename=filename@entry=0x7f0e0cdb0710, globals=globals@entry=0x7f0e0cffb140, locals=locals@entry=0x7f0e0cffb140, flags=flags@entry=0x7ffc4a9478e0, arena=arena@entry=0x7f0e0cf19830) at /usr/local/src/conda/python-3.12.13/Python/pythonrun.c:1778
+1778	in /usr/local/src/conda/python-3.12.13/Python/pythonrun.c
+#10 0x000055752e8c0bc0 in pyrun_file (fp=fp@entry=0x55755a587cd0, filename=filename@entry=0x7f0e0cdb0710, start=start@entry=257, globals=globals@entry=0x7f0e0cffb140, locals=locals@entry=0x7f0e0cffb140, closeit=closeit@entry=1, flags=0x7ffc4a9478e0) at /usr/local/src/conda/python-3.12.13/Python/pythonrun.c:1674
+1674	in /usr/local/src/conda/python-3.12.13/Python/pythonrun.c
+#11 0x000055752e8c07d6 in _PyRun_SimpleFileObject (fp=0x55755a587cd0, filename=0x7f0e0cdb0710, closeit=1, flags=0x7ffc4a9478e0) at /usr/local/src/conda/python-3.12.13/Python/pythonrun.c:459
+459	in /usr/local/src/conda/python-3.12.13/Python/pythonrun.c
+#12 0x000055752e8c02d4 in _PyRun_AnyFileObject (fp=0x55755a587cd0, filename=filename@entry=0x7f0e0cdb0710, closeit=closeit@entry=1, flags=flags@entry=0x7ffc4a9478e0) at /usr/local/src/conda/python-3.12.13/Python/pythonrun.c:78
+78	in /usr/local/src/conda/python-3.12.13/Python/pythonrun.c
+#13 0x000055752e8bd0de in pymain_run_file_obj (program_name=0x7f0e0cf2d470, filename=0x7f0e0cdb0710, skip_source_first_line=0) at /usr/local/src/conda/python-3.12.13/Modules/main.c:361
+warning: 361	/usr/local/src/conda/python-3.12.13/Modules/main.c: No such file or directory
+#14 pymain_run_file (config=0x55752ec0b370 <_PyRuntime+77008>) at /usr/local/src/conda/python-3.12.13/Modules/main.c:380
+380	in /usr/local/src/conda/python-3.12.13/Modules/main.c
+#15 pymain_run_python (exitcode=0x7ffc4a9478b4) at /usr/local/src/conda/python-3.12.13/Modules/main.c:634
+634	in /usr/local/src/conda/python-3.12.13/Modules/main.c
+#16 Py_RunMain () at /usr/local/src/conda/python-3.12.13/Modules/main.c:714
+714	in /usr/local/src/conda/python-3.12.13/Modules/main.c
+#17 0x000055752e8750b7 in Py_BytesMain (argc=<optimized out>, argv=<optimized out>) at /usr/local/src/conda/python-3.12.13/Modules/main.c:768
+768	in /usr/local/src/conda/python-3.12.13/Modules/main.c
+#18 0x00007f0e0d878db8 in __libc_start_call_main (main=main@entry=0x55752e875000 <main>, argc=argc@entry=18, argv=argv@entry=0x7ffc4a947b48) at ../sysdeps/nptl/libc_start_call_main.h:59
+59	      result = main (argc, argv, __environ MAIN_AUXVEC_PARAM);
+#19 0x00007f0e0d878ed7 in __libc_start_main_impl (main=0x55752e875000 <main>, argc=18, argv=0x7ffc4a947b48, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffc4a947b38) at ../csu/libc-start.c:372
+372	  __libc_start_call_main (main, argc, argv MAIN_AUXVEC_PARAM);
+#20 0x000055752e874f2e in _start ()
+[Inferior 1 (process 1404744) detached]
+terminate called after throwing an instance of 'c10::AcceleratorError'
+  what():  CUDA error: an illegal memory access was encountered
+Search for `hipErrorIllegalAddress' in https://rocm.docs.amd.com/projects/HIP/en/latest/index.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Device-side assertion tracking was not enabled by user.
+Exception raised from SetDevice at /mnt/sata/pytorch-rocm/pytorch-2.12.0/c10/hip/HIPFunctions.cpp:334 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa2 (0x7f0e065867b2 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libc10.so)
+frame #1: <unknown function> + 0xd3fa (0x7f0e068bf3fa in /mnt/sata/anaconda3/envs/ComfyUI/lib/libc10_hip.so)
+frame #2: c10::cuda::SetDevice(signed char, bool) + 0x68 (0x7f0e069052f8 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libc10_hip.so)
+frame #3: <unknown function> + 0x1287484 (0x7f0ded087484 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_hip.so)
+frame #4: <unknown function> + 0x168fabc (0x7f0ded48fabc in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_hip.so)
+frame #5: <unknown function> + 0x2162285 (0x7f0df6762285 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #6: at::native::copy_(at::Tensor&, at::Tensor const&, bool) + 0x69 (0x7f0df6764769 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #7: at::_ops::copy_::call(at::Tensor&, at::Tensor const&, bool) + 0x197 (0x7f0df7821da7 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #8: at::native::_to_copy(at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, std::optional<c10::MemoryFormat>) + 0x1a0c (0x7f0df6b7536c in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0x37ccd2c (0x7f0df7dccd2c in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #10: at::_ops::_to_copy::redispatch(c10::DispatchKeySet, at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, std::optional<c10::MemoryFormat>) + 0xf2 (0x7f0df71e5bb2 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #11: <unknown function> + 0x348863c (0x7f0df7a8863c in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #12: at::_ops::_to_copy::call(at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, std::optional<c10::MemoryFormat>) + 0x256 (0x7f0df72bb116 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #13: at::native::to(at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, bool, std::optional<c10::MemoryFormat>) + 0xcd (0x7f0df6b5bcfd in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x396af42 (0x7f0df7f6af42 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #15: at::_ops::to_dtype_layout::redispatch(c10::DispatchKeySet, at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, bool, std::optional<c10::MemoryFormat>) + 0x111 (0x7f0df7413991 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0x34884e9 (0x7f0df7a884e9 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #17: at::_ops::to_dtype_layout::call(at::Tensor const&, std::optional<c10::ScalarType>, std::optional<c10::Layout>, std::optional<c10::Device>, std::optional<bool>, bool, bool, std::optional<c10::MemoryFormat>) + 0x24a (0x7f0df74b498a in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x5750c2 (0x7f0e051750c2 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_python.so)
+frame #19: <unknown function> + 0x5e1569 (0x7f0e051e1569 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_python.so)
+frame #20: <unknown function> + 0x221940 (0x55752e7f6940 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #21: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #22: <unknown function> + 0x2491c4 (0x55752e81e1c4 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #23: <unknown function> + 0x21e796 (0x55752e7f3796 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #24: PyObject_CallFunctionObjArgs + 0xa8 (0x55752e88f528 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #25: <unknown function> + 0x1002c00 (0x7f0e05c02c00 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_python.so)
+frame #26: torch::handle_torch_function_no_python_arg_parser(c10::ArrayRef<_object*>, _object*, _object*, char const*, _object*, char const*, torch::TorchFunctionName) + 0x16 (0x7f0e05c04716 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_python.so)
+frame #27: <unknown function> + 0x1004f39 (0x7f0e05c04f39 in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_python.so)
+frame #28: <unknown function> + 0x5e132a (0x7f0e051e132a in /mnt/sata/anaconda3/envs/ComfyUI/lib/libtorch_python.so)
+frame #29: <unknown function> + 0x21ea68 (0x55752e7f3a68 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #30: _PyObject_Call + 0xb5 (0x55752e806ed5 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #31: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #32: <unknown function> + 0x2491c4 (0x55752e81e1c4 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #33: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #34: <unknown function> + 0x2491c4 (0x55752e81e1c4 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #35: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #36: <unknown function> + 0x2491c4 (0x55752e81e1c4 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #37: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #38: <unknown function> + 0x2491c4 (0x55752e81e1c4 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #39: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #40: _PyObject_FastCallDictTstate + 0x1ce (0x55752e7cd1de in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #41: _PyObject_Call_Prepend + 0x67 (0x55752e8044d7 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #42: <unknown function> + 0x300859 (0x55752e8d5859 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #43: _PyObject_MakeTpCall + 0x2bc (0x55752e7ca55c in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #44: _PyEval_EvalFrameDefault + 0xa45 (0x55752e7d4875 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #45: <unknown function> + 0x249693 (0x55752e81e693 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #46: <unknown function> + 0x24922e (0x55752e81e22e in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #47: _PyObject_Call + 0x12b (0x55752e806f4b in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #48: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #49: <unknown function> + 0x2cebaf (0x55752e8a3baf in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #50: <unknown function> + 0x8241 (0x7f0e0cad1241 in /mnt/ssd/conda-envs/ComfyUI/lib/python3.12/lib-dynload/_asyncio.cpython-312-x86_64-linux-gnu.so)
+frame #51: <unknown function> + 0x8a2f (0x7f0e0cad1a2f in /mnt/ssd/conda-envs/ComfyUI/lib/python3.12/lib-dynload/_asyncio.cpython-312-x86_64-linux-gnu.so)
+frame #52: <unknown function> + 0x21e518 (0x55752e7f3518 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #53: <unknown function> + 0x351bbc (0x55752e926bbc in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #54: <unknown function> + 0x1b4fb2 (0x55752e789fb2 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #55: <unknown function> + 0x214deb (0x55752e7e9deb in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #56: _PyEval_EvalFrameDefault + 0x4e88 (0x55752e7d8cb8 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #57: <unknown function> + 0x249693 (0x55752e81e693 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #58: <unknown function> + 0x249260 (0x55752e81e260 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #59: <unknown function> + 0x32da32 (0x55752e902a32 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #60: <unknown function> + 0x32d9e4 (0x55752e9029e4 in /mnt/ssd/conda-envs/ComfyUI/bin/python3.12)
+frame #61: <unknown function> + 0x94fb7 (0x7f0e0d8e2fb7 in /usr/lib/libc.so.6)
+frame #62: <unknown function> + 0x115088 (0x7f0e0d963088 in /usr/lib/libc.so.6)
+
+Fatal Python error: Aborted
+
+Stack (most recent call first):
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/torch/_tensor.py", line 1699 in __torch_function__
+  File "/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-GGUF/ops.py", line 58 in to
+  File "/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-GGUF/ops.py", line 209 in cast_bias_weight
+  File "/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-GGUF/ops.py", line 243 in forward_ggml_cast_weights
+  File "/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-GGUF/ops.py", line 215 in forward_comfy_cast_weights
+  File "/mnt/ssd/ComfyUI/comfy/ops.py", line 576 in forward
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789 in _call_impl
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778 in _wrapped_call_impl
+  File "/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UltraTex/ultratex_core/optim.py", line 147 in run
+  File "/mnt/ssd/ComfyUI/comfy/ldm/flux/model.py", line 288 in forward_orig
+  File "/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UltraTex/ultratex_core/sampling.py", line 336 in sample
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124 in decorate_context
+  File "/mnt/ssd/ComfyUI/custom_nodes/ComfyUI-UltraTex/nodes.py", line 284 in sample
+  File "/mnt/ssd/ComfyUI/execution.py", line 314 in process_inputs
+  File "/mnt/ssd/ComfyUI/execution.py", line 326 in _async_map_node_over_list
+  File "/mnt/ssd/ComfyUI/execution.py", line 352 in get_output_data
+  File "/mnt/ssd/ComfyUI/execution.py", line 547 in execute
+  File "/mnt/ssd/ComfyUI/execution.py", line 789 in execute_async
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/asyncio/events.py", line 88 in _run
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/asyncio/base_events.py", line 1999 in _run_once
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/asyncio/base_events.py", line 645 in run_forever
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/asyncio/base_events.py", line 678 in run_until_complete
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/asyncio/runners.py", line 118 in run
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/asyncio/runners.py", line 195 in run
+  File "/mnt/ssd/ComfyUI/execution.py", line 728 in execute
+  File "/mnt/ssd/ComfyUI/main.py", line 376 in prompt_worker
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/threading.py", line 1012 in run
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/threading.py", line 1075 in _bootstrap_inner
+  File "/mnt/ssd/conda-envs/ComfyUI/lib/python3.12/threading.py", line 1032 in _bootstrap
+
+Extension modules: sqlalchemy.cyextension.collections, sqlalchemy.cyextension.immutabledict, sqlalchemy.cyextension.processors, sqlalchemy.cyextension.resultproxy, sqlalchemy.cyextension.util, greenlet._greenlet, markupsafe._speedups, multidict._multidict, yarl._quoting_c, propcache._helpers_c, aiohttp._http_writer, aiohttp._http_parser, aiohttp._websocket.mask, aiohttp._websocket.reader_c, frozenlist._frozenlist, yaml._yaml, PIL._imaging, chardet.models, chardet.pipeline.ascii, chardet.pipeline.confusion, chardet.pipeline.escape, chardet.pipeline.magic, chardet.pipeline.statistical, chardet.pipeline.structural, chardet.pipeline.utf8, chardet.pipeline.utf1632, chardet.pipeline.validity, chardet.pipeline.orchestrator, charset_normalizer.md, charset_normalizer.cd, requests.packages.chardet.models, requests.packages.chardet.pipeline.ascii, requests.packages.chardet.pipeline.confusion, requests.packages.chardet.pipeline.escape, requests.packages.chardet.pipeline.magic, requests.packages.chardet.pipeline.statistical, requests.packages.chardet.pipeline.structural, requests.packages.chardet.pipeline.utf8, requests.packages.chardet.pipeline.utf1632, requests.packages.chardet.pipeline.validity, requests.packages.chardet.pipeline.orchestrator, numpy._core._multiarray_umath, numpy.linalg._umath_linalg, torch._C, torch._C._dynamo.autograd_compiler, torch._C._dynamo.eval_frame, torch._C._dynamo.guards, torch._C._dynamo.utils, torch._C._fft, torch._C._linalg, torch._C._nested, torch._C._nn, torch._C._sparse, torch._C._special, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand, psutil._psutil_linux, PIL._imagingft, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.ndimage._nd_image, scipy.ndimage._rank_filter_1d, scipy.special._ufuncs_cxx, scipy.special._ellip_harm_2, scipy.special._special_ufuncs, scipy.special._gufuncs, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, _ni_label, scipy.ndimage._ni_label, av._core, av.logging, av.buffer, av.audio.format, av.error, av.dictionary, av.container.pyio, av.option, av.descriptor, av.format, av.index, av.utils, av.stream, av.container.streams, av.sidedata.encparams, av.sidedata.motionvectors, av.sidedata.sidedata, av.opaque, av.packet, av.container.input, av.container.output, av.container.core, av.codec.context, av.video.format, av.video.reformatter, av.plane, av.video.plane, av.video.frame, av.video.stream, av.codec.hwaccel, av.codec.codec, av.frame, av.audio.layout, av.audio.plane, av.audio.frame, av.audio.stream, av.filter.link, av.filter.context, av.filter.graph, av.filter.filter, av.filter.loudnorm, av.audio.resampler, av.audio.codeccontext, av.audio.fifo, av.bitstream, av.device, av.video.codeccontext, regex._regex, scipy.signal._sigtools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._batched_linalg, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_schur_sqrtm, scipy.linalg._matfuncs_expm, scipy.linalg._linalg_pythran, scipy.linalg.cython_blas, scipy.linalg._decomp_update, scipy._lib._uarray._uarray, scipy.signal._max_len_seq_inner, scipy.signal._upfirdn_apply, scipy.signal._spline, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._hausdorff, scipy.spatial._distance_wrap, scipy.spatial.transform._rotation_cy, scipy.spatial.transform._rigid_transform_cy, scipy.interpolate._fitpack, scipy.interpolate._dfitpack, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpacklib, scipy.sparse.linalg._propack, scipy.optimize._group_columns, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._slsqplib, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy.linalg._decomp_interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.optimize._direct, scipy.interpolate._dierckx, scipy.interpolate._ppoly, scipy.interpolate._interpnd, scipy.interpolate._rbfinterp_pythran, scipy.interpolate._rgi_cython, scipy.signal._sosfilt, scipy.integrate._odepack, scipy.integrate._quadpack, scipy.integrate._vode, scipy.integrate._dop, scipy.special.cython_special, scipy.stats._stats, scipy.stats._biasedurn, scipy.stats._stats_pythran, scipy.stats._levy_stable.levyst, scipy.stats._ansari_swilk_statistics, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, scipy.stats._sobol, scipy.stats._qmc_cy, scipy.stats._rcont.rcont, scipy.stats._qmvnt_cy, scipy.signal._peak_finding_utils, sentencepiece._sentencepiece, av.subtitles.stream, _cffi_backend, numba.core.typeconv._typeconv, numba._helperlib, numba._dynfunc, numba._dispatcher, numba.core.runtime._nrt_python, numba.np.ufunc._internal, numba.experimental.jitclass._box, kiwisolver._cext, pyamdgpuinfo._impl, zstandard.backend_c, sklearn.__check_build._check_build, pyarrow.lib, pandas._libs._cyutility, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.properties, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pyarrow._compute, pandas._libs.ops, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.indexing, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs.groupby, pandas._libs.json, pandas._libs.parsers, pandas._libs.testing, sklearn._cyutility, sklearn.utils._isfinite, sklearn.utils.sparsefuncs_fast, sklearn.utils.murmurhash, sklearn.utils._openmp_helpers, sklearn.metrics.cluster._expected_mutual_info_fast, sklearn.metrics._dist_metrics, sklearn.metrics._pairwise_distances_reduction._datasets_pair, sklearn.utils._cython_blas, sklearn.metrics._pairwise_distances_reduction._base, sklearn.metrics._pairwise_distances_reduction._middle_term_computer, sklearn.utils._heap, sklearn.utils._sorting, sklearn.metrics._pairwise_distances_reduction._argkmin, sklearn.metrics._pairwise_distances_reduction._argkmin_classmode, sklearn.utils._vector_sentinel, sklearn.metrics._pairwise_distances_reduction._radius_neighbors, sklearn.metrics._pairwise_distances_reduction._radius_neighbors_classmode, sklearn.metrics._pairwise_fast, sklearn.preprocessing._csr_polynomial_expansion, sklearn.preprocessing._target_encoder_fast, xxhash._xxhash, pywt._extensions._dwt, pywt._extensions._cwt, pywt._extensions._pywt, pywt._extensions._swt, websockets.speedups, google._upb._message, pymupdf._extra, pymupdf._mupdf, sklearn.utils._fast_dict, sklearn.cluster._hierarchical_fast, sklearn.cluster._k_means_common, sklearn.cluster._k_means_elkan, sklearn.cluster._k_means_lloyd, sklearn.cluster._k_means_minibatch, sklearn.cluster._dbscan_inner, sklearn.neighbors._partition_nodes, sklearn.neighbors._ball_tree, sklearn.neighbors._kd_tree, sklearn.utils.arrayfuncs, sklearn.utils._random, sklearn.utils._seq_dataset, sklearn.linear_model._cd_fast, _loss, sklearn._loss._loss, sklearn.linear_model._sag_fast, sklearn.svm._liblinear, sklearn.svm._libsvm, sklearn.svm._libsvm_sparse, sklearn.utils._weight_vector, sklearn.linear_model._sgd_fast, sklearn.decomposition._online_lda_fast, sklearn.decomposition._cdnmf_fast, sklearn.cluster._hdbscan._tree, sklearn.cluster._hdbscan._linkage, sklearn.cluster._hdbscan._reachability, sklearn._isotonic, sklearn.tree._utils, sklearn.tree._tree, sklearn.tree._partitioner, sklearn.tree._splitter, sklearn.tree._criterion, sklearn.neighbors._quad_tree, sklearn.manifold._barnes_hut_tsne, sklearn.manifold._utils, skimage.measure._ccomp, skimage.measure._moments_cy, skimage.measure._find_contours_cy, skimage.measure._marching_cubes_lewiner_cy, PIL._imagingcms, PIL._imagingmath, moderngl.mgl, glcontext.x11, hip_utils (total: 333)

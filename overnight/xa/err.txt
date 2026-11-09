@@ -1,0 +1,5 @@
+xatlas pass 0 charts 3047 utilization 0.7772 folded or torn polygons 95
+xatlas pass 1 charts 3122 utilization 0.7772 folded or torn polygons 23
+xatlas pass 2 charts 3125 utilization 0.7802 folded or torn polygons 56
+xatlas pass 3 charts 3209 utilization 0.7769 folded or torn polygons 24
+xatlas pass 4 charts 3237 utilization 0.7776 folded or torn polygons 0
